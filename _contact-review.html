@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact seal review</title></head>
+<body>
+  <header class="folio-nav" style="display:flex;opacity:1;transform:none">
+    <div class="folio-dock">
+      <a class="folio-brand" href="#" aria-label="Fahmi Aufa"><span class="folio-brand-seal"><img src="/logo.svg" alt=""></span></a>
+      <div class="folio-nav-index"><nav aria-label="Main navigation">
+        <a href="#projects"><span class="nav-label">Work</span></a>
+        <a href="#about"><span class="nav-label">About</span></a>
+        <span class="nav-lab-placeholder">Lab</span>
+        <a href="#contact" class="nav-contact" aria-label="Let's talk — contact Fahmi">
+          <span class="nav-contact-orbit" aria-hidden="true"><svg viewBox="0 0 100 100"><defs><path id="contact-orbit-path" d="M 50,50 m -34,0 a 34,34 0 1,1 68,0 a 34,34 0 1,1 -68,0"></path></defs><text><textPath href="#contact-orbit-path">LET'S CREATE · LET'S CREATE · </textPath></text></svg></span>
+          <span class="nav-contact-core" aria-hidden="true"><span class="nav-contact-arrow">↗</span></span>
+        </a>
+      </nav></div>
+    </div>
+  </header>
+  <main id="main-content" class="folio-main" style="display:block;opacity:1">
+    <section id="projects" style="height:100vh"></section>
+    <div id="contact" class="footer-sequence contact-scroll-target"><div class="footer-stage">
+      <footer class="signature-footer"><h2 class="footer-wordmark">FAHMI AUFA<span>↗</span></h2><div class="footer-details"><p class="footer-manifesto">DESIGN, DATA &amp; DEVELOPMENT.</p></div><div class="signature-bottom">© 2026</div></footer>
+      <div class="footer-shutter"><div class="footer-prelude"><span class="prelude-line">GOOD THINGS.</span><span class="prelude-line">START HERE.</span></div><span class="footer-scroll-cue">SCROLL</span></div>
+    </div></div>
+  </main>
+  <script type="module">
+    import '/src/style.css'; import '/src/portfolio.css'; import gsap from 'gsap'; import { ScrollTrigger } from 'gsap/ScrollTrigger'; import { animateFooterReveal } from '/src/footer-reveal.js';
+    gsap.registerPlugin(ScrollTrigger); animateFooterReveal(); document.fonts.ready.then(() => ScrollTrigger.refresh());
+  </script>
+</body>
+</html>

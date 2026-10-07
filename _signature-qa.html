@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Signature motion QA</title></head><body>
+<div style="position:fixed;top:5px;left:5px;z-index:10000000;background:white;color:black;padding:8px;font:14px sans-serif"><button data-p="0">0%</button><button data-p=".25">25%</button><button data-p=".5">50%</button><button data-p=".75">75%</button><button data-p="1">100%</button><button id="play">Write</button><button id="flip">Flip 25%</button><button id="halfFlip">Flip 50%</button><button id="lateFlip">Flip 75%</button><button id="finish">Finish flip</button><button id="coverage">Check ink</button><output id="result"></output></div><main class="folio-main" id="qa"></main>
+<script type="module">
+import '/src/style.css';import '/src/portfolio.css';import gsap from 'gsap';import {initSignatureAnimation} from '/src/signature-anim.js';import {initPaperFlip} from '/src/paper-flip.js';
+const doc=new DOMParser().parseFromString(await(await fetch('/index.html')).text(),'text/html');
+document.querySelector('#qa').append(doc.querySelector('.signature-footer'));
+document.querySelector('.signature-footer').style.minHeight='100svh';
+if(location.search.includes('reduced')){const native=window.matchMedia.bind(window);window.matchMedia=q=>q.includes('prefers-reduced-motion')?{matches:true,addEventListener(){},removeEventListener(){}}:native(q);}const card=document.querySelector('.footer-contact-card');const sig=initSignatureAnimation(card);initPaperFlip(card);sig.restart();if(!location.search.includes('reduced'))sig.progress(0);
+document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{sig.progress(Number(b.dataset.p));document.querySelector('#result').textContent=b.textContent;});
+document.querySelector('#play').onclick=()=>sig.restart();let flip;
+document.querySelector('#flip').onclick=()=>{card.click();flip=gsap.globalTimeline.getChildren().filter(t=>t.vars.t===1).at(-1);flip?.pause().progress(.25);};
+document.querySelector('#finish').onclick=()=>flip?.progress(1);document.querySelector('#halfFlip').onclick=()=>flip?.progress(.5);document.querySelector('#lateFlip').onclick=()=>flip?.progress(.75);
+document.querySelector('#coverage').onclick=async()=>{
+ const original=await(await fetch('/signaturestrokes/garis%20full.svg')).text();const data='data:image/svg+xml;base64,'+btoa(original);
+ const svg=card.querySelector('.footer-card-signature svg').cloneNode(true);
+ svg.querySelector('.sig-final-art').setAttribute('href',data);svg.querySelectorAll('path').forEach(p=>{p.style.fill='none';p.style.stroke='white';p.style.strokeLinecap='round';p.style.strokeLinejoin='round';});
+ await Promise.all([...svg.querySelectorAll('.sig-stage-fill')].map(async image=>{const source=await(await fetch(image.getAttribute('href'))).text();image.setAttribute('href','data:image/svg+xml;base64,'+btoa(source));}));
+ const render=async(url)=>{const im=new Image();im.src=url;await im.decode();const c=document.createElement('canvas');c.width=603;c.height=752;const ctx=c.getContext('2d');ctx.drawImage(im,0,0,603,752);return ctx.getImageData(0,0,603,752).data;};
+ const [a,b]=await Promise.all([render(data),render('data:image/svg+xml;base64,'+btoa(new XMLSerializer().serializeToString(svg)))]);let total=0,drawn=0;for(let i=3;i<a.length;i+=4){total+=a[i];drawn+=Math.min(a[i],b[i]);}const bins={};for(let i=3;i<a.length;i+=4){const delta=a[i]-b[i];if(delta>16){const n=(i-3)/4;const k=Math.floor((n%603)/25)*25+','+Math.floor(Math.floor(n/603)/25)*25;bins[k]=(bins[k]||0)+delta;}}document.querySelector('#result').textContent='Ink coverage '+(100*drawn/total).toFixed(2)+'% '+JSON.stringify(Object.entries(bins).sort((a,b)=>b[1]-a[1]).slice(0,8));
+};
+</script></body></html>
+
+
+
+

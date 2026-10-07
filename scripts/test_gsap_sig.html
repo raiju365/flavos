@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { margin: 0; background: #151613; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; gap: 20px; font-family: sans-serif; }
+  .card { width: 440px; height: 390px; background: #dbe1bc; position: relative; border-radius: 4px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); overflow: hidden; transform: rotate(6deg); }
+  .sig-container { position: absolute; inset: 0; pointer-events: none; }
+  .sig-svg { width: 100%; height: 100%; }
+  .mask-stroke {
+    fill: none;
+    stroke: white;
+    stroke-width: 30px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .controls { position: fixed; top: 16px; left: 16px; z-index: 100; display: flex; gap: 10px; }
+  button { padding: 8px 16px; background: #25271e; color: #f0eee7; border: 1px solid #666; cursor: pointer; border-radius: 4px; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+<div class="controls">
+  <button id="replay">Replay Animation</button>
+  <button id="step0">0%</button>
+  <button id="step25">25%</button>
+  <button id="step50">50%</button>
+  <button id="step75">75%</button>
+  <button id="step100">100%</button>
+</div>
+
+<div class="card">
+  <div class="sig-container" id="sig-wrapper">
+    <!-- Inline SVG with defs mask and original paths -->
+  </div>
+</div>
+
+<script type="module">
+  import origPaths from '/scripts/orig_paths.json';
+  import strokes from '/scripts/five_strokes.json';
+
+  const wrapper = document.getElementById('sig-wrapper');
+  wrapper.innerHTML = `
+    <svg class="sig-svg" viewBox="0 0 422 570" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <mask id="paper-sig-mask" maskUnits="userSpaceOnUse" x="-50" y="-50" width="522" height="670">
+          <rect x="-50" y="-50" width="522" height="670" fill="black"/>
+          <g class="mask-stroke">
+            <path id="stroke-stem" d="${strokes.stem}" />
+            <path id="stroke-flourish" d="${strokes.flourish}" />
+            <path id="stroke-cross" d="${strokes.cross}" />
+            <path id="stroke-cursive" d="${strokes.cursive}" />
+            <path id="stroke-dot" d="${strokes.dot}" stroke-width="36" />
+          </g>
+        </mask>
+      </defs>
+      <g mask="url(#paper-sig-mask)">
+        <path fill="#151613" d="${origPaths[0]}" />
+        <path fill="#151613" d="${origPaths[1]}" />
+      </g>
+    </svg>
+  `;
+
+  const stem = document.getElementById('stroke-stem');
+  const flourish = document.getElementById('stroke-flourish');
+  const cross = document.getElementById('stroke-cross');
+  const cursive = document.getElementById('stroke-cursive');
+  const dot = document.getElementById('stroke-dot');
+
+  const allStrokes = [stem, flourish, cross, cursive, dot];
+  allStrokes.forEach(s => {
+    const len = s.getTotalLength();
+    s.style.strokeDasharray = len;
+    s.style.strokeDashoffset = len;
+  });
+
+  const tl = gsap.timeline({ paused: false, repeat: -1, repeatDelay: 1 });
+  
+  const getLen = el => el.getTotalLength();
+
+  tl.to(stem, { strokeDashoffset: 0, duration: 0.5, ease: 'power2.inOut' })
+    .to(flourish, { strokeDashoffset: 0, duration: 0.9, ease: 'power1.inOut' }, '-=0.1')
+    .to(cross, { strokeDashoffset: 0, duration: 0.35, ease: 'power1.out' }, '-=0.1')
+    .to(cursive, { strokeDashoffset: 0, duration: 0.7, ease: 'power1.inOut' }, '-=0.05')
+    .to(dot, { strokeDashoffset: 0, duration: 0.15, ease: 'power2.out' });
+
+  window.sigTimeline = tl;
+  document.getElementById('replay').onclick = () => tl.restart();
+  document.getElementById('step0').onclick = () => { tl.pause(); tl.progress(0); };
+  document.getElementById('step25').onclick = () => { tl.pause(); tl.progress(0.25); };
+  document.getElementById('step50').onclick = () => { tl.pause(); tl.progress(0.5); };
+  document.getElementById('step75').onclick = () => { tl.pause(); tl.progress(0.75); };
+  document.getElementById('step100').onclick = () => { tl.pause(); tl.progress(1); };
+</script>
+</body>
+</html>

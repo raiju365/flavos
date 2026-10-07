@@ -1,0 +1,7 @@
+Google Sans Regular (normal, weight 400, Latin subset)
+Downloaded: 2026-10-06
+Provider: https://fonts.googleapis.com/css2?family=Google+Sans:wght@400&display=swap
+Font: https://fonts.gstatic.com/s/googlesans/v71/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJllpyk.woff2
+Project: https://github.com/googlefonts/googlesans
+License: SIL Open Font License 1.1; see GoogleSans-OFL.txt.
+Used locally for the About passages only.

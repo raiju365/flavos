@@ -1,0 +1,6 @@
+SF Pro Text Bold
+Source: https://www.azfonts.net/fonts/sf-pro-text/bold-316347/download
+Downloaded: 2026-09-13
+Copyright (c) 2015-2017 Apple Inc. All rights reserved.
+AZFonts identifies this download as personal use only. This source note is not a license grant for commercial redistribution.
+The actual font is the TrueType file; the site's WOFF2 download returned a Type 1 file and was not retained.

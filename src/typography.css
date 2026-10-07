@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Google Sans';
+  src: url('/fonts/GoogleSans-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* Gaia is the default; the About passages use Google Sans. */
+:root {
+  --font-site: 'Gaia Display', Arial, sans-serif;
+  --font-display: var(--font-site);
+  --font-body: var(--font-site);
+  --folio-serif: var(--font-site);
+}
+html body,
+html body * {
+  font-family: 'Gaia Display', Arial, sans-serif !important;
+  font-synthesis: none;
+  font-style: normal !important;
+  font-weight: 400;
+}
+
+#about .about-reading-copy,
+#about .about-reading-copy * {
+  font-family: 'Google Sans', Arial, sans-serif !important;
+}
+.studio-link,
+.tools-eyebrow,
+.orbit-gallery .orbit-close,
+.orbit-detail-number,
+.footer-back-to-top {
+  text-transform: uppercase;
+}
+.about-reading-copy,
+.tool-entry p,
+.tools-intro p,
+.orbit-detail-context p,
+.footer-direct {
+  text-transform: none;
+}
+.orbit-detail-copy h3 { overflow-wrap: anywhere; }
+.signature-footer .footer-direct { overflow-wrap: anywhere; }
+/* Wider Gaia letterforms need more room than the former condensed serif. */
+.folio-main .work-index-button .btn-text { font-size: clamp(52px, 8.2vw, 142px); line-height: 1.05; }
+.folio-main .signature-footer .footer-headline { font-size: clamp(80px, 13vw, 220px); }
+@media (max-width: 700px) {
+  .folio-main .work-index-button .btn-text { font-size: clamp(36px, 9vw, 64px); }
+  .folio-main .signature-footer .footer-headline { font-size: clamp(52px, 13vw, 90px); }
+  .signature-footer .footer-direct { font-size: clamp(12px, 3.3vw, 18px); }
+}

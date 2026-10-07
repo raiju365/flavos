@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Miracle History';
+  src: url('/fonts/MiracleHistory.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+#loading-screen.elegant-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2000000;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  padding: 0;
+  color: #eee9df;
+  background: #0b0b0a;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.loader-composition {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Mask container in exact center */
+.loader-mark-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+}
+
+.loader-mark {
+  display: block;
+  /* Ukuran logo di tengah yang pas tidak kekecilan dan kebesaran */
+  width: clamp(54px, 5.2vw, 76px);
+  height: auto;
+  filter: brightness(0) invert(0.96);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+}
+
+/* Horizontal travel corridor along the bottom (mentok ke sudut bawah di semua device) */
+.loader-travel-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  align-items: flex-end;
+  line-height: 0.82;
+}
+
+.loader-progress {
+  display: inline-block;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+  line-height: 0.82;
+}
+
+.loader-percent {
+  display: inline-block;
+  font-family: 'Miracle History', 'Instrument Serif', Georgia, serif;
+  font-style: normal;
+  font-weight: 400;
+  /* Proportional on mobile, tablet/iPad, and desktop */
+  font-size: clamp(48px, 6.2vw, 84px);
+  line-height: 0.82;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  will-change: transform, opacity, filter, text-shadow;
+  transform-origin: center bottom;
+}
+
+.loader-feedback {
+  position: absolute;
+  left: clamp(24px, 4.5vw, 64px);
+  bottom: clamp(110px, 15vh, 160px);
+  max-width: min(32ch, calc(100% - 48px));
+  font: 400 14px/1.6 Arial, sans-serif;
+}
+
+.loader-status { margin: 0 0 12px; }
+.loader-status:empty { display: none; }
+.loader-retry {
+  padding: 6px 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.loader-retry:focus-visible { outline: 2px solid currentColor; outline-offset: 6px; }
+
+/* Custom fountain pen cursor is visible from loading screen onward; Hold indicator is only revealed after loading finishes */
+body:has(#loading-screen) #cursor-hold-indicator {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#loading-screen {
+  cursor: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #loading-screen.elegant-loader,
+  .loader-mark,
+  .loader-progress {
+    will-change: auto;
+  }
+}

@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paper regression</title></head><body>
+<div style="position:fixed;z-index:10000;top:8px;left:8px;background:white;padding:8px">
+<button id="quarter">Flip / freeze 25%</button><button id="middle">50%</button><button id="late">75%</button><button id="end">Finish</button>
+</div><main class="folio-main" id="qa"></main>
+<script type="module">
+import '/src/style.css'; import '/src/portfolio.css';
+import gsap from 'gsap'; import {initFooterInteractions} from '/src/footer-interactions.js';
+const source = new DOMParser().parseFromString(await (await fetch('/index.html')).text(),'text/html');
+document.querySelector('#qa').append(source.querySelector('.signature-footer'));
+document.querySelector('.signature-footer').style.minHeight='100svh';
+initFooterInteractions();
+let tween;
+document.querySelector('#quarter').onclick=()=>{document.querySelector('.footer-contact-card').click();tween=gsap.globalTimeline.getChildren().find(t=>Object.hasOwn(t.vars,'progress'));tween?.pause().progress(.25);};
+for(const [id,p] of [['middle',.5],['late',.75],['end',1]]) document.getElementById(id).onclick=()=>tween?.progress(p);
+</script></body></html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description"
+    content="Portfolio of Fahmi, a UI/UX Engineer and Data Analyst blending analytical rigor with creative design in a classical Greek/Roman aesthetic." />
+  <title>Fahmi Aufa</title>
+  <link rel="preload" href="/fonts/Gaia-Display.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/src/portfolio.css" />
+  <link rel="stylesheet" href="/src/editorial.css" />
+  <link rel="stylesheet" href="/src/loader.css" />
+  <link rel="stylesheet" href="/src/typography.css" />
+</head>
+
+<body>
+  <div class="tv-noise" aria-hidden="true"></div>
+  <!-- Loader waits for the complete intro and the page's images/fonts. -->
+  <div id="loading-screen" class="elegant-loader" aria-label="Loading portfolio" aria-busy="true">
+    <svg class="loader-svg-filters" aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none;">
+      <defs>
+        <filter id="loader-motion-blur" x="-50%" y="-30%" width="200%" height="160%" color-interpolation-filters="sRGB">
+          <feGaussianBlur id="loader-blur-elem" in="SourceGraphic" stdDeviation="0 0" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="loader-composition" aria-hidden="true">
+      <div class="loader-mark-mask">
+        <img class="loader-mark" src="/logo.svg" alt="" width="68" height="68" fetchpriority="high" />
+      </div>
+      <div class="loader-travel-track">
+        <div class="loader-progress">
+          <span class="loader-percent">0</span>
+        </div>
+      </div>
+    </div>
+    <div class="loader-feedback">
+      <p class="loader-status" role="status" aria-live="polite"></p>
+      <button class="loader-retry" type="button" hidden>Try again ↗</button>
+    </div>
+  </div>
+  <div class="nav-focus-veil" aria-hidden="true"></div>
+  <!-- Background Particles -->
+  <div id="tsparticles" aria-hidden="true" style="opacity: 0; pointer-events: none;"></div>
+
+
+  <!-- Portfolio navigation -->
+  <header class="folio-nav studio-header" style="display: none; opacity: 0;">
+    <div class="studio-bar">
+      <nav class="studio-desktop" aria-label="Primary navigation">
+        <a class="studio-link" href="#hero"><span class="nav-word"><span>HOME</span><span
+              aria-hidden="true">HOME</span></span></a>
+        <a class="studio-link" href="#about"><span class="nav-word"><span>ABOUT</span><span
+              aria-hidden="true">ABOUT</span></span></a>
+        <a class="studio-brand" href="#hero" aria-label="Fahmi Aufa — Home"><img src="/logo.svg" alt="" width="32"
+            height="32" /></a>
+        <a class="studio-link" href="#projects"><span class="nav-word"><span>WORK</span><span
+              aria-hidden="true">WORK</span></span></a>
+        <a class="studio-link" href="#contact"><span class="nav-word"><span>TALK</span><span
+              aria-hidden="true">TALK</span></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="folio-main" style="display: none; opacity: 0;">
+    <a class="skip-content" href="#hero">Skip to content</a>
+
+    <section id="hero" class="folio-hero imperial-hero" aria-labelledby="hero-heading">
+      <div class="hero-bg-wrapper" aria-hidden="true">
+        <!-- Classical Base Painting (Ancient Rome) -->
+        <img src="/paling-atas.png" alt="Imperial Classical Painting" class="hero-bg-img hero-bg-base"
+          fetchpriority="high" />
+        <div class="hero-vignette-overlay"></div>
+        <div class="hero-gradient-overlay-top"></div>
+        <div class="hero-gradient-overlay-bottom"></div>
+      </div>
+
+      <h1 id="hero-heading" class="sr-only">Fahmi Aufa — Portfolio</h1>
+
+    </section>
+
+    <section class="folio-logo-pause" aria-label="Fahmi Aufa">
+      <div class="logo-pause-viewport">
+        <div class="logo-style-cycle" data-style="1" role="img" aria-label="Fahmi Aufa — logo dalam berbagai material">
+          <img class="logo-style-layer is-visible" src="/logoanimasi/web/logo1.webp" alt="" width="480" height="480" />
+          <img class="logo-style-layer" src="/logoanimasi/web/logo1.webp" alt="" width="480" height="480"
+            aria-hidden="true" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="folio-about folio-section" aria-label="About Fahmi Aufa">
+      <div class="about-reading-stage">
+        <div class="about-reading-content about-reading-content--left">
+          <p class="about-reading-copy">Hi, I’m Fahmi. I bring design and technology together to shape clear digital
+            experiences. I care about useful ideas, expressive systems, and the small visual decisions that make every
+            interaction feel natural, memorable, and distinctly human. Through typography, motion, and visual storytelling,
+            I give each project a clear, lasting voice.</p>
+        </div>
+
+        <aside class="about-art-showcase portrait-static" id="about-art-showcase" aria-label="Portrait of Fahmi Aufa">
+          <div class="portrait-stage">
+
+            <div class="portrait-orbit">
+              <div class="portrait-object">
+                <div class="portrait-window">
+                  <img class="portrait-canvas-bg" src="/fotosebelahabout/frames/frame_001.webp" alt="" aria-hidden="true"
+                    draggable="false" />
+                  <img class="portrait-core" src="/fotosebelahabout/selfphoto.png" alt="Portrait of Fahmi Aufa"
+                    loading="eager" width="736" height="1119" draggable="false" />
+                </div>
+                <img class="portrait-frame" src="/borderfoto.png" alt="" aria-hidden="true"
+                  width="1024" height="1536" draggable="false" />
+              </div>
+            </div>
+
+          </div>
+        </aside>
+        <div class="about-reading-content about-reading-content--right">
+          <p class="about-reading-copy">From early research to the final detail, I turn complex thoughts into focused
+            products. I keep learning, testing, and collaborating so every project balances clarity, character,
+            accessibility, and the quiet confidence of work made with intention. Through thoughtful layouts and interactions,
+            I connect every detail to a clear, useful whole.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="folio-work folio-section orbit-gallery orbit-inline" aria-labelledby="work-heading">
+      <div class="orbit-shell">
+        <h2 id="work-heading" class="sr-only" tabindex="-1">Works.</h2>
+        <div class="orbit-overview">
+          <div class="orbit-stage" role="region" aria-label="10 karya, geser horizontal atau gunakan tombol panah untuk menjelajah">
+            <div class="orbit-camera"><div class="orbit-cards"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <dialog id="project-gallery" class="project-gallery orbit-gallery" aria-labelledby="gallery-heading"
+      data-lenis-prevent>
+      <div class="orbit-shell">
+        <header class="orbit-header">
+          <h2 id="gallery-heading">Works.</h2>
+          <button type="button" class="orbit-close" aria-label="Close work detail" autofocus>Close <span aria-hidden="true">×</span></button>
+        </header>
+        <section class="orbit-detail" aria-labelledby="orbit-detail-title" hidden>
+          <button type="button" class="orbit-back" aria-label="Kembali ke semua karya" title="Kembali">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="orbit-detail-layout">
+            <div class="orbit-detail-copy">
+              <span class="orbit-detail-number"></span>
+              <h3 id="orbit-detail-title" tabindex="-1"></h3>
+            </div>
+            <div class="orbit-detail-media"><span>aset</span></div>
+            <div class="orbit-detail-context">
+              <p class="orbit-detail-description"></p>
+            </div>
+          </div>
+          <nav class="orbit-detail-controls" aria-label="Browse work details">
+            <button type="button" class="orbit-detail-prev" aria-label="Previous work detail">←</button>
+            <span class="orbit-detail-count"></span>
+            <button type="button" class="orbit-detail-next" aria-label="Next work detail">→</button>
+          </nav>
+        </section>
+      </div>
+    </dialog>
+
+    <div id="contact" class="footer-sequence contact-scroll-target" aria-label="Contact Fahmi">
+      <div class="footer-stage">
+        <footer class="signature-footer" aria-labelledby="contact-heading">
+          <div class="footer-logo-anchor" aria-hidden="true"></div>
+          <div class="footer-editorial">
+            <div class="footer-wordmark-wrap">
+              <h2 id="contact-heading" class="footer-headline">Let's talk.</h2>
+              <nav class="footer-socials" aria-label="Social and email links">
+                <!-- Temporary destinations; replace with the final profile URLs and email. -->
+                <a class="footer-direct" href="https://example.com/instagram" target="_blank" rel="noopener noreferrer"
+                  title="Instagram — placeholder">Instagram <span aria-hidden="true">↗</span></a>
+                <a class="footer-direct" href="https://example.com/linkedin" target="_blank" rel="noopener noreferrer"
+                  title="LinkedIn — placeholder">LinkedIn <span aria-hidden="true">↗</span></a>
+                <a class="footer-direct" href="mailto:hello@example.com" title="Email — placeholder">Email <span
+                    aria-hidden="true">↗</span></a>
+              </nav>
+            </div>
+          </div>
+          <div class="signature-bottom"><a href="#hero" class="footer-back-to-top" aria-label="Back to top">Top <span
+                class="back-top-arrow" aria-hidden="true">↑</span></a></div>
+        </footer>
+      </div>
+    </div>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
