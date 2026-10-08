@@ -1,0 +1,44 @@
+[
+  {
+    "entryProgress": "0.0000",
+    "entryPhase": "white",
+    "foregroundScale": "1.0000",
+    "paintingScale": "0.5000"
+  },
+  {
+    "entryProgress": "0.1802",
+    "entryPhase": "entering",
+    "foregroundScale": "1.1557",
+    "paintingScale": "0.5275"
+  },
+  {
+    "entryProgress": "0.3500",
+    "entryPhase": "entering",
+    "foregroundScale": "1.7265",
+    "paintingScale": "0.6010"
+  },
+  {
+    "entryProgress": "0.5000",
+    "entryPhase": "entering",
+    "foregroundScale": "3.3523",
+    "paintingScale": "0.7057"
+  },
+  {
+    "entryProgress": "0.6500",
+    "entryPhase": "entering",
+    "foregroundScale": "12.5582",
+    "paintingScale": "0.8413"
+  },
+  {
+    "entryProgress": "0.7802",
+    "entryPhase": "entering",
+    "foregroundScale": "166.6667",
+    "paintingScale": "0.9538"
+  },
+  {
+    "entryProgress": "0.9000",
+    "entryPhase": "painting",
+    "foregroundScale": "166.6667",
+    "paintingScale": "1.0000"
+  }
+]

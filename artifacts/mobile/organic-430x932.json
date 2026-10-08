@@ -1,0 +1,216 @@
+{
+  "results": [
+    {
+      "width": 430,
+      "height": 932,
+      "touch": true,
+      "distances": {
+        "descent": 4,
+        "orbitHold": 0
+      },
+      "before": {
+        "y": 12575,
+        "complete": "false",
+        "entry": 0,
+        "workTop": 4870.1875,
+        "portrait": {
+          "width": 352.59375,
+          "height": 489.28125
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "held": {
+        "y": 12785,
+        "complete": "true",
+        "entry": 0,
+        "workTop": 4660.1875,
+        "portrait": {
+          "width": 352.59375,
+          "height": 489.28125
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "released": {
+        "y": 14182,
+        "complete": "true",
+        "entry": 0.3747,
+        "workTop": 3263.1875,
+        "portrait": {
+          "width": 352.59375,
+          "height": 489.28125
+        },
+        "translate": "0px -73.1924px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.3747,
+          0.3418,
+          0.3052,
+          0.2643,
+          0.2184,
+          0.1662,
+          0.1067,
+          0.038,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "settled": {
+        "y": 17445,
+        "complete": "true",
+        "entry": 1,
+        "workTop": 0.1875,
+        "portrait": {
+          "width": 352.59375,
+          "height": 489.28125
+        },
+        "translate": "0px -1165px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "locked": false
+      },
+      "reverse": {
+        "y": 14183,
+        "complete": "true",
+        "entry": 0.3749,
+        "workTop": 3262.1875,
+        "portrait": {
+          "width": 352.59375,
+          "height": 489.28125
+        },
+        "translate": "0px -73.5278px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.3749,
+          0.3421,
+          0.3055,
+          0.2646,
+          0.2187,
+          0.1666,
+          0.1071,
+          0.0384,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "restored": {
+        "y": 12575,
+        "complete": "false",
+        "entry": 0,
+        "workTop": 4870.1875,
+        "portrait": {
+          "width": 352.59375,
+          "height": 489.28125
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.3749,
+          0.3421,
+          0.3055,
+          0.2646,
+          0.2187,
+          0.1666,
+          0.1071,
+          0.0384,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "reduced": {
+        "y": 1974,
+        "entry": 1,
+        "workTop": 1046.875,
+        "portrait": {
+          "width": 352.59375,
+          "height": 489.28125
+        },
+        "translate": "0px",
+        "copies": [
+          "1",
+          "1"
+        ],
+        "overflow": 0,
+        "cards": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "locked": false
+      }
+    }
+  ],
+  "errors": []
+}

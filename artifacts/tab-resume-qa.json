@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "before": {
+        "timeOrigin": 1791490323963.2,
+        "y": 2574,
+        "visibility": "visible",
+        "loader": "removed",
+        "nav": "navigate",
+        "discarded": false,
+        "hash": "#about"
+      },
+      "hidden": {
+        "timeOrigin": 1791490323963.2,
+        "y": 2574,
+        "visibility": "visible",
+        "loader": "removed",
+        "nav": "navigate",
+        "discarded": false,
+        "hash": "#about"
+      },
+      "after": {
+        "timeOrigin": 1791490323963.2,
+        "y": 2574,
+        "visibility": "visible",
+        "loader": "removed",
+        "nav": "navigate",
+        "discarded": false,
+        "hash": "#about"
+      },
+      "sameDocument": true,
+      "scrollDelta": 0
+    }
+  ],
+  "errors": []
+}

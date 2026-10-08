@@ -1,0 +1,36 @@
+ vec2 st = uv - 0.5;
+  float radius = 1.0 + strength * dot(st, st);
+  return 0.5 + radius * st;
+}
+`,z=`
+uniform sampler2D uTexture;
+uniform float uScrollVelocity;
+uniform float uScroll;
+uniform float uBarrelMultiplier;
+uniform vec2 uPointerOffset;
+uniform bool uIsMobile;
+varying vec2 vUv;
+
+${K}
+
+void main() {
+  vec2 uv = clamp(vUv + uPointerOffset, vec2(0.0), vec2(1.0));
+  vec2 uvBarrel = barrelPincushion(uv, uScrollVelocity * uBarrelMultiplier);
+
+  vec4 textureColor = texture2D(uTexture, uvBarrel);
+
+  if (uIsMobile) {
+    gl_FragColor = vec4(textureColor.rgb, uScroll);
+  } else {
+    gl_FragColor = vec4(textureColor.rgb, textureColor.a * uScroll);
+  }
+
+  #include <colorspace_fragment>
+}
+`,W=`
+varying vec2 vUv;
+void main() {
+  vUv = uv;
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+}
+`,X=J({uIsMobile:!1,uTexture:new L.Texture,uScrollVelocity:0,uScroll:1,uBarrelMultiplier:d.config.mosaic.shader.barrelMultiplier,uPointerOffset:new L.Vector2(0,0)},W,z);function Z({children:t}){let e=(0,u.useRef)(null),r=(0,u.useRef)(0),i=(0,u.useRef)(new L.Vector2(0,0)),A=(0,Y.useTouch)();return(0,G.D)(()=>{let t=e.current;if(!t)return;let{progress:o}=E.useHomeScenesStore.getState().mosaic,l=o-r.current;r.current=o,t.uniforms.uScrollVelocity.value=L.MathUtils.lerp(t.uniforms.uScrollVelocity.value,l,d.config.mosaic.shader.velocityLerp),t.uniforms.uBarrelMultiplier.value=A?d.config.mosaic.shader.barrelMultiplierMobile:d.config.mosaic.shader.barrelMultiplier;let n=Math.max(0,Math.min(1,(1-o)/d.config.mosaic.shader.fadeDivisor));t.uniforms.uScroll.value=n*(0,y.getMosaicReveal)(),t.uniforms.uIsMobile.value=!1;let s=A?0:1-L.MathUtils.smoothstep(o,0,.04),{ndcX:h,ndcY:c}=V.usePointerStore.getState();i.current.x=L.MathUtils.lerp(i.current.x,.0025*h*s,.055),i.current.y=L.MathUtils.lerp(i.current.y,.0018*c*s,.055),t.uniforms.uPointerOffset?.value.copy(i.current)}),(0,s.jsx)("mosaicPortalMaterial",{ref:e,transparent:!0,children:t},X.key)}(0,O.e)({MosaicPortalMaterial:X});var G=k,k=k,$=t.i(99143);let tt=t=>t===Object(t)&&!Array.isArray(t)&&"function"!=typeof t;function te(t,e){let r=(0,k.C)(t=>t.gl),i=(0,$.useLoader)(L.TextureLoader,tt(t)?Object.values(t):t);return(0,u.useLayoutEffect)(()=>{null==e||e(i)},[e]),(0,u.useEffect)(()=>{if("initTexture"in r){let t=[];Array.isArray(i)?t=i:i instanceof L.Texture?t=[i]:tt(i)&&(t=Object.values(i)),t.forEach(t=>{t instanceof L.Texture&&r.initTexture(t)})}},[r,i]),(0,u.useMemo)(()=>{if(!tt(t))return i;{let e={},r=0;for(let A in t)e[A]=i[r++];return e}},[t,i])}te.preload=t=>$.useLoader.preload(L.TextureLoader,t),te.clear=t=>$.useLoader.clear(L.TextureLoader,t);let tr=(0,u.forwardRef)(function({url:t,width:e,height:r,scale:i,position:A,rotation:o,name:l},n){let h=te(t);h.colorSpace=L.SRGBColorSpace;let c=_(e,r,i);return(0,s.jsxs)("mesh",{ref:n,position:A,rotation:o,scale:c,name:l,children:[(0,s.jsx)("planeGeometry",{args:[1,1]}),(0,s.jsx)("meshBasicMaterial",{map:h,transparent:!0,toneMapped:!1,depthTest:!0})]})});var G=k;let ti=(0,u.forwardRef)(function({url:t,scale:e,position:r,rotation:i,name:A},o){let{nodes:l}=(0,I.useGLTF)(t,!0),n=(0,u.useRef)(null);return(0,u.useLayoutEffect)(()=>{l.Scene.traverse(t=>{t instanceof L.Mesh&&(t.material.transparent=!0)})},[l.Scene]),(0,G.D)(({clock:t})=>{if(!n.current)return;let{orbitalSpeed:e,orbitalAmplitude:i}=d.config.lighting,A=t.getElapsedTime()*e;n.current.position.set(r[0]+Math.cos(A)*i,r[1]+-5+Math.sin(A)*i,r[2]+Math.sin(A)*i+4)}),(0,s.jsxs)("group",{children:[(0,s.jsx)("primitive",{ref:o,object:l.Scene,name:A,scale:e,position:r,rotation:i}),(0,s.jsx)("ambientLight",{intensity:d.config.lighting.ambientIntensity}),(0,s.jsx)("pointLight",{ref:n,intensity:d.co

@@ -116,6 +116,7 @@ export function createAboutTextDust(stage, showcase, copies, wordGroups) {
     canvas.style.height = `${stageRect.height}px`;
 
     fields = copies.map((copy, groupIndex) => {
+      if (!wordGroups[groupIndex].length || !copy.getClientRects().length) return null;
       const rect = copy.getBoundingClientRect();
       const left = rect.left - stageRect.left - 3;
       const top = rect.top - stageRect.top - 3;
@@ -229,7 +230,7 @@ export function createAboutTextDust(stage, showcase, copies, wordGroups) {
       const sampled = stride === 1 ? particles : particles.filter((_, i) => Math.floor(i / stride) !== Math.floor((i - 1) / stride));
       sampled.sort((a, b) => a.birth - b.birth);
       return { atlas, remaining, remainingInk, erased: 0, cells, left, top, width, height, particles: sampled, color };
-    });
+    }).filter(Boolean);
     canvas.dataset.particles = String(fields.reduce((sum, field) => sum + field.particles.length, 0));
     canvas.dataset.erosion = 'organic-ignition';
   }

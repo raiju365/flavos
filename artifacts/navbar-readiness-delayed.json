@@ -1,0 +1,14 @@
+{
+  "waiting": {
+    "phase": "covered",
+    "hash": "",
+    "locked": true,
+    "decodeCalled": true
+  },
+  "back": {
+    "entry": "1.0000",
+    "inert": false,
+    "overlay": "idle"
+  },
+  "forward": true
+}

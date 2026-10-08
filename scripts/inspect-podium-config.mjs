@@ -1,0 +1,1 @@
+const html=await(await fetch('https://podium.global/')).text();for(const m of html.matchAll(/<script[^>]+src="([^"]+)"/g)){const s=await(await fetch(new URL(m[1],'https://podium.global/'))).text();const i=s.indexOf('fluidIntensity:');if(i>=0)console.log(s.slice(Math.max(0,i-1000),i+800));}

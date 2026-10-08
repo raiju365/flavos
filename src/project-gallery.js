@@ -631,7 +631,8 @@ export function initProjectGallery({ getLenis }) {
   stage.addEventListener('pointerdown', event => {
     if (event.button !== 0 || busy || !entered) return;
     clearTimeout(wheelSettle);
-    drag = { id: event.pointerId, x: event.clientX, y: event.clientY, angle, moved: false };
+    drag = { id: event.pointerId, x: event.clientX, y: event.clientY, angle, moved: false,
+      sensitivity: event.pointerType === 'touch' ? 1.6 : 1 };
   }, options);
   stage.addEventListener('pointermove', event => {
     if (!drag || drag.id !== event.pointerId) return;
@@ -642,7 +643,7 @@ export function initProjectGallery({ getLenis }) {
     drag.moved = true; stage.setPointerCapture(event.pointerId);
     returnHold = false;
     stage.classList.add('is-dragging'); resetHighlights();
-    target = drag.angle + dx / (geometry?.radius || 600);
+    target = drag.angle + dx * drag.sensitivity / (geometry?.radius || 600);
     caption(); start();
   }, options);
   const endDrag = event => {
@@ -723,10 +724,16 @@ export function initProjectGallery({ getLenis }) {
     const holdDistance = innerHeight * orbitHold;
     // Allow both mobile passages to pass through the viewport before pinning.
     // Centering the portrait early strands the lower paragraph below the fold.
-    const pinTop = innerWidth < 700
-      ? Math.min(0, innerHeight - readingHeight)
-      : 0;
-    const endTop = Math.max(innerHeight, readingHeight + pinTop);
+    const readingPinTop = Math.min(0, innerHeight - readingHeight);
+    // A large phone portrait needs its own framing once the copy dissolves.
+    // Keep both paragraphs reachable first, then centre the actual photo for
+    // the card departure without resizing it or changing the release boundary.
+    const portraitPinTop = about.classList.contains('has-mobile-copy')
+      ? Math.min(0, (innerHeight + 64) / 2 - entryGeometry.localPhotoCenterY)
+      : readingPinTop;
+    const pinTop = readingPinTop + (portraitPinTop - readingPinTop)
+      * ease(Number(about.dataset.absorbProgress) || 0);
+    const endTop = Math.max(innerHeight, readingHeight + readingPinTop);
     // Desktop has a longer departure, then a settled orbit that keeps rotating
     // for two more viewport lengths before Work returns to document flow.
     const raw = clamp((endTop + span + holdDistance - bounds.top) / span);
@@ -779,8 +786,15 @@ export function initProjectGallery({ getLenis }) {
     else if (!sceneVisible) { cancelAnimationFrame(frame); frame = 0; lastTime = 0; velocity = 0; }
   }, { threshold: [0, .2, .5, .8, 1] });
   visible.observe(section);
-  const navigation = new MutationObserver(scheduleEntrance);
+  let lastAbsorbProgress = about.dataset.absorbProgress;
+  const navigation = new MutationObserver(records => {
+    const absorptionChanged = about.dataset.absorbProgress !== lastAbsorbProgress;
+    lastAbsorbProgress = about.dataset.absorbProgress;
+    if (records.some(record => record.target !== about)
+      || (absorptionChanged && about.classList.contains('has-mobile-copy'))) scheduleEntrance();
+  });
   navigation.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+  navigation.observe(about, { attributes: true, attributeFilter: ['data-absorb-progress'] });
   window.addEventListener('scroll', scheduleEntrance, { ...options, passive: true });
   window.addEventListener('scroll', () => {
     const delta = window.scrollY - previousScrollY;

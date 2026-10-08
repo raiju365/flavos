@@ -16,9 +16,11 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
   if (copies.length < 2 || !stage || !showcase || !contentLeft || !contentRight) return () => {};
   const ctx = canvas ? canvas.getContext('2d', { alpha: false, desynchronized: true }) : null;
   const originals = copies.map(copy => copy.textContent.trim().replace(/\s+/g, ' '));
-  const wordGroups = copies.map((copy, groupIndex) => {
-    const tokens = originals[groupIndex].split(' ');
-    copy.setAttribute('aria-label', originals[groupIndex]);
+  const mobileCopyMedia = matchMedia('(max-width: 699px), (pointer: coarse) and (max-width: 1100px) and (max-height: 500px)');
+  const mobileCopy = 'I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.';
+  function populateCopy(copy, text) {
+    const tokens = text ? text.split(' ') : [];
+    copy.setAttribute('aria-label', text);
     copy.replaceChildren();
     return tokens.map((word, index) => {
       const wrapper = document.createElement('span');
@@ -28,22 +30,31 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
       copy.append(wrapper, index === tokens.length - 1 ? '' : ' ');
       return wrapper;
     });
-  });
-  const words = wordGroups.flat();
+  }
+  const wordGroups = [];
+  let words = [];
+  function applyResponsiveCopy() {
+    const texts = mobileCopyMedia.matches ? ['', mobileCopy] : originals;
+    section.classList.toggle('has-mobile-copy', mobileCopyMedia.matches);
+    copies.forEach((copy, index) => { wordGroups[index] = populateCopy(copy, texts[index]); });
+    words = wordGroups.flat();
+  }
+  applyResponsiveCopy();
   const lastWordProgress = [-1, -1];
+  let readingOverflows = false;
   const dust = createAboutTextDust(stage, showcase, copies, wordGroups);
   const frameColor = createAboutFrameColor(showcase);
   const cinematicMedia = window.matchMedia('(prefers-reduced-motion: no-preference)');
   const desktopHandoffMedia = window.matchMedia(DESKTOP_HANDOFF_QUERY);
 
   // Keep the reading rhythm and release directly into the Work section.
-  const leftScrollDistance = Math.round(wordGroups[0].length * 5.5);
-  const rightScrollDistance = Math.round(wordGroups[1].length * 5.5);
-  const textScrollDistance = leftScrollDistance + rightScrollDistance;
   const motionScrollDistance = canvas ? 260 : 0;
   let handoffDistances = getWorkHandoffDistances();
   let LEFT_COMPLETE, TEXT_COMPLETE, FILM_COMPLETE, ABSORB_COMPLETE;
   function configureDistance() {
+    const leftScrollDistance = Math.round(wordGroups[0].length * 5.5);
+    const rightScrollDistance = Math.round(wordGroups[1].length * 5.5);
+    const textScrollDistance = leftScrollDistance + rightScrollDistance;
     const absorbDistance = cinematicMedia.matches ? textScrollDistance : 0;
     handoffDistances = getWorkHandoffDistances();
     const { descent, orbitHold } = handoffDistances;
@@ -110,7 +121,7 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
   // Fit both passages to the proportional frame with one shared font and line
   // count. Keep the existing word nodes for reveal and dust.
   function alignPassageLines() {
-    const paired = window.matchMedia('(min-width: 700px)').matches;
+    const paired = !mobileCopyMedia.matches;
     stage.style.removeProperty('--about-paired-font');
     stage.style.removeProperty('--about-paired-leading');
     const readLayouts = () => wordGroups.map((group, index) => {
@@ -193,6 +204,11 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
 
   function measureCinematicGeometry() {
     alignPassageLines();
+    // If the readable composition cannot fit, reveal it before native scrolling
+    // moves its first lines above the viewport. The dust/handoff still follows.
+    const nextOverflow = stage.offsetHeight > innerHeight + 1;
+    if (nextOverflow !== readingOverflows) lastWordProgress.fill(-1);
+    readingOverflows = nextOverflow;
     dust.measure();
   }
 
@@ -309,10 +325,10 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
     // ==========================================
     // Finish every word on the left before revealing the right paragraph.
     // ==========================================
-    const leftProgress = Math.min(1, Math.max(0, displayedProgress / LEFT_COMPLETE));
+    const leftProgress = LEFT_COMPLETE ? Math.min(1, Math.max(0, displayedProgress / LEFT_COMPLETE)) : 1;
     const rightProgress = Math.min(1, Math.max(0, (displayedProgress - LEFT_COMPLETE) / (TEXT_COMPLETE - LEFT_COMPLETE)));
     wordGroups.forEach((group, groupIndex) => {
-      const textProgress = !cinematicMedia.matches ? 1 : groupIndex === 0 ? leftProgress : rightProgress;
+      const textProgress = !cinematicMedia.matches || readingOverflows ? 1 : groupIndex === 0 ? leftProgress : rightProgress;
       if (Math.abs(textProgress - lastWordProgress[groupIndex]) < .00001) return;
       lastWordProgress[groupIndex] = textProgress;
       const revealed = textProgress * (group.length + revealSpan);
@@ -381,6 +397,29 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
     draw(0, 0);
   };
   window.addEventListener('portfolio:restore', restoreState);
+  const onCopyChange = () => {
+    const top = scrollY + section.getBoundingClientRect().top;
+    const oldHeight = section.offsetHeight;
+    const oldY = scrollY;
+    const oldProgress = trigger.progress;
+    applyResponsiveCopy();
+    lastWordProgress.fill(-1);
+    configureDistance();
+    getLenis()?.resize();
+    ScrollTrigger.refresh();
+    if (oldY >= top) {
+      const nextY = oldY >= top + oldHeight
+        ? oldY + section.offsetHeight - oldHeight
+        : top + oldProgress * Math.max(0, section.offsetHeight - innerHeight);
+      repositioning = true;
+      if (getLenis()) getLenis().scrollTo(nextY, { immediate: true, force: true });
+      else scrollTo({ top: nextY, behavior: 'instant' });
+      ScrollTrigger.update();
+      repositioning = false;
+    }
+    restoreState();
+  };
+  mobileCopyMedia.addEventListener('change', onCopyChange);
   const onMediaChange = () => {
     configureDistance();
     ScrollTrigger.refresh();
@@ -419,6 +458,8 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
   document.fonts.addEventListener('loadingdone', onFontsLoaded);
 
   return () => {
+    mobileCopyMedia.removeEventListener('change', onCopyChange);
+    section.classList.remove('has-mobile-copy');
     window.removeEventListener('portfolio:restore', restoreState);
     gsap.ticker.remove(draw);
     cinematicMedia.removeEventListener('change', onMediaChange);

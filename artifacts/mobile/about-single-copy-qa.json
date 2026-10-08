@@ -1,0 +1,465 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "initial": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 35.09375,
+          "w": 319.796875,
+          "y": 137.8125,
+          "bottom": 581.578125
+        },
+        "copy": {
+          "y": 602.671875,
+          "bottom": 766.953125
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      },
+      "reading": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 35.09375,
+          "w": 319.796875,
+          "y": 137.421875,
+          "bottom": 581.1875
+        },
+        "copy": {
+          "y": 602.28125,
+          "bottom": 766.5625
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0.0001,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      },
+      "absorbing": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 35.09375,
+          "w": 319.796875,
+          "y": 137.421875,
+          "bottom": 581.1875
+        },
+        "copy": {
+          "y": 602.28125,
+          "bottom": 766.5625
+        },
+        "color": 0.4005,
+        "particles": 2400,
+        "absorb": 0.58,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "0",
+        "overflow": 0
+      },
+      "colored": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 35.09375,
+          "w": 319.796875,
+          "y": 137.421875,
+          "bottom": 581.1875
+        },
+        "copy": {
+          "y": 602.28125,
+          "bottom": 766.5625
+        },
+        "color": 1,
+        "particles": 2400,
+        "absorb": 1,
+        "complete": "true",
+        "entry": 0,
+        "opacity": "0",
+        "overflow": 0
+      },
+      "entry": 0.375,
+      "reverse": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 35.09375,
+          "w": 319.796875,
+          "y": 137.8125,
+          "bottom": 581.578125
+        },
+        "copy": {
+          "y": 602.671875,
+          "bottom": 766.953125
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      }
+    },
+    {
+      "width": 320,
+      "height": 480,
+      "initial": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 28.796875,
+          "w": 262.390625,
+          "y": 80,
+          "bottom": 444.109375
+        },
+        "copy": {
+          "y": 458.109375,
+          "bottom": 605.109375
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      },
+      "reading": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 28.796875,
+          "w": 262.390625,
+          "y": -65,
+          "bottom": 299.109375
+        },
+        "copy": {
+          "y": 313.109375,
+          "bottom": 460.109375
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      },
+      "absorbing": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 28.796875,
+          "w": 262.390625,
+          "y": 28.765625,
+          "bottom": 392.875
+        },
+        "copy": {
+          "y": 406.875,
+          "bottom": 553.875
+        },
+        "color": 0.3997,
+        "particles": 2400,
+        "absorb": 0.5795,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "0",
+        "overflow": 0
+      },
+      "colored": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 28.796875,
+          "w": 262.390625,
+          "y": 80,
+          "bottom": 444.109375
+        },
+        "copy": {
+          "y": 458.109375,
+          "bottom": 605.109375
+        },
+        "color": 1,
+        "particles": 2400,
+        "absorb": 1,
+        "complete": "true",
+        "entry": 0,
+        "opacity": "0",
+        "overflow": 0
+      },
+      "entry": 0.375,
+      "reverse": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 28.796875,
+          "w": 262.390625,
+          "y": 80,
+          "bottom": 444.109375
+        },
+        "copy": {
+          "y": 458.109375,
+          "bottom": 605.109375
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      }
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "initial": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 38.703125,
+          "w": 352.59375,
+          "y": 164.328125,
+          "bottom": 653.609375
+        },
+        "copy": {
+          "y": 676.90625,
+          "bottom": 828.03125
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      },
+      "reading": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 38.703125,
+          "w": 352.59375,
+          "y": 164.140625,
+          "bottom": 653.421875
+        },
+        "copy": {
+          "y": 676.71875,
+          "bottom": 827.84375
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0.0003,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      },
+      "absorbing": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 38.703125,
+          "w": 352.59375,
+          "y": 164.140625,
+          "bottom": 653.421875
+        },
+        "copy": {
+          "y": 676.71875,
+          "bottom": 827.84375
+        },
+        "color": 0.4006,
+        "particles": 2400,
+        "absorb": 0.5801,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "0",
+        "overflow": 0
+      },
+      "colored": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 38.703125,
+          "w": 352.59375,
+          "y": 164.140625,
+          "bottom": 653.421875
+        },
+        "copy": {
+          "y": 676.71875,
+          "bottom": 827.84375
+        },
+        "color": 1,
+        "particles": 2400,
+        "absorb": 1,
+        "complete": "true",
+        "entry": 0,
+        "opacity": "0",
+        "overflow": 0
+      },
+      "entry": 0.375,
+      "reverse": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 38.703125,
+          "w": 352.59375,
+          "y": 164.328125,
+          "bottom": 653.609375
+        },
+        "copy": {
+          "y": 676.90625,
+          "bottom": 828.03125
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      }
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "initial": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 251,
+          "w": 165,
+          "y": 84,
+          "bottom": 312.96875
+        },
+        "copy": {
+          "y": 332.96875,
+          "bottom": 458.90625
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      },
+      "reading": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 251,
+          "w": 165,
+          "y": -24,
+          "bottom": 204.96875
+        },
+        "copy": {
+          "y": 224.96875,
+          "bottom": 350.90625
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      },
+      "absorbing": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 251,
+          "w": 165,
+          "y": 46.046875,
+          "bottom": 275.015625
+        },
+        "copy": {
+          "y": 295.015625,
+          "bottom": 420.953125
+        },
+        "color": 0.4014,
+        "particles": 2400,
+        "absorb": 0.5806,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "0",
+        "overflow": 0
+      },
+      "colored": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 251,
+          "w": 165,
+          "y": 84,
+          "bottom": 312.96875
+        },
+        "copy": {
+          "y": 332.96875,
+          "bottom": 458.90625
+        },
+        "color": 1,
+        "particles": 2400,
+        "absorb": 1,
+        "complete": "true",
+        "entry": 0,
+        "opacity": "0",
+        "overflow": 0
+      },
+      "entry": 0.3753,
+      "reverse": {
+        "mobile": true,
+        "left": "none",
+        "text": "I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.",
+        "photo": {
+          "x": 251,
+          "w": 165,
+          "y": 84,
+          "bottom": 312.96875
+        },
+        "copy": {
+          "y": 332.96875,
+          "bottom": 458.90625
+        },
+        "color": 0,
+        "particles": 2400,
+        "absorb": 0,
+        "complete": "false",
+        "entry": 0,
+        "opacity": "1",
+        "overflow": 0
+      }
+    }
+  ],
+  "errors": []
+}

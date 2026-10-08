@@ -7,12 +7,14 @@ const { chromium } = require('playwright');
 const browser = await chromium.launch({ executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true });
 const results = [], errors = [];
 try {
-  for (const [width, height, touch = false] of [[1440, 900], [1280, 900], [1366, 1024, true], [820, 1000, true], [390, 844, true], [320, 640, true]]) {
+  const cases = process.argv[3] ? [[Number(process.argv[2]), Number(process.argv[3]), true]]
+    : [[1440, 900], [1280, 900], [1366, 1024, true], [820, 1000, true], [390, 844, true], [320, 640, true]];
+  for (const [width, height, touch = false] of cases) {
     if(process.argv[2] && width !== Number(process.argv[2])) continue;
     const page = await browser.newPage({ viewport: { width, height }, isMobile: touch, hasTouch: touch });
     page.on('pageerror', error => errors.push(error.message));
-    await page.goto('http://localhost:5173/', { waitUntil: 'networkidle' });
-    await page.waitForFunction(() => window.isMainPageReady && document.body.style.overflow !== 'hidden');
+    await page.goto('http://localhost:5173/', { waitUntil: 'domcontentloaded', timeout: 120000 });
+    await page.waitForFunction(() => window.isMainPageReady && document.body.style.overflow !== 'hidden', null, { timeout: 120000 });
     const distances = await page.evaluate(async () => (await import('/src/about-work-handoff.js')).getWorkHandoffDistances());
     assert.deepEqual(distances, touch || width < 1200 ? { descent: 4, orbitHold: 0 } : { descent: 6, orbitHold: 2 });
     const handoff = (distances.descent + distances.orbitHold) * 100;
@@ -112,6 +114,6 @@ try {
   console.error(error);
   process.exitCode = 1;
 } finally {
-  await writeFile('artifacts/about-works-release-qa.json', JSON.stringify({ results, errors }, null, 2));
+  await writeFile(process.argv[3] ? `artifacts/mobile/organic-${process.argv[2]}x${process.argv[3]}.json` : 'artifacts/about-works-release-qa.json', JSON.stringify({ results, errors }, null, 2));
   await browser.close();
 }

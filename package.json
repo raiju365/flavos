@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "npm run build && vite preview --host 127.0.0.1 --port 4173 --strictPort",
     "build": "vite build",
     "preview": "vite preview"
   },

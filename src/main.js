@@ -3,6 +3,7 @@ import { initScrollRestoration } from './scroll-restoration'
 import { createKineticLoader } from './loader-transition'
 import { preparePageAssets, nextPaint } from './page-readiness'
 import { initTvNoise } from './tv-noise'
+import { initContentProtection } from './content-protection'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 import gsap from 'gsap'
@@ -11,6 +12,9 @@ import { tsParticles } from "@tsparticles/engine"
 import { loadSlim } from "@tsparticles/slim"
 
 gsap.registerPlugin(ScrollTrigger)
+
+const cleanupContentProtection = initContentProtection();
+if (import.meta.hot) import.meta.hot.dispose(cleanupContentProtection);
 
 // Trackpad pinch can emit Ctrl+wheel without a preceding keydown.
 const preventZoom = (event) => {

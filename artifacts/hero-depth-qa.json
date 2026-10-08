@@ -1,0 +1,1826 @@
+{
+  "results": [
+    {
+      "w": 1440,
+      "h": 900,
+      "reduced": false,
+      "fallback": false,
+      "steps": [
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "0.5000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.2000",
+          "entryPhase": "entering",
+          "foregroundScale": "1.1941",
+          "paintingScale": "0.5337",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4000",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0666",
+          "paintingScale": "0.6317",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.6000",
+          "entryPhase": "entering",
+          "foregroundScale": "7.1239",
+          "paintingScale": "0.7941",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              9
+            ],
+            [
+              255,
+              255,
+              255,
+              7
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.7802",
+          "entryPhase": "entering",
+          "foregroundScale": "166.6667",
+          "paintingScale": "0.9538",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9000",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9599",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4000",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0666",
+          "paintingScale": "0.6317",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "0.5000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "w": 820,
+      "h": 1000,
+      "reduced": false,
+      "fallback": false,
+      "steps": [
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "0.5000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.2000",
+          "entryPhase": "entering",
+          "foregroundScale": "1.1941",
+          "paintingScale": "0.5337",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4000",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0666",
+          "paintingScale": "0.6317",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.6000",
+          "entryPhase": "entering",
+          "foregroundScale": "7.1239",
+          "paintingScale": "0.7941",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              5
+            ],
+            [
+              255,
+              255,
+              255,
+              157
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.7800",
+          "entryPhase": "entering",
+          "foregroundScale": "166.6667",
+          "paintingScale": "0.9537",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9000",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9600",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4000",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0666",
+          "paintingScale": "0.6317",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "0.5000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "reduced": false,
+      "fallback": false,
+      "steps": [
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "0.5000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.2001",
+          "entryPhase": "entering",
+          "foregroundScale": "1.1944",
+          "paintingScale": "0.5337",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4003",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0687",
+          "paintingScale": "0.6319",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              23
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.6004",
+          "entryPhase": "entering",
+          "foregroundScale": "7.1512",
+          "paintingScale": "0.7945",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              3
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.7801",
+          "entryPhase": "entering",
+          "foregroundScale": "166.6667",
+          "paintingScale": "0.9537",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.8999",
+          "entryPhase": "entering",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9598",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4003",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0687",
+          "paintingScale": "0.6319",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              24
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "0.5000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "w": 320,
+      "h": 700,
+      "reduced": false,
+      "fallback": false,
+      "steps": [
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "0.5000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.2000",
+          "entryPhase": "entering",
+          "foregroundScale": "1.1941",
+          "paintingScale": "0.5337",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4000",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0666",
+          "paintingScale": "0.6317",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              99
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.6000",
+          "entryPhase": "entering",
+          "foregroundScale": "7.1239",
+          "paintingScale": "0.7941",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              3
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.7802",
+          "entryPhase": "entering",
+          "foregroundScale": "166.6667",
+          "paintingScale": "0.9538",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9000",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9603",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4000",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0666",
+          "paintingScale": "0.6317",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              97
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "0.5000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "reduced": true,
+      "fallback": false,
+      "steps": [
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.1997",
+          "entryPhase": "entering",
+          "foregroundScale": "1.1934",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              221
+            ],
+            [
+              255,
+              255,
+              255,
+              221
+            ],
+            [
+              255,
+              255,
+              255,
+              221
+            ],
+            [
+              255,
+              255,
+              255,
+              221
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.3993",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0611",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              15
+            ],
+            [
+              255,
+              255,
+              255,
+              113
+            ],
+            [
+              255,
+              255,
+              255,
+              113
+            ],
+            [
+              255,
+              255,
+              255,
+              113
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.5990",
+          "entryPhase": "entering",
+          "foregroundScale": "7.0545",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.7800",
+          "entryPhase": "entering",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9002",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9594",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.3993",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0611",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              16
+            ],
+            [
+              255,
+              255,
+              255,
+              113
+            ],
+            [
+              255,
+              255,
+              255,
+              113
+            ],
+            [
+              255,
+              255,
+              255,
+              113
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "1.0000",
+          "corners": [
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "renderer": "webgl",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "reduced": false,
+      "fallback": true,
+      "steps": [
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.2001",
+          "entryPhase": "entering",
+          "foregroundScale": "1.1944",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4003",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0687",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.6004",
+          "entryPhase": "entering",
+          "foregroundScale": "7.1512",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.7801",
+          "entryPhase": "entering",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.8999",
+          "entryPhase": "entering",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.9598",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.4003",
+          "entryPhase": "entering",
+          "foregroundScale": "2.0687",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        },
+        {
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "1.0000",
+          "corners": [],
+          "renderer": "fallback",
+          "top": 0,
+          "overflow": 0,
+          "locked": false,
+          "opacity": "1"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,216 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "distances": {
+        "descent": 4,
+        "orbitHold": 0
+      },
+      "before": {
+        "y": 11398,
+        "complete": "false",
+        "entry": 0,
+        "workTop": 4410.390625,
+        "portrait": {
+          "width": 319.796875,
+          "height": 443.765625
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "held": {
+        "y": 11588,
+        "complete": "true",
+        "entry": 0,
+        "workTop": 4220.390625,
+        "portrait": {
+          "width": 319.796875,
+          "height": 443.765625
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "released": {
+        "y": 12853,
+        "complete": "true",
+        "entry": 0.3746,
+        "workTop": 2955.390625,
+        "portrait": {
+          "width": 319.796875,
+          "height": 443.765625
+        },
+        "translate": "0px -66.176px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.3746,
+          0.3417,
+          0.3051,
+          0.2642,
+          0.2182,
+          0.1661,
+          0.1066,
+          0.0378,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "settled": {
+        "y": 15808,
+        "complete": "true",
+        "entry": 1,
+        "workTop": 0.390625,
+        "portrait": {
+          "width": 319.796875,
+          "height": 443.765625
+        },
+        "translate": "0px -1055px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "locked": false
+      },
+      "reverse": {
+        "y": 12854,
+        "complete": "true",
+        "entry": 0.3749,
+        "workTop": 2954.390625,
+        "portrait": {
+          "width": 319.796875,
+          "height": 443.765625
+        },
+        "translate": "0px -66.5112px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.3749,
+          0.342,
+          0.3054,
+          0.2646,
+          0.2186,
+          0.1665,
+          0.107,
+          0.0383,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "restored": {
+        "y": 11398,
+        "complete": "false",
+        "entry": 0,
+        "workTop": 4410.390625,
+        "portrait": {
+          "width": 319.796875,
+          "height": 443.765625
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.3749,
+          0.342,
+          0.3054,
+          0.2646,
+          0.2186,
+          0.1665,
+          0.107,
+          0.0383,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "reduced": {
+        "y": 1798,
+        "entry": 1,
+        "workTop": 969.453125,
+        "portrait": {
+          "width": 319.796875,
+          "height": 443.765625
+        },
+        "translate": "0px",
+        "copies": [
+          "1",
+          "1"
+        ],
+        "overflow": 0,
+        "cards": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "locked": false
+      }
+    }
+  ],
+  "errors": []
+}

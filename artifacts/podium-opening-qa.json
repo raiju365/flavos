@@ -1,0 +1,135 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "reduced": false,
+      "background": "rgb(255, 255, 255)",
+      "mark": {
+        "x": 378,
+        "y": 99,
+        "w": 684,
+        "h": 684
+      },
+      "copy": [
+        {
+          "opacity": "1",
+          "bottom": 872
+        },
+        {
+          "opacity": "1",
+          "bottom": 872
+        }
+      ],
+      "images": true,
+      "overflow": 0,
+      "locked": false,
+      "navColor": "rgb(36, 36, 60)"
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "reduced": false,
+      "background": "rgb(255, 255, 255)",
+      "mark": {
+        "x": 188.6015625,
+        "y": 268.6015625,
+        "w": 442.796875,
+        "h": 442.796875
+      },
+      "copy": [
+        {
+          "opacity": "1",
+          "bottom": 972
+        },
+        {
+          "opacity": "1",
+          "bottom": 972
+        }
+      ],
+      "images": true,
+      "overflow": 0,
+      "locked": false,
+      "navColor": "rgb(36, 36, 60)"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "background": "rgb(255, 255, 255)",
+      "mark": {
+        "x": 31.203125,
+        "y": 249.75,
+        "w": 327.59375,
+        "h": 327.59375
+      },
+      "copy": [
+        {
+          "opacity": "1",
+          "bottom": 780.40625
+        },
+        {
+          "opacity": "1",
+          "bottom": 818
+        }
+      ],
+      "images": true,
+      "overflow": 0,
+      "locked": false,
+      "navColor": "rgb(36, 36, 60)"
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "reduced": false,
+      "background": "rgb(255, 255, 255)",
+      "mark": {
+        "x": 25.6015625,
+        "y": 208.6015625,
+        "w": 268.796875,
+        "h": 268.796875
+      },
+      "copy": [
+        {
+          "opacity": "1",
+          "bottom": 636.40625
+        },
+        {
+          "opacity": "1",
+          "bottom": 674
+        }
+      ],
+      "images": true,
+      "overflow": 0,
+      "locked": false,
+      "navColor": "rgb(36, 36, 60)"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "background": "rgb(255, 255, 255)",
+      "mark": {
+        "x": 31.203125,
+        "y": 249.75,
+        "w": 327.59375,
+        "h": 327.59375
+      },
+      "copy": [
+        {
+          "opacity": "1",
+          "bottom": 780.40625
+        },
+        {
+          "opacity": "1",
+          "bottom": 818
+        }
+      ],
+      "images": true,
+      "overflow": 0,
+      "locked": false,
+      "navColor": "rgb(36, 36, 60)"
+    }
+  ],
+  "errors": []
+}

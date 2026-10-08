@@ -8,7 +8,6 @@ export const TRANSITION_CONFIG = {
   },
   hover: { duration: .4, cssEase: 'cubic-bezier(.16, 1, .3, 1)' },
   sameSection: { duration: .7 },
-  swapTimeoutMs: 1500,
   completionGuardMs: 6500,
   reducedMotion: { fadeDuration: .24 },
   colors: { surface: '#252558', caption: '#f2f0e8' },

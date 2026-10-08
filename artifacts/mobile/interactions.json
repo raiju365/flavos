@@ -1,0 +1,69 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "height": 480,
+      "center": 160,
+      "ratio": 1,
+      "natural": 1,
+      "overflow": 0,
+      "touchDrag": true,
+      "verticalSwipe": true,
+      "touchCarousel": true,
+      "backAfterScroll": true,
+      "resize": true,
+      "reduced": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "center": 195,
+      "ratio": 1,
+      "natural": 1,
+      "overflow": 0,
+      "touchDrag": true,
+      "verticalSwipe": true,
+      "touchCarousel": true,
+      "backAfterScroll": true,
+      "resize": true,
+      "reduced": true
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "center": 333.5,
+      "ratio": 1,
+      "natural": 1,
+      "overflow": 0,
+      "touchDrag": true,
+      "verticalSwipe": true,
+      "touchCarousel": true,
+      "backAfterScroll": true,
+      "resize": true,
+      "reduced": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "center": 421.9921875,
+      "ratio": 1,
+      "natural": 1,
+      "overflow": 0,
+      "touchDrag": true,
+      "verticalSwipe": true,
+      "touchCarousel": true,
+      "backAfterScroll": true,
+      "resize": true,
+      "reduced": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "desktop": true,
+      "center": 719.9921875,
+      "ratio": 1,
+      "natural": 1
+    }
+  ],
+  "errors": []
+}

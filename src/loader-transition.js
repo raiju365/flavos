@@ -113,12 +113,16 @@ export function createKineticLoader({ loader, reducedMotion = false }) {
         }, 0.2);
       }
 
-      // 3. Logo stays stationary on the loader surface and is carried upward together with the background
+      // Complete the existing loader, then hand off through a clean white field.
+      tl.to(mark, { opacity: 0, duration: .25 }, .2);
+      tl.to(loader, { backgroundColor: '#ffffff', duration: .45, ease: 'power2.inOut' }, .35);
+      tl.call(() => window.dispatchEvent(new Event('portfolio:hero-enter')), [], .85);
       tl.to(loader, {
-        yPercent: -100,
-        duration: 1.35,
-        ease: 'power4.inOut'
-      }, 0.35);
+        opacity: 0,
+        duration: .2,
+        ease: 'power2.inOut'
+      }, .85);
+      tl.to({}, { duration: 1.55 });
     }
 
     exit = tl;

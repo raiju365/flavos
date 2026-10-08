@@ -1,0 +1,6 @@
+import {createRequire} from 'node:module';
+import {writeFile} from 'node:fs/promises';
+const require=createRequire('C:/Users/Fahmi Aufa/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');const {chromium}=require('playwright');
+const b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage({viewport:{width:1440,height:900}});
+await p.addInitScript(()=>window.addEventListener('portfolio:hero-enter',()=>{window.entrySamples=[];let start=performance.now();function sample(){const el=document.querySelector('.hero-bg-wrapper'),s=getComputedStyle(el);window.entrySamples.push({t:performance.now()-start,transform:s.transform,opacity:s.opacity,filter:s.filter});if(performance.now()-start<2100)requestAnimationFrame(sample)}sample()}));
+await p.goto('http://127.0.0.1:4173/');await p.waitForFunction(()=>window.entrySamples?.length);for(let i=0;i<4;i++){await p.waitForTimeout(350);await p.screenshot({path:`artifacts/hero-entry-sequence-${i}.png`});}await p.waitForFunction(()=>!document.querySelector('#loading-screen'));await writeFile('artifacts/hero-entry-samples.json',JSON.stringify(await p.evaluate(()=>window.entrySamples),null,2));await b.close();

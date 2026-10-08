@@ -11,6 +11,7 @@ export function animateFooterReveal() {
   let arrivalObserver;
   let arrivalFrame = 0;
   let arrival;
+  let settleArrival;
 
   if (heading && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     heading.setAttribute('aria-label', 'Get in touch');
@@ -35,7 +36,17 @@ export function animateFooterReveal() {
       opacity: 0, filter: 'blur(12px)', transformOrigin: '50% 90%'
     });
     heading.dataset.arrival = 'waiting';
+    settleArrival = event => {
+      if (event.detail.target.id !== 'contact') return;
+      arrivalObserver?.disconnect();
+      cancelAnimationFrame(arrivalFrame);
+      arrival?.kill();
+      gsap.set(letters, { clearProps: 'transform,transformOrigin,opacity,filter' });
+      heading.dataset.arrival = 'complete';
+    };
+    window.addEventListener('portfolio:navigate', settleArrival);
     const playArrival = () => {
+      if (heading.dataset.arrival === 'complete') return;
       // Navigation can cover the destination: reveal after its curtain clears.
       if (document.documentElement.classList.contains('is-colonnade-transitioning')) {
         arrivalFrame = requestAnimationFrame(playArrival);
@@ -76,6 +87,7 @@ export function animateFooterReveal() {
     arrivalObserver?.disconnect();
     cancelAnimationFrame(arrivalFrame);
     arrival?.kill();
+    if (settleArrival) window.removeEventListener('portfolio:navigate', settleArrival);
     media.revert();
     if (heading && originalMarkup !== undefined) {
       heading.innerHTML = originalMarkup;

@@ -8,11 +8,10 @@
 .colonnade-overlay.is-reduced .dust-transition-canvas,
 .colonnade-overlay.is-reduced .dust-transition-caption,
 .colonnade-overlay[data-renderer="fallback"] .dust-transition-canvas { visibility: hidden; }
-html.is-colonnade-transitioning .folio-nav.studio-header,
+html.is-colonnade-transitioning:not(.is-colonnade-ready) .folio-nav.studio-header,
 html.is-colonnade-transitioning #custom-cursor,
 html.is-colonnade-transitioning #cursor-hold-indicator { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
-.folio-nav.studio-header .studio-link::after { transform-origin: right; transition: transform var(--nav-hover-duration) var(--nav-hover-ease), opacity var(--nav-hover-duration); }
-.folio-nav.studio-header .studio-link:hover::after, .folio-nav.studio-header .studio-link[aria-current]::after { transform-origin: left; }
+.folio-nav.studio-header .studio-link::after { content: none !important; display: none !important; }
 .studio-header .nav-word>span { transition: transform var(--nav-hover-duration) var(--nav-hover-ease); }
 .studio-arrow-mask { display: inline-block; position: relative; width: 14px; height: 14px; overflow: hidden; }
 .studio-arrow-mask .studio-arrow { position: absolute; inset: 0; transition: transform var(--nav-hover-duration) var(--nav-hover-ease); }

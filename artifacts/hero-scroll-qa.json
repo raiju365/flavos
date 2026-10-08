@@ -1,0 +1,600 @@
+{
+  "results": [
+    {
+      "w": 1440,
+      "h": 900,
+      "reduced": false,
+      "steps": [
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.1802,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.4,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            254,
+            255,
+            0
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.65,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.8599,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "painting",
+          "progress": 0.9599,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.4,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            254,
+            255,
+            0
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        }
+      ]
+    },
+    {
+      "w": 820,
+      "h": 1000,
+      "reduced": false,
+      "steps": [
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.18,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.4,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            114,
+            97,
+            0,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.65,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.86,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "painting",
+          "progress": 0.96,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.4,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            114,
+            97,
+            0,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        }
+      ]
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "reduced": false,
+      "steps": [
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.1797,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.4003,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.6498,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.8604,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "painting",
+          "progress": 0.9598,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.4003,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        }
+      ]
+    },
+    {
+      "w": 320,
+      "h": 700,
+      "reduced": false,
+      "steps": [
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.1802,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.4,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.65,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.8603,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "painting",
+          "progress": 0.9603,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.4,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        }
+      ]
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "reduced": true,
+      "steps": [
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.1794,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.3993,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.6497,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.8596,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "painting",
+          "progress": 0.9594,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(255, 255, 255)",
+          "locked": false
+        },
+        {
+          "phase": "entering",
+          "progress": 0.3993,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        },
+        {
+          "phase": "white",
+          "progress": 0,
+          "top": 0,
+          "overflow": 0,
+          "whiteCorners": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "nav": "rgb(23, 23, 23)",
+          "locked": false
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

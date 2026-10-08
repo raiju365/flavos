@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/src/editorial.css" />
   <link rel="stylesheet" href="/src/loader.css" />
   <link rel="stylesheet" href="/src/typography.css" />
+  <link rel="stylesheet" href="/src/mobile.css" />
 </head>
 
 <body>
@@ -71,17 +72,28 @@
   <main id="main-content" class="folio-main" style="display: none; opacity: 0;">
     <a class="skip-content" href="#hero">Skip to content</a>
 
-    <section id="hero" class="folio-hero imperial-hero" aria-labelledby="hero-heading">
-      <div class="hero-bg-wrapper" aria-hidden="true">
-        <!-- Classical Base Painting (Ancient Rome) -->
-        <img src="/paling-atas.png" alt="Imperial Classical Painting" class="hero-bg-img hero-bg-base"
-          fetchpriority="high" />
+    <section id="hero" class="folio-hero imperial-hero podium-hero" aria-labelledby="hero-heading">
+      <div class="hero-destination" aria-hidden="true">
+        <img class="hero-destination-image" src="/paling-atas.png" alt="" fetchpriority="high" />
         <div class="hero-vignette-overlay"></div>
         <div class="hero-gradient-overlay-top"></div>
         <div class="hero-gradient-overlay-bottom"></div>
       </div>
+      <img class="hero-aperture-source" src="/hero-runner-mask.svg" alt="" aria-hidden="true" />
+      <div class="hero-bg-wrapper" aria-hidden="true">
+        <!-- Classical Base Painting (Ancient Rome) -->
+        <img src="/paling-atas.png" alt="Imperial Classical Painting" class="hero-bg-img hero-bg-base"
+          fetchpriority="high" />
+        <div class="hero-collage">
+          <img src="/karya/efefesfeaf.png" alt="" />
+          <img src="/karya/COVERalbum.png" alt="" />
+          <img src="/paling-atas.png" alt="" />
+          <img src="/karya/posterhc.png" alt="" />
+        </div>
+      </div>
 
       <h1 id="hero-heading" class="sr-only">Fahmi Aufa — Portfolio</h1>
+      <div class="hero-introduction"><p>Visual stories.<br>Made with intention.</p><a href="#about">Scroll to explore <span aria-hidden="true">↓</span></a></div>
 
     </section>
 
@@ -148,10 +160,10 @@
           <h2 id="gallery-heading" class="sr-only">Work detail</h2>
           <button type="button" class="orbit-close" aria-label="Close work detail" autofocus>Close</button>
         </header>
+        <button type="button" class="orbit-back" aria-label="Kembali ke semua karya" title="Kembali">
+          BACK
+        </button>
         <section class="orbit-detail" aria-labelledby="orbit-detail-title" hidden>
-          <button type="button" class="orbit-back" aria-label="Kembali ke semua karya" title="Kembali">
-            BACK
-          </button>
           <div class="orbit-detail-layout">
             <div class="orbit-detail-copy">
               <h3 id="orbit-detail-title" tabindex="-1"></h3>

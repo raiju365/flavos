@@ -1,0 +1,17 @@
+html.content-protected,
+html.content-protected * {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+}
+html.content-protected img,
+html.content-protected svg,
+html.content-protected a {
+  -webkit-user-drag: none;
+}
+/* Keep future form fields and editable controls usable. */
+html.content-protected :is(input, textarea, [contenteditable]:not([contenteditable='false'])),
+html.content-protected [contenteditable]:not([contenteditable='false']) * {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}

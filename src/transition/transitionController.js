@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { TRANSITION_CONFIG as config } from './transition.config';
 import { createOverlay } from './TransitionOverlay';
+import { nextPaint } from '../page-readiness';
 
 export function initPageTransition({ getLenis, reduceMotion }) {
   const root = document.documentElement;
@@ -40,9 +41,9 @@ export function initPageTransition({ getLenis, reduceMotion }) {
     el.addEventListener('blur', () => previous === null ? el.removeAttribute('tabindex') : el.setAttribute('tabindex', previous), { once: true });
   };
   const assets = target => {
-    const images = [...target.querySelectorAll('img')].slice(0, 2);
+    const images = [...target.querySelectorAll('img')];
     images.forEach(img => { img.loading = 'eager'; });
-    return Promise.allSettled([document.fonts.load('48px "Gaia Display"'), ...images.map(img => img.decode())]);
+    return Promise.all([document.fonts.ready, ...images.map(img => img.decode())]);
   };
   const settleScroll = target => {
     getLenis()?.resize();
@@ -69,6 +70,8 @@ export function initPageTransition({ getLenis, reduceMotion }) {
       return;
     }
     busy = true;
+    // Begin decoding during the cover, and retain a handled result for swap.
+    const prepared = assets(target).then(() => null, error => error);
     root.classList.add('is-colonnade-transitioning');
     header.dataset.transitionTarget = target.id;
     links.forEach(link => link.hash === `#${target.id}` ? link.setAttribute('aria-current', 'location') : link.removeAttribute('aria-current'));
@@ -85,19 +88,18 @@ export function initPageTransition({ getLenis, reduceMotion }) {
     overlay.classList.add('is-active');
     overlay.dataset.phase = 'cover';
     if (!reduced) dust.start();
-    let finished = false, swapped = false, assetTimer;
+    let finished = false, swapped = false;
     const finish = () => {
       if (finished) return;
       finished = true;
       clearTimeout(guard);
-      clearTimeout(assetTimer);
       dust.reset();
       overlay.classList.remove('is-active', 'is-reduced');
       overlay.dataset.phase = 'idle';
       gsap.set([overlay, label], { clearProps: 'transform,opacity,willChange' });
       root.style.overflow = oldOverflow;
       main.inert = oldInert;
-      root.classList.remove('is-colonnade-transitioning');
+      root.classList.remove('is-colonnade-transitioning', 'is-colonnade-ready');
       delete header.dataset.transitionTarget;
       getLenis()?.start();
       busy = false;
@@ -111,18 +113,32 @@ export function initPageTransition({ getLenis, reduceMotion }) {
     };
     const swap = async () => {
       overlay.dataset.phase = 'covered';
+      // The animation watchdog must not reveal an unprepared destination.
+      clearTimeout(guard);
       try {
-        await Promise.race([assets(target), new Promise(resolve => { assetTimer = setTimeout(resolve, config.swapTimeoutMs); })]);
-        clearTimeout(assetTimer);
+        const assetError = await prepared;
+        if (assetError) throw assetError;
         if (finished || cancelled) return;
+        // Restore the final gutter while still covered, then commit scroll-
+        // driven scenes and one-time entrances before revealing any pixels.
+        root.style.overflow = oldOverflow;
         settleScroll(target);
+        window.dispatchEvent(new Event('portfolio:restore'));
+        window.dispatchEvent(new CustomEvent('portfolio:navigate', { detail: { target } }));
+        window.dispatchEvent(new Event('scroll'));
+        await nextPaint();
+        if (finished || cancelled) return;
+        root.classList.add('is-colonnade-ready');
         swapped = true;
         if (!historyNavigation && !pendingHistory) history.pushState(null, '', `#${target.id}`);
         document.title = baseTitle;
       } catch (error) {
         console.error('Navigation transition failed:', error);
       } finally {
-        if (!finished && !cancelled) timeline.play();
+        if (!finished && !cancelled) {
+          guard = setTimeout(() => timeline.kill(), config.completionGuardMs);
+          timeline.play();
+        }
       }
     };
     timeline = gsap.timeline({ paused: true, onComplete: finish, onInterrupt: finish });
@@ -130,7 +146,8 @@ export function initPageTransition({ getLenis, reduceMotion }) {
       gsap.set(overlay, { opacity: 0 });
       timeline.to(overlay, { opacity: 1, duration: config.reducedMotion.fadeDuration / 2 })
         .addPause('>', swap)
-        .to(overlay, { opacity: 0, duration: config.reducedMotion.fadeDuration / 2 });
+        .to(overlay, { opacity: 0, duration: config.reducedMotion.fadeDuration / 2,
+          onStart: () => { overlay.dataset.phase = 'reveal'; } });
     } else {
       const grains = { cover: 0, reveal: 0 };
       gsap.set(label, { opacity: 0 });
@@ -161,7 +178,7 @@ export function initPageTransition({ getLenis, reduceMotion }) {
     if (!busy && window.isMainPageReady && !root.classList.contains('is-switching-scene')) navigate(target);
   }, options);
   links.forEach(link => {
-    const warm = () => { const target = document.getElementById(link.hash.slice(1)); if (target) assets(target); };
+    const warm = () => { const target = document.getElementById(link.hash.slice(1)); if (target) assets(target).catch(() => {}); };
     link.addEventListener('pointerenter', warm, options);
     link.addEventListener('focus', warm, options);
   });

@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "touch": false,
+      "reduced": false,
+      "initial": {
+        "enabled": true,
+        "canvas": true,
+        "texture": "idle",
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "final": {
+        "enabled": true,
+        "canvas": true,
+        "texture": "idle",
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "navigation": true
+    },
+    {
+      "width": 820,
+      "touch": false,
+      "reduced": false,
+      "initial": {
+        "enabled": true,
+        "canvas": true,
+        "texture": "idle",
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "final": {
+        "enabled": true,
+        "canvas": true,
+        "texture": "idle",
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "navigation": true
+    },
+    {
+      "width": 390,
+      "touch": true,
+      "reduced": false,
+      "initial": {
+        "enabled": false,
+        "canvas": false,
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "final": {
+        "enabled": false,
+        "canvas": false,
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "navigation": true
+    },
+    {
+      "width": 320,
+      "touch": true,
+      "reduced": false,
+      "initial": {
+        "enabled": false,
+        "canvas": false,
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "final": {
+        "enabled": false,
+        "canvas": false,
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "navigation": true
+    },
+    {
+      "width": 1440,
+      "touch": false,
+      "reduced": true,
+      "initial": {
+        "enabled": false,
+        "canvas": false,
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "final": {
+        "enabled": false,
+        "canvas": false,
+        "overflow": 0,
+        "pixels": 0,
+        "underline": "none"
+      },
+      "navigation": true
+    }
+  ],
+  "errors": []
+}

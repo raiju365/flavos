@@ -8,10 +8,13 @@ import { initBrandHover } from './brand-hover';
 import { initLogoStyleCycle } from './logo-style-cycle';
 import { initLogoNavJourney } from './logo-nav-journey';
 import { initPageTransition } from './transition/transitionController';
+import { createHeroScrollEntry } from './hero-scroll-entry';
 
 export function initPortfolio({ getLenis }) {
   const main = document.getElementById('main-content');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const heroEntry = createHeroScrollEntry();
+  if (import.meta.hot) import.meta.hot.dispose(heroEntry.destroy);
   const transitions = mountScrollTransitions(main);
   let animationsReady = reduceMotion.matches;
   let revealRequested = false;
@@ -59,19 +62,18 @@ export function initPortfolio({ getLenis }) {
   // Prepare the first screen with initial values
   if (!reduceMotion.matches) {
     if (heroReveals.length) gsap.set(heroReveals, { y: 32, opacity: 0 });
-    gsap.set('.hero-bg-img', { scale: 1.08, opacity: 0.85 });
   }
 
   const revealHero = () => {
     revealRequested = true;
-    if (!animationsReady || heroPlayed || reduceMotion.matches) return;
+    if (!animationsReady || heroPlayed) return;
     heroPlayed = true;
+    heroEntry.enter();
     const landing = gsap.timeline({ defaults: { overwrite: 'auto' } });
-    landing
-      .to('.hero-bg-img', { scale: 1.02, opacity: 1, duration: 1.6, ease: 'power2.out' }, 0);
     if (heroReveals.length) landing.to(heroReveals, { y: 0, opacity: 1, stagger: 0.1, duration: 1.0, ease: 'power3.out' }, 0.15);
   };
   window.addEventListener('portfolio:reveal', revealHero);
+  window.addEventListener('portfolio:hero-enter', revealHero);
   initProjectGallery({ getLenis });
   const year = document.getElementById('copyright-year');
   if (year) year.textContent = new Date().getFullYear();
@@ -143,27 +145,20 @@ export function initPortfolio({ getLenis }) {
     started = true;
     observer.disconnect();
     requestAnimationFrame(() => {
+      heroEntry.mount();
+      // About owns its reduced-motion mode and responsive copy; keep its
+      // content controller mounted when decorative animations are disabled.
+      const cleanupAbout = animateAboutReading({ getLenis });
+      if (import.meta.hot) import.meta.hot.dispose(cleanupAbout);
       const media = gsap.matchMedia();
       media.add('(prefers-reduced-motion: no-preference)', () => {
         animateScrollTransitions(transitions);
-        const cleanupAbout = animateAboutReading({ getLenis });
         const cleanupFooter = animateFooterReveal();
         main.querySelectorAll('[data-reveal]').forEach(element => {
           if (element.closest('#hero')) return;
           gsap.from(element, { y: 30, opacity: 0, duration: 0.85, ease: 'power3.out', scrollTrigger: { trigger: element, start: 'top 92%', once: true } });
         });
-        gsap.to('.hero-bg-img', {
-          yPercent: 12,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: '#hero',
-            start: 'top top',
-            end: 'bottom top',
-            scrub: true,
-            invalidateOnRefresh: true
-          }
-        });
-        return () => { cleanupAbout(); cleanupFooter(); };
+        return () => { cleanupFooter(); };
       });
 
 
@@ -215,7 +210,9 @@ function initDesignerNavbar({ getLenis, reduceMotion }) {
     const overFooter = contact && contact.top < barHeight;
     header.classList.toggle('is-scrolled', window.scrollY > 40);
     header.classList.toggle('is-in-footer', Boolean(contact && contact.top < barHeight + 24));
-    header.classList.toggle('is-light-section', !overHero && !overFooter);
+    const insideHero = overHero && Number(document.querySelector('#hero')?.dataset.entryProgress || 0) > .48;
+    header.classList.toggle('is-light-section', !overFooter && !insideHero);
+    header.classList.toggle('is-hero-surface', Boolean(overHero));
     const marker = Math.min(window.innerHeight * .3, 220);
     let active = 'hero';
     bounds.forEach(section => {
