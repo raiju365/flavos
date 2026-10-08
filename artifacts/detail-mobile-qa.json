@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "touch": true,
+      "image": "/karya/detail/efefesfeaf.png-1280.webp",
+      "ratio": 1,
+      "natural": 1,
+      "center": 195,
+      "overflow": 0,
+      "carousel": true,
+      "close": true,
+      "resize": true,
+      "reduced": true
+    },
+    {
+      "width": 820,
+      "touch": true,
+      "image": "/karya/detail/efefesfeaf.png-1280.webp",
+      "ratio": 1,
+      "natural": 1,
+      "center": 409.9921875,
+      "overflow": 0,
+      "carousel": true,
+      "close": true,
+      "resize": true,
+      "reduced": true
+    },
+    {
+      "width": 1440,
+      "touch": false,
+      "image": "/karya/detail/efefesfeaf.png-1920.webp",
+      "ratio": 1,
+      "natural": 1,
+      "center": 719.9921875,
+      "overflow": 0,
+      "carousel": true,
+      "close": true,
+      "resize": true,
+      "reduced": true
+    }
+  ],
+  "errors": []
+}

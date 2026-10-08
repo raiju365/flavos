@@ -1,0 +1,1801 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "states": [
+        {
+          "p": 0.1,
+          "frame": 108.6318359375,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 1014.32,
+              "visible": true
+            },
+            {
+              "z": 1002.13,
+              "visible": true
+            },
+            {
+              "z": 988.46,
+              "visible": false
+            },
+            {
+              "z": 976.269,
+              "visible": false
+            },
+            {
+              "z": 967.95,
+              "visible": false
+            },
+            {
+              "z": 973.306,
+              "visible": false
+            },
+            {
+              "z": 985.496,
+              "visible": false
+            },
+            {
+              "z": 999.166,
+              "visible": false
+            },
+            {
+              "z": 1011.36,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.2993,
+          "frame": -224.951171875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 974.501,
+              "visible": true
+            },
+            {
+              "z": 857.681,
+              "visible": true
+            },
+            {
+              "z": 714.388,
+              "visible": true
+            },
+            {
+              "z": 597.567,
+              "visible": true
+            },
+            {
+              "z": 550.053,
+              "visible": true
+            },
+            {
+              "z": 595.227,
+              "visible": false
+            },
+            {
+              "z": 712.048,
+              "visible": false
+            },
+            {
+              "z": 855.341,
+              "visible": false
+            },
+            {
+              "z": 972.161,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.4993,
+          "frame": -756.990234375,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 896.886,
+              "visible": true
+            },
+            {
+              "z": 576.117,
+              "visible": true
+            },
+            {
+              "z": 180.155,
+              "visible": true
+            },
+            {
+              "z": -140.614,
+              "visible": true
+            },
+            {
+              "z": -264.529,
+              "visible": true
+            },
+            {
+              "z": -141.74,
+              "visible": true
+            },
+            {
+              "z": 179.03,
+              "visible": true
+            },
+            {
+              "z": 574.991,
+              "visible": true
+            },
+            {
+              "z": 895.76,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.6993,
+          "frame": -991.6103515625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 836.849,
+              "visible": true
+            },
+            {
+              "z": 358.321,
+              "visible": true
+            },
+            {
+              "z": -233.085,
+              "visible": true
+            },
+            {
+              "z": -711.613,
+              "visible": true
+            },
+            {
+              "z": -894.626,
+              "visible": true
+            },
+            {
+              "z": -711.8,
+              "visible": true
+            },
+            {
+              "z": -233.271,
+              "visible": true
+            },
+            {
+              "z": 358.134,
+              "visible": true
+            },
+            {
+              "z": 836.663,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.8996,
+          "frame": -994.75,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 824.934,
+              "visible": true
+            },
+            {
+              "z": 315.097,
+              "visible": true
+            },
+            {
+              "z": -315.097,
+              "visible": true
+            },
+            {
+              "z": -824.934,
+              "visible": true
+            },
+            {
+              "z": -1019.68,
+              "visible": true
+            },
+            {
+              "z": -824.934,
+              "visible": true
+            },
+            {
+              "z": -315.097,
+              "visible": true
+            },
+            {
+              "z": 315.097,
+              "visible": true
+            },
+            {
+              "z": 824.934,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.7007,
+          "frame": -991.8681640625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 836.593,
+              "visible": true
+            },
+            {
+              "z": 357.391,
+              "visible": true
+            },
+            {
+              "z": -234.85,
+              "visible": true
+            },
+            {
+              "z": -714.052,
+              "visible": true
+            },
+            {
+              "z": -897.316,
+              "visible": true
+            },
+            {
+              "z": -714.234,
+              "visible": true
+            },
+            {
+              "z": -235.032,
+              "visible": true
+            },
+            {
+              "z": 357.208,
+              "visible": true
+            },
+            {
+              "z": 836.411,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.5006,
+          "frame": -759.8720703125,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 896.376,
+              "visible": true
+            },
+            {
+              "z": 574.266,
+              "visible": true
+            },
+            {
+              "z": 176.644,
+              "visible": true
+            },
+            {
+              "z": -145.466,
+              "visible": true
+            },
+            {
+              "z": -269.883,
+              "visible": true
+            },
+            {
+              "z": -146.584,
+              "visible": true
+            },
+            {
+              "z": 175.526,
+              "visible": true
+            },
+            {
+              "z": 573.148,
+              "visible": true
+            },
+            {
+              "z": 895.258,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.3006,
+          "frame": -228.310546875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 974.074,
+              "visible": true
+            },
+            {
+              "z": 856.129,
+              "visible": true
+            },
+            {
+              "z": 711.444,
+              "visible": true
+            },
+            {
+              "z": 593.5,
+              "visible": true
+            },
+            {
+              "z": 545.565,
+              "visible": true
+            },
+            {
+              "z": 591.167,
+              "visible": true
+            },
+            {
+              "z": 709.111,
+              "visible": false
+            },
+            {
+              "z": 853.796,
+              "visible": false
+            },
+            {
+              "z": 971.74,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.1006,
+          "frame": 108.296875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 1019.68,
+              "visible": true
+            },
+            {
+              "z": 1014.28,
+              "visible": true
+            },
+            {
+              "z": 1001.99,
+              "visible": true
+            },
+            {
+              "z": 988.205,
+              "visible": false
+            },
+            {
+              "z": 975.917,
+              "visible": false
+            },
+            {
+              "z": 967.562,
+              "visible": false
+            },
+            {
+              "z": 972.955,
+              "visible": false
+            },
+            {
+              "z": 985.242,
+              "visible": false
+            },
+            {
+              "z": 999.032,
+              "visible": false
+            },
+            {
+              "z": 1011.32,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        }
+      ],
+      "reducedMotion": true,
+      "resize": true
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "states": [
+        {
+          "p": 0.1,
+          "frame": 326.5,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 681.174,
+              "visible": true
+            },
+            {
+              "z": 671.035,
+              "visible": true
+            },
+            {
+              "z": 659.902,
+              "visible": false
+            },
+            {
+              "z": 649.763,
+              "visible": false
+            },
+            {
+              "z": 642.227,
+              "visible": false
+            },
+            {
+              "z": 646.799,
+              "visible": false
+            },
+            {
+              "z": 656.938,
+              "visible": false
+            },
+            {
+              "z": 668.072,
+              "visible": false
+            },
+            {
+              "z": 678.211,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.2993,
+          "frame": 313.9912109375,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 654.602,
+              "visible": true
+            },
+            {
+              "z": 574.511,
+              "visible": true
+            },
+            {
+              "z": 476.618,
+              "visible": true
+            },
+            {
+              "z": 396.528,
+              "visible": true
+            },
+            {
+              "z": 363.043,
+              "visible": true
+            },
+            {
+              "z": 394.187,
+              "visible": false
+            },
+            {
+              "z": 474.278,
+              "visible": false
+            },
+            {
+              "z": 572.171,
+              "visible": false
+            },
+            {
+              "z": 652.262,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.4993,
+          "frame": -12.0322265625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 602.803,
+              "visible": true
+            },
+            {
+              "z": 386.35,
+              "visible": true
+            },
+            {
+              "z": 119.33,
+              "visible": true
+            },
+            {
+              "z": -97.1226,
+              "visible": true
+            },
+            {
+              "z": -181.192,
+              "visible": true
+            },
+            {
+              "z": -98.2485,
+              "visible": true
+            },
+            {
+              "z": 118.205,
+              "visible": true
+            },
+            {
+              "z": 385.224,
+              "visible": true
+            },
+            {
+              "z": 601.677,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.6993,
+          "frame": -607.8857421875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 562.733,
+              "visible": true
+            },
+            {
+              "z": 240.797,
+              "visible": true
+            },
+            {
+              "z": -157.051,
+              "visible": true
+            },
+            {
+              "z": -478.988,
+              "visible": true
+            },
+            {
+              "z": -602.187,
+              "visible": true
+            },
+            {
+              "z": -479.174,
+              "visible": true
+            },
+            {
+              "z": -157.237,
+              "visible": true
+            },
+            {
+              "z": 240.61,
+              "visible": true
+            },
+            {
+              "z": 562.547,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.8992,
+          "frame": -914.435546875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 554.78,
+              "visible": true
+            },
+            {
+              "z": 211.907,
+              "visible": true
+            },
+            {
+              "z": -211.907,
+              "visible": true
+            },
+            {
+              "z": -554.78,
+              "visible": true
+            },
+            {
+              "z": -685.746,
+              "visible": true
+            },
+            {
+              "z": -554.78,
+              "visible": true
+            },
+            {
+              "z": -211.907,
+              "visible": true
+            },
+            {
+              "z": 211.907,
+              "visible": true
+            },
+            {
+              "z": 554.78,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.7007,
+          "frame": -611.8662109375,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 562.56,
+              "visible": true
+            },
+            {
+              "z": 240.167,
+              "visible": true
+            },
+            {
+              "z": -158.246,
+              "visible": true
+            },
+            {
+              "z": -480.639,
+              "visible": true
+            },
+            {
+              "z": -604.007,
+              "visible": true
+            },
+            {
+              "z": -480.821,
+              "visible": true
+            },
+            {
+              "z": -158.428,
+              "visible": true
+            },
+            {
+              "z": 239.985,
+              "visible": true
+            },
+            {
+              "z": 562.378,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.5008,
+          "frame": -16.13671875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 602.409,
+              "visible": true
+            },
+            {
+              "z": 384.919,
+              "visible": true
+            },
+            {
+              "z": 116.613,
+              "visible": true
+            },
+            {
+              "z": -100.877,
+              "visible": true
+            },
+            {
+              "z": -185.331,
+              "visible": true
+            },
+            {
+              "z": -101.993,
+              "visible": true
+            },
+            {
+              "z": 115.497,
+              "visible": true
+            },
+            {
+              "z": 383.802,
+              "visible": true
+            },
+            {
+              "z": 601.292,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.3005,
+          "frame": 313.4248046875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 654.327,
+              "visible": true
+            },
+            {
+              "z": 573.512,
+              "visible": true
+            },
+            {
+              "z": 474.72,
+              "visible": true
+            },
+            {
+              "z": 393.905,
+              "visible": true
+            },
+            {
+              "z": 360.152,
+              "visible": true
+            },
+            {
+              "z": 391.571,
+              "visible": true
+            },
+            {
+              "z": 472.387,
+              "visible": false
+            },
+            {
+              "z": 571.178,
+              "visible": false
+            },
+            {
+              "z": 651.993,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.1008,
+          "frame": 326.5,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 681.141,
+              "visible": true
+            },
+            {
+              "z": 670.914,
+              "visible": true
+            },
+            {
+              "z": 659.671,
+              "visible": false
+            },
+            {
+              "z": 649.444,
+              "visible": false
+            },
+            {
+              "z": 641.876,
+              "visible": false
+            },
+            {
+              "z": 646.482,
+              "visible": false
+            },
+            {
+              "z": 656.709,
+              "visible": false
+            },
+            {
+              "z": 667.951,
+              "visible": false
+            },
+            {
+              "z": 678.178,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        }
+      ],
+      "reducedMotion": true,
+      "resize": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "states": [
+        {
+          "p": 0.1,
+          "frame": 323.171875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 681.174,
+              "visible": true
+            },
+            {
+              "z": 671.035,
+              "visible": true
+            },
+            {
+              "z": 659.901,
+              "visible": false
+            },
+            {
+              "z": 649.761,
+              "visible": false
+            },
+            {
+              "z": 642.226,
+              "visible": false
+            },
+            {
+              "z": 646.798,
+              "visible": false
+            },
+            {
+              "z": 656.938,
+              "visible": false
+            },
+            {
+              "z": 668.072,
+              "visible": false
+            },
+            {
+              "z": 678.211,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.2994,
+          "frame": 312.576171875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 654.58,
+              "visible": true
+            },
+            {
+              "z": 574.43,
+              "visible": true
+            },
+            {
+              "z": 476.465,
+              "visible": true
+            },
+            {
+              "z": 396.316,
+              "visible": true
+            },
+            {
+              "z": 362.81,
+              "visible": true
+            },
+            {
+              "z": 393.976,
+              "visible": false
+            },
+            {
+              "z": 474.126,
+              "visible": false
+            },
+            {
+              "z": 572.091,
+              "visible": false
+            },
+            {
+              "z": 652.24,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.4993,
+          "frame": 37.3544921875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 602.792,
+              "visible": true
+            },
+            {
+              "z": 386.31,
+              "visible": true
+            },
+            {
+              "z": 119.255,
+              "visible": true
+            },
+            {
+              "z": -97.2275,
+              "visible": true
+            },
+            {
+              "z": -181.308,
+              "visible": true
+            },
+            {
+              "z": -98.3531,
+              "visible": true
+            },
+            {
+              "z": 118.129,
+              "visible": true
+            },
+            {
+              "z": 385.184,
+              "visible": true
+            },
+            {
+              "z": 601.666,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.6992,
+          "frame": -465.41015625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 562.735,
+              "visible": true
+            },
+            {
+              "z": 240.804,
+              "visible": true
+            },
+            {
+              "z": -157.037,
+              "visible": true
+            },
+            {
+              "z": -478.968,
+              "visible": true
+            },
+            {
+              "z": -602.166,
+              "visible": true
+            },
+            {
+              "z": -479.155,
+              "visible": true
+            },
+            {
+              "z": -157.223,
+              "visible": true
+            },
+            {
+              "z": 240.618,
+              "visible": true
+            },
+            {
+              "z": 562.549,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.8992,
+          "frame": -724.154296875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 554.78,
+              "visible": true
+            },
+            {
+              "z": 211.907,
+              "visible": true
+            },
+            {
+              "z": -211.907,
+              "visible": true
+            },
+            {
+              "z": -554.78,
+              "visible": true
+            },
+            {
+              "z": -685.746,
+              "visible": true
+            },
+            {
+              "z": -554.78,
+              "visible": true
+            },
+            {
+              "z": -211.907,
+              "visible": true
+            },
+            {
+              "z": 211.907,
+              "visible": true
+            },
+            {
+              "z": 554.78,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.7004,
+          "frame": -468.06640625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 562.598,
+              "visible": true
+            },
+            {
+              "z": 240.306,
+              "visible": true
+            },
+            {
+              "z": -157.982,
+              "visible": true
+            },
+            {
+              "z": -480.274,
+              "visible": true
+            },
+            {
+              "z": -603.605,
+              "visible": true
+            },
+            {
+              "z": -480.458,
+              "visible": true
+            },
+            {
+              "z": -158.165,
+              "visible": true
+            },
+            {
+              "z": 240.123,
+              "visible": true
+            },
+            {
+              "z": 562.415,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.5005,
+          "frame": 34.6181640625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 602.481,
+              "visible": true
+            },
+            {
+              "z": 385.179,
+              "visible": true
+            },
+            {
+              "z": 117.108,
+              "visible": true
+            },
+            {
+              "z": -100.193,
+              "visible": true
+            },
+            {
+              "z": -184.577,
+              "visible": true
+            },
+            {
+              "z": -101.312,
+              "visible": true
+            },
+            {
+              "z": 115.99,
+              "visible": true
+            },
+            {
+              "z": 384.061,
+              "visible": true
+            },
+            {
+              "z": 601.362,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.3005,
+          "frame": 312.123046875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 654.319,
+              "visible": true
+            },
+            {
+              "z": 573.483,
+              "visible": true
+            },
+            {
+              "z": 474.666,
+              "visible": true
+            },
+            {
+              "z": 393.829,
+              "visible": true
+            },
+            {
+              "z": 360.068,
+              "visible": true
+            },
+            {
+              "z": 391.496,
+              "visible": true
+            },
+            {
+              "z": 472.332,
+              "visible": false
+            },
+            {
+              "z": 571.149,
+              "visible": false
+            },
+            {
+              "z": 651.985,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.1003,
+          "frame": 323.171875,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 685.746,
+              "visible": true
+            },
+            {
+              "z": 681.161,
+              "visible": true
+            },
+            {
+              "z": 670.987,
+              "visible": true
+            },
+            {
+              "z": 659.81,
+              "visible": false
+            },
+            {
+              "z": 649.636,
+              "visible": false
+            },
+            {
+              "z": 642.088,
+              "visible": false
+            },
+            {
+              "z": 646.673,
+              "visible": false
+            },
+            {
+              "z": 656.847,
+              "visible": false
+            },
+            {
+              "z": 668.024,
+              "visible": false
+            },
+            {
+              "z": 678.198,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        }
+      ],
+      "reducedMotion": true,
+      "resize": true
+    },
+    {
+      "width": 320,
+      "height": 715,
+      "states": [
+        {
+          "p": 0.1,
+          "frame": 271,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 606.216,
+              "visible": true
+            },
+            {
+              "z": 596.539,
+              "visible": true
+            },
+            {
+              "z": 585.976,
+              "visible": false
+            },
+            {
+              "z": 576.299,
+              "visible": false
+            },
+            {
+              "z": 568.94,
+              "visible": false
+            },
+            {
+              "z": 573.335,
+              "visible": false
+            },
+            {
+              "z": 583.013,
+              "visible": false
+            },
+            {
+              "z": 593.576,
+              "visible": false
+            },
+            {
+              "z": 603.253,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.2993,
+          "frame": 262.0400390625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 582.614,
+              "visible": true
+            },
+            {
+              "z": 510.76,
+              "visible": true
+            },
+            {
+              "z": 423.047,
+              "visible": true
+            },
+            {
+              "z": 351.193,
+              "visible": true
+            },
+            {
+              "z": 320.855,
+              "visible": true
+            },
+            {
+              "z": 348.853,
+              "visible": false
+            },
+            {
+              "z": 420.707,
+              "visible": false
+            },
+            {
+              "z": 508.42,
+              "visible": false
+            },
+            {
+              "z": 580.274,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.4993,
+          "frame": 28.8505859375,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 536.621,
+              "visible": true
+            },
+            {
+              "z": 343.606,
+              "visible": true
+            },
+            {
+              "z": 105.558,
+              "visible": true
+            },
+            {
+              "z": -87.4577,
+              "visible": true
+            },
+            {
+              "z": -162.574,
+              "visible": true
+            },
+            {
+              "z": -88.5832,
+              "visible": true
+            },
+            {
+              "z": 104.432,
+              "visible": true
+            },
+            {
+              "z": 342.481,
+              "visible": true
+            },
+            {
+              "z": 535.496,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.6993,
+          "frame": -397.181640625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 501.052,
+              "visible": true
+            },
+            {
+              "z": 214.334,
+              "visible": true
+            },
+            {
+              "z": -139.982,
+              "visible": true
+            },
+            {
+              "z": -426.7,
+              "visible": true
+            },
+            {
+              "z": -536.447,
+              "visible": true
+            },
+            {
+              "z": -426.886,
+              "visible": true
+            },
+            {
+              "z": -140.168,
+              "visible": true
+            },
+            {
+              "z": 214.147,
+              "visible": true
+            },
+            {
+              "z": 500.865,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.8993,
+          "frame": -616.2822265625,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 493.996,
+              "visible": true
+            },
+            {
+              "z": 188.69,
+              "visible": true
+            },
+            {
+              "z": -188.69,
+              "visible": true
+            },
+            {
+              "z": -493.996,
+              "visible": true
+            },
+            {
+              "z": -610.612,
+              "visible": true
+            },
+            {
+              "z": -493.996,
+              "visible": true
+            },
+            {
+              "z": -188.69,
+              "visible": true
+            },
+            {
+              "z": 188.69,
+              "visible": true
+            },
+            {
+              "z": 493.996,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.7007,
+          "frame": -399.8359375,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 500.908,
+              "visible": true
+            },
+            {
+              "z": 213.812,
+              "visible": true
+            },
+            {
+              "z": -140.972,
+              "visible": true
+            },
+            {
+              "z": -428.068,
+              "visible": true
+            },
+            {
+              "z": -537.954,
+              "visible": true
+            },
+            {
+              "z": -428.25,
+              "visible": true
+            },
+            {
+              "z": -141.154,
+              "visible": true
+            },
+            {
+              "z": 213.63,
+              "visible": true
+            },
+            {
+              "z": 500.726,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.5007,
+          "frame": 26.1142578125,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 536.295,
+              "visible": true
+            },
+            {
+              "z": 342.421,
+              "visible": true
+            },
+            {
+              "z": 103.307,
+              "visible": true
+            },
+            {
+              "z": -90.5678,
+              "visible": true
+            },
+            {
+              "z": -166.002,
+              "visible": true
+            },
+            {
+              "z": -91.6847,
+              "visible": true
+            },
+            {
+              "z": 102.19,
+              "visible": true
+            },
+            {
+              "z": 341.304,
+              "visible": true
+            },
+            {
+              "z": 535.178,
+              "visible": true
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.3007,
+          "frame": 261.5859375,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 582.341,
+              "visible": true
+            },
+            {
+              "z": 509.766,
+              "visible": true
+            },
+            {
+              "z": 421.159,
+              "visible": true
+            },
+            {
+              "z": 348.584,
+              "visible": true
+            },
+            {
+              "z": 317.98,
+              "visible": true
+            },
+            {
+              "z": 346.252,
+              "visible": true
+            },
+            {
+              "z": 418.827,
+              "visible": false
+            },
+            {
+              "z": 507.433,
+              "visible": false
+            },
+            {
+              "z": 580.008,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        },
+        {
+          "p": 0.1007,
+          "frame": 271,
+          "angle": 0,
+          "cards": [
+            {
+              "z": 610.612,
+              "visible": true
+            },
+            {
+              "z": 606.189,
+              "visible": true
+            },
+            {
+              "z": 596.439,
+              "visible": true
+            },
+            {
+              "z": 585.785,
+              "visible": false
+            },
+            {
+              "z": 576.035,
+              "visible": false
+            },
+            {
+              "z": 568.649,
+              "visible": false
+            },
+            {
+              "z": 573.073,
+              "visible": false
+            },
+            {
+              "z": 582.823,
+              "visible": false
+            },
+            {
+              "z": 593.476,
+              "visible": false
+            },
+            {
+              "z": 603.226,
+              "visible": false
+            }
+          ],
+          "overflow": 0,
+          "broken": 0
+        }
+      ],
+      "reducedMotion": true,
+      "resize": true
+    }
+  ],
+  "errors": []
+}

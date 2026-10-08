@@ -1,0 +1,239 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "reducedMotion": "no-preference",
+    "rear": {
+      "index": "4",
+      "depth": "0.896"
+    },
+    "samples": [
+      {
+        "top": 308.1329345703125,
+        "bottom": 587.0282592773438,
+        "width": 256.58172607421875,
+        "depth": -1932.06,
+        "spin": 152.07,
+        "mask": true
+      },
+      {
+        "top": 300.9661865234375,
+        "bottom": 573.17236328125,
+        "width": 257.73089599609375,
+        "depth": -1910.92,
+        "spin": 145.23,
+        "mask": true
+      },
+      {
+        "top": 287.1346130371094,
+        "bottom": 538.3357543945312,
+        "width": 292.182373046875,
+        "depth": -1580.07,
+        "spin": 125.92,
+        "mask": true
+      },
+      {
+        "top": 226.548828125,
+        "bottom": 428.40020751953125,
+        "width": 301.6883544921875,
+        "depth": -754.67,
+        "spin": 88.9,
+        "mask": true
+      },
+      {
+        "top": -162.80706787109375,
+        "bottom": 183.62176513671875,
+        "width": 554.6417846679688,
+        "depth": -64.31,
+        "spin": 48.91,
+        "mask": true
+      },
+      {
+        "top": -37.37948226928711,
+        "bottom": 580.8255958557129,
+        "width": 618.318115234375,
+        "depth": 13.74,
+        "spin": 7.76,
+        "mask": false
+      }
+    ],
+    "audits": [
+      {
+        "direction": "open",
+        "collisions": [],
+        "invisible": [],
+        "checked": 26
+      },
+      {
+        "direction": "return",
+        "collisions": [],
+        "invisible": [],
+        "checked": 26
+      }
+    ],
+    "cleanup": {
+      "proxies": 0,
+      "locked": false,
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "reducedMotion": "no-preference",
+    "rear": {
+      "index": "5",
+      "depth": "0.985"
+    },
+    "samples": [
+      {
+        "top": 312.13330078125,
+        "bottom": 583.19189453125,
+        "width": 265.1048889160156,
+        "depth": -2020.22,
+        "spin": -167.86,
+        "mask": true
+      },
+      {
+        "top": 306.0445251464844,
+        "bottom": 570.7228393554688,
+        "width": 257.8860778808594,
+        "depth": -1998.68,
+        "spin": -160.31,
+        "mask": true
+      },
+      {
+        "top": 294.9993896484375,
+        "bottom": 534.46240234375,
+        "width": 277.3230895996094,
+        "depth": -1654.12,
+        "spin": -138.99,
+        "mask": true
+      },
+      {
+        "top": 284.65911865234375,
+        "bottom": 467.0615234375,
+        "width": 307.08551025390625,
+        "depth": -792.6,
+        "spin": -98.13,
+        "mask": true
+      },
+      {
+        "top": -126.299072265625,
+        "bottom": 186.41168212890625,
+        "width": 447.4984130859375,
+        "depth": -70.36,
+        "spin": -53.98,
+        "mask": true
+      },
+      {
+        "top": 2.583908796310425,
+        "bottom": 559.1022193431854,
+        "width": 400.4300842285156,
+        "depth": 13.74,
+        "spin": -8.57,
+        "mask": false
+      }
+    ],
+    "audits": [
+      {
+        "direction": "open",
+        "collisions": [],
+        "invisible": [],
+        "checked": 23
+      },
+      {
+        "direction": "return",
+        "collisions": [],
+        "invisible": [],
+        "checked": 23
+      }
+    ],
+    "cleanup": {
+      "proxies": 0,
+      "locked": false,
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "reducedMotion": "no-preference",
+    "rear": {
+      "index": "6",
+      "depth": "0.697"
+    },
+    "samples": [
+      {
+        "top": 300.42303466796875,
+        "bottom": 594.4133911132812,
+        "width": 227.20208740234375,
+        "depth": -1724.56,
+        "spin": -132.4,
+        "mask": true
+      },
+      {
+        "top": 292.3240661621094,
+        "bottom": 580.3458862304688,
+        "width": 228.54031372070312,
+        "depth": -1704.39,
+        "spin": -126.45,
+        "mask": true
+      },
+      {
+        "top": 277.93524169921875,
+        "bottom": 542.7300415039062,
+        "width": 262.4938659667969,
+        "depth": -1405.77,
+        "spin": -109.64,
+        "mask": true
+      },
+      {
+        "top": 161.76953125,
+        "bottom": 380.1779479980469,
+        "width": 320.9491271972656,
+        "depth": -665.4,
+        "spin": -77.4,
+        "mask": true
+      },
+      {
+        "top": -186.8112335205078,
+        "bottom": 180.17616271972656,
+        "width": 481.0333251953125,
+        "depth": -50.08,
+        "spin": -42.58,
+        "mask": true
+      },
+      {
+        "top": -72.10758972167969,
+        "bottom": 597.3914947509766,
+        "width": 388.8371887207031,
+        "depth": 13.74,
+        "spin": -6.76,
+        "mask": false
+      }
+    ],
+    "audits": [
+      {
+        "direction": "open",
+        "collisions": [],
+        "invisible": [],
+        "checked": 43
+      },
+      {
+        "direction": "return",
+        "collisions": [],
+        "invisible": [],
+        "checked": 43
+      }
+    ],
+    "cleanup": {
+      "proxies": 0,
+      "locked": false,
+      "overflow": false
+    },
+    "errors": []
+  }
+]

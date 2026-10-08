@@ -3,6 +3,7 @@
 export function initTvNoise() {
   const overlay = document.querySelector('.tv-noise');
   if (!overlay) return () => {};
+  const gallery = document.querySelector('#project-gallery');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const coarsePointer = window.matchMedia('(pointer: coarse)');
   const connection = navigator.connection;
@@ -38,7 +39,7 @@ export function initTvNoise() {
   }
 
   function tick(now) {
-    if (disposed || document.hidden || !pageActive || reducedMotion.matches) {
+    if (disposed || document.hidden || !pageActive || reducedMotion.matches || gallery?.open) {
       raf = 0;
       return;
     }
@@ -66,7 +67,7 @@ export function initTvNoise() {
   }
   function syncPlayback() {
     stop();
-    if (disposed || document.hidden || !pageActive || reducedMotion.matches) return;
+    if (disposed || document.hidden || !pageActive || reducedMotion.matches || gallery?.open) return;
     overlay.removeAttribute('data-noise-paused');
     lastDraw = 0;
     raf = requestAnimationFrame(tick);
@@ -97,6 +98,9 @@ export function initTvNoise() {
   function hidePage() { pageActive = false; stop(); }
   function showPage() { pageActive = true; syncPlayback(); }
   updateSettings();
+  // The opaque modal covers the grain; resume it when the gallery closes.
+  const galleryVisibility = new MutationObserver(syncPlayback);
+  if (gallery) galleryVisibility.observe(gallery, { attributes: true, attributeFilter: ['open'] });
   coarsePointer.addEventListener('change', updateSettings);
   reducedMotion.addEventListener('change', syncPlayback);
   connection?.addEventListener('change', updateSettings);
@@ -107,6 +111,7 @@ export function initTvNoise() {
 
   function dispose() {
     disposed = true;
+    galleryVisibility.disconnect();
     stop();
     coarsePointer.removeEventListener('change', updateSettings);
     reducedMotion.removeEventListener('change', syncPlayback);

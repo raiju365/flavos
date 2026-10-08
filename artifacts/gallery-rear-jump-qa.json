@@ -1,0 +1,202 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "reducedMotion": "no-preference",
+    "rear": {
+      "x": 1269.2515869140625,
+      "y": 449.99998474121094,
+      "index": "3",
+      "depth": "0.464"
+    },
+    "samples": [
+      {
+        "top": 293.424560546875,
+        "bottom": 601.0093383789062,
+        "width": 190.3372802734375,
+        "depth": -1491.72,
+        "spin": 116.39,
+        "mask": true
+      },
+      {
+        "top": 289.7425842285156,
+        "bottom": 580.6310424804688,
+        "width": 200.2171630859375,
+        "depth": -1472.64,
+        "spin": 111.16,
+        "mask": true
+      },
+      {
+        "top": 284.80657958984375,
+        "bottom": 529.9705200195312,
+        "width": 229.359130859375,
+        "depth": -1210.19,
+        "spin": 96.38,
+        "mask": true
+      },
+      {
+        "top": 185.22479248046875,
+        "bottom": 360.8302001953125,
+        "width": 298.14178466796875,
+        "depth": -565.23,
+        "spin": 68.04,
+        "mask": true
+      },
+      {
+        "top": -41.010223388671875,
+        "bottom": 186.8065185546875,
+        "width": 498.6990966796875,
+        "depth": -34.1,
+        "spin": 37.43,
+        "mask": true
+      },
+      {
+        "top": 131.14390563964844,
+        "bottom": 490.23667907714844,
+        "width": 616.2639770507812,
+        "depth": 13.74,
+        "spin": 5.94,
+        "mask": false
+      }
+    ],
+    "audits": [
+      {
+        "direction": "open",
+        "collisions": [],
+        "invisible": [],
+        "checked": 28
+      },
+      {
+        "direction": "return",
+        "collisions": [],
+        "invisible": [],
+        "checked": 28
+      }
+    ],
+    "cleanup": {
+      "proxies": 0,
+      "locked": false,
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 820,
+    "height": 1000,
+    "reducedMotion": "no-preference",
+    "rear": {
+      "x": 777.2710571289062,
+      "y": 499.99998474121094,
+      "index": "3",
+      "depth": "0.476"
+    },
+    "samples": [
+      {
+        "top": 394.20709228515625,
+        "bottom": 600.3609619140625,
+        "width": 129.17205810546875,
+        "depth": -1009.81,
+        "spin": 117.11,
+        "mask": true
+      },
+      {
+        "top": 388.9910888671875,
+        "bottom": 582.9507446289062,
+        "width": 134.60369873046875,
+        "depth": -992.98,
+        "spin": 111.84,
+        "mask": true
+      },
+      {
+        "top": 377.9763488769531,
+        "bottom": 540.0255737304688,
+        "width": 151.514892578125,
+        "depth": -805.39,
+        "spin": 96.97,
+        "mask": true
+      },
+      {
+        "top": 304.4580383300781,
+        "bottom": 418.29864501953125,
+        "width": 187.78582763671875,
+        "depth": -357.91,
+        "spin": 68.46,
+        "mask": true
+      },
+      {
+        "top": 172.95729064941406,
+        "bottom": 311.93310546875,
+        "width": 300.36529541015625,
+        "depth": -1.04,
+        "spin": 37.66,
+        "mask": false
+      },
+      {
+        "top": 304.1229248046875,
+        "bottom": 511.1713562011719,
+        "width": 353.2930908203125,
+        "depth": 13.74,
+        "spin": 5.98,
+        "mask": false
+      }
+    ],
+    "audits": [
+      {
+        "direction": "open",
+        "collisions": [],
+        "invisible": [],
+        "checked": 28
+      },
+      {
+        "direction": "return",
+        "collisions": [],
+        "invisible": [],
+        "checked": 28
+      }
+    ],
+    "cleanup": {
+      "proxies": 0,
+      "locked": false,
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "reducedMotion": "no-preference",
+    "rear": {
+      "x": 34.77959632873535,
+      "y": 421.99998474121094,
+      "index": "5",
+      "depth": "0.984"
+    },
+    "samples": [],
+    "audits": [],
+    "cleanup": {
+      "proxies": 0,
+      "locked": false,
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "reducedMotion": "reduce",
+    "rear": {
+      "x": 999.9005126953125,
+      "y": 450.00001525878906,
+      "index": "4",
+      "depth": "0.809"
+    },
+    "samples": [],
+    "audits": [],
+    "cleanup": {
+      "proxies": 0,
+      "locked": false,
+      "overflow": false
+    },
+    "errors": []
+  }
+]

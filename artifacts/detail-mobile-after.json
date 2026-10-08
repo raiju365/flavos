@@ -1,0 +1,13 @@
+{
+  "ms": 685.9000000953674,
+  "maxFrame": 270.7999999999993,
+  "framesOver50": 2,
+  "resources": [
+    {
+      "url": "http://localhost:5173/karya/detail/efefesfeaf.png-1280.webp",
+      "bytes": 542778
+    }
+  ],
+  "border": "0px",
+  "cursorParent": "DIALOG"
+}

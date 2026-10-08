@@ -1,0 +1,167 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "cruise": {
+        "velocity": 0.070884,
+        "demand": 0.07392,
+        "angle": 0.0871,
+        "p": 1
+      },
+      "lift": {
+        "velocity": 0.053038,
+        "demand": 0,
+        "angle": 0.0949,
+        "p": 0.9996
+      },
+      "braking": {
+        "velocity": 0.016866,
+        "demand": 0,
+        "angle": 0.1098,
+        "p": 0.9996
+      },
+      "stopped": {
+        "velocity": 0.000053,
+        "demand": 0,
+        "angle": 0.117,
+        "p": 0.9996
+      },
+      "restarting": {
+        "velocity": 0.010337,
+        "demand": 0.07392,
+        "angle": 0.1172,
+        "p": 1
+      },
+      "resumed": {
+        "velocity": 0.072514,
+        "demand": 0.07392,
+        "angle": 0.2342,
+        "p": 1
+      }
+    },
+    {
+      "width": 820,
+      "cruise": {
+        "velocity": 0.070867,
+        "demand": 0.07392,
+        "angle": 0.0863,
+        "p": 1
+      },
+      "lift": {
+        "velocity": 0.056158,
+        "demand": 0,
+        "angle": 0.093,
+        "p": 0.9995
+      },
+      "braking": {
+        "velocity": 0.017853,
+        "demand": 0,
+        "angle": 0.1083,
+        "p": 0.9995
+      },
+      "stopped": {
+        "velocity": 0.000056,
+        "demand": 0,
+        "angle": 0.116,
+        "p": 0.9995
+      },
+      "restarting": {
+        "velocity": 0.009509,
+        "demand": 0.07392,
+        "angle": 0.1161,
+        "p": 1
+      },
+      "resumed": {
+        "velocity": 0.072532,
+        "demand": 0.07392,
+        "angle": 0.2335,
+        "p": 1
+      }
+    },
+    {
+      "width": 390,
+      "cruise": {
+        "velocity": 0.071016,
+        "demand": 0.07392,
+        "angle": 0.0882,
+        "p": 1
+      },
+      "lift": {
+        "velocity": 0.055413,
+        "demand": 0,
+        "angle": 0.0954,
+        "p": 0.9993
+      },
+      "braking": {
+        "velocity": 0.017995,
+        "demand": 0,
+        "angle": 0.1109,
+        "p": 0.9993
+      },
+      "stopped": {
+        "velocity": 0.000057,
+        "demand": 0,
+        "angle": 0.1186,
+        "p": 0.9993
+      },
+      "restarting": {
+        "velocity": 0.011889,
+        "demand": 0.07392,
+        "angle": 0.1189,
+        "p": 1
+      },
+      "resumed": {
+        "velocity": 0.072549,
+        "demand": 0.07392,
+        "angle": 0.2366,
+        "p": 1
+      }
+    },
+    {
+      "width": 360,
+      "cruise": {
+        "velocity": 0.070986,
+        "demand": 0.07392,
+        "angle": 0.0878,
+        "p": 1
+      },
+      "lift": {
+        "velocity": 0.055263,
+        "demand": 0,
+        "angle": 0.0939,
+        "p": 0.9992
+      },
+      "braking": {
+        "velocity": 0.018339,
+        "demand": 0,
+        "angle": 0.1092,
+        "p": 0.9992
+      },
+      "stopped": {
+        "velocity": 0.000056,
+        "demand": 0,
+        "angle": 0.1171,
+        "p": 0.9992
+      },
+      "restarting": {
+        "velocity": 0.011135,
+        "demand": 0.07392,
+        "angle": 0.1173,
+        "p": 1
+      },
+      "resumed": {
+        "velocity": 0.072514,
+        "demand": 0.07392,
+        "angle": 0.2341,
+        "p": 1
+      }
+    }
+  ],
+  "reduced": {
+    "velocity": 0,
+    "demand": 0,
+    "angle": 0.2403,
+    "p": 1
+  },
+  "errors": []
+}

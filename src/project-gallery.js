@@ -1,10 +1,12 @@
 import gsap from 'gsap';
+import { createDetailFlight } from './gallery-detail-flight';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { galleryWorks } from './project-gallery-data';
 import './project-gallery.css';
 import { createGalleryArtColor } from './gallery-art-color';
 import { DESKTOP_HANDOFF_QUERY, getWorkHandoffDistances } from './about-work-handoff';
 import { getGalleryFlightLayout } from './gallery-flight-layout';
+import imageVariants from './gallery-image-variants.json';
 
 export function initProjectGallery({ getLenis }) {
   const dialog = document.getElementById('project-gallery');
@@ -18,6 +20,18 @@ export function initProjectGallery({ getLenis }) {
   const detail = $('.orbit-detail'), media = $('.orbit-detail-media');
   const title = $('#orbit-detail-title');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  const compactDetail = matchMedia('(pointer: coarse), (max-width: 760px)');
+  const detailSource = src => imageVariants[src]?.[compactDetail.matches ? 1280 : 1920] || src;
+  function setDetailImage(image, src) {
+    const dimensions = imageVariants[src];
+    if (dimensions) { image.width = dimensions.width; image.height = dimensions.height; }
+    image.decoding = 'async';
+    image.src = detailSource(src);
+  }
+  function restoreCursor() {
+    const cursor = dialog.querySelector('#custom-cursor');
+    if (cursor) document.body.append(cursor);
+  }
   const desktopHandoff = matchMedia(DESKTOP_HANDOFF_QUERY);
   const abort = new AbortController(), options = { signal: abort.signal };
   const count = galleryWorks.length, step = Math.PI * 2 / count;
@@ -34,9 +48,15 @@ export function initProjectGallery({ getLenis }) {
   let centerIndex = 0;
   let wheelSettle = 0;
   let travellingArt = null;
+  let turntableControls = null;
   const detailParts = () => [$('.orbit-detail-copy'), $('.orbit-detail-context'), $('.orbit-detail-controls'), $('.orbit-back')];
   function removeTravel() {
     travellingArt?.remove(); travellingArt = null;
+    if (turntableControls) {
+      const { controls, spacer } = turntableControls;
+      spacer.replaceWith(controls); controls.classList.remove('orbit-turntable-controls');
+      turntableControls = null;
+    }
     gsap.set([media, ...cards], { clearProps: 'visibility' });
   }
   function activeImage() {
@@ -45,6 +65,7 @@ export function initProjectGallery({ getLenis }) {
     return media.querySelectorAll('img')[index] || media;
   }
   function loadImage(src) {
+    src = detailSource(src);
     if (!imageCache.has(src)) {
       const image = new Image(); image.src = src;
       imageCache.set(src, { image, ready: image.decode().catch(() => {}) });
@@ -53,7 +74,9 @@ export function initProjectGallery({ getLenis }) {
   }
   function prepareWork(i) {
     const work = galleryWorks[wrap(i)];
-    return Promise.all((work.images || (work.src ? [{ src: work.src }] : [])).map(asset => loadImage(asset.src).ready));
+    const assets = work.images || (work.src ? [{ src: work.src }] : []);
+    const asset = assets[detailStates.get(wrap(i))?.slide || 0] || assets[0];
+    return asset ? loadImage(asset.src).ready : Promise.resolve();
   }
   function setImageSize(image) {
     const source = imageCache.get(image.getAttribute('src'))?.image;
@@ -62,18 +85,53 @@ export function initProjectGallery({ getLenis }) {
   function cardEndpoint(i) {
     const card = cards[i], cameraRect = camera.getBoundingClientRect();
     const matrix = new DOMMatrix(getComputedStyle(card).transform);
-    const theta = angle + i * step;
     return {
       left: cameraRect.left + card.offsetLeft, top: cameraRect.top + card.offsetTop,
       width: card.offsetWidth, height: card.offsetHeight,
       x: matrix.m41, y: matrix.m42, z: matrix.m43 - geometry.radius,
-      rotationY: Math.atan2(Math.sin(theta), Math.cos(theta)) * 180 / Math.PI,
+      rotationY: Math.atan2(-matrix.m13, matrix.m11) * 180 / Math.PI,
+      scale: Math.hypot(matrix.m11, matrix.m12, matrix.m13),
       perspective: geometry.perspective,
       perspectiveOrigin: `${cameraRect.left + cameraRect.width / 2}px ${cameraRect.top + cameraRect.height / 2}px`,
       blur: parseFloat(card.style.getPropertyValue('--orbit-depth-blur')) || 0,
     };
   }
-  const flatEndpoint = element => ({ ...rectVars(element), x: 0, y: 0, z: 0, rotationY: 0, blur: 0 });
+  const flatEndpoint = element => ({ ...rectVars(element), x: 0, y: 0, z: 0, rotationY: 0, scale: 1, blur: 0 });
+  function rearJump(i, origin) {
+    if (!origin || Number(cards[i].dataset.depth) < .35) return null;
+    const obstacles = cards.flatMap((card, index) => index === i ? [] : [{
+      pose: cardEndpoint(index), rect: rectVars(card),
+    }]);
+    const maskCache = new Map();
+    const maskAt = depth => {
+      const nearer = obstacles.filter(obstacle => obstacle.pose.z > depth + 1);
+      if (!nearer.length) return 'none';
+      const key = nearer.map(obstacle => obstacle.pose.z).join(',');
+      if (!maskCache.has(key)) {
+        const holes = nearer.map(({ rect: r }) => `<rect x="${r.left}" y="${r.top}" width="${r.width}" height="${r.height}" fill="black"/>`).join('');
+        maskCache.set(key, `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${innerWidth}" height="${innerHeight}"><rect width="100%" height="100%" fill="white"/>${holes}</svg>`)}")`);
+      }
+      return maskCache.get(key);
+    };
+    return { obstacles, maskAt, mask: maskAt(origin.z) };
+  }
+  function animateRearFlight(flight, rear, front, jump, returning = false) {
+    const route = createDetailFlight(rear, front, jump.obstacles);
+    const progress = { rearFlight: returning ? 1 : 0 };
+    const scene = flight.proxy.parentElement;
+    scene.style.maskMode = 'luminance'; scene.style.maskRepeat = 'no-repeat';
+    const draw = () => {
+      Object.assign(flight.state, route.poseAt(progress.rearFlight));
+      scene.style.maskImage = jump.maskAt(flight.state.z);
+      flight.proxy.dataset.flightProgress = progress.rearFlight.toFixed(4);
+      flight.proxy.dataset.flightDepth = flight.state.z.toFixed(2);
+      flight.proxy.dataset.flightSpin = flight.state.rotationY.toFixed(2);
+      flight.proxy.dataset.flightLift = route.lift.toFixed(2);
+      flight.render();
+    };
+    draw();
+    return { target: progress, vars: { rearFlight: returning ? 0 : 1, duration: 1.25, ease: 'none', onUpdate: draw } };
+  }
   function travelArtwork(source, endpoint, plane) {
     const scene = document.createElement('div'); scene.className = 'orbit-travelling-art';
     scene.setAttribute('aria-hidden', 'true'); scene.inert = true;
@@ -86,10 +144,10 @@ export function initProjectGallery({ getLenis }) {
     scene.append(proxy); dialog.append(scene); travellingArt = scene;
     const state = { ...endpoint };
     const render = () => {
-      const { left, top, width, height, x, y, z, rotationY, blur } = state;
+      const { left, top, width, height, x, y, z, rotationY, rotationX = 0, rotationZ = 0, scale = 1, blur } = state;
       Object.assign(proxy.style, {
         left: `${left}px`, top: `${top}px`, width: `${width}px`, height: `${height}px`,
-        transform: `translate3d(${x}px,${y}px,${z}px) rotateY(${rotationY}deg)`,
+        transform: `translate3d(${x}px,${y}px,${z}px) rotateY(${rotationY}deg) rotateX(${rotationX}deg) rotateZ(${rotationZ}deg) scale(${scale})`,
         filter: `blur(${blur}px)`,
       });
     };
@@ -99,6 +157,21 @@ export function initProjectGallery({ getLenis }) {
   function rectVars(element) {
     const r = element.getBoundingClientRect();
     return { left: r.left, top: r.top, width: r.width, height: r.height };
+  }
+  function turntableCard(source, scene, role) {
+    const bounds = rectVars(source);
+    const card = document.createElement('div');
+    card.className = 'orbit-turntable-card'; card.dataset.role = role;
+    Object.assign(card.style, {
+      left: `${bounds.left}px`, top: `${bounds.top}px`,
+      width: `${bounds.width}px`, height: `${bounds.height}px`,
+    });
+    if (source.matches('img')) {
+      const image = new Image(); image.src = source.currentSrc || source.src;
+      image.alt = ''; image.decoding = 'async'; card.append(image);
+    } else { card.textContent = 'asset'; card.classList.add('is-empty'); }
+    scene.append(card);
+    return { card, bounds };
   }
   const wrap = value => (value + count) % count;
   const label = i => galleryWorks[i].title || `Asset ${String(i + 1).padStart(2, '0')}`;
@@ -225,8 +298,8 @@ export function initProjectGallery({ getLenis }) {
     stage.dataset.paused = String(!auto());
   }
   function hold() { caption(); start(); }
-  function highlight(i, active) {
-    artColors[i]?.setActive(active);
+  function highlight(i, active, immediate = false) {
+    artColors[i]?.setActive(active, immediate);
     const surface = cards[i].firstElementChild;
     cards[i].classList.toggle('is-highlighted', active);
     gsap.killTweensOf(surface);
@@ -257,7 +330,6 @@ export function initProjectGallery({ getLenis }) {
     selected = wrap(i);
     const work = galleryWorks[selected];
     title.textContent = label(selected);
-    $('.orbit-detail-number').textContent = String(selected + 1).padStart(2, '0');
     $('.orbit-detail-count').textContent = `${String(selected + 1).padStart(2, '0')} / ${count}`;
     $('.orbit-detail-description').textContent = work.description || 'Karya sedang dibuat. Aset dan penjelasannya akan ditampilkan di sini.';
     media.replaceChildren();
@@ -265,7 +337,7 @@ export function initProjectGallery({ getLenis }) {
     if (work.src) {
       if (work.images?.length > 1) renderImageSlides(work);
       else {
-        const image = new Image(); image.src = work.src; image.alt = work.title || label(selected);
+        const image = new Image(); setDetailImage(image, work.src); image.alt = work.title || label(selected);
         setImageSize(image);
         // Detail keeps natural proportions; the rotating thumbnails are square.
         media.append(image);
@@ -283,7 +355,7 @@ export function initProjectGallery({ getLenis }) {
     work.images.forEach((asset, index) => {
       const slide = document.createElement('div'); slide.className = 'orbit-image-slide';
       slide.setAttribute('role', 'group'); slide.setAttribute('aria-label', `${index + 1} dari ${work.images.length}: ${asset.label}`);
-      const image = new Image(); image.src = asset.src; image.alt = asset.alt;
+      const image = new Image(); setDetailImage(image, asset.src); image.alt = asset.alt;
       setImageSize(image);
       image.draggable = false; slide.append(image); viewport.append(slide);
     });
@@ -313,7 +385,7 @@ export function initProjectGallery({ getLenis }) {
   }
   function resetHighlights() {
     hovered = null; focused = null;
-    cards.forEach((card, i) => highlight(i, false));
+    cards.forEach((card, i) => highlight(i, false, true));
   }
   function clearTransition() {
     removeTravel();
@@ -327,8 +399,10 @@ export function initProjectGallery({ getLenis }) {
     busy = true; target = angle; velocity = 0; lastTime = 0; returnIndex = i;
     const ticket = ++operation;
     clearTimeout(wheelSettle);
-    returnState = { angle, width: innerWidth, height: innerHeight, endpoints: cards.map((_, index) => cardEndpoint(index)) };
-    const origin = returnState.endpoints[i];
+    returnState = { angle, width: innerWidth, height: innerHeight,
+      endpoints: compactDetail.matches || motion.matches ? null : cards.map((_, index) => cardEndpoint(index)) };
+    const origin = returnState.endpoints?.[i];
+    const jump = rearJump(i, origin);
     const sourceColor = Number(cards[i].querySelector('img')?.dataset.colorProgress || 0);
     updateDetail(i); resetHighlights();
     resumeScroll = Boolean(getLenis() && !getLenis().isStopped);
@@ -337,17 +411,24 @@ export function initProjectGallery({ getLenis }) {
     document.body.style.overflow = 'hidden';
     detail.hidden = false; detail.inert = true; detail.scrollTop = 0;
     overview.inert = true;
-    if (!motion.matches) {
+    if (!motion.matches && !compactDetail.matches) {
       gsap.set($('.orbit-shell'), { clipPath: 'inset(100% 0 0 0)' });
       gsap.set(detailParts(), { y: 22, clipPath: 'inset(0 0 100% 0)' });
     }
     dialog.showModal();
+    const cursor = document.getElementById('custom-cursor');
+    if (cursor) dialog.append(cursor);
     const finish = () => {
       detail.inert = false; clearTransition();
       title.focus({ preventScroll: true });
     };
     dialog.classList.add('is-orbit-transitioning'); dialog.dataset.scenePhase = 'loading-detail';
-    const flight = motion.matches ? null : travelArtwork(cards[i], origin, origin);
+    const flight = motion.matches || compactDetail.matches ? null : travelArtwork(cards[i], origin, origin);
+    if (flight && jump) {
+      travellingArt.style.maskImage = jump.mask;
+      travellingArt.style.maskMode = 'luminance';
+      travellingArt.style.maskRepeat = 'no-repeat';
+    }
     if (flight) gsap.set([media, cards[i]], { visibility: 'hidden' });
     await prepareWork(i);
     if (ticket !== operation || !dialog.open) return;
@@ -355,7 +436,15 @@ export function initProjectGallery({ getLenis }) {
     const viewport = media.querySelector('.orbit-image-viewport');
     if (viewport) viewport.scrollLeft = (detailStates.get(i)?.slide || 0) * viewport.clientWidth;
     detail.scrollTop = detailStates.get(i)?.scrollTop || 0;
-    if (motion.matches || !flight) { finish(); return; }
+    if (motion.matches) { finish(); return; }
+    if (compactDetail.matches || !flight) {
+      // Touch devices reveal the real detail directly: no full-size duplicate,
+      // per-frame layout resizing, grayscale filter or fullscreen clip mask.
+      dialog.dataset.scenePhase = 'to-detail';
+      animation = gsap.timeline({ onComplete: finish })
+        .fromTo(media, { opacity: .65, y: 8 }, { opacity: 1, y: 0, duration: .24, ease: 'power2.out' });
+      return;
+    }
     const destination = flatEndpoint(activeImage());
     const { proxy, state, render } = flight;
     const proxyImage = proxy.querySelector('img');
@@ -368,6 +457,15 @@ export function initProjectGallery({ getLenis }) {
       gsap.set(proxyImage, { filter: `grayscale(${1 - sourceColor})` });
     }
     dialog.dataset.scenePhase = 'to-detail';
+    if (jump) {
+      const route = animateRearFlight(flight, origin, destination, jump);
+      animation = gsap.timeline({ onComplete: finish })
+        .to(route.target, route.vars, 0)
+        .to($('.orbit-shell'), { clipPath: 'inset(0% 0 0 0)', duration: .35, ease: 'power3.inOut' }, .65)
+        .to(detailParts(), { y: 0, clipPath: 'inset(0 0 0% 0)', duration: .4, stagger: .05, ease: 'power3.out' }, .94);
+      if (proxyImage) animation.to(proxyImage, { filter: 'grayscale(0)', duration: .85, ease: 'power2.out' }, .08);
+      return;
+    }
     animation = gsap.timeline({ onComplete: finish })
       .to($('.orbit-shell'), { clipPath: 'inset(0% 0 0 0)', duration: .8, ease: 'power3.inOut' }, .12)
       .to(state, { ...destination, duration: 1.05, ease: 'power3.inOut', onUpdate: render }, 0)
@@ -388,11 +486,27 @@ export function initProjectGallery({ getLenis }) {
     if (motion.matches) { finish(); return; }
     dialog.classList.add('is-orbit-transitioning');
     dialog.dataset.scenePhase = 'to-overview';
+    if (compactDetail.matches) {
+      animation = gsap.timeline({ onComplete: finish })
+        .to($('.orbit-shell'), { opacity: 0, duration: .18, ease: 'power2.in' });
+      return;
+    }
     const sameViewport = returnState?.width === innerWidth && returnState?.height === innerHeight;
-    const destination = sameViewport ? returnState.endpoints[returnIndex] : cardEndpoint(returnIndex);
-    const { proxy, state, render } = travelArtwork(source, origin, destination);
+    const destination = sameViewport && returnState.endpoints ? returnState.endpoints[returnIndex] : cardEndpoint(returnIndex);
+    const flight = travelArtwork(source, origin, destination);
+    const { proxy, state, render } = flight;
     const proxyImage = proxy.querySelector('img');
     gsap.set([media, cards[returnIndex]], { visibility: 'hidden' });
+    const jump = rearJump(returnIndex, destination);
+    if (jump) {
+      const route = animateRearFlight(flight, destination, origin, jump, true);
+      animation = gsap.timeline({ onComplete: finish })
+        .to(route.target, route.vars, 0)
+        .to(detailParts(), { y: -12, clipPath: 'inset(0 0 100% 0)', duration: .25, stagger: .02, ease: 'power2.in' }, 0)
+        .to($('.orbit-shell'), { clipPath: 'inset(0 0 100% 0)', duration: .35, ease: 'power3.inOut' }, .25);
+      if (proxyImage) animation.to(proxyImage, { filter: 'grayscale(1)', duration: .8, ease: 'power2.inOut' }, .3);
+      return;
+    }
     animation = gsap.timeline({ onComplete: finish })
       .to(detailParts(), { y: -18, clipPath: 'inset(0 0 100% 0)', duration: .35, stagger: .03, ease: 'power2.in' }, 0)
       .to($('.orbit-shell'), { clipPath: 'inset(0 0 100% 0)', duration: .85, ease: 'power3.inOut' }, .12)
@@ -407,13 +521,96 @@ export function initProjectGallery({ getLenis }) {
     if (ticket !== operation || !dialog.open) return;
     if (motion.matches) { updateDetail(nextIndex); clearTransition(); title.focus({ preventScroll: true }); return; }
     dialog.dataset.scenePhase = 'change-work';
-    const forward = direction > 0;
-    const exit = forward ? 'inset(0 100% 0 0)' : 'inset(0 0 0 100%)';
-    const enter = forward ? 'inset(0 0 0 100%)' : 'inset(0 100% 0 0)';
+    dialog.classList.add('is-orbit-transitioning');
+    const copy = [$('.orbit-detail-copy'), $('.orbit-detail-context')];
+    animation = gsap.timeline()
+      .to(copy, { opacity: 0, x: direction > 0 ? 10 : -10, y: -8, duration: .16, stagger: .025, ease: 'power2.in' })
+      .call(() => { if (ticket === operation && dialog.open) turnDetail(nextIndex, direction); });
+  }
+  function turnDetail(nextIndex, direction) {
+    const scene = document.createElement('div');
+    scene.className = 'orbit-travelling-art orbit-turntable';
+    scene.setAttribute('aria-hidden', 'true'); scene.inert = true;
+    dialog.append(scene); travellingArt = scene;
+    const outgoing = turntableCard(activeImage(), scene, 'outgoing');
+    const copy = [$('.orbit-detail-copy'), $('.orbit-detail-context')];
+    gsap.set([media, ...copy], { visibility: 'hidden' });
+    updateDetail(nextIndex);
+    const incoming = turntableCard(activeImage(), scene, 'incoming');
+    const centers = [outgoing, incoming].map(({ bounds }) => ({
+      x: bounds.left + bounds.width / 2, y: bounds.top + bounds.height / 2,
+    }));
+    const sweep = Math.PI * 2 / 3;
+    const halfDiagonal = Math.max(...[outgoing, incoming].map(({ bounds }) => Math.hypot(bounds.width, bounds.height) / 2));
+    // Keep the compact wheel geometry, but let art sink behind a feathered
+    // glass layer instead of cutting it off at a hard rectangular edge.
+    const windowBottom = Math.min(innerHeight - 84,
+      Math.max(...[outgoing, incoming].map(({ bounds }) => bounds.top + bounds.height)) + 16);
+    const radius = Math.max(innerWidth * .32,
+      (windowBottom - Math.min(...centers.map(center => center.y)) + halfDiagonal + 16) / (1 - Math.cos(sweep)));
+    const wheel = document.createElement('div'); wheel.className = 'orbit-turntable-wheel';
+    scene.append(wheel);
+    // Keep real navigation crisp and clickable above the glass. A spacer
+    // preserves the scroll geometry of mobile detail content during the turn.
+    const controls = $('.orbit-detail-controls'), spacer = document.createElement('div');
+    const controlStyle = getComputedStyle(controls);
+    spacer.style.height = `${controls.offsetHeight}px`;
+    spacer.style.marginTop = controlStyle.marginTop;
+    if (controlStyle.position === 'absolute') spacer.style.display = 'none';
+    controls.replaceWith(spacer); dialog.append(controls);
+    controls.classList.add('orbit-turntable-controls');
+    turntableControls = { controls, spacer };
+    const sign = direction > 0 ? 1 : -1;
+    [outgoing, incoming].forEach((item, index) => {
+      const { card, bounds } = item;
+      const sharp = document.createElement('span'); sharp.className = 'orbit-turntable-texture';
+      sharp.append(...card.childNodes);
+      const frost = sharp.cloneNode(true); frost.classList.add('is-frosted');
+      card.append(sharp, frost); item.sharp = sharp; item.frost = frost;
+      const theta = index ? -sign * sweep : 0;
+      wheel.append(card);
+      Object.assign(card.style, {
+        left: `${-bounds.width / 2}px`, top: `${-bounds.height / 2}px`,
+        transform: `rotate(${theta}rad) translateY(${-radius}px)`,
+      });
+    });
+    scene.dataset.radius = String(radius);
+    scene.dataset.angularGap = String(sweep);
+    const state = { progress: 0 };
+    const render = () => {
+      const p = state.progress;
+      scene.dataset.progress = p.toFixed(4);
+      // Move a single rigid wheel: both works share one radius, one angular
+      // speed and an invariant 120-degree spacing. Their orientation stays
+      // tangent to the circle rather than tilting independently.
+      // Recenter the whole assembly only to accommodate different detail
+      // aspect ratios; no individual card leaves the circular track.
+      const x = centers[0].x + (centers[1].x - centers[0].x) * p;
+      const y = centers[0].y + (centers[1].y - centers[0].y) * p + radius;
+      wheel.style.transform = `translate3d(${x}px,${y}px,0) rotate(${sign * sweep * p}rad)`;
+      [outgoing, incoming].forEach(({ card, bounds, sharp, frost }, index) => {
+        const theta = sign * sweep * (index ? p - 1 : p);
+        const travel = Math.abs(theta) / sweep;
+        const contact = ease((travel - .08) / .92);
+        // The soft contact front lives in the artwork's coordinates, so it
+        // travels AND rotates with the sheet. A broad curved feather avoids
+        // the screen-horizontal seam of the previous inverse-rotated mask.
+        const cx = 50 - Math.sign(theta) * 20 * contact;
+        const cy = 45 - 25 * contact;
+        const edge = 165 * (1 - contact), feather = 65;
+        const shape = `ellipse ${bounds.width * .9}px ${bounds.height * 1.05}px at ${cx}% ${cy}%`;
+        sharp.style.maskImage = `radial-gradient(${shape}, #000 ${edge - feather}%, transparent ${edge + feather}%)`;
+        frost.style.maskImage = `radial-gradient(${shape}, transparent ${edge - feather}%, #000 ${edge + feather}%)`;
+        card.style.opacity = String(1 - ease((travel - .68) / .32));
+        card.dataset.glassOverlap = contact.toFixed(4);
+      });
+    };
+    render();
+    gsap.set(copy, { visibility: 'visible', opacity: 0, x: -sign * 12, y: 16 });
+    const duration = compactDetail.matches ? .78 : 1;
     animation = gsap.timeline({ onComplete: () => { clearTransition(); title.focus({ preventScroll: true }); } })
-      .to([media, ...detailParts()], { clipPath: exit, x: forward ? -16 : 16, duration: .4, stagger: .025, ease: 'power3.inOut' })
-      .call(() => { updateDetail(nextIndex); })
-      .fromTo([media, ...detailParts()], { clipPath: enter, x: forward ? 16 : -16 }, { clipPath: 'inset(0 0 0 0)', x: 0, duration: .65, stagger: .035, ease: 'power3.out', immediateRender: false });
+      .to(state, { progress: 1, duration, ease: 'power2.inOut', onUpdate: render }, 0)
+      .to(copy, { opacity: 1, x: 0, y: 0, duration: .28, stagger: .05, ease: 'power3.out' }, duration * .64);
   }
   $('.orbit-detail-prev').addEventListener('click', () => changeDetail(-1), options);
   $('.orbit-detail-next').addEventListener('click', () => changeDetail(1), options);
@@ -488,6 +685,7 @@ export function initProjectGallery({ getLenis }) {
   $('.orbit-close').addEventListener('click', close, options);
   dialog.addEventListener('cancel', event => { event.preventDefault(); close(); }, options);
   dialog.addEventListener('close', () => {
+    restoreCursor();
     ++operation;
     clearTimeout(wheelSettle);
     animation?.kill(); clearTransition();
@@ -541,7 +739,7 @@ export function initProjectGallery({ getLenis }) {
     // as the portrait recedes. Every seek uses the same world-space path.
     // Follow the first departing cards on desktop. Waiting until 42% leaves
     // their flight below the viewport behind the full-height portrait frame.
-    const cameraProgress = desktopHandoff.matches ? progress / .75 : (progress - .42) / .55;
+    const cameraProgress = desktopHandoff.matches ? progress / .75 : (progress - .22) / .75;
     const cameraY = motion.matches ? 0 : innerHeight * 1.25 * ease(cameraProgress);
     portraitLift = cameraY;
     readingStage.style.setProperty('--gallery-stage-top', `${pinTop}px`);
@@ -616,6 +814,7 @@ export function initProjectGallery({ getLenis }) {
   motion.addEventListener('change', mediaChange, options); mediaChange();
   document.addEventListener('visibilitychange', () => { lastTime = 0; start(); }, options);
   if (import.meta.hot) import.meta.hot.dispose(() => {
+    restoreCursor();
     clearTimeout(wheelSettle);
     animation?.kill(); entrance?.kill();
     removeTravel(); visible.disconnect(); navigation.disconnect();
@@ -640,4 +839,6 @@ export function initProjectGallery({ getLenis }) {
     cards.forEach(card => card.remove());
   });
 }
+
+
 

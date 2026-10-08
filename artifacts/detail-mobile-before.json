@@ -1,0 +1,14 @@
+{
+  "ms": 2252.7999999523163,
+  "maxFrame": 423.5,
+  "framesOver50": 2,
+  "resources": [
+    {
+      "url": "http://localhost:5173/karya/efefesfeaf.png",
+      "bytes": 8374688
+    }
+  ],
+  "number": "01",
+  "border": "1px",
+  "cursorParent": "BODY"
+}

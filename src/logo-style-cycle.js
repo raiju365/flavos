@@ -8,6 +8,7 @@ export function initLogoStyleCycle() {
   const controller = new AbortController();
   const options = { signal: controller.signal };
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  const styleIds = [1, 4, 5, 6, 8, 9, 10, 11, 12, 13];
   const holds = [1200, 1500, 1200, 1800, 1200, 1500, 1800, 1500, 1800, 1500, 1500, 1800, 1800];
   const holdFor = id => holds[id - 1] ?? 2000;
   let assets = [], loading = false, docked = false, disposed = false;
@@ -104,8 +105,7 @@ export function initLogoStyleCycle() {
   async function load() {
     if (loading || motion.matches) return;
     loading = true;
-    const results = await Promise.allSettled(Array.from({ length: 13 }, async (_, offset) => {
-      const id = offset + 1;
+    const results = await Promise.allSettled(styleIds.map(async id => {
       const image = new Image();
       image.src = `/logoanimasi/web/logo${id}.webp`;
       await image.decode();

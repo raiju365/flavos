@@ -1,0 +1,1067 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "cursor": {
+        "count": 1,
+        "display": "block",
+        "image": "none",
+        "dialog": "none",
+        "button": "none"
+      },
+      "states": [
+        {
+          "direction": 1,
+          "time": 0.2,
+          "p": 0.032,
+          "cards": [
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "outgoing",
+              "x": 37.534297354399996,
+              "y": 1.2581216922991416,
+              "radius": 560.4608867472991,
+              "distance": 560.4610208774969,
+              "theta": 0.06702055956497535,
+              "tangentDot": -1.2677829132445241e-17,
+              "w": 649,
+              "h": 649,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(450.352px 743.4px at 69.992% 20.01%, rgb(0, 0, 0) -64.9341%, transparent 65.0659%)",
+              "role": "incoming",
+              "x": -503.05045280699994,
+              "y": 807.5561464380992,
+              "radius": 560.4608867472991,
+              "distance": 560.460369188573,
+              "theta": -2.0273741840205233,
+              "tangentDot": 5.606992936331234e-7,
+              "w": 500,
+              "h": 708,
+              "opacity": 0.00856
+            }
+          ],
+          "count": "02 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.5,
+          "p": 0.5,
+          "cards": [
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 41.6222% 34.5278%, rgb(0, 0, 0) 30.8834%, transparent 160.883%)",
+              "role": "outgoing",
+              "x": 485.3732375249999,
+              "y": 280.2303867472991,
+              "radius": 560.4608867472991,
+              "distance": 560.4608040137597,
+              "theta": 1.0471973493043076,
+              "tangentDot": -1.0142263305956193e-16,
+              "w": 649,
+              "h": 649,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(450.352px 743.4px at 58.3778% 34.5278%, rgb(0, 0, 0) 30.8834%, transparent 160.883%)",
+              "role": "incoming",
+              "x": -485.37268575,
+              "y": 280.23073442229907,
+              "radius": 560.4608867472991,
+              "distance": 560.4601523250882,
+              "theta": -1.0471973942811907,
+              "tangentDot": 5.606988598992331e-7,
+              "w": 500,
+              "h": 708,
+              "opacity": 1
+            }
+          ],
+          "count": "02 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.8,
+          "p": 0.968,
+          "cards": [
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 30.008% 20.01%, rgb(0, 0, 0) -64.9341%, transparent 65.0659%)",
+              "role": "outgoing",
+              "x": 503.0507379259999,
+              "y": 807.5563719662991,
+              "radius": 560.4608867472991,
+              "distance": 560.4607245325101,
+              "theta": 2.027374320914239,
+              "tangentDot": 5.0711316529780964e-17,
+              "w": 649,
+              "h": 649,
+              "opacity": 0.00856
+            },
+            {
+              "mask": "radial-gradient(450.352px 743.4px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "incoming",
+              "x": -37.53415731300004,
+              "y": 1.2590624592991162,
+              "radius": 560.4608867472991,
+              "distance": 560.4600728439308,
+              "theta": -0.06702042267125967,
+              "tangentDot": 5.606987007797997e-7,
+              "w": 500,
+              "h": 708,
+              "opacity": 1
+            }
+          ],
+          "count": "02 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0.9663,
+            0.8641
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.2,
+          "p": 0.032,
+          "cards": [
+            {
+              "mask": "radial-gradient(450.352px 743.4px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "outgoing",
+              "x": -37.534297354399996,
+              "y": 1.2581216922991416,
+              "radius": 560.4608867472991,
+              "distance": 560.4610208774969,
+              "theta": -0.06702055956497535,
+              "tangentDot": 1.2677829132445241e-17,
+              "w": 500,
+              "h": 708,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 30.008% 20.01%, rgb(0, 0, 0) -64.9341%, transparent 65.0659%)",
+              "role": "incoming",
+              "x": 503.05045280699994,
+              "y": 807.5561464380992,
+              "radius": 560.4608867472991,
+              "distance": 560.460369188573,
+              "theta": 2.0273741840205233,
+              "tangentDot": -5.606992936331234e-7,
+              "w": 649,
+              "h": 649,
+              "opacity": 0.00856
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.5,
+          "p": 0.5,
+          "cards": [
+            {
+              "mask": "radial-gradient(450.352px 743.4px at 58.3778% 34.5278%, rgb(0, 0, 0) 30.8834%, transparent 160.883%)",
+              "role": "outgoing",
+              "x": -485.37323752500004,
+              "y": 280.2303867472991,
+              "radius": 560.4608867472991,
+              "distance": 560.4608040137598,
+              "theta": -1.0471973493043079,
+              "tangentDot": 0,
+              "w": 500,
+              "h": 708,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 41.6222% 34.5278%, rgb(0, 0, 0) 30.8834%, transparent 160.883%)",
+              "role": "incoming",
+              "x": 485.3726857500001,
+              "y": 280.23073442229907,
+              "radius": 560.4608867472991,
+              "distance": 560.4601523250882,
+              "theta": 1.0471973942811907,
+              "tangentDot": -5.606988598485219e-7,
+              "w": 649,
+              "h": 649,
+              "opacity": 1
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.8,
+          "p": 0.968,
+          "cards": [
+            {
+              "mask": "radial-gradient(450.352px 743.4px at 69.992% 20.01%, rgb(0, 0, 0) -64.9341%, transparent 65.0659%)",
+              "role": "outgoing",
+              "x": -503.050737926,
+              "y": 807.5563719662991,
+              "radius": 560.4608867472991,
+              "distance": 560.4607245325101,
+              "theta": -2.027374320914239,
+              "tangentDot": 5.0711316529780964e-17,
+              "w": 500,
+              "h": 708,
+              "opacity": 0.00856
+            },
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "incoming",
+              "x": 37.53415731300004,
+              "y": 1.2590624592991162,
+              "radius": 560.4608867472991,
+              "distance": 560.4600728439308,
+              "theta": 0.06702042267125967,
+              "tangentDot": -5.606987007797997e-7,
+              "w": 649,
+              "h": 649,
+              "opacity": 1
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0.9663,
+            0.8641
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.2,
+          "p": 0.032,
+          "cards": [
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "outgoing",
+              "x": -36.38883563280001,
+              "y": 1.2195565456325994,
+              "radius": 543.3567200806325,
+              "distance": 543.3570202403629,
+              "theta": -0.06702055956497538,
+              "tangentDot": -2.6153821587212827e-17,
+              "w": 649,
+              "h": 649,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(502.2px 585.9px at 30.008% 20.01%, rgb(0, 0, 0) -64.9341%, transparent 65.0659%)",
+              "role": "incoming",
+              "x": 487.69897488619995,
+              "y": 782.9111445762325,
+              "radius": 543.3567200806325,
+              "distance": 543.3568002707507,
+              "theta": 2.0273737139977577,
+              "tangentDot": -0.000001030722582450074,
+              "w": 558,
+              "h": 558,
+              "opacity": 0.00856
+            }
+          ],
+          "count": "10 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.5,
+          "p": 0.5,
+          "cards": [
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 58.3778% 34.5278%, rgb(0, 0, 0) 30.8834%, transparent 160.883%)",
+              "role": "outgoing",
+              "x": -470.560745925,
+              "y": 271.6782200806325,
+              "radius": 543.3567200806325,
+              "distance": 543.3568099948159,
+              "theta": -1.0471973493043079,
+              "tangentDot": 0,
+              "w": 649,
+              "h": 649,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(502.2px 585.9px at 41.6222% 34.5278%, rgb(0, 0, 0) 30.8834%, transparent 160.883%)",
+              "role": "incoming",
+              "x": 470.56043995000005,
+              "y": 271.67813005563255,
+              "radius": 543.3567200806325,
+              "distance": 543.3565900252887,
+              "theta": 1.0471969242584254,
+              "tangentDot": -0.0000010307217846539005,
+              "w": 558,
+              "h": 558,
+              "opacity": 1
+            }
+          ],
+          "count": "10 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.8,
+          "p": 0.968,
+          "cards": [
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 69.992% 20.01%, rgb(0, 0, 0) -64.9341%, transparent 65.0659%)",
+              "role": "outgoing",
+              "x": -487.69876906199994,
+              "y": 782.9114108836326,
+              "radius": 543.3567200806325,
+              "distance": 543.3567329391539,
+              "theta": -2.027374320914239,
+              "tangentDot": -1.5692292952327697e-16,
+              "w": 649,
+              "h": 649,
+              "opacity": 0.00856
+            },
+            {
+              "mask": "radial-gradient(502.2px 585.9px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "incoming",
+              "x": 36.388472629000034,
+              "y": 1.2200405926325857,
+              "radius": 543.3567200806325,
+              "distance": 543.3565129696577,
+              "theta": 0.06701995264849407,
+              "tangentDot": -0.0000010307214923587904,
+              "w": 558,
+              "h": 558,
+              "opacity": 1
+            }
+          ],
+          "count": "10 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0.9663,
+            0.8641
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.2,
+          "p": 0.032,
+          "cards": [
+            {
+              "mask": "radial-gradient(502.2px 585.9px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "outgoing",
+              "x": 36.38883563280001,
+              "y": 1.2195565456325994,
+              "radius": 543.3567200806325,
+              "distance": 543.3570202403629,
+              "theta": 0.06702055956497538,
+              "tangentDot": 2.6153821587212827e-17,
+              "w": 558,
+              "h": 558,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 69.992% 20.01%, rgb(0, 0, 0) -64.9341%, transparent 65.0659%)",
+              "role": "incoming",
+              "x": -487.69897488619995,
+              "y": 782.9111445762325,
+              "radius": 543.3567200806325,
+              "distance": 543.3568002707507,
+              "theta": -2.0273737139977577,
+              "tangentDot": 0.000001030722582450074,
+              "w": 649,
+              "h": 649,
+              "opacity": 0.00856
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.5,
+          "p": 0.5,
+          "cards": [
+            {
+              "mask": "radial-gradient(502.2px 585.9px at 41.6222% 34.5278%, rgb(0, 0, 0) 30.8834%, transparent 160.883%)",
+              "role": "outgoing",
+              "x": 470.560745925,
+              "y": 271.6782200806325,
+              "radius": 543.3567200806325,
+              "distance": 543.3568099948159,
+              "theta": 1.0471973493043079,
+              "tangentDot": 0,
+              "w": 558,
+              "h": 558,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 58.3778% 34.5278%, rgb(0, 0, 0) 30.8834%, transparent 160.883%)",
+              "role": "incoming",
+              "x": -470.56043995,
+              "y": 271.67813005563255,
+              "radius": 543.3567200806325,
+              "distance": 543.3565900252886,
+              "theta": -1.0471969242584254,
+              "tangentDot": 0.000001030721784706208,
+              "w": 649,
+              "h": 649,
+              "opacity": 1
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.8,
+          "p": 0.968,
+          "cards": [
+            {
+              "mask": "radial-gradient(502.2px 585.9px at 30.008% 20.01%, rgb(0, 0, 0) -64.9341%, transparent 65.0659%)",
+              "role": "outgoing",
+              "x": 487.6987690619999,
+              "y": 782.9114108836326,
+              "radius": 543.3567200806325,
+              "distance": 543.3567329391537,
+              "theta": 2.027374320914239,
+              "tangentDot": 2.0923057269770261e-16,
+              "w": 558,
+              "h": 558,
+              "opacity": 0.00856
+            },
+            {
+              "mask": "radial-gradient(583.819px 681.122px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "incoming",
+              "x": -36.388472629000034,
+              "y": 1.2200405926325857,
+              "radius": 543.3567200806325,
+              "distance": 543.3565129696577,
+              "theta": -0.06701995264849407,
+              "tangentDot": 0.0000010307214923587904,
+              "w": 649,
+              "h": 649,
+              "opacity": 1
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(14px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0.9663,
+            0.8641
+          ],
+          "controlsRaised": true
+        }
+      ],
+      "wrap": true,
+      "resize": true,
+      "escape": true
+    },
+    {
+      "width": 390,
+      "cursor": {
+        "count": 1,
+        "display": "none",
+        "image": "auto",
+        "dialog": "auto",
+        "button": "pointer"
+      },
+      "states": [
+        {
+          "direction": 1,
+          "time": 0.2,
+          "p": 0.0384,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "outgoing",
+              "x": 27.482810080000007,
+              "y": 1.1073910923905714,
+              "radius": 341.69031549239054,
+              "distance": 341.68996655264766,
+              "theta": 0.08051898455471974,
+              "tangentDot": 2.0794933410277588e-17,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(274.894px 453.6px at 69.9863% 20.0171%, rgb(0, 0, 0) -64.887%, transparent 65.113%)",
+              "role": "incoming",
+              "x": -308.69465016,
+              "y": 488.18098370839056,
+              "radius": 341.69031549239054,
+              "distance": 341.6897758373448,
+              "theta": -2.013876440088509,
+              "tangentDot": -1.2035749951373478e-7,
+              "w": 305,
+              "h": 432,
+              "opacity": 0.014366
+            }
+          ],
+          "count": "02 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.5,
+          "p": 0.5888,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 38.0268% 30.0335%, rgb(0, 0, 0) 1.22126%, transparent 131.221%)",
+              "role": "outgoing",
+              "x": 322.39408232000005,
+              "y": 228.4908103223906,
+              "radius": 341.69031549239054,
+              "distance": 341.6900236847541,
+              "theta": 1.233122716398633,
+              "tangentDot": 1.663594672822207e-16,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(274.894px 453.6px at 55.0189% 38.7264%, rgb(0, 0, 0) 58.5942%, transparent 188.594%)",
+              "role": "incoming",
+              "x": -259.230615376,
+              "y": 119.0888105413905,
+              "radius": 341.69031549239054,
+              "distance": 341.68983296941946,
+              "theta": -0.861272708244596,
+              "tangentDot": -1.2035753952318668e-7,
+              "w": 305,
+              "h": 432,
+              "opacity": 1
+            }
+          ],
+          "count": "02 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.8,
+          "p": 0.9866,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 30.0006% 20.0008%, rgb(0, 0, 0) -64.995%, transparent 65.005%)",
+              "role": "outgoing",
+              "x": 300.58161779,
+              "y": 504.1796282323905,
+              "radius": 341.69031549239054,
+              "distance": 341.6900433257767,
+              "theta": 2.0663808585036394,
+              "tangentDot": -1.663594672822207e-16,
+              "w": 354,
+              "h": 354,
+              "opacity": 0.000685319
+            },
+            {
+              "mask": "radial-gradient(274.894px 453.6px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "incoming",
+              "x": -9.571040943000014,
+              "y": 0.13453593039054113,
+              "radius": 341.69031549239054,
+              "distance": 341.6898526104311,
+              "theta": -0.028014566139589483,
+              "tangentDot": -1.2035755358576038e-7,
+              "w": 305,
+              "h": 432,
+              "opacity": 1
+            }
+          ],
+          "count": "02 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0.9707,
+            0.8769
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.2,
+          "p": 0.0384,
+          "cards": [
+            {
+              "mask": "radial-gradient(274.894px 453.6px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "outgoing",
+              "x": -27.482810080000007,
+              "y": 1.1073910923905714,
+              "radius": 341.69031549239054,
+              "distance": 341.68996655264766,
+              "theta": -0.08051898455471974,
+              "tangentDot": -2.0794933410277588e-17,
+              "w": 305,
+              "h": 432,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 30.0137% 20.0171%, rgb(0, 0, 0) -64.887%, transparent 65.113%)",
+              "role": "incoming",
+              "x": 308.69465016,
+              "y": 488.18098370839056,
+              "radius": 341.69031549239054,
+              "distance": 341.6897758373448,
+              "theta": 2.013876440088509,
+              "tangentDot": 1.2035749951373478e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 0.014366
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.5,
+          "p": 0.5888,
+          "cards": [
+            {
+              "mask": "radial-gradient(274.894px 453.6px at 61.9732% 30.0335%, rgb(0, 0, 0) 1.22126%, transparent 131.221%)",
+              "role": "outgoing",
+              "x": -322.39408232,
+              "y": 228.4908103223906,
+              "radius": 341.69031549239054,
+              "distance": 341.69002368475407,
+              "theta": -1.233122716398633,
+              "tangentDot": -1.2476960046166554e-16,
+              "w": 305,
+              "h": 432,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 44.9811% 38.7264%, rgb(0, 0, 0) 58.5942%, transparent 188.594%)",
+              "role": "incoming",
+              "x": 259.230615376,
+              "y": 119.0888105413905,
+              "radius": 341.69031549239054,
+              "distance": 341.68983296941946,
+              "theta": 0.861272708244596,
+              "tangentDot": 1.2035753952318668e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.8,
+          "p": 0.9866,
+          "cards": [
+            {
+              "mask": "radial-gradient(274.894px 453.6px at 69.9994% 20.0008%, rgb(0, 0, 0) -64.995%, transparent 65.005%)",
+              "role": "outgoing",
+              "x": -300.58161779,
+              "y": 504.1796282323905,
+              "radius": 341.69031549239054,
+              "distance": 341.6900433257767,
+              "theta": -2.0663808585036394,
+              "tangentDot": 1.663594672822207e-16,
+              "w": 305,
+              "h": 432,
+              "opacity": 0.000685319
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "incoming",
+              "x": 9.571040943000014,
+              "y": 0.13453593039054113,
+              "radius": 341.69031549239054,
+              "distance": 341.6898526104311,
+              "theta": 0.028014566139589483,
+              "tangentDot": 1.2035755358576038e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0.9707,
+            0.8769
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.2,
+          "p": 0.0384,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "outgoing",
+              "x": -25.285970864000006,
+              "y": 1.0187818400252695,
+              "radius": 314.37720036002526,
+              "distance": 314.37696922626276,
+              "theta": -0.08051898455471974,
+              "tangentDot": -1.1300799405083854e-17,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 30.0137% 20.0171%, rgb(0, 0, 0) -64.887%, transparent 65.113%)",
+              "role": "incoming",
+              "x": 284.019906488,
+              "y": 449.1585721120253,
+              "radius": 314.37720036002526,
+              "distance": 314.37767963518513,
+              "theta": 2.0138766496683944,
+              "tangentDot": 3.299379841126412e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 0.014366
+            }
+          ],
+          "count": "10 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.5,
+          "p": 0.5888,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 61.9732% 30.0335%, rgb(0, 0, 0) 1.22126%, transparent 131.221%)",
+              "role": "outgoing",
+              "x": -296.623502056,
+              "y": 210.22630089902526,
+              "radius": 314.37720036002526,
+              "distance": 314.37702179151256,
+              "theta": -1.2331227163986327,
+              "tangentDot": -4.5203197620335416e-17,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 44.9811% 38.7264%, rgb(0, 0, 0) 58.5942%, transparent 188.594%)",
+              "role": "incoming",
+              "x": 238.509723679,
+              "y": 109.56882598502517,
+              "radius": 314.37720036002526,
+              "distance": 314.3777322005538,
+              "theta": 0.8612729178244811,
+              "tangentDot": 3.299380940468178e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            }
+          ],
+          "count": "10 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": -1,
+          "time": 0.8,
+          "p": 0.9866,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 69.9994% 20.0008%, rgb(0, 0, 0) -64.995%, transparent 65.005%)",
+              "role": "outgoing",
+              "x": -276.554617507,
+              "y": 463.8779252020252,
+              "radius": 314.37720036002526,
+              "distance": 314.3770398625295,
+              "theta": -2.0663808585036394,
+              "tangentDot": 1.8081279048134166e-16,
+              "w": 354,
+              "h": 354,
+              "opacity": 0.000685319
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "incoming",
+              "x": 8.806070184999982,
+              "y": 0.12280819702522194,
+              "radius": 314.37720036002526,
+              "distance": 314.37775027161155,
+              "theta": 0.02801477571947465,
+              "tangentDot": 3.2993813220961736e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            }
+          ],
+          "count": "10 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0.9707,
+            0.8769
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.2,
+          "p": 0.0384,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "outgoing",
+              "x": 25.285970864000006,
+              "y": 1.0187818400252695,
+              "radius": 314.37720036002526,
+              "distance": 314.37696922626276,
+              "theta": 0.08051898455471974,
+              "tangentDot": 1.1300799405083854e-17,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 69.9863% 20.0171%, rgb(0, 0, 0) -64.887%, transparent 65.113%)",
+              "role": "incoming",
+              "x": -284.019906488,
+              "y": 449.1585721120253,
+              "radius": 314.37720036002526,
+              "distance": 314.37767963518513,
+              "theta": -2.0138766496683944,
+              "tangentDot": -3.299379841126412e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 0.014366
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.5,
+          "p": 0.5888,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 38.0268% 30.0335%, rgb(0, 0, 0) 1.22126%, transparent 131.221%)",
+              "role": "outgoing",
+              "x": 296.623502056,
+              "y": 210.22630089902526,
+              "radius": 314.37720036002526,
+              "distance": 314.37702179151256,
+              "theta": 1.2331227163986327,
+              "tangentDot": 4.5203197620335416e-17,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 55.0189% 38.7264%, rgb(0, 0, 0) 58.5942%, transparent 188.594%)",
+              "role": "incoming",
+              "x": -238.509723679,
+              "y": 109.56882598502517,
+              "radius": 314.37720036002526,
+              "distance": 314.3777322005538,
+              "theta": -0.8612729178244811,
+              "tangentDot": -3.299380940468178e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0,
+            0
+          ],
+          "controlsRaised": true
+        },
+        {
+          "direction": 1,
+          "time": 0.8,
+          "p": 0.9866,
+          "cards": [
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 30.0006% 20.0008%, rgb(0, 0, 0) -64.995%, transparent 65.005%)",
+              "role": "outgoing",
+              "x": 276.554617507,
+              "y": 463.8779252020253,
+              "radius": 314.37720036002526,
+              "distance": 314.3770398625295,
+              "theta": 2.0663808585036394,
+              "tangentDot": 1.8081279048134166e-16,
+              "w": 354,
+              "h": 354,
+              "opacity": 0.000685319
+            },
+            {
+              "mask": "radial-gradient(318.6px 371.7px at 50% 45%, rgb(0, 0, 0) 100%, transparent 230%)",
+              "role": "incoming",
+              "x": -8.806070184999982,
+              "y": 0.12280819702522194,
+              "radius": 314.37720036002526,
+              "distance": 314.37775027161155,
+              "theta": -0.02801477571947465,
+              "tangentDot": -3.2993813220961736e-7,
+              "w": 354,
+              "h": 354,
+              "opacity": 1
+            }
+          ],
+          "count": "01 / 10",
+          "clip": "none",
+          "glass": "blur(9px)",
+          "overlays": 0,
+          "tracks": 0,
+          "text": [
+            0.9707,
+            0.8769
+          ],
+          "controlsRaised": true
+        }
+      ],
+      "wrap": true,
+      "resize": true,
+      "escape": true
+    }
+  ],
+  "errors": []
+}
