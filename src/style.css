@@ -3,7 +3,8 @@
 /* style.css */
 
 /* Keep touch scrolling available while excluding pinch and double-tap zoom. */
-html, body {
+html,
+body {
   touch-action: pan-x pan-y;
 }
 
@@ -161,7 +162,7 @@ button:focus-visible,
   left: 0;
   width: 32px;
   height: 85px;
-  margin-left: -16px;
+  margin-left: -15.4px;
   margin-top: 0;
   background-image: url('/cursor.svg');
   opacity: 0;
@@ -171,9 +172,9 @@ button:focus-visible,
   z-index: 2000002;
   /* Show cursor above everything */
   filter: drop-shadow(0 2px 6px rgba(26, 31, 92, 0.25));
-  transform-origin: 50% 0%;
+  transform-origin: 48% 0%;
   will-change: transform;
-  transform: translate3d(-100px, -100px, 0);
+  transform: translate3d(-100px, -100px, 0) rotate(-45deg);
   backface-visibility: hidden;
 }
 
@@ -1030,4 +1031,3 @@ section {
     display: none;
   }
 }
-

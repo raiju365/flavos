@@ -122,7 +122,7 @@ window.finishIntroGlobal = () => Promise.resolve();
       const scaleLerp = 1 - Math.exp(-dt * 0.025);
       cursorScale += (targetScale - cursorScale) * scaleLerp;
 
-      cursor.style.transform = `translate3d(${cursorX.toFixed(2)}px, ${cursorY.toFixed(2)}px, 0) scale(${cursorScale.toFixed(3)})`;
+      cursor.style.transform = `translate3d(${cursorX.toFixed(2)}px, ${cursorY.toFixed(2)}px, 0) rotate(-45deg) scale(${cursorScale.toFixed(3)})`;
     }
     requestAnimationFrame(renderCursor);
   }

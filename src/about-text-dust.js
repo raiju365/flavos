@@ -6,7 +6,7 @@ export function createAboutTextDust(stage, showcase, copies, wordGroups) {
   canvas.setAttribute('aria-hidden', 'true');
   stage.append(canvas);
   const ctx = canvas.getContext('2d');
-  const enabled = matchMedia('(min-width: 768px) and (min-height: 651px) and (prefers-reduced-motion: no-preference)');
+  const enabled = matchMedia('(prefers-reduced-motion: no-preference)');
   const clamp = t => Math.max(0, Math.min(1, t));
   const noise = seed => {
     const n = Math.sin(seed * 127.1 + 311.7) * 43758.5453;
@@ -122,6 +122,8 @@ export function createAboutTextDust(stage, showcase, copies, wordGroups) {
       const width = Math.ceil(rect.width + 6);
       const height = Math.ceil(rect.height + 6);
       const rightward = rect.left + rect.width / 2 < photo.left + photo.width / 2;
+      const stacked = rect.bottom <= photo.top || rect.top >= photo.bottom;
+      const above = rect.bottom <= photo.top;
       const atlas = document.createElement('canvas');
       atlas.width = Math.ceil(width * dpr);
       atlas.height = Math.ceil(height * dpr);
@@ -201,7 +203,8 @@ export function createAboutTextDust(stage, showcase, copies, wordGroups) {
           particles.push({
             x: left + x + 1, y: top + y + 1,
             cell, birth: 0,
-            targetX, targetY: centerY + (top + y - centerY) * .22 + (n - .5) * 20,
+            targetX: stacked ? photo.left - stageRect.left + photo.width * (.15 + .7 * x / width) : targetX,
+            targetY: stacked ? (above ? photo.top + photo.height * .08 : photo.bottom - photo.height * .08) - stageRect.top : centerY + (top + y - centerY) * .22 + (n - .5) * 20,
             radius: .45 + noise(seed + 1) * .65,
             drift: (noise(seed + 2) - .5) * 34,
             bendX: word.bendX, bendY: word.bendY,

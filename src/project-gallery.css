@@ -8,8 +8,9 @@
 .orbit-gallery::backdrop { background: transparent; }
 .project-gallery > .orbit-shell { background: #f3f0e8; }
 .orbit-gallery [hidden] { display: none !important; }
-.orbit-travelling-art { position: absolute; z-index: 7; display: grid; place-items: center; overflow: hidden; pointer-events: none; background: #ece9e1; font: 400 32px/1 'Instrument Serif', Georgia, serif; will-change: left, top, width, height; }
-.orbit-travelling-art img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.orbit-travelling-art { position: fixed; inset: 0; z-index: 7; pointer-events: none; }
+.orbit-travelling-surface { position: absolute; display: grid; place-items: center; overflow: hidden; background: #ece9e1; font: 400 32px/1 'Instrument Serif', Georgia, serif; transform-origin: 50% 50%; will-change: transform, left, top, width, height; }
+.orbit-travelling-surface img { position: absolute; inset: 0; width: 100%; height: 100%; min-width: 0; min-height: 0; display: block; object-fit: cover; object-position: center; }
 .orbit-shell { --orbit-gutter: clamp(20px, 4vw, 72px); position: relative; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; padding: 28px var(--orbit-gutter) 20px; }
 .orbit-header { position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: center; flex: 0 0 auto; pointer-events: none; }
 .orbit-header button { pointer-events: auto; }
@@ -126,6 +127,45 @@
   .orbit-caption-title { font-size: 22px; }
   .orbit-caption-note { display: none; }
 }
+/* Symmetric viewport margins keep the artwork centred independently of the
+   header and browse controls. The two text columns have identical widths. */
+.project-gallery .orbit-shell { padding: 0; }
+.project-gallery .orbit-header {
+  position: absolute; top: 24px; left: var(--orbit-gutter); right: var(--orbit-gutter);
+  height: 44px; justify-content: flex-end;
+}
+.project-gallery .orbit-detail {
+  position: absolute; inset: 0; padding: 0;
+}
+.project-gallery .orbit-back {
+  position: absolute; top: 24px; left: var(--orbit-gutter); margin: 0; z-index: 4;
+}
+.project-gallery .orbit-detail-layout {
+  position: absolute; top: 96px; bottom: 96px; left: 50%;
+  transform: translateX(-50%); width: calc(100% - var(--orbit-gutter) * 2);
+  min-height: 0; margin: 0; gap: clamp(24px, 3vw, 52px);
+}
+.project-gallery .orbit-detail-media img { max-height: calc(100svh - 192px); }
+.project-gallery .orbit-detail-media:has(.orbit-image-controls) img { max-height: calc(100svh - 316px); }
+.project-gallery .orbit-image-carousel { position: relative; }
+.project-gallery .orbit-image-controls { position: absolute; top: 100%; left: 0; right: 0; }
+.project-gallery .orbit-detail-copy h3 { font-size: clamp(28px, 3vw, 48px); margin-bottom: 0; }
+.project-gallery .orbit-detail-controls {
+  position: absolute; bottom: 24px; left: 0; right: 0; height: 44px; padding: 0;
+}
+@media (max-width: 760px) {
+  .project-gallery .orbit-detail { padding: 88px var(--orbit-gutter) 24px; }
+  .project-gallery .orbit-detail-layout {
+    position: static; transform: none; width: 100%; margin: 0;
+    min-height: calc(100svh - 180px); gap: 24px;
+    grid-template-columns: minmax(0, 1fr); align-content: center;
+  }
+  .project-gallery .orbit-detail-media img,
+  .project-gallery .orbit-detail-media:has(.orbit-image-controls) img { max-height: 48svh; }
+  .project-gallery .orbit-image-controls { position: static; }
+  .project-gallery .orbit-detail-copy h3 { font-size: clamp(28px, 7vw, 40px); }
+  .project-gallery .orbit-detail-controls { position: static; margin-top: 24px; }
+}
 @media (prefers-reduced-motion: reduce) {
   .orbit-stage::after { display: none; }
   .orbit-gallery .orbit-card { transition: none; will-change: auto; }
@@ -144,6 +184,19 @@
 }
 .orbit-inline .orbit-overview.is-emerging .orbit-card { pointer-events: none; }
 .orbit-inline .orbit-overview.is-emerging .orbit-stage { cursor: default; touch-action: pan-y pinch-zoom; }
+.orbit-inline .orbit-overview.is-emerging.is-interactive { pointer-events: auto; }
+.orbit-inline .orbit-overview.is-emerging.is-interactive .orbit-card { pointer-events: auto; }
+.orbit-inline .orbit-overview.is-emerging.is-interactive .orbit-stage { cursor: grab; }
+.orbit-inline .orbit-overview.is-emerging.is-interactive .orbit-stage.is-dragging { cursor: grabbing; }
+
+/* The pen cursor already follows the pointer; suppress the native hand on
+   both the stage and artwork during hover and pointer capture. */
+@media (hover: hover) and (pointer: fine) {
+  #projects.orbit-inline .orbit-stage,
+  #projects.orbit-inline .orbit-stage * {
+    cursor: none !important;
+  }
+}
 
 @media (max-width: 767px), (max-height: 650px) {
   #about .about-reading-content { opacity: var(--gallery-copy-opacity, 1); }

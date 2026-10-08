@@ -43,9 +43,28 @@ html body * {
 .signature-footer .footer-direct { overflow-wrap: anywhere; }
 /* Wider Gaia letterforms need more room than the former condensed serif. */
 .folio-main .work-index-button .btn-text { font-size: clamp(52px, 8.2vw, 142px); line-height: 1.05; }
-.folio-main .signature-footer .footer-headline { font-size: clamp(80px, 13vw, 220px); }
 @media (max-width: 700px) {
   .folio-main .work-index-button .btn-text { font-size: clamp(36px, 9vw, 64px); }
-  .folio-main .signature-footer .footer-headline { font-size: clamp(52px, 13vw, 90px); }
-  .signature-footer .footer-direct { font-size: clamp(12px, 3.3vw, 18px); }
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/fonts/Fraunces-Variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Expressive display face, kept local with its SIL Open Font License. */
+html body .signature-footer .footer-headline,
+html body .signature-footer .footer-headline * {
+  font-family: 'Fraunces', Georgia, serif !important;
+  font-style: normal !important;
+  font-variation-settings: 'opsz' 144, 'SOFT' 65, 'WONK' 1;
+  font-weight: 450;
+}
+html body .signature-footer .footer-direct,
+html body .signature-footer .footer-direct *,
+html body .signature-footer .footer-back-to-top * {
+  font-family: 'Google Sans', Arial, sans-serif !important;
 }

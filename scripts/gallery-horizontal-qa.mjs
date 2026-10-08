@@ -1,0 +1,63 @@
+import { createRequire } from 'node:module';
+import assert from 'node:assert/strict';
+const require = createRequire('C:/Users/Fahmi Aufa/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
+const { chromium } = require('playwright');
+const browser = await chromium.launch({ executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true });
+const page = await browser.newPage();
+const errors = [];
+page.on('pageerror', error => errors.push(error.message));
+try {
+  for (const [width, height] of [[1440, 900], [820, 1000], [390, 844]]) {
+    await page.setViewportSize({ width, height });
+    await page.goto('http://localhost:5173/', { waitUntil: 'networkidle' });
+    await page.waitForFunction(() => window.isMainPageReady && document.body.style.overflow !== 'hidden');
+    // Reproduce the settled ring before the actual Work section reaches the top.
+    await page.evaluate(() => scrollTo({ top: scrollY + document.querySelector('#projects').getBoundingClientRect().top - innerHeight * .6, behavior: 'instant' }));
+    await page.waitForTimeout(1200);
+    assert.equal(await page.locator('.orbit-overview').evaluate(el => el.classList.contains('is-emerging') && !el.inert), true);
+    await page.mouse.move(width * .5, height * .5);
+    await page.waitForTimeout(1200);
+    const rotation = () => page.locator('.orbit-card').first().evaluate(el => el.style.transform);
+    const before = await rotation();
+    await page.mouse.down();
+    await page.mouse.move(width * .8, height * .5, { steps: 15 });
+    assert.equal(await page.locator('.orbit-stage').evaluate(el => el.classList.contains('is-dragging')), true);
+    await page.mouse.up();
+    await page.waitForTimeout(450);
+    assert.notEqual(await rotation(), before);
+    assert.equal(await page.locator('#project-gallery').evaluate(el => el.open), false);
+    const afterDrag = await rotation();
+    const horizontalY = await page.evaluate(() => scrollY);
+    await page.mouse.wheel(-750, 0);
+    await page.waitForTimeout(450);
+    assert.notEqual(await rotation(), afterDrag);
+    const afterWheel = await rotation();
+    await page.keyboard.down('Shift');
+    await page.mouse.wheel(0, 750);
+    await page.keyboard.up('Shift');
+    await page.waitForTimeout(450);
+    assert.notEqual(await rotation(), afterWheel);
+    assert.ok(Math.abs(await page.evaluate(() => scrollY) - horizontalY) < 2, 'horizontal input must not move the page');
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    await page.screenshot({ path: `artifacts/gallery-horizontal-${width}.png` });
+    const y = await page.evaluate(() => scrollY);
+    await page.mouse.wheel(0, 350);
+    await page.waitForTimeout(750);
+    assert.ok(await page.evaluate(() => scrollY) > y, 'vertical page scroll remains available');
+    console.log(`PASS ${width}: settled handoff input, drag, horizontal wheel, Shift+wheel, vertical scroll, overflow`);
+  }
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('http://localhost:5173/', { waitUntil: 'networkidle' });
+  await page.waitForFunction(() => window.isMainPageReady && document.body.style.overflow !== 'hidden');
+  await page.locator('.studio-link[href="#projects"]').click();
+  await page.waitForTimeout(1200);
+  assert.equal(await page.locator('.orbit-overview').evaluate(el => el.inert), false);
+  await page.locator('.orbit-card[data-center="true"]').focus();
+  const before = await page.locator('.orbit-card').first().evaluate(el => el.style.transform);
+  await page.keyboard.press('ArrowRight');
+  await page.waitForTimeout(200);
+  assert.notEqual(await page.locator('.orbit-card').first().evaluate(el => el.style.transform), before);
+  assert.deepEqual(errors, []);
+  console.log('PASS reduced motion, keyboard, no page errors');
+} finally { await browser.close(); }

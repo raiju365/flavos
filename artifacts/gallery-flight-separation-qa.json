@@ -1,0 +1,62 @@
+[
+  {
+    "width": 1792,
+    "height": 948,
+    "states": 1600,
+    "before": 102,
+    "after": 0,
+    "minimumClearance": 9.906602690654267,
+    "maximumStep": 32.86342646822406,
+    "meanLayoutMs": 0.004725687500000151
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "states": 1600,
+    "before": 99,
+    "after": 0,
+    "minimumClearance": 9.405002604763752,
+    "maximumStep": 31.17160645523321,
+    "meanLayoutMs": 0.0031382500000006353
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "states": 1600,
+    "before": 102,
+    "after": 0,
+    "minimumClearance": 7.524002058959695,
+    "maximumStep": 24.9506750111713,
+    "meanLayoutMs": 0.003208562499998777
+  },
+  {
+    "width": 820,
+    "height": 1000,
+    "states": 1600,
+    "before": 92,
+    "after": 0,
+    "minimumClearance": 6.325000647674074,
+    "maximumStep": 20.080259495889237,
+    "meanLayoutMs": 0.003394437499999583
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "states": 1600,
+    "before": 68,
+    "after": 0,
+    "minimumClearance": 7.238380606692175,
+    "maximumStep": 18.12984714009362,
+    "meanLayoutMs": 0.0035933125000025966
+  },
+  {
+    "width": 320,
+    "height": 715,
+    "states": 1600,
+    "before": 66,
+    "after": 0,
+    "minimumClearance": 6.847899226882177,
+    "maximumStep": 15.71247307569986,
+    "meanLayoutMs": 0.0038019999999995948
+  }
+]

@@ -1,7 +1,10 @@
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { galleryWorks } from './project-gallery-data';
 import './project-gallery.css';
 import { createGalleryArtColor } from './gallery-art-color';
+import { DESKTOP_HANDOFF_QUERY, getWorkHandoffDistances } from './about-work-handoff';
+import { getGalleryFlightLayout } from './gallery-flight-layout';
 
 export function initProjectGallery({ getLenis }) {
   const dialog = document.getElementById('project-gallery');
@@ -9,9 +12,13 @@ export function initProjectGallery({ getLenis }) {
   if (!dialog || !section) return;
   const $ = selector => dialog.querySelector(selector) || section.querySelector(selector);
   const stage = $('.orbit-stage'), overview = $('.orbit-overview');
+  const about = document.querySelector('#about');
+  const portrait = about.querySelector('.portrait-orbit');
+  const readingStage = portrait.closest('.about-reading-stage');
   const detail = $('.orbit-detail'), media = $('.orbit-detail-media');
   const title = $('#orbit-detail-title');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  const desktopHandoff = matchMedia(DESKTOP_HANDOFF_QUERY);
   const abort = new AbortController(), options = { signal: abort.signal };
   const count = galleryWorks.length, step = Math.PI * 2 / count;
   const ring = $('.orbit-cards'), camera = $('.orbit-camera');
@@ -21,8 +28,9 @@ export function initProjectGallery({ getLenis }) {
   let hovered = null, focused = null, selected = null;
   let busy = false, animation, resumeScroll = false, drag, suppressClick = 0;
   let returnIndex = 0, restoringFocus = false;
+  let returnState = null, operation = 0, returnHold = false;
+  const imageCache = new Map(), detailStates = new Map();
   let previousOverflow = '', entered = false, inView = false, sceneVisible = false, entrance;
-  const arrival = galleryWorks.map(() => ({ progress: 0 }));
   let centerIndex = 0;
   let wheelSettle = 0;
   let travellingArt = null;
@@ -36,15 +44,57 @@ export function initProjectGallery({ getLenis }) {
     const index = viewport ? Math.round(viewport.scrollLeft / (viewport.clientWidth || 1)) : 0;
     return media.querySelectorAll('img')[index] || media;
   }
-  function travelArtwork(source, rect) {
-    const proxy = document.createElement('div'); proxy.className = 'orbit-travelling-art';
-    proxy.setAttribute('aria-hidden', 'true');
+  function loadImage(src) {
+    if (!imageCache.has(src)) {
+      const image = new Image(); image.src = src;
+      imageCache.set(src, { image, ready: image.decode().catch(() => {}) });
+    }
+    return imageCache.get(src);
+  }
+  function prepareWork(i) {
+    const work = galleryWorks[wrap(i)];
+    return Promise.all((work.images || (work.src ? [{ src: work.src }] : [])).map(asset => loadImage(asset.src).ready));
+  }
+  function setImageSize(image) {
+    const source = imageCache.get(image.getAttribute('src'))?.image;
+    if (source?.naturalWidth) { image.width = source.naturalWidth; image.height = source.naturalHeight; }
+  }
+  function cardEndpoint(i) {
+    const card = cards[i], cameraRect = camera.getBoundingClientRect();
+    const matrix = new DOMMatrix(getComputedStyle(card).transform);
+    const theta = angle + i * step;
+    return {
+      left: cameraRect.left + card.offsetLeft, top: cameraRect.top + card.offsetTop,
+      width: card.offsetWidth, height: card.offsetHeight,
+      x: matrix.m41, y: matrix.m42, z: matrix.m43 - geometry.radius,
+      rotationY: Math.atan2(Math.sin(theta), Math.cos(theta)) * 180 / Math.PI,
+      perspective: geometry.perspective,
+      perspectiveOrigin: `${cameraRect.left + cameraRect.width / 2}px ${cameraRect.top + cameraRect.height / 2}px`,
+      blur: parseFloat(card.style.getPropertyValue('--orbit-depth-blur')) || 0,
+    };
+  }
+  const flatEndpoint = element => ({ ...rectVars(element), x: 0, y: 0, z: 0, rotationY: 0, blur: 0 });
+  function travelArtwork(source, endpoint, plane) {
+    const scene = document.createElement('div'); scene.className = 'orbit-travelling-art';
+    scene.setAttribute('aria-hidden', 'true'); scene.inert = true;
+    scene.style.perspective = `${plane.perspective}px`;
+    scene.style.perspectiveOrigin = plane.perspectiveOrigin;
+    const proxy = document.createElement('div'); proxy.className = 'orbit-travelling-surface';
     const image = source.matches('img') ? source : source.querySelector('img');
     if (image) { const copy = new Image(); copy.src = image.currentSrc || image.src; copy.alt = ''; proxy.append(copy); }
     else proxy.textContent = 'asset';
-    dialog.append(proxy); travellingArt = proxy;
-    gsap.set(proxy, { left: rect.left, top: rect.top, width: rect.width, height: rect.height });
-    return proxy;
+    scene.append(proxy); dialog.append(scene); travellingArt = scene;
+    const state = { ...endpoint };
+    const render = () => {
+      const { left, top, width, height, x, y, z, rotationY, blur } = state;
+      Object.assign(proxy.style, {
+        left: `${left}px`, top: `${top}px`, width: `${width}px`, height: `${height}px`,
+        transform: `translate3d(${x}px,${y}px,${z}px) rotateY(${rotationY}deg)`,
+        filter: `blur(${blur}px)`,
+      });
+    };
+    render();
+    return { proxy, state, render };
   }
   function rectVars(element) {
     const r = element.getBoundingClientRect();
@@ -58,46 +108,45 @@ export function initProjectGallery({ getLenis }) {
     card.setAttribute('aria-label', `${String(i + 1).padStart(2, '0')}. ${label(i)} — lihat detail`);
     const surface = document.createElement('span'); surface.className = 'orbit-card-surface';
     if (work.src) {
-      const image = new Image(); image.src = work.src; image.alt = work.title || '';
+      const image = new Image();
+      image.decoding = 'async';
+      image.src = `/karya/thumbs/${work.src.split('/').pop()}.webp`;
+      image.alt = work.title || '';
+      image.addEventListener('error', () => { image.src = work.src; }, { ...options, once: true });
       image.draggable = false; surface.append(image);
-      image.addEventListener('load', measure, options);
     } else surface.textContent = 'asset';
     card.append(surface);
     $('.orbit-cards').append(card);
     return card;
   });
   const artColors = cards.map((card, index) => createGalleryArtColor(card.firstElementChild, index + 1, motion));
-  const auto = () => emergence >= 1 && !motion.matches && hovered === null && focused === null && !drag;
-  let sourceX = 0, sourceY = 0, sourceScale = 1, emergence = 0, landingY = 0;
-  let entranceDirty = false, appliedCameraY = 0;
+  const auto = () => emergence >= 1 && !motion.matches && hovered === null && focused === null && !drag && !returnHold;
+  let emergence = 0, landingY = 0, originX = 0, originY = 0, portraitLift = 0;
+  let entranceDirty = false, entryGeometry;
   function paint() {
     if (!geometry) return;
     const { radius } = geometry;
+    ring.style.transform = `translateZ(${-radius}px)`;
     centerIndex = ((Math.round(-angle / step) % count) + count) % count;
+    const poses = getGalleryFlightLayout({
+      progress: emergence, count, angle, radius, size: geometry.size, gap: geometry.gap,
+      photoWidth: entryGeometry.photoWidth, originX, originY, portraitLift, landingY,
+      viewportHeight: innerHeight, desktop: desktopHandoff.matches,
+    });
     cards.forEach((card, i) => {
-      const progress = arrival[i].progress;
-      const theta = angle + i * step + (1 - ease(emergence)) * Math.PI * 1.5;
-      const depth = Math.max(0, -Math.cos(theta));
+      const { x, y, z, yaw, pitch, bank, scale, progress, depth } = poses[i];
       // Frost builds continuously towards the rear; the front stays clear.
       const frost = depth * depth * (3 - 2 * depth);
       const blur = frost * 7.5;
       card.style.setProperty('--orbit-depth-blur', `${blur.toFixed(3)}px`);
       card.style.setProperty('--orbit-glass-opacity', (frost * .48).toFixed(3));
       card.dataset.depth = depth.toFixed(3);
-      // Leave the portrait vertically first; only then open into the orbit.
-      // The bend and twist share scroll progress, including reverse seeks.
-      const spread = ease((progress - .28) / .72);
-      const descend = ease(progress);
-      const arc = Math.sin(ease(progress) * Math.PI);
-      const sweep = arc * geometry.size * .22;
-      const x = sourceX * (1 - spread) + Math.sin(theta) * radius * spread + sweep;
-      const y = sourceY * (1 - descend) + landingY * descend;
-      const z = radius + (Math.cos(theta) * radius - radius) * spread;
-      const scale = sourceScale + (1 - sourceScale) * spread;
-      card.style.transform = `translate3d(${x}px,${y}px,${z}px) rotateY(${theta * spread}rad) rotateZ(${arc * -.12}rad) scale(${scale})`;
+      card.style.transform = `translate3d(${x}px,${y}px,${z}px) rotateY(${yaw}rad) rotateX(${pitch}rad) rotateZ(${bank}rad) scale(${scale})`;
       card.style.visibility = progress <= 0 ? 'hidden' : '';
+      card.dataset.arrival = progress.toFixed(4);
       card.dataset.center = String(i === centerIndex);
     });
+    camera.style.transform = 'translate3d(0,0,0)';
     stage.dataset.angle = angle.toFixed(4);
     stage.dataset.centerIndex = String(centerIndex);
   }
@@ -139,9 +188,27 @@ export function initProjectGallery({ getLenis }) {
   }
   function measure() {
     if (!stage.clientWidth || !stage.clientHeight) return;
+    // Scroll locking may change the document gutter. Keep the opening orbit
+    // geometry until the original page is restored, unless the viewport changed.
+    if (returnState && returnState.width === innerWidth && returnState.height === innerHeight) return;
+    // Cache document coordinates on resize/refresh, not after every scroll
+    // transform write. Entry then needs no synchronous layout measurements.
+    const sectionBounds = section.getBoundingClientRect();
+    const photoBounds = portrait.getBoundingClientRect();
+    const readingBounds = readingStage.getBoundingClientRect();
+    entryGeometry = {
+      top: sectionBounds.top + scrollY,
+      sectionHeight: section.clientHeight,
+      aboutBottom: about.getBoundingClientRect().bottom + scrollY,
+      readingHeight: readingStage.offsetHeight,
+      photoWidth: photoBounds.width,
+      photoCenterX: photoBounds.left + photoBounds.width / 2,
+      localPhotoCenterY: photoBounds.top - readingBounds.top + photoBounds.height / 2,
+    };
     const heightLimit = stage.clientHeight * (stage.clientHeight < 600 ? .425 : .475);
     const size = Math.min(475, Math.max(287.5, stage.clientWidth * .31875), heightLimit, stage.clientWidth * .8);
-    const gap = size * (stage.clientWidth <= 650 ? .42 : .55);
+    // Keep enough chord distance for each card's diagonal, also on mobile.
+    const gap = size * .55;
     const radius = (size + gap) / (2 * Math.tan(Math.PI / count));
     const perspective = radius * 3.4;
     stage.style.setProperty('--orbit-size', `${size}px`);
@@ -168,11 +235,12 @@ export function initProjectGallery({ getLenis }) {
   cards.forEach((card, i) => {
     card.addEventListener('pointerenter', event => {
       if (event.pointerType === 'touch' || drag || busy || selected !== null) return;
-      hovered = i; highlight(i, true); hold();
+      hovered = i; prepareWork(i); highlight(i, true); hold();
     }, options);
     card.addEventListener('pointerleave', () => { if (hovered === i) hovered = null; highlight(i, focused === i); caption(); start(); }, options);
     card.addEventListener('focus', () => {
       if (!restoringFocus && card.matches(':focus-visible')) {
+        prepareWork(i);
         focused = i;
         target = -i * step + Math.round((angle + i * step) / (2 * Math.PI)) * 2 * Math.PI;
         highlight(i, true); hold();
@@ -182,6 +250,10 @@ export function initProjectGallery({ getLenis }) {
     card.addEventListener('click', () => { if (performance.now() > suppressClick) openDetail(i); }, options);
   });
   function updateDetail(i) {
+    if (selected !== null) {
+      const viewport = media.querySelector('.orbit-image-viewport');
+      detailStates.set(selected, { slide: viewport ? Math.round(viewport.scrollLeft / (viewport.clientWidth || 1)) : 0, scrollTop: detail.scrollTop });
+    }
     selected = wrap(i);
     const work = galleryWorks[selected];
     title.textContent = label(selected);
@@ -194,14 +266,14 @@ export function initProjectGallery({ getLenis }) {
       if (work.images?.length > 1) renderImageSlides(work);
       else {
         const image = new Image(); image.src = work.src; image.alt = work.title || label(selected);
-        const thumbnail = cards[selected].querySelector('img');
-        if (thumbnail?.naturalWidth) { image.width = thumbnail.naturalWidth; image.height = thumbnail.naturalHeight; }
+        setImageSize(image);
         // Detail keeps natural proportions; the rotating thumbnails are square.
         media.append(image);
       }
     } else {
       const placeholder = document.createElement('span'); placeholder.textContent = 'asset'; media.append(placeholder);
     }
+    detail.scrollTop = detailStates.get(selected)?.scrollTop || 0;
   }
   function renderImageSlides(work) {
     const carousel = document.createElement('div'); carousel.className = 'orbit-image-carousel';
@@ -212,8 +284,7 @@ export function initProjectGallery({ getLenis }) {
       const slide = document.createElement('div'); slide.className = 'orbit-image-slide';
       slide.setAttribute('role', 'group'); slide.setAttribute('aria-label', `${index + 1} dari ${work.images.length}: ${asset.label}`);
       const image = new Image(); image.src = asset.src; image.alt = asset.alt;
-      const thumbnail = cards[selected].querySelector('img');
-      if (index === 0 && thumbnail?.naturalWidth) { image.width = thumbnail.naturalWidth; image.height = thumbnail.naturalHeight; }
+      setImageSize(image);
       image.draggable = false; slide.append(image); viewport.append(slide);
     });
     const controls = document.createElement('div'); controls.className = 'orbit-image-controls';
@@ -236,7 +307,9 @@ export function initProjectGallery({ getLenis }) {
       event.preventDefault(); event.stopPropagation();
       move(event.key === 'Home' ? 0 : event.key === 'End' ? work.images.length - 1 : current + (event.key === 'ArrowLeft' ? -1 : 1));
     }, options);
-    sync(); controls.append(previous, status, next); carousel.append(viewport, controls); media.append(carousel);
+    controls.append(previous, status, next); carousel.append(viewport, controls); media.append(carousel);
+    viewport.scrollLeft = (detailStates.get(selected)?.slide || 0) * viewport.clientWidth;
+    sync();
   }
   function resetHighlights() {
     hovered = null; focused = null;
@@ -249,43 +322,65 @@ export function initProjectGallery({ getLenis }) {
     dialog.classList.remove('is-orbit-transitioning');
     busy = false; animation = null;
   }
-  function openDetail(i) {
+  async function openDetail(i) {
     if (busy || selected !== null) return;
-    busy = true; target = angle; velocity = 0; returnIndex = i;
+    busy = true; target = angle; velocity = 0; lastTime = 0; returnIndex = i;
+    const ticket = ++operation;
     clearTimeout(wheelSettle);
-    const origin = rectVars(cards[i]);
+    returnState = { angle, width: innerWidth, height: innerHeight, endpoints: cards.map((_, index) => cardEndpoint(index)) };
+    const origin = returnState.endpoints[i];
+    const sourceColor = Number(cards[i].querySelector('img')?.dataset.colorProgress || 0);
     updateDetail(i); resetHighlights();
     resumeScroll = Boolean(getLenis() && !getLenis().isStopped);
     getLenis()?.stop();
     previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     detail.hidden = false; detail.inert = true; detail.scrollTop = 0;
+    overview.inert = true;
+    if (!motion.matches) {
+      gsap.set($('.orbit-shell'), { clipPath: 'inset(100% 0 0 0)' });
+      gsap.set(detailParts(), { y: 22, clipPath: 'inset(0 0 100% 0)' });
+    }
     dialog.showModal();
     const finish = () => {
       detail.inert = false; clearTransition();
       title.focus({ preventScroll: true });
     };
-    if (motion.matches) { finish(); return; }
-    dialog.classList.add('is-orbit-transitioning');
+    dialog.classList.add('is-orbit-transitioning'); dialog.dataset.scenePhase = 'loading-detail';
+    const flight = motion.matches ? null : travelArtwork(cards[i], origin, origin);
+    if (flight) gsap.set([media, cards[i]], { visibility: 'hidden' });
+    await prepareWork(i);
+    if (ticket !== operation || !dialog.open) return;
+    media.querySelectorAll('img').forEach(setImageSize);
+    const viewport = media.querySelector('.orbit-image-viewport');
+    if (viewport) viewport.scrollLeft = (detailStates.get(i)?.slide || 0) * viewport.clientWidth;
+    detail.scrollTop = detailStates.get(i)?.scrollTop || 0;
+    if (motion.matches || !flight) { finish(); return; }
+    const destination = flatEndpoint(activeImage());
+    const { proxy, state, render } = flight;
+    const proxyImage = proxy.querySelector('img');
+    // Use one full-resolution image: its centred cover crop matches the square
+    // thumbnail, then opens continuously to the natural detail proportions.
+    if (proxyImage) {
+      proxyImage.src = activeImage().getAttribute('src');
+      await proxyImage.decode().catch(() => {});
+      if (ticket !== operation || !dialog.open) return;
+      gsap.set(proxyImage, { filter: `grayscale(${1 - sourceColor})` });
+    }
     dialog.dataset.scenePhase = 'to-detail';
-    const destination = rectVars(activeImage());
-    const proxy = travelArtwork(cards[i], origin);
-    gsap.set([media, cards[i]], { visibility: 'hidden' });
-    gsap.set($('.orbit-shell'), { clipPath: 'inset(100% 0 0 0)' });
-    gsap.set(detailParts(), { y: 22, clipPath: 'inset(0 0 100% 0)' });
-    gsap.set(proxy, { filter: 'grayscale(1)' });
     animation = gsap.timeline({ onComplete: finish })
       .to($('.orbit-shell'), { clipPath: 'inset(0% 0 0 0)', duration: .8, ease: 'power3.inOut' }, .12)
-      .to(proxy, { ...destination, filter: 'grayscale(0)', duration: 1.05, ease: 'power3.inOut' }, 0)
+      .to(state, { ...destination, duration: 1.05, ease: 'power3.inOut', onUpdate: render }, 0)
       .to(detailParts(), { y: 0, clipPath: 'inset(0 0 0% 0)', duration: .65, stagger: .07, ease: 'power3.out' }, .55);
+    if (proxyImage) animation.to(proxyImage, { filter: 'grayscale(0)', duration: .7, ease: 'power2.inOut' }, .2);
   }
   function back() {
     if (busy || selected === null) return;
     busy = true; detail.inert = true;
-    const source = activeImage(), origin = rectVars(source);
+    const source = activeImage(), origin = flatEndpoint(source);
     returnIndex = selected;
     // Keep the orbit where it paused, even after browsing other works in detail.
-    target = angle;
+    angle = target = returnState?.angle ?? angle;
     resetHighlights(); measure(); caption();
     const finish = () => {
       clearTransition(); dialog.close();
@@ -293,33 +388,44 @@ export function initProjectGallery({ getLenis }) {
     if (motion.matches) { finish(); return; }
     dialog.classList.add('is-orbit-transitioning');
     dialog.dataset.scenePhase = 'to-overview';
-    const proxy = travelArtwork(source, origin);
-    const destination = rectVars(cards[returnIndex]);
+    const sameViewport = returnState?.width === innerWidth && returnState?.height === innerHeight;
+    const destination = sameViewport ? returnState.endpoints[returnIndex] : cardEndpoint(returnIndex);
+    const { proxy, state, render } = travelArtwork(source, origin, destination);
+    const proxyImage = proxy.querySelector('img');
     gsap.set([media, cards[returnIndex]], { visibility: 'hidden' });
     animation = gsap.timeline({ onComplete: finish })
       .to(detailParts(), { y: -18, clipPath: 'inset(0 0 100% 0)', duration: .35, stagger: .03, ease: 'power2.in' }, 0)
       .to($('.orbit-shell'), { clipPath: 'inset(0 0 100% 0)', duration: .85, ease: 'power3.inOut' }, .12)
-      .to(proxy, { ...destination, filter: 'grayscale(1)', duration: 1.05, ease: 'power3.inOut' }, .05);
+      .to(state, { ...destination, duration: 1.05, ease: 'power3.inOut', onUpdate: render }, .05);
+    if (proxyImage) animation.to(proxyImage, { filter: 'grayscale(1)', duration: .7, ease: 'power2.inOut' }, .25);
   }
-  function changeDetail(direction) {
+  async function changeDetail(direction) {
     if (busy || selected === null) return;
-    if (motion.matches) { updateDetail(selected + direction); title.focus(); return; }
-    busy = true; dialog.dataset.scenePhase = 'change-work';
+    const nextIndex = wrap(selected + direction), ticket = ++operation;
+    busy = true; dialog.dataset.scenePhase = 'loading-work';
+    await prepareWork(nextIndex);
+    if (ticket !== operation || !dialog.open) return;
+    if (motion.matches) { updateDetail(nextIndex); clearTransition(); title.focus({ preventScroll: true }); return; }
+    dialog.dataset.scenePhase = 'change-work';
     const forward = direction > 0;
     const exit = forward ? 'inset(0 100% 0 0)' : 'inset(0 0 0 100%)';
     const enter = forward ? 'inset(0 0 0 100%)' : 'inset(0 100% 0 0)';
     animation = gsap.timeline({ onComplete: () => { clearTransition(); title.focus({ preventScroll: true }); } })
       .to([media, ...detailParts()], { clipPath: exit, x: forward ? -16 : 16, duration: .4, stagger: .025, ease: 'power3.inOut' })
-      .call(() => { updateDetail(selected + direction); detail.scrollTop = 0; })
+      .call(() => { updateDetail(nextIndex); })
       .fromTo([media, ...detailParts()], { clipPath: enter, x: forward ? 16 : -16 }, { clipPath: 'inset(0 0 0 0)', x: 0, duration: .65, stagger: .035, ease: 'power3.out', immediateRender: false });
   }
   $('.orbit-detail-prev').addEventListener('click', () => changeDetail(-1), options);
   $('.orbit-detail-next').addEventListener('click', () => changeDetail(1), options);
   $('.orbit-back').addEventListener('click', back, options);
   stage.addEventListener('wheel', event => {
-    if (event.ctrlKey || event.metaKey || busy || Math.abs(event.deltaY) >= Math.abs(event.deltaX)) return;
+    if (event.ctrlKey || event.metaKey || busy || !entered || selected !== null) return;
+    const horizontal = Math.abs(event.deltaX) > Math.abs(event.deltaY);
+    if (!horizontal && !event.shiftKey) return;
     event.preventDefault();
-    const delta = event.deltaX;
+    event.stopPropagation();
+    returnHold = false;
+    const delta = horizontal ? event.deltaX : event.deltaY;
     target -= Math.max(-180, Math.min(180, delta * (event.deltaMode === 1 ? 16 : 1))) / (geometry?.radius || 600);
     clearTimeout(wheelSettle);
     wheelSettle = setTimeout(() => { target = Math.round(target / step) * step; start(); }, 180);
@@ -327,14 +433,17 @@ export function initProjectGallery({ getLenis }) {
   }, { ...options, passive: false });
   stage.addEventListener('pointerdown', event => {
     if (event.button !== 0 || busy || !entered) return;
-    drag = { id: event.pointerId, x: event.clientX, y: event.clientY, angle: target, moved: false };
+    clearTimeout(wheelSettle);
+    drag = { id: event.pointerId, x: event.clientX, y: event.clientY, angle, moved: false };
   }, options);
   stage.addEventListener('pointermove', event => {
     if (!drag || drag.id !== event.pointerId) return;
     const dx = event.clientX - drag.x, dy = event.clientY - drag.y;
     if (!drag.moved && Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > 6) { drag = null; return; }
     if (!drag.moved && Math.hypot(dx, dy) < 6) return;
+    velocity = 0;
     drag.moved = true; stage.setPointerCapture(event.pointerId);
+    returnHold = false;
     stage.classList.add('is-dragging'); resetHighlights();
     target = drag.angle + dx / (geometry?.radius || 600);
     caption(); start();
@@ -363,6 +472,7 @@ export function initProjectGallery({ getLenis }) {
     const activeIndex = cards.indexOf(document.activeElement);
     const currentIndex = focused ?? (activeIndex >= 0 ? activeIndex : centerIndex);
     const i = event.key === 'Home' ? 0 : event.key === 'End' ? count - 1 : wrap(currentIndex + direction);
+    returnHold = false;
     cards[i].focus({ preventScroll: true }); focused = i;
     target = -i * step;
     target += Math.round((angle - target) / (2 * Math.PI)) * 2 * Math.PI;
@@ -372,71 +482,86 @@ export function initProjectGallery({ getLenis }) {
   section.addEventListener('keydown', onKey, options);
   function close() {
     if (!dialog.open) return;
-    if (busy) { returnIndex = selected ?? returnIndex; animation?.kill(); clearTransition(); dialog.close(); }
+    if (busy) { ++operation; returnIndex = selected ?? returnIndex; animation?.kill(); clearTransition(); dialog.close(); }
     else back();
   }
   $('.orbit-close').addEventListener('click', close, options);
   dialog.addEventListener('cancel', event => { event.preventDefault(); close(); }, options);
   dialog.addEventListener('close', () => {
+    ++operation;
     clearTimeout(wheelSettle);
     animation?.kill(); clearTransition();
     document.body.style.overflow = previousOverflow;
+    const viewport = media.querySelector('.orbit-image-viewport');
+    if (selected !== null) detailStates.set(selected, { slide: viewport ? Math.round(viewport.scrollLeft / (viewport.clientWidth || 1)) : 0, scrollTop: detail.scrollTop });
     detail.hidden = true; detail.inert = true;
     resetHighlights();
-    busy = false; drag = null; selected = null; target = angle; velocity = 0; lastTime = 0;
+    angle = target = returnState?.angle ?? angle;
+    returnState = null; returnHold = true;
+    busy = false; drag = null; selected = null; velocity = 0; lastTime = 0;
+    measure(); paint();
     if (resumeScroll) getLenis()?.start();
     restoringFocus = true;
     cards[returnIndex].focus({ preventScroll: true });
     restoringFocus = false;
     caption(); start();
   }, options);
+  // A return lands on the exact frozen orbit. Resume only when the visitor
+  // deliberately leaves the gallery or navigates it again.
+  stage.addEventListener('pointerleave', () => { returnHold = false; caption(); start(); }, options);
+  stage.addEventListener('pointermove', () => {
+    if (returnHold && !busy && selected === null) { returnHold = false; caption(); start(); }
+  }, options);
 
-  const portrait = document.querySelector('#about .portrait-orbit');
   const clamp = value => Math.max(0, Math.min(1, value));
   const ease = value => { const t = clamp(value); return t * t * t * (t * (t * 6 - 15) + 10); };
   function beginEntrance(render = true) {
-    if (!geometry || !portrait) return;
-    const bounds = section.getBoundingClientRect();
-    // Batch geometry reads before writes. Recover world coordinates from the
-    // previous camera offset instead of resetting transforms and forcing layout.
-    const readingStage = portrait.closest('.about-reading-stage');
-    const photo = portrait.getBoundingClientRect();
-    const sectionHeight = section.clientHeight;
-    const stageHeight = stage.clientHeight;
-    const compact = innerWidth < 768 || innerHeight < 651;
+    if (!geometry || !entryGeometry) return;
+    const { sectionHeight, readingHeight } = entryGeometry;
+    const bounds = { top: entryGeometry.top - scrollY, bottom: entryGeometry.top + sectionHeight - scrollY };
     // Reserve a longer descent after absorption, shared with about-reading.
-    const span = innerHeight * 4;
-    const readingBounds = readingStage.getBoundingClientRect();
-    const localPhotoCenter = photo.top - readingBounds.top + photo.height / 2;
-    const pinTop = compact ? Math.min(0, innerHeight * .45 - localPhotoCenter) : 0;
-    const endTop = Math.max(innerHeight, readingBounds.height + pinTop);
-    const raw = clamp((endTop + span - bounds.top) / span);
-    const progress = motion.matches ? 1 : raw < .0005 ? 0 : raw;
+    const { descent, orbitHold } = getWorkHandoffDistances();
+    const span = innerHeight * descent;
+    const holdDistance = innerHeight * orbitHold;
+    // Allow both mobile passages to pass through the viewport before pinning.
+    // Centering the portrait early strands the lower paragraph below the fold.
+    const pinTop = innerWidth < 700
+      ? Math.min(0, innerHeight - readingHeight)
+      : 0;
+    const endTop = Math.max(innerHeight, readingHeight + pinTop);
+    // Desktop has a longer departure, then a settled orbit that keeps rotating
+    // for two more viewport lengths before Work returns to document flow.
+    const raw = clamp((endTop + span + holdDistance - bounds.top) / span);
+    // Organic scrolling waits for the ink. A direct Work navigation seeks
+    // past About and must land on usable cards immediately.
+    const absorptionComplete = about.dataset.absorbComplete === 'true' || entryGeometry.aboutBottom <= scrollY;
+    const progress = motion.matches ? 1 : !absorptionComplete || raw < .0005 ? 0 : raw;
     emergence = progress;
-    // Track the descending works: the original frame recedes above the camera.
-    const cameraY = motion.matches ? 0 : innerHeight * 1.25 * ease((progress - .12) / .7);
-    const cameraDelta = appliedCameraY - cameraY;
-    const photoTop = photo.top + cameraDelta;
+    // First descend out of the back of the frame; then follow the works down
+    // as the portrait recedes. Every seek uses the same world-space path.
+    // Follow the first departing cards on desktop. Waiting until 42% leaves
+    // their flight below the viewport behind the full-height portrait frame.
+    const cameraProgress = desktopHandoff.matches ? progress / .75 : (progress - .42) / .55;
+    const cameraY = motion.matches ? 0 : innerHeight * 1.25 * ease(cameraProgress);
+    portraitLift = cameraY;
     readingStage.style.setProperty('--gallery-stage-top', `${pinTop}px`);
     readingStage.style.translate = `0 ${-cameraY}px`;
-    appliedCameraY = cameraY;
     readingStage.style.willChange = progress > 0 && progress < 1 ? 'translate' : '';
-    document.querySelector('#about').style.setProperty('--gallery-copy-opacity', compact && !motion.matches ? String(1 - ease(progress / .16)) : '1');
+    document.querySelector('#about').style.setProperty('--gallery-copy-opacity', '1');
     const travelling = progress > 0 && bounds.top > 0 && !motion.matches;
     sceneVisible = bounds.bottom > 0 && (travelling || bounds.top < innerHeight);
     overview.classList.toggle('is-emerging', travelling);
     overview.style.height = travelling ? `${sectionHeight}px` : '';
-    // World-space fall minus camera travel keeps the artwork in view. Once
-    // settled, hold its centre until the actual Work section reaches the lens.
-    landingY = travelling ? innerHeight * .3 * Math.sin(Math.PI * ease(progress)) : 0;
-    sourceX = photo.left + photo.width / 2 - innerWidth / 2;
-    sourceY = photoTop + photo.height / 2 - stageHeight / 2;
-    sourceScale = Math.min(photo.width, photo.height) * .72 / geometry.size;
-    arrival.forEach((item, i) => {
-      const stagger = count > 1 ? i / (count - 1) * .36 : 0;
-      item.progress = clamp((progress - stagger) / .64);
-    });
-    entered = progress >= 1 && (!travelling || bounds.top <= 1);
+    // Stagger departures across the first 45% of the handoff. The remaining
+    // flight time is per card, so the final work still lands at exactly 100%.
+    const ringProgress = ease(progress);
+    originX = entryGeometry.photoCenterX - innerWidth / 2;
+    originY = entryGeometry.localPhotoCenterY + pinTop - geometry.height / 2;
+    landingY = motion.matches ? 0 : innerHeight * (desktopHandoff.matches ? .18 : .34) * Math.sin(Math.PI * ringProgress);
+    // The ring is already settled while its viewport plane is still fixed.
+    // Enable input here instead of waiting for the Work section to catch up.
+    entered = progress >= 1 && sceneVisible;
+    overview.classList.toggle('is-interactive', entered);
     overview.inert = !entered || selected !== null;
     section.dataset.entryPhase = entered ? 'idle' : travelling ? 'emerging' : 'waiting';
     section.dataset.entryProgress = progress.toFixed(4);
@@ -470,10 +595,12 @@ export function initProjectGallery({ getLenis }) {
       start();
     }
   }, { ...options, passive: true });
-  window.addEventListener('portfolio:restore', beginEntrance, options);
-  window.addEventListener('portfolio:ready', beginEntrance, options);
-  window.addEventListener('portfolio:reveal', beginEntrance, options);
-  const resize = new ResizeObserver(measure); resize.observe(stage);
+  window.addEventListener('portfolio:restore', measure, options);
+  window.addEventListener('portfolio:ready', measure, options);
+  window.addEventListener('portfolio:reveal', measure, options);
+  ScrollTrigger.addEventListener('refresh', measure);
+  const resize = new ResizeObserver(measure);
+  [stage, readingStage, about].forEach(element => resize.observe(element));
   window.addEventListener('resize', () => {
     // Finish a viewport-dependent aperture if the viewport changes mid-flight.
     if (busy) animation?.progress(1);
@@ -500,7 +627,9 @@ export function initProjectGallery({ getLenis }) {
     }
     gsap.set(dialog, { clearProps: 'clipPath,willChange' });
     abort.abort(); resize.disconnect(); cancelAnimationFrame(frame);
+    ScrollTrigger.removeEventListener('refresh', measure);
     overview.classList.remove('is-emerging');
+    overview.classList.remove('is-interactive');
     overview.style.removeProperty('height');
     overview.style.removeProperty('clip-path');
     document.querySelector('#about')?.style.removeProperty('--gallery-copy-opacity');

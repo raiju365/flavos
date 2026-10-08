@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { createAboutTextDust } from './about-text-dust';
 import { createAboutFrameColor } from './about-frame-color';
+import { DESKTOP_HANDOFF_QUERY, getWorkHandoffDistances } from './about-work-handoff';
 
 export function animateAboutReading({ getLenis = () => null } = {}) {
   const section = document.querySelector('#about');
@@ -32,17 +33,21 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
   const lastWordProgress = [-1, -1];
   const dust = createAboutTextDust(stage, showcase, copies, wordGroups);
   const frameColor = createAboutFrameColor(showcase);
-  const cinematicMedia = window.matchMedia('(min-width: 768px) and (min-height: 651px) and (prefers-reduced-motion: no-preference)');
+  const cinematicMedia = window.matchMedia('(prefers-reduced-motion: no-preference)');
+  const desktopHandoffMedia = window.matchMedia(DESKTOP_HANDOFF_QUERY);
 
   // Keep the reading rhythm and release directly into the Work section.
   const leftScrollDistance = Math.round(wordGroups[0].length * 5.5);
   const rightScrollDistance = Math.round(wordGroups[1].length * 5.5);
   const textScrollDistance = leftScrollDistance + rightScrollDistance;
   const motionScrollDistance = canvas ? 260 : 0;
+  let handoffDistances = getWorkHandoffDistances();
   let LEFT_COMPLETE, TEXT_COMPLETE, FILM_COMPLETE, ABSORB_COMPLETE;
   function configureDistance() {
-    const absorbDistance = cinematicMedia.matches ? 160 : 0;
-    const clearPortraitDistance = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 420;
+    const absorbDistance = cinematicMedia.matches ? textScrollDistance : 0;
+    handoffDistances = getWorkHandoffDistances();
+    const { descent, orbitHold } = handoffDistances;
+    const clearPortraitDistance = cinematicMedia.matches ? (descent + orbitHold) * 100 : 0;
     const total = textScrollDistance + motionScrollDistance + absorbDistance + clearPortraitDistance;
     section.style.setProperty('--about-word-count', String(words.length));
     section.style.setProperty('--about-scroll-distance', `${total}svh`);
@@ -98,7 +103,7 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
   let cinematicActive = false;
   let gateArmed = false, repositioning = false, clearTime = 0;
   const revealSpan = 3.6;
-  const hiddenOpacity = 0.38;
+  const hiddenOpacity = 0;
   const MAX_BLUR = 9.0;
   const clamp01 = value => Math.max(0, Math.min(1, value));
 
@@ -293,15 +298,12 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
     
     // Smooth, responsive interpolation following user scroll
     const convergenceRate = progress > 0.85 ? 16 : 10;
-    let nextProgress = displayedProgress + (progress - displayedProgress) * (1 - Math.exp(-dt * convergenceRate));
-    // Even a quick wheel burst gives the ink time to travel visibly. Reading
-    // keeps its existing response; only the absorption phase has a speed limit.
-    if (cinematicMedia.matches && nextProgress > FILM_COMPLETE && displayedProgress < ABSORB_COMPLETE && nextProgress > displayedProgress) {
-      nextProgress = Math.min(nextProgress, Math.max(displayedProgress, FILM_COMPLETE) + dt * (ABSORB_COMPLETE - FILM_COMPLETE) / 3.2);
-      // Snap only the tiny endpoint residue so a stopped wheel can finish.
-      if (progress >= ABSORB_COMPLETE && ABSORB_COMPLETE - nextProgress < .00001) nextProgress = ABSORB_COMPLETE;
-    }
-    displayedProgress = nextProgress;
+    const nextProgress = displayedProgress + (progress - displayedProgress) * (1 - Math.exp(-dt * convergenceRate));
+    // Interpolation approaches a held endpoint without ever reaching it.
+    // Commit the final half-pixel so the completion pause can finish and
+    // release native/Lenis scrolling into Works in either direction.
+    const endpointTolerance = .5 / Math.max(1, trigger.end - trigger.start);
+    displayedProgress = Math.abs(progress - nextProgress) <= endpointTolerance ? progress : nextProgress;
     clearTime = displayedProgress >= ABSORB_COMPLETE ? clearTime + dt : 0;
 
     // ==========================================
@@ -310,7 +312,7 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
     const leftProgress = Math.min(1, Math.max(0, displayedProgress / LEFT_COMPLETE));
     const rightProgress = Math.min(1, Math.max(0, (displayedProgress - LEFT_COMPLETE) / (TEXT_COMPLETE - LEFT_COMPLETE)));
     wordGroups.forEach((group, groupIndex) => {
-      const textProgress = groupIndex === 0 ? leftProgress : rightProgress;
+      const textProgress = !cinematicMedia.matches ? 1 : groupIndex === 0 ? leftProgress : rightProgress;
       if (Math.abs(textProgress - lastWordProgress[groupIndex]) < .00001) return;
       lastWordProgress[groupIndex] = textProgress;
       const revealed = textProgress * (group.length + revealSpan);
@@ -383,7 +385,36 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
     configureDistance();
     ScrollTrigger.refresh();
   };
+  const onDesktopHandoffChange = () => {
+    // Keep the current scene when resizing across the desktop breakpoint.
+    // Removing four screen lengths above Work must not send the user to Contact.
+    const boundary = scrollY + section.getBoundingClientRect().top
+      + (section.offsetHeight - innerHeight) * ABSORB_COMPLETE;
+    const offset = scrollY - boundary;
+    const previous = handoffDistances;
+    configureDistance();
+    getLenis()?.resize();
+    ScrollTrigger.refresh();
+    if (!cinematicMedia.matches || offset <= 0) return;
+    const oldDescent = previous.descent * innerHeight;
+    const oldHold = previous.orbitHold * innerHeight;
+    const newDescent = handoffDistances.descent * innerHeight;
+    const newHold = handoffDistances.orbitHold * innerHeight;
+    const nextOffset = offset <= oldDescent
+      ? offset / oldDescent * newDescent
+      : offset <= oldDescent + oldHold
+        ? newDescent + (offset - oldDescent) / oldHold * newHold
+        : newDescent + newHold + offset - oldDescent - oldHold;
+    repositioning = true;
+    const lenis = getLenis();
+    if (lenis) lenis.scrollTo(boundary + nextOffset, { immediate: true, force: true });
+    else window.scrollTo({ top: boundary + nextOffset, behavior: 'instant' });
+    ScrollTrigger.update();
+    progress = displayedProgress = trigger.progress;
+    repositioning = false;
+  };
   cinematicMedia.addEventListener('change', onMediaChange);
+  desktopHandoffMedia.addEventListener('change', onDesktopHandoffChange);
   const onFontsLoaded = () => ScrollTrigger.refresh();
   document.fonts.addEventListener('loadingdone', onFontsLoaded);
 
@@ -391,6 +422,7 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
     window.removeEventListener('portfolio:restore', restoreState);
     gsap.ticker.remove(draw);
     cinematicMedia.removeEventListener('change', onMediaChange);
+    desktopHandoffMedia.removeEventListener('change', onDesktopHandoffChange);
     document.fonts.removeEventListener('loadingdone', onFontsLoaded);
     frameColor.dispose();
     stage.style.removeProperty('--about-paired-font');

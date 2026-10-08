@@ -23,7 +23,10 @@ export function initPageTransition({ getLenis, reduceMotion }) {
     const offset = header.querySelector('.studio-bar').offsetHeight + 16;
     // Center the orbit's stage, including short screens where Work is taller.
     const workStage = target.id === 'projects' ? target.querySelector('.orbit-stage')?.getBoundingClientRect() : null;
-    const top = workStage ? scrollY + workStage.top + workStage.height / 2 - innerHeight / 2
+    // During the About handoff the orbit plane is fixed to the viewport.
+    // Its top is then zero even though the actual Work section is far below.
+    // Anchor navigation to the section's document position in both states.
+    const top = workStage ? scrollY + rect.top + workStage.height / 2 - innerHeight / 2
       : target.id === 'hero' ? 0 : target.id === 'contact' && target.classList.contains('is-animated')
       ? rect.bottom + scrollY - innerHeight
       : rect.top + scrollY - (target.id === 'about' || target.id === 'contact' ? 0 : offset);
@@ -59,7 +62,7 @@ export function initPageTransition({ getLenis, reduceMotion }) {
     const same = links.some(link => link.hash === `#${target.id}` && link.hasAttribute('aria-current'));
     if (same && !historyNavigation) {
       if (location.hash !== `#${target.id}`) history.pushState(null, '', `#${target.id}`);
-      document.title = `${config.labels[target.id][2]} — ${baseTitle}`;
+      document.title = baseTitle;
       if (getLenis()) getLenis().scrollTo(position(target), { duration: reduceMotion.matches ? 0 : config.sameSection.duration });
       else window.scrollTo({ top: position(target), behavior: reduceMotion.matches ? 'instant' : 'smooth' });
       focus(target);
@@ -115,7 +118,7 @@ export function initPageTransition({ getLenis, reduceMotion }) {
         settleScroll(target);
         swapped = true;
         if (!historyNavigation && !pendingHistory) history.pushState(null, '', `#${target.id}`);
-        document.title = `${page} — ${baseTitle}`;
+        document.title = baseTitle;
       } catch (error) {
         console.error('Navigation transition failed:', error);
       } finally {

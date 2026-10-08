@@ -1,0 +1,216 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "distances": {
+        "descent": 6,
+        "orbitHold": 2
+      },
+      "before": {
+        "y": 12218,
+        "complete": "false",
+        "entry": 0,
+        "workTop": 8356,
+        "portrait": {
+          "width": 489.59375,
+          "height": 679.40625
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "held": {
+        "y": 12474,
+        "complete": "true",
+        "entry": 0,
+        "workTop": 8100,
+        "portrait": {
+          "width": 489.59375,
+          "height": 679.40625
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "released": {
+        "y": 13824,
+        "complete": "true",
+        "entry": 0.2498,
+        "workTop": 6750,
+        "portrait": {
+          "width": 489.59375,
+          "height": 679.40625
+        },
+        "translate": "0px -235.7px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.2498,
+          0.2103,
+          0.1665,
+          0.1174,
+          0.0623,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "settled": {
+        "y": 18774,
+        "complete": "true",
+        "entry": 1,
+        "workTop": 1800,
+        "portrait": {
+          "width": 489.59375,
+          "height": 679.40625
+        },
+        "translate": "0px -1125px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "locked": false
+      },
+      "reverse": {
+        "y": 13824,
+        "complete": "true",
+        "entry": 0.25,
+        "workTop": 6750,
+        "portrait": {
+          "width": 489.59375,
+          "height": 679.40625
+        },
+        "translate": "0px -236.111px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.25,
+          0.2105,
+          0.1667,
+          0.1176,
+          0.0625,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "restored": {
+        "y": 12218,
+        "complete": "false",
+        "entry": 0,
+        "workTop": 8356,
+        "portrait": {
+          "width": 489.59375,
+          "height": 679.40625
+        },
+        "translate": "0px",
+        "copies": [
+          "0",
+          "0"
+        ],
+        "overflow": 0,
+        "cards": [
+          0.25,
+          0.2105,
+          0.1667,
+          0.1176,
+          0.0625,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "locked": false
+      },
+      "reduced": {
+        "y": 2034,
+        "entry": 1,
+        "workTop": 900,
+        "portrait": {
+          "width": 489.59375,
+          "height": 679.40625
+        },
+        "translate": "0px",
+        "copies": [
+          "1",
+          "1"
+        ],
+        "overflow": 0,
+        "cards": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "locked": false
+      }
+    }
+  ],
+  "errors": []
+}

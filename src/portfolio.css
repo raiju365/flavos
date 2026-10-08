@@ -962,8 +962,9 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   #custom-cursor {
     width: 32px !important;
     height: 85px !important;
-    margin-left: -16px !important;
+    margin-left: -15.4px !important;
     margin-top: 0 !important;
+    transform-origin: 48% 0% !important;
     opacity: 1 !important;
     filter: drop-shadow(0 2px 8px rgba(26, 31, 92, 0.35)) !important;
     pointer-events: none !important;
