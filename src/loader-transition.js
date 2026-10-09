@@ -1,7 +1,7 @@
 import gsap from 'gsap';
 import './loader.css';
 
-export function createKineticLoader({ loader, reducedMotion = false }) {
+export function createKineticLoader({ loader, reducedMotion = false, restoring = false }) {
   if (!loader) return { setProgress() { }, clearError() { }, showError() { }, reveal: () => Promise.resolve() };
 
   const mark = loader.querySelector('.loader-mark');
@@ -100,7 +100,12 @@ export function createKineticLoader({ loader, reducedMotion = false }) {
 
     const tl = gsap.timeline({ onComplete: dispose });
 
-    if (reducedMotion) {
+    if (restoring) {
+      // Resume the settled destination without replaying the white Hero handoff.
+      tl.to([mark, progressEl].filter(Boolean), { opacity: 0, duration: reducedMotion ? .1 : .25, ease: 'power2.out' });
+      tl.call(() => window.dispatchEvent(new Event('portfolio:hero-enter')));
+      tl.to(loader, { opacity: 0, duration: reducedMotion ? .25 : .95, ease: 'power2.inOut' }, reducedMotion ? .1 : .3);
+    } else if (reducedMotion) {
       tl.to(loader, { opacity: 0, duration: 0.3 });
     } else {
       // 1. Brief pause at 100 so user sees the completed right-aligned 100

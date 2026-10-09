@@ -183,7 +183,7 @@ window.finishIntroGlobal = () => Promise.resolve();
 const loadingScreen = document.getElementById('loading-screen');
 document.body.style.overflow = 'hidden'; // Lock scrolling during loading
 
-const kineticLoader = createKineticLoader({ loader: loadingScreen, reducedMotion: prefersReducedMotion.matches });
+const kineticLoader = createKineticLoader({ loader: loadingScreen, reducedMotion: prefersReducedMotion.matches, restoring: scrollRestoration.restoring });
 
 let pageProgress = 0;
 const updateLoadingProgress = () => kineticLoader.setProgress(pageProgress * 100);

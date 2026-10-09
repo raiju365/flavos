@@ -1,0 +1,835 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "reduced": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "fontRequests": [
+        "http://localhost:5173/fonts/Inter-Latin-Variable.woff2",
+        "http://localhost:5173/fonts/IBMPlexMono-Latin-Medium.woff2"
+      ],
+      "nav": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 476,
+            "y": 24,
+            "width": 100,
+            "height": 44,
+            "top": 24,
+            "right": 576,
+            "bottom": 68,
+            "left": 476
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 588,
+            "y": 24,
+            "width": 80,
+            "height": 44,
+            "top": 24,
+            "right": 668,
+            "bottom": 68,
+            "left": 588
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 772,
+            "y": 24,
+            "width": 80,
+            "height": 44,
+            "top": 24,
+            "right": 852,
+            "bottom": 68,
+            "left": 772
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 864,
+            "y": 24,
+            "width": 100,
+            "height": 44,
+            "top": 24,
+            "right": 964,
+            "bottom": 68,
+            "left": 864
+          }
+        }
+      ],
+      "about": [
+        {
+          "font": "Inter, Arial, sans-serif",
+          "size": "35.6831px",
+          "r": {
+            "x": 57.59375,
+            "y": 130.265625,
+            "width": 374.421875,
+            "height": 679.46875,
+            "top": 130.265625,
+            "right": 432.015625,
+            "bottom": 809.734375,
+            "left": 57.59375
+          },
+          "scroll": 681,
+          "height": 679
+        },
+        {
+          "font": "Inter, Arial, sans-serif",
+          "size": "35.6831px",
+          "r": {
+            "x": 1007.984375,
+            "y": 130.265625,
+            "width": 374.421875,
+            "height": 679.46875,
+            "top": 130.265625,
+            "right": 1382.40625,
+            "bottom": 809.734375,
+            "left": 1007.984375
+          },
+          "scroll": 681,
+          "height": 679
+        }
+      ],
+      "detail": {
+        "font": "Inter, Arial, sans-serif",
+        "r": {
+          "x": 57.6015625,
+          "y": 436.234375,
+          "width": 100.9375,
+          "height": 43.53125,
+          "top": 436.234375,
+          "right": 158.5390625,
+          "bottom": 479.765625,
+          "left": 57.6015625
+        },
+        "text": "DEAF"
+      },
+      "controls": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        }
+      ],
+      "footer": {
+        "font": "Inter, Arial, sans-serif",
+        "size": "158.4px",
+        "backFont": "\"IBM Plex Mono\", monospace",
+        "r": {
+          "x": 321.328125,
+          "y": 383.375,
+          "width": 797.34375,
+          "height": 155.234375,
+          "top": 383.375,
+          "right": 1118.671875,
+          "bottom": 538.609375,
+          "left": 321.328125
+        },
+        "scroll": 797,
+        "width": 797
+      },
+      "overflow": 0
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "reduced": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "fontRequests": [
+        "http://localhost:5173/fonts/Inter-Latin-Variable.woff2",
+        "http://localhost:5173/fonts/IBMPlexMono-Latin-Medium.woff2"
+      ],
+      "nav": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 236,
+            "y": 24,
+            "width": 76,
+            "height": 44,
+            "top": 24,
+            "right": 312,
+            "bottom": 68,
+            "left": 236
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 316,
+            "y": 24,
+            "width": 62,
+            "height": 44,
+            "top": 24,
+            "right": 378,
+            "bottom": 68,
+            "left": 316
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 442,
+            "y": 24,
+            "width": 62,
+            "height": 44,
+            "top": 24,
+            "right": 504,
+            "bottom": 68,
+            "left": 442
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 508,
+            "y": 24,
+            "width": 76,
+            "height": 44,
+            "top": 24,
+            "right": 584,
+            "bottom": 68,
+            "left": 508
+          }
+        }
+      ],
+      "about": [
+        {
+          "font": "Inter, Arial, sans-serif",
+          "size": "20.3191px",
+          "r": {
+            "x": 28.6875,
+            "y": 326.5625,
+            "width": 217.3125,
+            "height": 386.75,
+            "top": 326.5625,
+            "right": 246,
+            "bottom": 713.3125,
+            "left": 28.6875
+          },
+          "scroll": 387,
+          "height": 387
+        },
+        {
+          "font": "Inter, Arial, sans-serif",
+          "size": "20.3191px",
+          "r": {
+            "x": 573.984375,
+            "y": 326.5625,
+            "width": 217.328125,
+            "height": 386.75,
+            "top": 326.5625,
+            "right": 791.3125,
+            "bottom": 713.3125,
+            "left": 573.984375
+          },
+          "scroll": 387,
+          "height": 387
+        }
+      ],
+      "detail": {
+        "font": "Inter, Arial, sans-serif",
+        "r": {
+          "x": 32.8046875,
+          "y": 492.875,
+          "width": 70.09375,
+          "height": 30.234375,
+          "top": 492.875,
+          "right": 102.8984375,
+          "bottom": 523.109375,
+          "left": 32.8046875
+        },
+        "text": "DEAF"
+      },
+      "controls": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        }
+      ],
+      "footer": {
+        "font": "Inter, Arial, sans-serif",
+        "size": "90.2px",
+        "backFont": "\"IBM Plex Mono\", monospace",
+        "r": {
+          "x": 182.9375,
+          "y": 467.796875,
+          "width": 454.109375,
+          "height": 88.390625,
+          "top": 467.796875,
+          "right": 637.046875,
+          "bottom": 556.1875,
+          "left": 182.9375
+        },
+        "scroll": 454,
+        "width": 454
+      },
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "fontRequests": [
+        "http://localhost:5173/fonts/Inter-Latin-Variable.woff2",
+        "http://localhost:5173/fonts/IBMPlexMono-Latin-Medium.woff2"
+      ],
+      "nav": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 16,
+            "y": 10,
+            "width": 74.5,
+            "height": 44,
+            "top": 10,
+            "right": 90.5,
+            "bottom": 54,
+            "left": 16
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 94.5,
+            "y": 10,
+            "width": 74.5,
+            "height": 44,
+            "top": 10,
+            "right": 169,
+            "bottom": 54,
+            "left": 94.5
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 221,
+            "y": 10,
+            "width": 74.5,
+            "height": 44,
+            "top": 10,
+            "right": 295.5,
+            "bottom": 54,
+            "left": 221
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 299.5,
+            "y": 10,
+            "width": 74.5,
+            "height": 44,
+            "top": 10,
+            "right": 374,
+            "bottom": 54,
+            "left": 299.5
+          }
+        }
+      ],
+      "about": [
+        {
+          "font": "Inter, Arial, sans-serif",
+          "size": "16.77px",
+          "r": {
+            "x": 23.390625,
+            "y": 602.28125,
+            "width": 343.21875,
+            "height": 164.28125,
+            "top": 602.28125,
+            "right": 366.609375,
+            "bottom": 766.5625,
+            "left": 23.390625
+          },
+          "scroll": 164,
+          "height": 164
+        }
+      ],
+      "detail": {
+        "font": "Inter, Arial, sans-serif",
+        "r": {
+          "x": 18,
+          "y": 88,
+          "width": 354,
+          "height": 30.234375,
+          "top": 88,
+          "right": 372,
+          "bottom": 118.234375,
+          "left": 18
+        },
+        "text": "DEAF"
+      },
+      "controls": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        }
+      ],
+      "footer": {
+        "font": "Inter, Arial, sans-serif",
+        "size": "62px",
+        "backFont": "\"IBM Plex Mono\", monospace",
+        "r": {
+          "x": 119.890625,
+          "y": 369.234375,
+          "width": 150.203125,
+          "height": 121.5,
+          "top": 369.234375,
+          "right": 270.09375,
+          "bottom": 490.734375,
+          "left": 119.890625
+        },
+        "scroll": 150,
+        "width": 150
+      },
+      "overflow": 0
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "reduced": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "fontRequests": [
+        "http://localhost:5173/fonts/Inter-Latin-Variable.woff2",
+        "http://localhost:5173/fonts/IBMPlexMono-Latin-Medium.woff2"
+      ],
+      "nav": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 16,
+            "y": 10,
+            "width": 57,
+            "height": 44,
+            "top": 10,
+            "right": 73,
+            "bottom": 54,
+            "left": 16
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 77,
+            "y": 10,
+            "width": 57,
+            "height": 44,
+            "top": 10,
+            "right": 134,
+            "bottom": 54,
+            "left": 77
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 186,
+            "y": 10,
+            "width": 57,
+            "height": 44,
+            "top": 10,
+            "right": 243,
+            "bottom": 54,
+            "left": 186
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 247,
+            "y": 10,
+            "width": 57,
+            "height": 44,
+            "top": 10,
+            "right": 304,
+            "bottom": 54,
+            "left": 247
+          }
+        }
+      ],
+      "about": [
+        {
+          "font": "Inter, Arial, sans-serif",
+          "size": "15px",
+          "r": {
+            "x": 20,
+            "y": 487.046875,
+            "width": 280,
+            "height": 168,
+            "top": 487.046875,
+            "right": 300,
+            "bottom": 655.046875,
+            "left": 20
+          },
+          "scroll": 168,
+          "height": 168
+        }
+      ],
+      "detail": {
+        "font": "Inter, Arial, sans-serif",
+        "r": {
+          "x": 18,
+          "y": 88,
+          "width": 284,
+          "height": 30.234375,
+          "top": 88,
+          "right": 302,
+          "bottom": 118.234375,
+          "left": 18
+        },
+        "text": "DEAF"
+      },
+      "controls": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        }
+      ],
+      "footer": {
+        "font": "Inter, Arial, sans-serif",
+        "size": "62px",
+        "backFont": "\"IBM Plex Mono\", monospace",
+        "r": {
+          "x": 84.890625,
+          "y": 297.25,
+          "width": 150.203125,
+          "height": 121.5,
+          "top": 297.25,
+          "right": 235.09375,
+          "bottom": 418.75,
+          "left": 84.890625
+        },
+        "scroll": 150,
+        "width": 150
+      },
+      "overflow": 0
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "reduced": false,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "fontRequests": [
+        "http://localhost:5173/fonts/Inter-Latin-Variable.woff2",
+        "http://localhost:5173/fonts/IBMPlexMono-Latin-Medium.woff2"
+      ],
+      "nav": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 113.5,
+            "y": 10,
+            "width": 95,
+            "height": 44,
+            "top": 10,
+            "right": 208.5,
+            "bottom": 54,
+            "left": 113.5
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 212.5,
+            "y": 10,
+            "width": 95,
+            "height": 44,
+            "top": 10,
+            "right": 307.5,
+            "bottom": 54,
+            "left": 212.5
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 359.5,
+            "y": 10,
+            "width": 95,
+            "height": 44,
+            "top": 10,
+            "right": 454.5,
+            "bottom": 54,
+            "left": 359.5
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 458.5,
+            "y": 10,
+            "width": 95,
+            "height": 44,
+            "top": 10,
+            "right": 553.5,
+            "bottom": 54,
+            "left": 458.5
+          }
+        }
+      ],
+      "about": [
+        {
+          "font": "Inter, Arial, sans-serif",
+          "size": "18px",
+          "r": {
+            "x": 68.5,
+            "y": 224.96875,
+            "width": 530,
+            "height": 125.9375,
+            "top": 224.96875,
+            "right": 598.5,
+            "bottom": 350.90625,
+            "left": 68.5
+          },
+          "scroll": 126,
+          "height": 126
+        }
+      ],
+      "detail": {
+        "font": "Inter, Arial, sans-serif",
+        "r": {
+          "x": 26.671875,
+          "y": 88,
+          "width": 613.65625,
+          "height": 43.1875,
+          "top": 88,
+          "right": 640.328125,
+          "bottom": 131.1875,
+          "left": 26.671875
+        },
+        "text": "DEAF"
+      },
+      "controls": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        }
+      ],
+      "footer": {
+        "font": "Inter, Arial, sans-serif",
+        "size": "80.04px",
+        "backFont": "\"IBM Plex Mono\", monospace",
+        "r": {
+          "x": 132,
+          "y": 166.28125,
+          "width": 402.984375,
+          "height": 78.4375,
+          "top": 166.28125,
+          "right": 534.984375,
+          "bottom": 244.71875,
+          "left": 132
+        },
+        "scroll": 403,
+        "width": 403
+      },
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "fontRequests": [
+        "http://localhost:5173/fonts/Inter-Latin-Variable.woff2",
+        "http://localhost:5173/fonts/IBMPlexMono-Latin-Medium.woff2"
+      ],
+      "nav": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 16,
+            "y": 10,
+            "width": 74.5,
+            "height": 44,
+            "top": 10,
+            "right": 90.5,
+            "bottom": 54,
+            "left": 16
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 94.5,
+            "y": 10,
+            "width": 74.5,
+            "height": 44,
+            "top": 10,
+            "right": 169,
+            "bottom": 54,
+            "left": 94.5
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 221,
+            "y": 10,
+            "width": 74.5,
+            "height": 44,
+            "top": 10,
+            "right": 295.5,
+            "bottom": 54,
+            "left": 221
+          }
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "r": {
+            "x": 299.5,
+            "y": 10,
+            "width": 74.5,
+            "height": 44,
+            "top": 10,
+            "right": 374,
+            "bottom": 54,
+            "left": 299.5
+          }
+        }
+      ],
+      "about": [
+        {
+          "font": "Inter, Arial, sans-serif",
+          "size": "16.77px",
+          "r": {
+            "x": 23.390625,
+            "y": 602.28125,
+            "width": 343.21875,
+            "height": 164.28125,
+            "top": 602.28125,
+            "right": 366.609375,
+            "bottom": 766.5625,
+            "left": 23.390625
+          },
+          "scroll": 164,
+          "height": 164
+        }
+      ],
+      "detail": {
+        "font": "Inter, Arial, sans-serif",
+        "r": {
+          "x": 18,
+          "y": 88,
+          "width": 354,
+          "height": 30.234375,
+          "top": 88,
+          "right": 372,
+          "bottom": 118.234375,
+          "left": 18
+        },
+        "text": "DEAF"
+      },
+      "controls": [
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        },
+        {
+          "font": "\"IBM Plex Mono\", monospace",
+          "size": "12px"
+        }
+      ],
+      "footer": {
+        "font": "Inter, Arial, sans-serif",
+        "size": "62px",
+        "backFont": "\"IBM Plex Mono\", monospace",
+        "r": {
+          "x": 120.0625,
+          "y": 369.25,
+          "width": 149.875,
+          "height": 121.5,
+          "top": 369.25,
+          "right": 269.9375,
+          "bottom": 490.75,
+          "left": 120.0625
+        },
+        "scroll": 150,
+        "width": 150
+      },
+      "overflow": 0
+    }
+  ],
+  "errors": []
+}

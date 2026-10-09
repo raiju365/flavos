@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "w": 1440,
+      "reduced": false,
+      "id": "hero",
+      "before": 0,
+      "after": 0,
+      "fadeFrames": 37
+    },
+    {
+      "w": 1440,
+      "reduced": false,
+      "id": "about",
+      "before": 4194,
+      "after": 4194,
+      "fadeFrames": 52
+    },
+    {
+      "w": 1440,
+      "reduced": false,
+      "id": "projects",
+      "before": 22194,
+      "after": 22194,
+      "fadeFrames": 66
+    },
+    {
+      "w": 1440,
+      "reduced": false,
+      "id": "contact",
+      "before": 23094,
+      "after": 23094,
+      "fadeFrames": 103
+    },
+    {
+      "w": 390,
+      "reduced": false,
+      "id": "hero",
+      "before": 0,
+      "after": 0,
+      "fadeFrames": 130
+    },
+    {
+      "w": 390,
+      "reduced": false,
+      "id": "about",
+      "before": 3823,
+      "after": 3823,
+      "fadeFrames": 130
+    },
+    {
+      "w": 390,
+      "reduced": false,
+      "id": "projects",
+      "before": 11757,
+      "after": 11757,
+      "fadeFrames": 125
+    },
+    {
+      "w": 390,
+      "reduced": false,
+      "id": "contact",
+      "before": 12601,
+      "after": 12601,
+      "fadeFrames": 129
+    },
+    {
+      "w": 390,
+      "reduced": true,
+      "id": "hero",
+      "before": 0,
+      "after": 0,
+      "fadeFrames": 34
+    },
+    {
+      "w": 390,
+      "reduced": true,
+      "id": "about",
+      "before": 2389,
+      "after": 2389,
+      "fadeFrames": 34
+    },
+    {
+      "w": 390,
+      "reduced": true,
+      "id": "projects",
+      "before": 3233,
+      "after": 3233,
+      "fadeFrames": 34
+    },
+    {
+      "w": 390,
+      "reduced": true,
+      "id": "contact",
+      "before": 4077,
+      "after": 4077,
+      "fadeFrames": 34
+    }
+  ],
+  "errors": []
+}

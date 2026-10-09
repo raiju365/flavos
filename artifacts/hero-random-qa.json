@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "visit": 1,
+      "difference": 597
+    },
+    {
+      "visit": 2,
+      "difference": 389
+    },
+    {
+      "seeds": [
+        "555569192",
+        "1935828564",
+        "387463971"
+      ],
+      "returnedSeed": "95049775",
+      "errors": []
+    }
+  ],
+  "errors": []
+}

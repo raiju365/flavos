@@ -1,5 +1,5 @@
 // A distance field gives the opening a continuous edge at every camera distance.
-// The field is generated from our local silhouette, not from a remote texture.
+// The field is generated from a fresh procedural outline for each visit.
 function distanceField(image) {
   const n = 1024, raster = document.createElement('canvas');
   raster.width = raster.height = n;
@@ -38,9 +38,11 @@ function distanceField(image) {
 
 const fragment = `precision highp float;
 varying vec2 uv;
-uniform sampler2D field, trail;
-uniform vec2 resolution;
+uniform sampler2D field, previousField;
+uniform vec2 resolution, pointerPosition, pointerFlow;
+uniform float pointerStrength;
 uniform float size, distance, progress, entry, clock, reduced;
+uniform float scrollVel, scratch, motionClock, shapeMix;
 float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
 float noise(vec2 p) {
   vec2 i=floor(p), f=fract(p); f=f*f*(3.-2.*f);
@@ -48,39 +50,79 @@ float noise(vec2 p) {
 }
 float sdf(vec2 p) {
   if(p.x<0. || p.x>1. || p.y<0. || p.y>1.) return .125;
-  return (dot(texture2D(field,p).rg,vec2(256.,1.))/257.-.5)*.25;
+  vec2 encoded=mix(texture2D(previousField,p).rg,texture2D(field,p).rg,shapeMix);
+  return (dot(encoded,vec2(256.,1.))/257.-.5)*.25;
 }
 void main() {
   vec2 screen=vec2(uv.x,1.-uv.y);
   vec2 center=vec2(.5,.49);
-  // Project a foreground plane approaching the camera; the background uses
-  // its own projection and therefore cannot grow at the same rate as this edge.
   vec2 q=(screen-center)*resolution/size*distance;
   float r2=dot(q,q);
-  // A monotonic lens map stretches the rim without folding distant pixels
-  // back into the silhouette (which would produce duplicate holes).
   q /= 1.+progress*2.2*exp(-1.8*r2);
-  vec2 material=q+.5;
-  float touch=texture2D(trail,screen).r*(1.-reduced)*pow(1.-progress,3.);
-  float fibres=noise(material*vec2(1150.,31.));
-  float grit=noise(material*830.);
-  vec2 shift=vec2(fibres-.5,grit-.5)*touch*.06;
-  // Fine erosion is attached to the material, not an overlay on the white page.
-  float d=sdf(material+shift);
-  d+=(noise(material*410.)-.5)*.0008*(1.-reduced);
+  // Enter through the solid central crossbar rather than the logo's white counter.
+  vec2 anchor=mix(vec2(.5),vec2(.5,.465),smoothstep(0.,.55,progress));
+  vec2 material=q+anchor;
+  // Pull the opening along uneven radial fibres as the camera approaches.
+  // The deformation stays continuous in both scroll directions.
+  float pull=smoothstep(.035,.52,progress)*(1.-smoothstep(.64,.8,progress))*(1.-reduced);
+  float theta=atan(q.y,q.x);
+  float tension=.55+.28*sin(theta*5.+motionClock*.22)+.17*sin(theta*9.-motionClock*.13);
+  material=anchor+q/(1.+pull*tension*(.6+scrollVel*.45));
+  // Directional elastic displacement: a stroke carries the contour with it,
+  // with a soft wake behind the pointer and a quiet lens at the leading edge.
+  // Pixel-space limits keep the response consistent across viewport sizes.
+  vec2 pointerDelta=(screen-pointerPosition)*resolution;
+  vec2 flow=pointerFlow*resolution;
+  float speed=length(flow);
+  vec2 direction=flow/max(speed,1.);
+  float energy=min(speed/1100.,1.);
+  float reach=min(180.,resolution.x*.3);
+  float along=dot(pointerDelta,direction);
+  vec2 wakeDelta=pointerDelta+direction*reach*.24*energy;
+  float wake=exp(-dot(wakeDelta,wakeDelta)/(reach*reach*.58));
+  float influence=exp(-dot(pointerDelta,pointerDelta)/(reach*reach*.36));
+  float response=pointerStrength*(1.-reduced)*(1.-smoothstep(.48,.7,progress));
+  float fold=cos(along/reach*3.2)*.18+.82;
+  vec2 displacement=pointerDelta*influence*.19-direction*(48.*energy)*wake*fold;
+  vec2 shift=displacement/size*distance/(1.+progress*2.2)*response;
+
+  // --- Organic jelly wobble driven by scroll velocity ---
+  // Layered noise at different scales with clock-driven phase offsets.
+  // Each layer has its own rhythm so the combined motion looks alive
+  // but never mechanical.  scrollVel amplifies the displacement.
+  float wobbleAmt = (1. - reduced)*(1.-smoothstep(.62,.8,progress));
+  float phase1 = motionClock * 1.1;
+  float phase2 = motionClock * 0.7;
+  float phase3 = motionClock * 1.8;
+  // low-freq sway (large organic pull)
+  float w1x = noise(material * 3.5 + vec2(phase1, phase2 * 0.6)) - .5;
+  float w1y = noise(material * 3.5 + vec2(phase2, phase1 * 0.8)) - .5;
+  // mid-freq jiggle (smaller, faster ripple)
+  float w2x = noise(material * 9.0 + vec2(phase3, phase1 * 1.3)) - .5;
+  float w2y = noise(material * 9.0 + vec2(phase1 * 1.2, phase3)) - .5;
+  // high-freq tremble (tiny nervous energy)
+  float w3x = noise(material * 22. + vec2(phase2 * 2.1, phase3 * 0.9)) - .5;
+  float w3y = noise(material * 22. + vec2(phase3 * 1.4, phase2 * 1.7)) - .5;
+  // Combine with decreasing amplitude per octave
+  vec2 wobble = vec2(w1x * .72 + w2x * (.16+.24*scrollVel) + w3x * .07*scrollVel,
+                     w1y * .72 + w2y * (.16+.24*scrollVel) + w3y * .07*scrollVel);
+  // Slow breathing remains at rest; scrolling adds smaller, quicker folds.
+  vec2 elastic=vec2(sin(material.y*12.+phase1*1.7),cos(material.x*11.-phase2*1.9));
+  shift += (wobble+elastic*.16)*wobbleAmt*(.012+.045*scrollVel);
+
+  // Preserve one continuous contour without directional cuts or fibres.
+  vec2 surface=material+shift;
+  float d=sdf(surface);
+
   float dotField=length((screen-center)*resolution/resolution.y)-.009;
   d=mix(dotField,d,smoothstep(0.,1.,entry));
-  float edgeWidth=.009 + .003*progress;
+  float edgeWidth=.009+.003*progress;
   float alpha=smoothstep(-edgeWidth,edgeWidth*.6,d);
-  // A broad inner shoulder makes a smoky material rim with etched radial fibres.
   float shoulder=(1.-smoothstep(.0,.032,abs(d)))*(1.-alpha);
-  vec2 radial=material-vec2(.5,.5);
-  float angle=atan(radial.y,radial.x);
-  float striation=noise(vec2(angle*160.,length(radial)*20.));
-  float grain=hash(floor(screen*resolution)+floor(clock*18.));
-  float edge=shoulder*(.12+.035*striation+.024*(grain-.5));
-  alpha=clamp(alpha+edge+touch*.16*(grit-.5)*(1.-alpha),0.,1.);
-  // The white material passes the camera geometrically. No painting crossfade.
+  float edge=shoulder*.12;
+  alpha=clamp(alpha+edge,0.,1.);
+  // Clear the thin crossbar's residual edge sheen continuously before handoff.
+  alpha*=1.-smoothstep(.7,.86,progress);
   if(reduced>.5) alpha*=1.-smoothstep(.05,.7,progress);
   gl_FragColor=vec4(vec3(1.),alpha);
 }`;
@@ -88,12 +130,9 @@ void main() {
 export function createApertureRenderer(canvas, source) {
   const gl = canvas.getContext('webgl', { alpha: true, antialias: false, depth: false, premultipliedAlpha: false, powerPreference: 'low-power' });
   if (!gl) return null;
-  let program, buffer, shaders=[], textures=[], uniforms, field, lost=false, disposed=false;
-  const trail = document.createElement('canvas'); trail.width=trail.height=256;
-  const ctx=trail.getContext('2d');
-  let lastTime=0, activeUntil=0, pending=[], lastPoint=null;
-  function clearTrail() { ctx.globalCompositeOperation='source-over'; ctx.fillStyle='#000';ctx.fillRect(0,0,256,256); }
-  clearTrail();
+  let program, buffer, shaders=[], textures=[], uniforms, field, previousField, patternTime=-5000, patternDuration=4000, lost=false, disposed=false;
+  let activeUntil=0, pointerTarget=null, pointerPosition={x:.5,y:.5}, pointerStrength=0, pointerFrame=0;
+  let pointerSample=null, flowTarget={x:0,y:0}, pointerFlow={x:0,y:0};
   function setup() {
     program=gl.createProgram(); shaders=[];
     for(const [type,code] of [[gl.VERTEX_SHADER,'attribute vec2 p; varying vec2 uv; void main(){uv=p*.5+.5;gl_Position=vec4(p,0.,1.);}'],[gl.FRAGMENT_SHADER,fragment]]) {
@@ -106,48 +145,83 @@ export function createApertureRenderer(canvas, source) {
     gl.useProgram(program);buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
     gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
     const attr=gl.getAttribLocation(program,'p');gl.enableVertexAttribArray(attr);gl.vertexAttribPointer(attr,2,gl.FLOAT,false,0,0);
-    uniforms=Object.fromEntries(['resolution','size','distance','progress','entry','clock','reduced'].map(n=>[n,gl.getUniformLocation(program,n)]));
-    textures=[field,trail].map((image,unit)=>{
+    uniforms=Object.fromEntries(['resolution','pointerPosition','pointerFlow','pointerStrength','size','distance','progress','entry','clock','reduced','scrollVel','scratch','motionClock','shapeMix'].map(n=>[n,gl.getUniformLocation(program,n)]));
+    textures=[field,previousField].map((image,unit)=>{
       const tex=gl.createTexture();gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,tex);
       for(const key of [gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER])gl.texParameteri(gl.TEXTURE_2D,key,gl.LINEAR);
       for(const key of [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T])gl.texParameteri(gl.TEXTURE_2D,key,gl.CLAMP_TO_EDGE);
       gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);
-      gl.uniform1i(gl.getUniformLocation(program,unit?'trail':'field'),unit);return tex;
+      gl.uniform1i(gl.getUniformLocation(program,['field','previousField'][unit]),unit);return tex;
     });
   }
   function release() { textures.forEach(t=>gl.deleteTexture(t));shaders.forEach(s=>gl.deleteShader(s));gl.deleteProgram(program);gl.deleteBuffer(buffer); }
-  function updateTrail(time) {
-    const dt=Math.min(100,time-lastTime||16);lastTime=time;
-    ctx.globalCompositeOperation='source-over';ctx.fillStyle=`rgba(0,0,0,${1-Math.exp(-dt/155)})`;ctx.fillRect(0,0,256,256);
-    for(const point of pending) {
-      const brush=ctx.createRadialGradient(point.x,point.y,0,point.x,point.y,24);
-      brush.addColorStop(0,'rgba(255,255,255,.75)');brush.addColorStop(1,'rgba(255,255,255,0)');
-      ctx.globalCompositeOperation='difference';ctx.fillStyle=brush;ctx.fillRect(point.x-24,point.y-24,48,48);
+  function updatePointer(time,reduced) {
+    const dt=Math.max(0,Math.min(64,pointerFrame?time-pointerFrame:16));pointerFrame=time;
+    const target=pointerTarget&&time<activeUntil&&!reduced?1:0;
+    pointerStrength+=(target-pointerStrength)*(1-Math.exp(-dt/(target?85:210)));
+    if(pointerStrength<.001&&!target){pointerStrength=0;pointerTarget=null;}
+    if(pointerTarget){
+      const follow=1-Math.exp(-dt/65);
+      pointerPosition.x+=(pointerTarget.x-pointerPosition.x)*follow;
+      pointerPosition.y+=(pointerTarget.y-pointerPosition.y)*follow;
     }
-    pending=[];
-    if(time>activeUntil)clearTrail();
-    gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,textures[1]);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,trail);
+    // Time-based decay avoids differences between 60 Hz and high-refresh mice.
+    if(!pointerSample||time-pointerSample.time>45||reduced){
+      const decay=Math.exp(-dt/180);
+      flowTarget.x*=decay;flowTarget.y*=decay;
+    }
+    const momentum=1-Math.exp(-dt/90);
+    pointerFlow.x+=(flowTarget.x-pointerFlow.x)*momentum;
+    pointerFlow.y+=(flowTarget.y-pointerFlow.y)*momentum;
+    gl.uniform2f(uniforms.pointerPosition,pointerPosition.x,pointerPosition.y);
+    gl.uniform2f(uniforms.pointerFlow,pointerFlow.x,pointerFlow.y);
+    gl.uniform1f(uniforms.pointerStrength,pointerStrength);
+    canvas.dataset.pointerStrength=pointerStrength.toFixed(4);
+    canvas.dataset.pointerMomentum=Math.hypot(pointerFlow.x,pointerFlow.y).toFixed(4);
   }
   const onLost=e=>{e.preventDefault();lost=true;canvas.style.visibility='hidden';};
   const onRestore=()=>{if(disposed||!field)return;setup();lost=false;canvas.dispatchEvent(new Event('aperture-restored'));};
   canvas.addEventListener('webglcontextlost',onLost);canvas.addEventListener('webglcontextrestored',onRestore);
   return {
-    prepare() { if(field||disposed)return;field=distanceField(source);setup(); },
-    pointer(x,y,time) {
-      const point={x:x*256,y:y*256};
-      if(lastPoint){const steps=Math.min(12,Math.ceil(Math.hypot(point.x-lastPoint.x,point.y-lastPoint.y)/4));for(let i=1;i<steps;i++)pending.push({x:lastPoint.x+(point.x-lastPoint.x)*i/steps,y:lastPoint.y+(point.y-lastPoint.y)*i/steps});}
-      pending.push(point);lastPoint=point;activeUntil=time+700;
+    prepare() { if(field||disposed)return;field=distanceField(source);previousField=field;setup(); },
+    setPattern(source,time,reduced,duration=4000) {
+      if(!field||disposed)return;
+      previousField=field;field=distanceField(source);patternDuration=duration;patternTime=reduced?time-duration:time;
+      if(lost)return;
+      for(const [unit,image] of [[0,field],[1,previousField]]){
+        gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,textures[unit]);
+        gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);
+      }
     },
-    reset() {pending=[];lastPoint=null;activeUntil=0;clearTrail();},
-    draw({width,height,size,distance,progress,entry,reduced,time}) {
+    pointer(x,y,time) {
+      if(!pointerTarget)pointerPosition={x,y};
+      if(pointerSample&&time-pointerSample.time<120){
+        const seconds=Math.max(8,time-pointerSample.time)/1000;
+        const vx=(x-pointerSample.x)/seconds,vy=(y-pointerSample.y)/seconds;
+        const limit=Math.min(1,2/Math.max(.001,Math.hypot(vx,vy)));
+        flowTarget={x:vx*limit,y:vy*limit};
+      }else{flowTarget={x:0,y:0};}
+      pointerSample={x,y,time};
+      pointerTarget={x,y};activeUntil=time+180;
+    },
+    endPointer() {activeUntil=0;pointerSample=null;flowTarget={x:0,y:0};},
+    reset() {pointerTarget=null;pointerStrength=0;activeUntil=0;pointerFrame=0;pointerSample=null;flowTarget={x:0,y:0};pointerFlow={x:0,y:0};},
+    draw({width,height,size,distance,progress,entry,reduced,time,motionClock=0,scrollVel=0,scratch=0}) {
       if(!field||lost||disposed)return;
-      gl.viewport(0,0,canvas.width,canvas.height);gl.useProgram(program);updateTrail(time);
+      gl.viewport(0,0,canvas.width,canvas.height);gl.useProgram(program);updatePointer(time,reduced);
       gl.uniform2f(uniforms.resolution,width,height);
-      for(const [key,value] of Object.entries({size,distance,progress,entry,clock:time/1000,reduced:+reduced}))gl.uniform1f(uniforms[key],value);
+      const blend=reduced?1:Math.max(0,Math.min(1,(time-patternTime)/patternDuration));
+      gl.uniform1f(uniforms.shapeMix,blend*blend*(3-2*blend));
+      canvas.dataset.shapeBlend=blend.toFixed(4);
+      for(const [key,value] of Object.entries({size,distance,progress,entry,clock:reduced?0:time/1000,reduced:+reduced,scrollVel,scratch,motionClock}))gl.uniform1f(uniforms[key],value);
       gl.drawArrays(gl.TRIANGLES,0,6);
-      canvas.dataset.trailState=time<activeUntil?'active':'idle';
+      canvas.dataset.trailState=pointerStrength>0?'active':'idle';
+      canvas.dataset.pointerEffect='elastic-flow';
     },
     get activeUntil(){return activeUntil;},
     destroy(){disposed=true;canvas.removeEventListener('webglcontextlost',onLost);canvas.removeEventListener('webglcontextrestored',onRestore);release();}
   };
 }
+
+
+

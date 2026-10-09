@@ -1,13 +1,5 @@
-@font-face {
-  font-family: 'Gaia Display';
-  src: url('/fonts/Gaia-Display.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 .folio-nav.studio-header .studio-link {
-  font-family: 'Gaia Display', Arial, sans-serif !important;
+  font-family: var(--font-label) !important;
 }
 
 .studio-header.is-nav-suction .studio-link .nav-word {
@@ -71,7 +63,7 @@
 
 /* Editorial proportions: one shared grid, expressive serif, quiet sans-serif. */
 :root {
-  --folio-serif: 'Instrument Serif', Georgia, serif;
+  --folio-serif: var(--font-display);
   --folio-paper: #f8f7f3;
 }
 
@@ -281,7 +273,7 @@
 }
 
 .folio-main .expertise-list h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   font-size: clamp(28px, 2.6vw, 44px);
   font-weight: 400;
   line-height: 1.15;
@@ -416,7 +408,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 8.5px;
   letter-spacing: 0.18em;
   color: rgba(90, 80, 60, 0.65);
@@ -494,7 +486,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 8.5px;
   letter-spacing: 0.14em;
   color: rgba(26, 31, 92, 0.6);
@@ -862,7 +854,7 @@
   position: absolute;
   top: 12px;
   left: 12px;
-  font-family: 'Martian Mono', 'Courier New', monospace;
+  font-family: var(--font-label);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1093,7 +1085,7 @@
 }
 
 .art-figure-sub {
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 8px;
   letter-spacing: 0.12em;
   color: rgba(26, 31, 92, 0.55);
@@ -1133,7 +1125,7 @@
 }
 
 .art-mode-label {
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 8.5px;
   letter-spacing: 0.1em;
   font-weight: 600;
@@ -1174,7 +1166,7 @@
 }
 
 .art-hint-text {
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 8px;
   letter-spacing: 0.12em;
   color: rgba(26, 31, 92, 0.75);
@@ -1238,7 +1230,7 @@
   justify-items: center;
   gap: 9px;
   color: rgba(25, 29, 59, .58);
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 8px;
   letter-spacing: .12em;
   line-height: 1;
@@ -1523,7 +1515,7 @@
   background:
     repeating-linear-gradient(0deg, rgba(4, 12, 7, 0) 0 3px, rgba(151, 255, 163, .085) 4px),
     linear-gradient(90deg, rgba(2, 9, 5, .62), transparent 48%, rgba(2, 9, 5, .35));
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 7px;
   line-height: 1;
   letter-spacing: .11em;
@@ -1786,7 +1778,7 @@
   padding: 5px 7px;
   color: #f0ede3;
   background: #191d3b;
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 6px;
   line-height: 1;
   letter-spacing: .13em;
@@ -1826,7 +1818,7 @@
   border: 0;
   color: inherit;
   background: transparent;
-  font: 400 13px/1 'Martian Mono', monospace;
+  font: 400 13px/1 var(--font-label);
   cursor: pointer;
   transition: color .3s ease, background-color .3s ease;
 }
@@ -1853,7 +1845,7 @@
   min-width: 0;
   gap: 10px;
   padding: 0 11px;
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 7px;
   line-height: 1;
   letter-spacing: .1em;
@@ -1883,7 +1875,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: 'Martian Mono', monospace;
+  font-family: var(--font-label);
   font-size: 7px;
   font-weight: 400;
   letter-spacing: .08em;
@@ -2197,7 +2189,7 @@
 }
 
 .brand-orbit-label {
-  font-family: 'Martian Mono', 'SF Mono', monospace;
+  font-family: var(--font-label);
   font-size: 7.4px;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -2696,6 +2688,8 @@
 
 /* Contact is the closing page itself, revealed as one continuous surface. */
 .folio-main .footer-sequence {
+  position: relative;
+  z-index: 14;
   height: auto;
   background: #17192c;
   overflow: clip;
@@ -2723,7 +2717,7 @@
   align-items: center;
   padding-bottom: 24px;
   border-bottom: 1px solid #f2efe62b;
-  font: 400 10px/1.5 Arial, sans-serif;
+  font: 400 10px/1.5 var(--font-body);
   letter-spacing: .09em;
 }
 
@@ -2747,7 +2741,7 @@
 .footer-note {
   margin: 0 0 clamp(28px, 4vh, 48px);
   color: #b1b1be;
-  font: 400 10px/1.5 Arial, sans-serif;
+  font: 400 10px/1.5 var(--font-body);
   letter-spacing: .12em;
 }
 
@@ -2768,7 +2762,7 @@
   margin-top: 36px;
   padding: 12px 0;
   border-color: #f2efe659;
-  font: 400 clamp(12px, 1.1vw, 17px)/1.5 Arial, sans-serif;
+  font: 400 clamp(12px, 1.1vw, 17px)/1.5 var(--font-body);
   overflow-wrap: anywhere;
 }
 
@@ -2794,14 +2788,14 @@
   margin-top: 28px;
   color: #c1c1cc;
   border-color: #f2efe633;
-  font: 400 11px/1.5 Arial, sans-serif;
+  font: 400 11px/1.5 var(--font-body);
 }
 
 .signature-bottom {
   border-color: #f2efe62b;
   color: #b1b1be;
   padding-top: 22px;
-  font: 400 10px/1.5 Arial, sans-serif;
+  font: 400 10px/1.5 var(--font-body);
 }
 
 @media (max-width: 768px) {
@@ -3654,7 +3648,7 @@
 .orbit-inline .orbit-shell { padding-top: clamp(96px, 12svh, 128px); }
 .folio-main .orbit-inline .orbit-header h2 {
   margin: 0;
-  font: 400 clamp(48px, 5vw, 76px)/1 'Instrument Serif', Georgia, serif;
+  font: 400 clamp(48px, 5vw, 76px)/1 var(--font-display);
   letter-spacing: -.045em;
 }
 .orbit-inline .orbit-stage { touch-action: pan-y pinch-zoom; }

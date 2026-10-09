@@ -1,0 +1,30 @@
+{
+  "result": {
+    "before": {
+      "ink": 0,
+      "trail": "idle",
+      "overflow": 0
+    },
+    "active": {
+      "ink": 5.587697368421052,
+      "trail": "active",
+      "overflow": 0
+    },
+    "lingering": {
+      "ink": 2.728848684210526,
+      "trail": "active",
+      "overflow": 0
+    },
+    "settled": {
+      "ink": 0,
+      "trail": "idle",
+      "overflow": 0
+    },
+    "reduced": {
+      "ink": 0,
+      "trail": "idle",
+      "overflow": 0
+    }
+  },
+  "errors": []
+}

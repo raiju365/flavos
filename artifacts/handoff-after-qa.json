@@ -1,0 +1,3047 @@
+{
+  "results": [
+    {
+      "width": 1742,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.01575202894782299,
+        "anchorB": {
+          "x": 873.0770584095707,
+          "y": 459.9322000351865
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "1.4646",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.02849983610617741,
+        "anchorB": {
+          "x": 875.5802911681914,
+          "y": 361.5286440007037
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4499",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5682",
+        "paintingScale": "1.4621",
+        "motionEnergy": "0.0288",
+        "motionClock": "2.0481",
+        "scratch": "0.2824",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.69,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.01649048878985146,
+        "anchorB": {
+          "x": 876.6332578289936,
+          "y": 321.0795324595355
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.69,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6899",
+        "entryPhase": "entering",
+        "foregroundScale": "23.3892",
+        "paintingScale": "1.6520",
+        "motionEnergy": "0.0301",
+        "motionClock": "2.6918",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 4.24133e-7,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.005696396026986587,
+        "anchorB": {
+          "x": 876.634643296974,
+          "y": 320.9936334447572
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.7001",
+        "entryPhase": "entering",
+        "foregroundScale": "28.4239",
+        "paintingScale": "1.6524",
+        "motionEnergy": "0.0347",
+        "motionClock": "2.9825",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.74,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.153812,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.005696396026986587,
+        "anchorB": {
+          "x": 876.634643296974,
+          "y": 320.9936334447572
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.74,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.1538",
+        "entryProgress": "0.7397",
+        "entryPhase": "entering",
+        "foregroundScale": "72.9714",
+        "paintingScale": "1.6524",
+        "motionEnergy": "0.0254",
+        "motionClock": "3.6653",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.498539,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.005696396026986587,
+        "anchorB": {
+          "x": 876.634643296974,
+          "y": 320.9936334447572
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.4985",
+        "entryProgress": "0.7798",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6634",
+        "paintingScale": "1.6524",
+        "motionEnergy": "0.0648",
+        "motionClock": "3.9436",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.82,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.844004,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.005696396026986587,
+        "anchorB": {
+          "x": 876.634643296974,
+          "y": 320.9936334447572
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.82,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.8440",
+        "entryProgress": "0.8200",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.6524",
+        "motionEnergy": "0.0551",
+        "motionClock": "4.7311",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.86,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.999984,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.005696396026986587,
+        "anchorB": {
+          "x": 876.634643296974,
+          "y": 320.9936334447572
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.86,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8596",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.6524",
+        "motionEnergy": "0.1002",
+        "motionClock": "5.0549",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.9,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.005696396026986587,
+        "anchorB": {
+          "x": 876.634643296974,
+          "y": 320.9936334447572
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8998",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.6524",
+        "motionEnergy": "0.1670",
+        "motionClock": "5.7823",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.498539,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.005696396026986587,
+        "anchorB": {
+          "x": 876.634643296974,
+          "y": 320.9936334447572
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.4985",
+        "entryProgress": "0.7798",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6634",
+        "paintingScale": "1.6524",
+        "motionEnergy": "0.2252",
+        "motionClock": "6.2908",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 4.24133e-7,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.005696396026986587,
+        "anchorB": {
+          "x": 876.634643296974,
+          "y": 320.9936334447572
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.7001",
+        "entryPhase": "entering",
+        "foregroundScale": "28.4239",
+        "paintingScale": "1.6524",
+        "motionEnergy": "0.0692",
+        "motionClock": "7.2343",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.02849983610617741,
+        "anchorB": {
+          "x": 875.5802911681914,
+          "y": 361.5286440007037
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4499",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5682",
+        "paintingScale": "1.4621",
+        "motionEnergy": "0.0318",
+        "motionClock": "8.0263",
+        "scratch": "0.2824",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.01575202894782299,
+        "anchorB": {
+          "x": 873.0770584095707,
+          "y": 459.9322000351865
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "802.29",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0296",
+        "motionClock": "8.7240",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.015279996808189821,
+        "anchorB": {
+          "x": 411.59850017593243,
+          "y": 410.2702212350457
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "1.4763",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.015085379602186382,
+        "anchorB": {
+          "x": 413.40044422941594,
+          "y": 332.18361849049967
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4500",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5693",
+        "paintingScale": "1.4186",
+        "motionEnergy": "0.0269",
+        "motionClock": "1.8708",
+        "scratch": "0.2817",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.69,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.00286654845673205,
+        "anchorB": {
+          "x": 414.1531821780436,
+          "y": 300.1344013898663
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.69,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6900",
+        "entryPhase": "entering",
+        "foregroundScale": "23.4482",
+        "paintingScale": "1.5905",
+        "motionEnergy": "0.0288",
+        "motionClock": "2.3856",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 3.2552e-12,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.012528944046847125,
+        "anchorB": {
+          "x": 414.1463098170302,
+          "y": 300.0627199155524
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.7000",
+        "entryPhase": "entering",
+        "foregroundScale": "28.3899",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0390",
+        "motionClock": "2.6366",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.74,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.156251,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.012528944046847125,
+        "anchorB": {
+          "x": 414.1463098170302,
+          "y": 300.0627199155524
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.74,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.1563",
+        "entryProgress": "0.7400",
+        "entryPhase": "entering",
+        "foregroundScale": "73.6700",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0345",
+        "motionClock": "3.0935",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.500001,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.012528944046847125,
+        "anchorB": {
+          "x": 414.1463098170302,
+          "y": 300.0627199155524
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.5000",
+        "entryProgress": "0.7800",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0409",
+        "motionClock": "3.3566",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.82,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.843751,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.012528944046847125,
+        "anchorB": {
+          "x": 414.1463098170302,
+          "y": 300.0627199155524
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.82,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.8438",
+        "entryProgress": "0.8200",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0339",
+        "motionClock": "3.8041",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.86,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.012528944046847125,
+        "anchorB": {
+          "x": 414.1463098170302,
+          "y": 300.0627199155524
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.86,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8600",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0858",
+        "motionClock": "3.8350",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.9,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.012528944046847125,
+        "anchorB": {
+          "x": 414.1463098170302,
+          "y": 300.0627199155524
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.9000",
+        "entryPhase": "painting",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.3973",
+        "motionClock": "3.8977",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.500001,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.012528944046847125,
+        "anchorB": {
+          "x": 414.1463098170302,
+          "y": 300.0627199155524
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.5000",
+        "entryProgress": "0.7800",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.1821",
+        "motionClock": "4.7827",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 3.2552e-12,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.012528944046847125,
+        "anchorB": {
+          "x": 414.1463098170302,
+          "y": 300.0627199155524
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.7000",
+        "entryPhase": "entering",
+        "foregroundScale": "28.3899",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0655",
+        "motionClock": "5.3524",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.015085379602186382,
+        "anchorB": {
+          "x": 413.40044422941594,
+          "y": 332.18361849049967
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4500",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5693",
+        "paintingScale": "1.4186",
+        "motionEnergy": "0.0394",
+        "motionClock": "5.8091",
+        "scratch": "0.2817",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.015279996808189821,
+        "anchorB": {
+          "x": 411.59850017593243,
+          "y": 410.2702212350457
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "504.79",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0304",
+        "motionClock": "6.3817",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.012859141325806024,
+        "anchorB": {
+          "x": 196.355977304715,
+          "y": 346.2664606790992
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "1.4319",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.018678842581474522,
+        "anchorB": {
+          "x": 197.87912341660802,
+          "y": 280.3180088845883
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4503",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5729",
+        "paintingScale": "1.4189",
+        "motionEnergy": "0.0276",
+        "motionClock": "1.7245",
+        "scratch": "0.2797",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.69,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0044883447921107945,
+        "anchorB": {
+          "x": 198.49870249824062,
+          "y": 253.32151653764953
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.69,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6899",
+        "entryPhase": "entering",
+        "foregroundScale": "23.4172",
+        "paintingScale": "1.5905",
+        "motionEnergy": "0.0362",
+        "motionClock": "2.0439",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6998",
+        "entryPhase": "entering",
+        "foregroundScale": "28.2782",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0478",
+        "motionClock": "2.2937",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.74,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.155974,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.74,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.1560",
+        "entryProgress": "0.7400",
+        "entryPhase": "entering",
+        "foregroundScale": "73.5904",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0425",
+        "motionClock": "2.6291",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.501112,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.5011",
+        "entryProgress": "0.7801",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0458",
+        "motionClock": "2.8780",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.82,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.84569,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.82,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.8457",
+        "entryProgress": "0.8203",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0411",
+        "motionClock": "3.2108",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.86,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.86,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8604",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0899",
+        "motionClock": "3.2532",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.9,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8999",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.4000",
+        "motionClock": "3.3162",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.501112,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.5011",
+        "entryProgress": "0.7801",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.2809",
+        "motionClock": "3.9790",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6998",
+        "entryPhase": "entering",
+        "foregroundScale": "28.2782",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.1273",
+        "motionClock": "4.4642",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.018678842581474522,
+        "anchorB": {
+          "x": 197.87912341660802,
+          "y": 280.3180088845883
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4503",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5729",
+        "paintingScale": "1.4189",
+        "motionEnergy": "0.0682",
+        "motionClock": "4.8594",
+        "scratch": "0.2797",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.012859141325806024,
+        "anchorB": {
+          "x": 196.355977304715,
+          "y": 346.2664606790992
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0495",
+        "motionClock": "5.2239",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.012755801330374628,
+        "anchorB": {
+          "x": 161.1134764250528,
+          "y": 287.1966045038705
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "1.4500",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.01256842004744762,
+        "anchorB": {
+          "x": 162.3850281491907,
+          "y": 232.5322726073188
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4500",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5693",
+        "paintingScale": "1.4186",
+        "motionEnergy": "0.0271",
+        "motionClock": "1.7461",
+        "scratch": "0.2817",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.69,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.01163350178663612,
+        "anchorB": {
+          "x": 162.90952674173116,
+          "y": 210.10487772695285
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.69,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6897",
+        "entryPhase": "entering",
+        "foregroundScale": "23.3126",
+        "paintingScale": "1.5905",
+        "motionEnergy": "0.0376",
+        "motionClock": "2.0350",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 6.64327e-12,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0033216757966388604,
+        "anchorB": {
+          "x": 162.9102194757213,
+          "y": 210.0463032195637
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.7000",
+        "entryPhase": "entering",
+        "foregroundScale": "28.3899",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0443",
+        "motionClock": "2.2810",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.74,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.154025,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0033216757966388604,
+        "anchorB": {
+          "x": 162.9102194757213,
+          "y": 210.0463032195637
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.74,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.1540",
+        "entryProgress": "0.7397",
+        "entryPhase": "entering",
+        "foregroundScale": "73.0324",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0425",
+        "motionClock": "2.5834",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.50149,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0033216757966388604,
+        "anchorB": {
+          "x": 162.9102194757213,
+          "y": 210.0463032195637
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.5015",
+        "entryProgress": "0.7802",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0467",
+        "motionClock": "2.8289",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.82,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.842633,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0033216757966388604,
+        "anchorB": {
+          "x": 162.9102194757213,
+          "y": 210.0463032195637
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.82,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.8426",
+        "entryProgress": "0.8198",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0429",
+        "motionClock": "3.1430",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.86,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0033216757966388604,
+        "anchorB": {
+          "x": 162.9102194757213,
+          "y": 210.0463032195637
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.86,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8603",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0925",
+        "motionClock": "3.1823",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.9,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0033216757966388604,
+        "anchorB": {
+          "x": 162.9102194757213,
+          "y": 210.0463032195637
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.9000",
+        "entryPhase": "painting",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.4018",
+        "motionClock": "3.2455",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.50149,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0033216757966388604,
+        "anchorB": {
+          "x": 162.9102194757213,
+          "y": 210.0463032195637
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.5015",
+        "entryProgress": "0.7802",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.2952",
+        "motionClock": "3.8809",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 6.64327e-12,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.0033216757966388604,
+        "anchorB": {
+          "x": 162.9102194757213,
+          "y": 210.0463032195637
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.7000",
+        "entryPhase": "entering",
+        "foregroundScale": "28.3899",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.1375",
+        "motionClock": "4.3594",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.01256842004744762,
+        "anchorB": {
+          "x": 162.3850281491907,
+          "y": 232.5322726073188
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4500",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5693",
+        "paintingScale": "1.4186",
+        "motionEnergy": "0.0770",
+        "motionClock": "4.7284",
+        "scratch": "0.2817",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": false,
+        "alignment": 0.012755801330374628,
+        "anchorB": {
+          "x": 161.1134764250528,
+          "y": 287.1966045038705
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "306.43",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0555",
+        "motionClock": "5.0597",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4501",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5703",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.69,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.69,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6904",
+        "entryPhase": "entering",
+        "foregroundScale": "23.6016",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.0000301922,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.7005",
+        "entryPhase": "entering",
+        "foregroundScale": "28.6801",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.74,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.152228,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.74,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.1522",
+        "entryProgress": "0.7394",
+        "entryPhase": "entering",
+        "foregroundScale": "72.5195",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.500321,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.5003",
+        "entryProgress": "0.7800",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.82,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.836312,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.82,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.8363",
+        "entryProgress": "0.8190",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.86,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.999977,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.86,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8596",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.9,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.9002",
+        "entryPhase": "painting",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.500321,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.5003",
+        "entryProgress": "0.7800",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.0000301922,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.7005",
+        "entryPhase": "entering",
+        "foregroundScale": "28.6801",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4501",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5703",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0560",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4503",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5729",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.3408",
+        "motionClock": "0.1128",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.69,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.69,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6899",
+        "entryPhase": "entering",
+        "foregroundScale": "23.4172",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.5654",
+        "motionClock": "0.1931",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6998",
+        "entryPhase": "entering",
+        "foregroundScale": "28.2782",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.5448",
+        "motionClock": "0.2714",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.74,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.155974,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.74,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.1560",
+        "entryProgress": "0.7400",
+        "entryPhase": "entering",
+        "foregroundScale": "73.5904",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.6999",
+        "motionClock": "0.3658",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.501112,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.5011",
+        "entryProgress": "0.7801",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.8022",
+        "motionClock": "0.4711",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.82,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.84569,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.82,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.8457",
+        "entryProgress": "0.8203",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.8696",
+        "motionClock": "0.5834",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.86,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.86,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8604",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.9140",
+        "motionClock": "0.7003",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.9,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 1,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "visible"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "1.0000",
+        "entryProgress": "0.8999",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.9433",
+        "motionClock": "0.8204",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.78,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0.501112,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.78,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.5011",
+        "entryProgress": "0.7801",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.9626",
+        "motionClock": "0.9425",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.7,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.7,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.6998",
+        "entryPhase": "entering",
+        "foregroundScale": "28.2782",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.9754",
+        "motionClock": "1.0659",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0.45,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.4503",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5729",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.9838",
+        "motionClock": "1.1902",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "progress": 0,
+      "layers": {
+        "a": "http://127.0.0.1:5174/Sidang Kekaisaran Romawi di Aula Marmer.png",
+        "b": "http://127.0.0.1:5174/paling-atas.png",
+        "loaded": true,
+        "blend": 0,
+        "coverA": true,
+        "coverB": true,
+        "alignment": 0.002965195610890237,
+        "anchorB": {
+          "x": 198.49949419422944,
+          "y": 253.25457424349048
+        },
+        "navbar": "hidden"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "imageBlend": "0.0000",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.5909",
+        "motionEnergy": "0.9893",
+        "motionClock": "1.3151",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    }
+  ],
+  "errors": []
+}

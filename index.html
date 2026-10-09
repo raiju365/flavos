@@ -3,14 +3,21 @@
 
 <head>
   <meta charset="UTF-8" />
+  <script>
+    if (['reload', 'back_forward'].includes(performance.getEntriesByType('navigation')[0]?.type)) {
+      document.documentElement.classList.add('is-restoring-visit');
+      history.scrollRestoration = 'manual';
+    }
+  </script>
+  <style>html.is-restoring-visit { background: #17192c; }</style>
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="description"
     content="Portfolio of Fahmi, a UI/UX Engineer and Data Analyst blending analytical rigor with creative design in a classical Greek/Roman aesthetic." />
   <title>Fahmi Aufa | Flavos</title>
   <link rel="icon" type="image/png" href="/untuk%20di%20lobby/wdadada.png" />
-  <link rel="preload" href="/fonts/Gaia-Display.otf" as="font" type="font/otf" crossorigin>
-  <link rel="preload" href="/fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Inter-Latin-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/IBMPlexMono-Latin-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/src/style.css" />
   <link rel="stylesheet" href="/src/portfolio.css" />
   <link rel="stylesheet" href="/src/editorial.css" />
@@ -74,26 +81,18 @@
 
     <section id="hero" class="folio-hero imperial-hero podium-hero" aria-labelledby="hero-heading">
       <div class="hero-destination" aria-hidden="true">
-        <img class="hero-destination-image" src="/paling-atas.png" alt="" fetchpriority="high" />
+        <img class="hero-destination-image" src="/Sidang%20Kekaisaran%20Romawi%20di%20Aula%20Marmer.png" width="1448" height="1086" alt="" fetchpriority="high" />
         <div class="hero-vignette-overlay"></div>
         <div class="hero-gradient-overlay-top"></div>
         <div class="hero-gradient-overlay-bottom"></div>
       </div>
-      <img class="hero-aperture-source" src="/hero-runner-mask.svg" alt="" aria-hidden="true" />
       <div class="hero-bg-wrapper" aria-hidden="true">
         <!-- Classical Base Painting (Ancient Rome) -->
-        <img src="/paling-atas.png" alt="Imperial Classical Painting" class="hero-bg-img hero-bg-base"
+        <img src="/Sidang%20Kekaisaran%20Romawi%20di%20Aula%20Marmer.png" alt="Sidang Kekaisaran Romawi di Aula Marmer" class="hero-bg-img hero-bg-base"
           fetchpriority="high" />
-        <div class="hero-collage">
-          <img src="/karya/efefesfeaf.png" alt="" />
-          <img src="/karya/COVERalbum.png" alt="" />
-          <img src="/paling-atas.png" alt="" />
-          <img src="/karya/posterhc.png" alt="" />
-        </div>
       </div>
 
       <h1 id="hero-heading" class="sr-only">Fahmi Aufa — Portfolio</h1>
-      <div class="hero-introduction"><p>Visual stories.<br>Made with intention.</p><a href="#about">Scroll to explore <span aria-hidden="true">↓</span></a></div>
 
     </section>
 

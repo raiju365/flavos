@@ -2,6 +2,10 @@
 .has-mouse-texture .hero-grain-surface { visibility: visible; }
 .has-mouse-texture .hero-bg-base { visibility: hidden; }
 .podium-hero { background: #fff !important; min-height: 100svh; height: 100svh; isolation: isolate; }
+.folio-main .folio-logo-pause.has-hero-paper-overlap {
+  margin-top: -100svh;
+  z-index: 1;
+}
 .podium-hero .hero-bg-wrapper {
   inset: 49% auto auto 50%; width: min(54vw, 76svh, 760px); height: auto;
   aspect-ratio: 1; transform: translate(-50%, -50%);
@@ -16,12 +20,15 @@
 .podium-hero .hero-grain-surface { z-index: 2; }
 .has-mouse-texture .hero-collage { visibility: hidden; }
 .hero-introduction { position: absolute; inset: auto 32px 28px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; color: #171717; z-index: 4; }
-.hero-introduction p { margin: 0; font: 600 clamp(20px,2.2vw,34px)/1.04 Arial,sans-serif; letter-spacing: -.035em; text-transform: uppercase; }
-.hero-introduction a { color: inherit; font: 12px/1.3 Arial,sans-serif; text-decoration: none; text-transform: uppercase; }
+.hero-introduction p { margin: 0; font: 600 clamp(20px,2.2vw,34px)/1.04 var(--font-body); letter-spacing: -.035em; text-transform: uppercase; }
+.hero-introduction a { color: inherit; font: 12px/1.3 var(--font-body); text-decoration: none; text-transform: uppercase; }
 .hero-introduction a span { margin-left: 12px; }
 .studio-header.is-hero-surface { color: #171717; }
 .hero-destination { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: #09090b; }
-.hero-destination-image { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transform: scale(1.02); filter: saturate(1.04) contrast(1.02); }
+.hero-destination-image { position: absolute; inset: 0; max-width: none; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transform: scale(1.02); filter: saturate(1.04) contrast(1.02); }
+.hero-destination > .hero-vignette-overlay { background: none; }
+.hero-destination > .hero-gradient-overlay-top { background: linear-gradient(180deg, rgba(8,8,10,.28), transparent); }
+.hero-destination > .hero-gradient-overlay-bottom { background: linear-gradient(0deg, rgba(9,9,11,.32), transparent); }
 .hero-aperture-source { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 .hero-aperture { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; }
 .folio-main .podium-hero.has-depth-entry { background: #080808 !important; }
@@ -31,6 +38,21 @@
 .studio-header.is-hero-surface.is-inside-hero .studio-brand img { filter: brightness(0) invert(1); }
 .folio-nav.studio-header.is-hero-surface { --nav-ink: #fff; color: #fff; mix-blend-mode: difference; }
 .folio-nav.studio-header.is-hero-surface .studio-brand img { filter: brightness(0) invert(1); }
+/* The travelling mark already switches ink at the paper boundary. Difference
+   blending would make its black ink disappear while the hero is still visible. */
+.folio-nav.studio-header.is-hero-surface.is-logo-journey { mix-blend-mode: normal; }
+.folio-nav.studio-header.has-hero-nav-reveal {
+  transition: opacity 1.1s cubic-bezier(.22, .61, .36, 1);
+}
+.folio-nav.studio-header.is-logo-aperture-visible {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .folio-nav.studio-header.has-hero-nav-reveal { transition: none; }
+}
 @media (max-width: 600px) {
   .podium-hero .hero-bg-wrapper { width: min(84vw, 58svh); }
   .hero-introduction { inset: auto 22px 26px; flex-direction: column; align-items: flex-start; gap: 22px; }

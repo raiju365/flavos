@@ -754,9 +754,12 @@ export function initProjectGallery({ getLenis }) {
     readingStage.style.willChange = progress > 0 && progress < 1 ? 'translate' : '';
     document.querySelector('#about').style.setProperty('--gallery-copy-opacity', '1');
     const travelling = progress > 0 && bounds.top > 0 && !motion.matches;
+    // Keep the settled gallery in its viewport while Contact slides over it.
+    // Release only once the opaque footer has covered the complete scene.
+    const footerCover = bounds.top <= 0 && bounds.bottom > 0;
     sceneVisible = bounds.bottom > 0 && (travelling || bounds.top < innerHeight);
-    overview.classList.toggle('is-emerging', travelling);
-    overview.style.height = travelling ? `${sectionHeight}px` : '';
+    overview.classList.toggle('is-emerging', travelling || footerCover);
+    overview.style.height = travelling || footerCover ? `${sectionHeight}px` : '';
     // Stagger departures across the first 45% of the handoff. The remaining
     // flight time is per card, so the final work still lands at exactly 100%.
     const ringProgress = ease(progress);

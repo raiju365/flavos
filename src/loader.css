@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Miracle History';
-  src: url('/fonts/MiracleHistory.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-
 #loading-screen.elegant-loader {
   position: fixed;
   inset: 0;
@@ -20,6 +10,10 @@
   background: #0b0b0a;
   will-change: transform;
   transform: translate3d(0, 0, 0);
+}
+
+html.is-restoring-visit #loading-screen.elegant-loader {
+  background: #17192c;
 }
 
 .loader-composition {
@@ -76,7 +70,7 @@
 
 .loader-percent {
   display: inline-block;
-  font-family: 'Miracle History', 'Instrument Serif', Georgia, serif;
+  font-family: var(--font-display);
   font-style: normal;
   font-weight: 400;
   /* Proportional on mobile, tablet/iPad, and desktop */
@@ -93,7 +87,7 @@
   left: clamp(24px, 4.5vw, 64px);
   bottom: clamp(110px, 15vh, 160px);
   max-width: min(32ch, calc(100% - 48px));
-  font: 400 14px/1.6 Arial, sans-serif;
+  font: 400 14px/1.6 var(--font-body);
 }
 
 .loader-status { margin: 0 0 12px; }

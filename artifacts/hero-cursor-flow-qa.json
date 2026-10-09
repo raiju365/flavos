@@ -1,0 +1,254 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "mode": "mouse",
+      "idle": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "active": {
+        "renderer": "webgl",
+        "pointerStrength": "1.0000",
+        "pointerMomentum": "0.3136",
+        "shapeBlend": "1.0000",
+        "trailState": "active",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "settled": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      }
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "mode": "mouse",
+      "idle": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "active": {
+        "renderer": "webgl",
+        "pointerStrength": "0.9997",
+        "pointerMomentum": "0.4062",
+        "shapeBlend": "1.0000",
+        "trailState": "active",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "settled": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mode": "touch",
+      "idle": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "active": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "settled": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      }
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "mode": "touch",
+      "idle": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "active": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "settled": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "mode": "reduce",
+      "idle": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "active": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "settled": {
+        "renderer": "webgl",
+        "pointerStrength": "0.0000",
+        "pointerMomentum": "0.0000",
+        "shapeBlend": "1.0000",
+        "trailState": "idle",
+        "pointerEffect": "elastic-flow",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mode": "fallback",
+      "idle": {
+        "renderer": "fallback",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "active": {
+        "renderer": "fallback",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      },
+      "settled": {
+        "renderer": "fallback",
+        "progress": 0,
+        "overflow": 0,
+        "canvases": 1,
+        "cursors": 1,
+        "locked": false
+      }
+    }
+  ],
+  "errors": []
+}

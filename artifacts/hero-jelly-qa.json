@@ -1,0 +1,62 @@
+{
+  "results": [
+    {
+      "progress": 0.5,
+      "entryProgress": "0.5000",
+      "entryPhase": "entering",
+      "foregroundScale": "3.3523",
+      "paintingScale": "0.7057",
+      "motionEnergy": "0.0343",
+      "motionClock": "7.2027",
+      "scratch": "0.8738"
+    },
+    {
+      "progress": 0.6,
+      "entryProgress": "0.6000",
+      "entryPhase": "entering",
+      "foregroundScale": "7.1239",
+      "paintingScale": "0.7941",
+      "motionEnergy": "0.0547",
+      "motionClock": "7.8173",
+      "scratch": "1.0000"
+    },
+    {
+      "progress": 0.9,
+      "entryProgress": "0.9000",
+      "entryPhase": "painting",
+      "foregroundScale": "166.6667",
+      "paintingScale": "1.0000",
+      "motionEnergy": "0.1767",
+      "motionClock": "8.1304",
+      "scratch": "1.0000"
+    },
+    {
+      "progress": 0.4,
+      "entryProgress": "0.4000",
+      "entryPhase": "entering",
+      "foregroundScale": "2.0666",
+      "paintingScale": "0.6317",
+      "motionEnergy": "0.0886",
+      "motionClock": "9.0438",
+      "scratch": "0.5830"
+    },
+    {
+      "progress": 0,
+      "entryProgress": "0.0000",
+      "entryPhase": "white",
+      "foregroundScale": "1.0000",
+      "paintingScale": "0.5000",
+      "motionEnergy": "0.0162",
+      "motionClock": "9.9985",
+      "scratch": "0.0000"
+    },
+    {
+      "changedAlphaSamples": 714,
+      "slow": 0.1654,
+      "fast": 0.5504,
+      "settled": 0.0093,
+      "errors": []
+    }
+  ],
+  "errors": []
+}

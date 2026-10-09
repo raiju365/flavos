@@ -1,0 +1,19 @@
+Typography migration — 2026-10-10
+
+Observed reference families:
+https://www.dylanbrouwer.design/ — Die Grotesk B (body), ABC Gravity Variable (hero), IBM Plex Mono (labels).
+https://www.raviklaassens.com/ — Suisse Intl Book (navigation/body/project labels), ReplicaLL (hero and narrative headings).
+
+Implemented: Inter as an open-source grotesk counterpart for display/body;
+IBM Plex Mono Medium for navigation and utility labels. No font files copied
+from the reference websites. Both assets are served locally (Latin subset).
+
+Inter-Latin-Variable.woff2
+https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2
+https://github.com/google/fonts/tree/main/ofl/inter
+License: Inter-OFL.txt
+
+IBMPlexMono-Latin-Medium.woff2
+https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgg.woff2
+https://github.com/IBM/plex
+License: IBMPlexMono-OFL.txt

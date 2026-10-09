@@ -20,14 +20,14 @@
   .orbit-turntable-texture.is-frosted { filter: blur(9px); }
 }
 .orbit-turntable-card img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.orbit-turntable-card.is-empty { font: 400 48px/1 'Instrument Serif', Georgia, serif; }
+.orbit-turntable-card.is-empty { font: 400 48px/1 var(--font-display); }
 .orbit-turntable-card.is-empty .orbit-turntable-texture { background: #ece9e1; }
-.orbit-travelling-surface { position: absolute; display: grid; place-items: center; overflow: hidden; background: #ece9e1; font: 400 32px/1 'Instrument Serif', Georgia, serif; transform-origin: 50% 50%; will-change: transform, left, top, width, height; }
+.orbit-travelling-surface { position: absolute; display: grid; place-items: center; overflow: hidden; background: #ece9e1; font: 400 32px/1 var(--font-display); transform-origin: 50% 50%; will-change: transform, left, top, width, height; }
 .orbit-travelling-surface img { position: absolute; inset: 0; width: 100%; height: 100%; min-width: 0; min-height: 0; display: block; object-fit: cover; object-position: center; }
 .orbit-shell { --orbit-gutter: clamp(20px, 4vw, 72px); position: relative; height: 100%; box-sizing: border-box; display: flex; flex-direction: column; padding: 28px var(--orbit-gutter) 20px; }
 .orbit-header { position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: center; flex: 0 0 auto; pointer-events: none; }
 .orbit-header button { pointer-events: auto; }
-.orbit-header h2 { margin: 0; font: 400 clamp(36px, 3.8vw, 58px)/1 'Instrument Serif', Georgia, serif; letter-spacing: -.04em; }
+.orbit-header h2 { margin: 0; font: 400 clamp(36px, 3.8vw, 58px)/1 var(--font-display); letter-spacing: -.04em; }
 .orbit-gallery button { color: inherit; font: inherit; -webkit-tap-highlight-color: transparent; }
 .orbit-gallery .orbit-close,
 .orbit-gallery .orbit-back,
@@ -35,7 +35,7 @@
 .orbit-gallery .orbit-detail-controls button {
   display: inline-flex; align-items: center; justify-content: center;
   min-width: 44px; min-height: 44px; padding: 8px 12px;
-  background: transparent; border: 0; border-radius: 0; font: 400 12px/1.4 Arial, sans-serif;
+  background: transparent; border: 0; border-radius: 0; font: 400 12px/1.4 var(--font-body);
 }
 .orbit-gallery .orbit-close { gap: 20px; }
 .orbit-close span { font-size: 23px; }
@@ -57,7 +57,7 @@
   width: var(--orbit-size); height: var(--orbit-size); aspect-ratio: 1;
   display: grid; place-items: center; padding: 0; border: 0;
   border-radius: 0; background: #ece9e1; color: #202334;
-  font: 400 clamp(18px, 2vw, 28px)/1 'Instrument Serif', Georgia, serif;
+  font: 400 clamp(18px, 2vw, 28px)/1 var(--font-display);
   pointer-events: auto; will-change: transform; overflow: hidden; backface-visibility: visible; cursor: pointer;
   transition: background-color .5s;
 }
@@ -76,8 +76,8 @@
 .orbit-card img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; pointer-events: none; filter: grayscale(1); }
 .orbit-color-filter { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
 .orbit-caption { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 0; text-align: center; pointer-events: none; }
-.orbit-caption-title { font: 400 clamp(26px, 3vw, 32px)/1.1 'Instrument Serif', Georgia, serif; }
-.orbit-caption-note { width: 180px; text-align: center; font: 400 11px/1.7 Arial, sans-serif; color: #6e707a; }
+.orbit-caption-title { font: 400 clamp(26px, 3vw, 32px)/1.1 var(--font-display); }
+.orbit-caption-note { width: 180px; text-align: center; font: 400 11px/1.7 var(--font-body); color: #6e707a; }
 .orbit-controls { position: absolute; z-index: 2; left: var(--orbit-gutter); right: var(--orbit-gutter); bottom: 20px; display: flex; align-items: center; justify-content: center; min-height: 48px; pointer-events: none; }
 .orbit-actions { display: grid; grid-template-columns: 44px minmax(0, 220px) 44px; align-items: start; column-gap: clamp(8px, 2vw, 28px); row-gap: 8px; max-width: 100%; }
 .orbit-actions button { pointer-events: auto; }
@@ -95,7 +95,7 @@
 .orbit-back svg { transition: transform .2s ease; }
 .orbit-back:hover svg { transform: translateX(-3px); }
 .orbit-detail-layout { min-height: max(360px, calc(100svh - 250px)); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr) minmax(0, 1fr); gap: clamp(24px, 3.2vw, 56px); align-items: center; width: 100%; max-width: 1440px; margin: 20px auto; }
-.orbit-detail-media { width: min(100%, 62vh); aspect-ratio: 1; display: grid; place-items: center; justify-self: center; background: #ece9e1; border: 0; box-sizing: border-box; font: 400 clamp(36px, 6vw, 80px)/1 'Instrument Serif', Georgia, serif; }
+.orbit-detail-media { width: min(100%, 62vh); aspect-ratio: 1; display: grid; place-items: center; justify-self: center; background: #ece9e1; border: 0; box-sizing: border-box; font: 400 clamp(36px, 6vw, 80px)/1 var(--font-display); }
 .orbit-detail-media.has-image { width: 100%; aspect-ratio: auto; background: none; border: 0; }
 .orbit-detail-media img { display: block; max-width: 100%; max-height: 66vh; width: auto; height: auto; object-fit: contain; filter: none; }
 .orbit-image-carousel { width: 100%; min-width: 0; }
@@ -103,16 +103,16 @@
 .orbit-image-viewport::-webkit-scrollbar { display: none; }
 .orbit-image-viewport:focus-visible { outline: 1px solid #a53628; outline-offset: 4px; }
 .orbit-image-slide { flex: 0 0 100%; min-width: 0; display: grid; place-items: center; scroll-snap-align: start; scroll-snap-stop: always; }
-.orbit-image-controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 18px; font: 400 11px/1.5 Arial, sans-serif; }
+.orbit-image-controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 18px; font: 400 11px/1.5 var(--font-body); }
 .orbit-gallery .orbit-image-controls button { min-width: 44px; min-height: 44px; padding: 8px; background: transparent; border: 1px solid #20233435; font-size: 20px; }
 .orbit-gallery .orbit-image-controls button:disabled { opacity: .25; cursor: default; }
 .orbit-detail-copy, .orbit-detail-context { min-width: 0; max-width: 300px; }
 .orbit-detail-copy { justify-self: start; }
 .orbit-detail-context { justify-self: end; }
-.orbit-detail-copy h3 { margin: 16px 0; font: 400 clamp(30px, 3.4vw, 54px)/1.05 'Instrument Serif', Georgia, serif; letter-spacing: -.03em; overflow-wrap: anywhere; }
-.orbit-detail-description { margin: 0; font: 400 14px/1.8 Arial, sans-serif; color: #6e707a; }
+.orbit-detail-copy h3 { margin: 16px 0; font: 400 clamp(30px, 3.4vw, 54px)/1.05 var(--font-display); letter-spacing: -.03em; overflow-wrap: anywhere; }
+.orbit-detail-description { margin: 0; font: 400 14px/1.8 var(--font-body); color: #6e707a; }
 .orbit-detail-controls { display: flex; justify-content: center; align-items: center; gap: 22px; padding-bottom: 8px; }
-.orbit-detail-count { font: 400 11px/1.5 Arial, sans-serif; color: #6e707a; }
+.orbit-detail-count { font: 400 11px/1.5 var(--font-body); color: #6e707a; }
 .orbit-gallery .orbit-detail-controls button { font-size: 22px; }
 @media (max-width: 760px) {
   .orbit-detail-layout { grid-template-columns: minmax(0, 1fr); min-height: 0; gap: 28px; margin: 14px 0 28px; }

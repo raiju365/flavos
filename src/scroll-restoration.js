@@ -22,6 +22,7 @@ export function initScrollRestoration() {
   document.addEventListener('visibilitychange', () => { if (document.hidden) save(); });
   return {
     top,
+    restoring: restore,
     activate() { ready = true; save(); }
   };
 }

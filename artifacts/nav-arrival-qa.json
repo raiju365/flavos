@@ -1,0 +1,330 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "reduced": false,
+      "before": {
+        "y": 1296,
+        "p": 0.8,
+        "opacity": 0,
+        "inert": true,
+        "flow": "rest",
+        "hit": false,
+        "overflow": 0,
+        "transform": ""
+      },
+      "early": {
+        "y": 1458,
+        "p": 0.9,
+        "opacity": 0.240334,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "middle": {
+        "y": 1458,
+        "p": 0.9,
+        "opacity": 0.776585,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "settled": {
+        "y": 1458,
+        "p": 0.9,
+        "opacity": 1,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "moved": {
+        "y": 1890,
+        "p": 1,
+        "opacity": 1,
+        "inert": true,
+        "flow": "flowing",
+        "hit": false,
+        "overflow": 0,
+        "transform": "translate3d(107.627px, -6.78492px, 0px) skewX(-8.99327deg) scale(1.89933, 1)"
+      },
+      "returned": {
+        "y": 1458,
+        "p": 0.9,
+        "opacity": 1,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      }
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "reduced": false,
+      "before": {
+        "y": 1440,
+        "p": 0.8,
+        "opacity": 0,
+        "inert": true,
+        "flow": "rest",
+        "hit": false,
+        "overflow": 0,
+        "transform": ""
+      },
+      "early": {
+        "y": 1620,
+        "p": 0.9,
+        "opacity": 0.240529,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "middle": {
+        "y": 1620,
+        "p": 0.9,
+        "opacity": 0.776662,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "settled": {
+        "y": 1620,
+        "p": 0.9,
+        "opacity": 1,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "moved": {
+        "y": 2100,
+        "p": 1,
+        "opacity": 1,
+        "inert": true,
+        "flow": "flowing",
+        "hit": false,
+        "overflow": 0,
+        "transform": "translate3d(86.5224px, -4.57361px, 0px) skewX(-8.64759deg) scale(1.86476, 1)"
+      },
+      "returned": {
+        "y": 1620,
+        "p": 0.9,
+        "opacity": 1,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "before": {
+        "y": 1215,
+        "p": 0.7999,
+        "opacity": 0,
+        "inert": true,
+        "flow": "rest",
+        "hit": false,
+        "overflow": 0,
+        "transform": ""
+      },
+      "early": {
+        "y": 1368,
+        "p": 0.9006,
+        "opacity": 0.240595,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "middle": {
+        "y": 1368,
+        "p": 0.9006,
+        "opacity": 0.783023,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "settled": {
+        "y": 1368,
+        "p": 0.9006,
+        "opacity": 1,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "moved": {
+        "y": 1773,
+        "p": 1,
+        "opacity": 1,
+        "inert": true,
+        "flow": "flowing",
+        "hit": false,
+        "overflow": 0,
+        "transform": "translate3d(88.1238px, -4.76204px, 0px) skewX(-8.63863deg) scale(1.86386, 1)"
+      },
+      "returned": {
+        "y": 1368,
+        "p": 0.9006,
+        "opacity": 1,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      }
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "reduced": false,
+      "before": {
+        "y": 1008,
+        "p": 0.8,
+        "opacity": 0,
+        "inert": true,
+        "flow": "rest",
+        "hit": false,
+        "overflow": 0,
+        "transform": ""
+      },
+      "early": {
+        "y": 1134,
+        "p": 0.9,
+        "opacity": 0.23998,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "middle": {
+        "y": 1134,
+        "p": 0.9,
+        "opacity": 0.776538,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "settled": {
+        "y": 1134,
+        "p": 0.9,
+        "opacity": 1,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "moved": {
+        "y": 1470,
+        "p": 1,
+        "opacity": 1,
+        "inert": true,
+        "flow": "flowing",
+        "hit": false,
+        "overflow": 0,
+        "transform": "translate3d(75.8345px, -3.76986px, 0px) skewX(-8.39302deg) scale(1.8393, 1)"
+      },
+      "returned": {
+        "y": 1134,
+        "p": 0.9,
+        "opacity": 1,
+        "inert": false,
+        "flow": "rest",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "before": {
+        "y": 473,
+        "p": 0.8003,
+        "opacity": 0,
+        "inert": true,
+        "flow": "reduced",
+        "hit": false,
+        "overflow": 0,
+        "transform": ""
+      },
+      "early": {
+        "y": 532,
+        "p": 0.9002,
+        "opacity": 1,
+        "inert": false,
+        "flow": "reduced",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "middle": {
+        "y": 532,
+        "p": 0.9002,
+        "opacity": 1,
+        "inert": false,
+        "flow": "reduced",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "settled": {
+        "y": 532,
+        "p": 0.9002,
+        "opacity": 1,
+        "inert": false,
+        "flow": "reduced",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "moved": {
+        "y": 937,
+        "p": 1,
+        "opacity": 1,
+        "inert": false,
+        "flow": "reduced",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      },
+      "returned": {
+        "y": 532,
+        "p": 0.9002,
+        "opacity": 1,
+        "inert": false,
+        "flow": "reduced",
+        "hit": true,
+        "overflow": 0,
+        "transform": ""
+      }
+    }
+  ],
+  "errors": []
+}

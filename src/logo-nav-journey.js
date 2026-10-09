@@ -27,7 +27,13 @@ export function initLogoNavJourney(cycle) {
   base.src = image.getAttribute('src');
   base.alt = '';
   base.className = 'logo-journey-base';
-  mark.append(base, stage);
+  // Two identical, aligned silhouettes let the paper edge recolor only the
+  // portion it has reached, without fading or switching the whole mark.
+  base.style.filter = 'brightness(0) invert(1)';
+  const paperInk = base.cloneNode();
+  paperInk.classList.add('logo-journey-paper-ink');
+  paperInk.style.filter = 'brightness(0)';
+  mark.append(base, paperInk, stage);
   header.append(mark);
   header.classList.add('has-logo-journey');
   section.classList.add('has-logo-journey');
@@ -36,6 +42,16 @@ export function initLogoNavJourney(cycle) {
   const clamp = n => Math.max(0, Math.min(1, n));
   const smooth = n => { const t = clamp(n); return t * t * (3 - 2 * t); };
   const mix = (a, b, t) => a + (b - a) * t;
+
+  function paintPaperInk(centerY, boxWidth, paperTop, footerTravel) {
+    // Matches the SVG's inset inside the square material-logo box in CSS.
+    const inkHeight = boxWidth * .67083333;
+    const inkTop = centerY - inkHeight / 2;
+    const cut = footerTravel > 0 ? 1 : clamp((paperTop - inkTop) / inkHeight);
+    paperInk.style.clipPath = `inset(${cut * 100}% 0 0 0)`;
+    mark.dataset.paper = String(cut < 1);
+    mark.dataset.paperInkCut = cut.toFixed(5);
+  }
 
   function measure() {
     cancelAnimationFrame(frame);
@@ -68,14 +84,14 @@ export function initLogoNavJourney(cycle) {
     const release = clamp((departure - .66) / (1 - .66));
     const reducedPause = rect.top <= height * .5 && rect.bottom >= height * .5;
     const footerTop = footer?.getBoundingClientRect().top ?? Infinity;
-      // Match the navbar's active-section boundary. Navigation stays interactive
-      // until Contact becomes active, including while the footer approaches.
-      const footerEntry = Math.min(height * .3, 220);
-      const inFooter = footerTop <= footerEntry;
-      const footerAbsorb = motion.matches ? Number(inFooter) :
-        smooth((footerEntry - footerTop) / (footerEntry * .65));
-      const footerTravel = motion.matches ? Number(inFooter) :
-        smooth((footerEntry * .35 - footerTop) / (footerEntry * .35 - 1));
+    // The footer's first visible edge starts the intake. Finish gathering the
+    // letters before the mark follows the rising footer to its left corner.
+    const footerProgress = footerTop >= height - 1 ? 0 : footerTop <= 1 ? 1 : clamp((height - footerTop) / height);
+    const inFooter = motion.matches
+      ? footerTop <= Math.min(height * .3, 220)
+      : footerProgress > 0;
+    const footerAbsorb = motion.matches ? Number(inFooter) : clamp(footerProgress / .3);
+    const footerTravel = motion.matches ? Number(inFooter) : smooth((footerProgress - .3) / .7);
     const absorption = Math.max(footerAbsorb, motion.matches ? Number(reducedPause) : entered * (1 - release));
     header.classList.toggle('is-footer-journey', footerAbsorb > 0);
     header.dataset.footerJourney = footerTravel >= 1 ? 'docked' : footerTravel > 0 ? 'travelling' : footerAbsorb > 0 ? 'absorbing' : 'inactive';
@@ -89,6 +105,7 @@ export function initLogoNavJourney(cycle) {
     if (!cycling) cycle.reset?.();
     stage.style.visibility = cycling ? 'inherit' : 'hidden';
     base.style.visibility = cycling ? 'hidden' : 'inherit';
+    paperInk.style.visibility = base.style.visibility;
     section.dataset.journey = docked ? 'centered' : arrival < 1 ? 'arriving' : departure < 1 ? 'returning' : 'complete';
     header.classList.toggle('is-logo-journey', travelling || (motion.matches && reducedPause));
       brand.inert = travelling || inFooter || (motion.matches && reducedPause);
@@ -111,10 +128,12 @@ export function initLogoNavJourney(cycle) {
         const origin = header.getBoundingClientRect();
         mark.style.cssText = `width:${target.width}px;height:${target.height}px;` +
           `transform:translate3d(${target.left - origin.left}px,${target.top - origin.top}px,0);`;
+        paintPaperInk(target.top + target.height / 2, target.width, rect.top, footerTravel);
         return;
       }
       stage.style.visibility = 'hidden';
       base.style.visibility = 'inherit';
+      paperInk.style.visibility = 'inherit';
     }
     const g = geometry;
     const progress = motion.matches ? 0 : arrival * (1 - returnToNav);
@@ -137,9 +156,7 @@ export function initLogoNavJourney(cycle) {
       x = mix(x, destination.left + destination.width / 2, footerTravel);
       y = mix(y, destination.top + destination.height / 2, footerTravel);
     }
-    // Switch ink exactly as the paper passes behind the travelling mark.
-    base.style.filter = y >= rect.top && footerTravel === 0 ? 'brightness(0)' : 'brightness(0) invert(1)';
-    mark.dataset.paper = String(y >= rect.top);
+    paintPaperInk(y, width, rect.top, footerTravel);
     mark.style.cssText = `width:${width}px;height:${width}px;` +
       `transform:translate3d(${x - origin.left - width / 2}px,${y - origin.top - width / 2}px,0);`;
     // Follow the footer's scrubbed reveal until it settles, even after scrolling stops.

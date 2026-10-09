@@ -206,7 +206,8 @@ function initDesignerNavbar({ getLenis, reduceMotion }) {
     const bounds = sections.map(section => ({ id: section.id, rect: section.getBoundingClientRect() }));
     const hero = bounds.find(section => section.id === 'hero')?.rect;
     const contact = bounds.find(section => section.id === 'contact')?.rect;
-    const overHero = hero && hero.bottom > barHeight;
+    const paperTop = document.querySelector('.folio-logo-pause')?.getBoundingClientRect().top ?? Infinity;
+    const overHero = hero && hero.bottom > barHeight && paperTop > barHeight;
     const overFooter = contact && contact.top < barHeight;
     header.classList.toggle('is-scrolled', window.scrollY > 40);
     header.classList.toggle('is-in-footer', Boolean(contact && contact.top < barHeight + 24));

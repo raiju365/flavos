@@ -1,0 +1,1205 @@
+{
+  "results": [
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "1.4540",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.3,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.2999",
+        "entryPhase": "entering",
+        "foregroundScale": "1.4879",
+        "paintingScale": "1.0207",
+        "motionEnergy": "0.0798",
+        "motionClock": "1.9220",
+        "scratch": "0.8434",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.4499",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5682",
+        "paintingScale": "1.0400",
+        "motionEnergy": "0.1102",
+        "motionClock": "2.2592",
+        "scratch": "0.2824",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.55,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.5501",
+        "entryPhase": "entering",
+        "foregroundScale": "4.6692",
+        "paintingScale": "1.0531",
+        "motionEnergy": "0.0747",
+        "motionClock": "2.8061",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.6497",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5031",
+        "paintingScale": "1.0649",
+        "motionEnergy": "0.0615",
+        "motionClock": "3.0712",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.75,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.7499",
+        "entryPhase": "entering",
+        "foregroundScale": "96.7062",
+        "paintingScale": "1.0741",
+        "motionEnergy": "0.0407",
+        "motionClock": "3.5274",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.8998",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.0800",
+        "motionEnergy": "0.0934",
+        "motionClock": "3.5387",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.6497",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5031",
+        "paintingScale": "1.0649",
+        "motionEnergy": "0.1961",
+        "motionClock": "4.0259",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.4499",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5682",
+        "paintingScale": "1.0400",
+        "motionEnergy": "0.0940",
+        "motionClock": "4.6552",
+        "scratch": "0.2824",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 1742,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "802.29",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0461",
+        "motionClock": "5.1647",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "1.4441",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.3,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.3000",
+        "entryPhase": "entering",
+        "foregroundScale": "1.4881",
+        "paintingScale": "1.0207",
+        "motionEnergy": "0.0273",
+        "motionClock": "1.7693",
+        "scratch": "0.8438",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.4500",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5693",
+        "paintingScale": "1.0400",
+        "motionEnergy": "0.0393",
+        "motionClock": "2.0090",
+        "scratch": "0.2817",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.55,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.5500",
+        "entryPhase": "entering",
+        "foregroundScale": "4.6661",
+        "paintingScale": "1.0531",
+        "motionEnergy": "0.0410",
+        "motionClock": "2.3348",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.6500",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5582",
+        "paintingScale": "1.0649",
+        "motionEnergy": "0.0453",
+        "motionClock": "2.5795",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.75,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.7500",
+        "entryPhase": "entering",
+        "foregroundScale": "97.1053",
+        "paintingScale": "1.0741",
+        "motionEnergy": "0.0413",
+        "motionClock": "2.9185",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.9000",
+        "entryPhase": "painting",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.0800",
+        "motionEnergy": "0.0904",
+        "motionClock": "2.9333",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.6500",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5582",
+        "paintingScale": "1.0649",
+        "motionEnergy": "0.1999",
+        "motionClock": "3.4081",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.4500",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5693",
+        "paintingScale": "1.0400",
+        "motionEnergy": "0.0903",
+        "motionClock": "3.8739",
+        "scratch": "0.2817",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "504.79",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0580",
+        "motionClock": "4.2315",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "1.4412",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.3,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.3002",
+        "entryPhase": "entering",
+        "foregroundScale": "1.4889",
+        "paintingScale": "1.0208",
+        "motionEnergy": "0.0283",
+        "motionClock": "1.7009",
+        "scratch": "0.8449",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.4503",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5729",
+        "paintingScale": "1.0400",
+        "motionEnergy": "0.0395",
+        "motionClock": "1.9411",
+        "scratch": "0.2797",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.55,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.5504",
+        "entryPhase": "entering",
+        "foregroundScale": "4.6786",
+        "paintingScale": "1.0532",
+        "motionEnergy": "0.0431",
+        "motionClock": "2.2249",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.6498",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5197",
+        "paintingScale": "1.0649",
+        "motionEnergy": "0.0478",
+        "motionClock": "2.4643",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.75,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.7498",
+        "entryPhase": "entering",
+        "foregroundScale": "96.6674",
+        "paintingScale": "1.0741",
+        "motionEnergy": "0.0465",
+        "motionClock": "2.7508",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.8999",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.0800",
+        "motionEnergy": "0.0993",
+        "motionClock": "2.7588",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.6498",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5197",
+        "paintingScale": "1.0649",
+        "motionEnergy": "0.1981",
+        "motionClock": "3.2494",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.4503",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5729",
+        "paintingScale": "1.0400",
+        "motionEnergy": "0.1063",
+        "motionClock": "3.6367",
+        "scratch": "0.2797",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0698",
+        "motionClock": "3.9611",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "1.4383",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.3,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.3000",
+        "entryPhase": "entering",
+        "foregroundScale": "1.4881",
+        "paintingScale": "1.0207",
+        "motionEnergy": "0.0291",
+        "motionClock": "1.6825",
+        "scratch": "0.8438",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.4500",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5693",
+        "paintingScale": "1.0400",
+        "motionEnergy": "0.0409",
+        "motionClock": "1.9169",
+        "scratch": "0.2817",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.55,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.5500",
+        "entryPhase": "entering",
+        "foregroundScale": "4.6661",
+        "paintingScale": "1.0531",
+        "motionEnergy": "0.0443",
+        "motionClock": "2.1864",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.6500",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5582",
+        "paintingScale": "1.0649",
+        "motionEnergy": "0.0468",
+        "motionClock": "2.4244",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.75,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.7500",
+        "entryPhase": "entering",
+        "foregroundScale": "97.1055",
+        "paintingScale": "1.0741",
+        "motionEnergy": "0.0473",
+        "motionClock": "2.6943",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.9000",
+        "entryPhase": "painting",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.0800",
+        "motionEnergy": "0.1000",
+        "motionClock": "2.7022",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.6500",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5582",
+        "paintingScale": "1.0649",
+        "motionEnergy": "0.2009",
+        "motionClock": "3.1869",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.4500",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5693",
+        "paintingScale": "1.0400",
+        "motionEnergy": "0.1119",
+        "motionClock": "3.5547",
+        "scratch": "0.2817",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 320,
+      "reduced": false,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "306.43",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0742",
+        "motionClock": "3.8685",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.3,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.2995",
+        "entryPhase": "entering",
+        "foregroundScale": "1.4861",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.4501",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5703",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.55,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.5499",
+        "entryPhase": "entering",
+        "foregroundScale": "4.6632",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.6497",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5158",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.75,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.7496",
+        "entryPhase": "entering",
+        "foregroundScale": "95.9837",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.9002",
+        "entryPhase": "painting",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.6497",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5158",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.4501",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5703",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "fallback": false,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0000",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.0000",
+        "motionClock": "0.0560",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.3,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.3002",
+        "entryPhase": "entering",
+        "foregroundScale": "1.4889",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.3408",
+        "motionClock": "0.1128",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.4503",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5729",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.5654",
+        "motionClock": "0.1931",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.55,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.5504",
+        "entryPhase": "entering",
+        "foregroundScale": "4.6786",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.7135",
+        "motionClock": "0.2891",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.6498",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5197",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.8111",
+        "motionClock": "0.3952",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.75,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.7498",
+        "entryPhase": "entering",
+        "foregroundScale": "96.6674",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.8755",
+        "motionClock": "0.5082",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.9,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.8999",
+        "entryPhase": "entering",
+        "foregroundScale": "166.6667",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.9179",
+        "motionClock": "0.6255",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.65,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.6498",
+        "entryPhase": "entering",
+        "foregroundScale": "12.5197",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.9459",
+        "motionClock": "0.7459",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0.45,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.4503",
+        "entryPhase": "entering",
+        "foregroundScale": "2.5729",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.9643",
+        "motionClock": "0.8681",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "fallback": true,
+      "progress": 0,
+      "state": {
+        "apertureSize": "373.46",
+        "entryProgress": "0.0000",
+        "entryPhase": "white",
+        "foregroundScale": "1.0000",
+        "paintingScale": "1.0000",
+        "motionEnergy": "0.9765",
+        "motionClock": "0.9916",
+        "scratch": "0.0000",
+        "overflow": 0,
+        "locked": false,
+        "top": 0,
+        "paintingOpacity": "1"
+      }
+    }
+  ],
+  "errors": []
+}
