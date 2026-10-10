@@ -76,9 +76,9 @@ export function initLogoNavJourney(cycle) {
     if (disposed || !geometry || !section.offsetHeight) return;
     const rect = section.getBoundingClientRect();
     const height = window.innerHeight;
-    // Keep the initial hero navbar intact. The longer footer intake is separate.
+    // Begin the descent when paper enters, before it reaches the logo.
     const entered = clamp((height * .98 - rect.top) / (height * .36));
-    const arrival = smooth((height * .62 - rect.top) / (height * .62));
+    const arrival = smooth((height * .98 - rect.top) / (height * .98));
     const departure = clamp((height - rect.bottom) / height);
     const returnToNav = smooth(departure / .66);
     const release = clamp((departure - .66) / (1 - .66));
@@ -97,11 +97,11 @@ export function initLogoNavJourney(cycle) {
     header.dataset.footerJourney = footerTravel >= 1 ? 'docked' : footerTravel > 0 ? 'travelling' : footerAbsorb > 0 ? 'absorbing' : 'inactive';
     const travelling = !motion.matches && entered > 0 && departure < 1;
     const docked = !motion.matches && rect.top <= 0 && rect.bottom >= height;
-    // Materials cycle only at or after the transition section (rect.top <= 0).
-    // On Hero (inputan 1) and while traveling between Hero and transition section (rect.top > 0),
-    // or when returning to Hero, keep the basic monochrome logo without style cycling.
-    const cycling = !motion.matches && rect.top <= 0;
-    cycle.setDocked?.(cycling);
+    // Finish the monochrome arrival before revealing the first material.
+    // A reversible blur conceals the opaque exchange at its midpoint.
+    const materialProgress = motion.matches ? 0 : smooth((height * .06 - rect.top) / (height * .16));
+    const cycling = !motion.matches && materialProgress >= .5;
+    cycle.setDocked?.(materialProgress >= 1);
     if (!cycling) cycle.reset?.();
     stage.style.visibility = cycling ? 'inherit' : 'hidden';
     base.style.visibility = cycling ? 'hidden' : 'inherit';
@@ -158,7 +158,8 @@ export function initLogoNavJourney(cycle) {
     }
     paintPaperInk(y, width, rect.top, footerTravel);
     mark.style.cssText = `width:${width}px;height:${width}px;` +
-      `transform:translate3d(${x - origin.left - width / 2}px,${y - origin.top - width / 2}px,0);`;
+      `transform:translate3d(${x - origin.left - width / 2}px,${y - origin.top - width / 2}px,0);` +
+      `filter:blur(${(Math.sin(Math.PI * materialProgress) ** 3 * Math.min(10,width*.025)).toFixed(3)}px);`;
     // Follow the footer's scrubbed reveal until it settles, even after scrolling stops.
     if (footerTravel > 0 && footerSettledFrames < 6 && !document.hidden) frame = requestAnimationFrame(update);
   }

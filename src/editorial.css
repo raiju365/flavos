@@ -3076,7 +3076,7 @@
   }
 }
 
-/* About desktop and tablet: two passages share one top-aligned portrait row. */
+/* About desktop and tablet: compact passages centered beside the portrait. */
 @media (min-width: 700px) {
   .about-reading-stage {
     height: 100svh !important;
@@ -3097,7 +3097,7 @@
     width: 100% !important;
     height: auto !important;
     padding: 0 !important;
-    align-self: start !important;
+    align-self: center !important;
   }
 
   .about-reading-copy {
@@ -3238,6 +3238,12 @@
   .about-art-showcase {
     width: min(48vw, 13svh) !important;
   }
+}
+
+.folio-main #about .about-reading-copy {
+  font-family: 'Instrument Serif', Georgia, serif !important;
+  font-weight: 400 !important;
+  font-optical-sizing: none;
 }
 
 .folio-main #about .about-reading-content--right .about-reading-copy {

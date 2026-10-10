@@ -7,7 +7,7 @@ const browser=await chromium.launch({channel:'msedge',headless:true});
 const page=await browser.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true,deviceScaleFactor:1});
 const errors=[],results=[];
 page.on('pageerror',e=>errors.push(e.message));
-const text='I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.';
+const text='I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.'.toUpperCase();
 const nav=async()=>{await page.locator('.studio-link[href="#about"]').click();await page.waitForFunction(()=>location.hash==='#about'&&!document.documentElement.classList.contains('is-colonnade-transitioning'));await page.waitForTimeout(1300);};
 const seek=async value=>{
  await page.evaluate(value=>{const e=document.querySelector('#about'),text=[...e.querySelectorAll('.about-reading-copy')].reduce((n,p)=>n+Math.round(p.querySelectorAll('.about-reading-word').length*5.5),0),total=parseFloat(e.style.getPropertyValue('--about-scroll-distance'));scrollTo({top:scrollY+e.getBoundingClientRect().top+(e.offsetHeight-innerHeight)*text*(1+value)/total,behavior:'instant'});},value);
@@ -35,8 +35,8 @@ try{
  }
  await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(800);await nav();
  assert.equal(await page.locator('#about').evaluate(e=>e.classList.contains('has-mobile-copy')),false);
- assert.ok(await page.locator('.about-reading-content--left').textContent().then(s=>s.includes('Hi, I’m Fahmi.')));
- assert.ok(await page.locator('.about-reading-content--right').textContent().then(s=>s.includes('From early research')));
+ assert.ok(await page.locator('.about-reading-content--left').textContent().then(s=>s.includes('I’M PASSIONATE ABOUT')));
+ assert.ok(await page.locator('.about-reading-content--right').textContent().then(s=>s.includes('AND A GROWING INTEREST')));
  await page.setViewportSize({width:390,height:844});await page.waitForTimeout(800);await nav();assert.equal((await state()).text,text);
  await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(800);
  assert.equal((await state()).text,text);assert.equal((await state()).left,'none');

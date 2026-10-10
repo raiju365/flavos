@@ -15,6 +15,20 @@
   font-weight: 500;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/fonts/Fraunces-Variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 :root {
   --font-site: 'Inter', Arial, sans-serif;
   --font-body: var(--font-site);

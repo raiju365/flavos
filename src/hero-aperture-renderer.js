@@ -112,6 +112,23 @@ void main() {
 
   // Preserve one continuous contour without directional cuts or fibres.
   vec2 surface=material+shift;
+  // Sculpt the outer rim independently of the counters. The logo stays upright;
+  // broad, slow curves change its silhouette without shaking the painting.
+  // The source mark occupies x=.11..89, y=.18..82 in the square field.
+  float contourLife=(1.-reduced)*(1.-smoothstep(.28,.68,progress));
+  float contourPhase=motionClock*1.35;
+  float horizontal=clamp((material.x-.11)/.78,0.,1.);
+  float arch=sin(horizontal*3.14159265);
+  float topRim=1.-smoothstep(.19,.235,material.y);
+  float bottomRim=smoothstep(.755,.82,material.y);
+  float sideRim=smoothstep(.27,.385,abs(material.x-.5));
+  float crown=.024*sin(contourPhase)+.010*sin(contourPhase*.63+1.2);
+  surface.y+=contourLife*topRim*arch*crown;
+  // Extend the foundation outwards; never carve a narrow waist under the arches.
+  surface.y-=contourLife*bottomRim*(.012+.012*(.5+.5*sin(contourPhase*.81+.8)))*arch;
+  float sideCurve=sin((material.y-.18)/.64*3.14159265);
+  float flare=.023*sin(contourPhase*.79-1.)+.011*sin(contourPhase*1.13+material.y*7.);
+  surface.x+=contourLife*sideRim*sign(material.x-.5)*sideCurve*flare;
   float d=sdf(surface);
 
   float dotField=length((screen-center)*resolution/resolution.y)-.009;

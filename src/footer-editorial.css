@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Signature Footer & Social Links
+   Clean Editorial Minimalist Hover (Inspired by Takafumi Senda & Codrops Restrained Line)
+   Subtle opacity shift, delicate 1px line wipe, and zero clutter
+   ========================================================================== */
+
+.signature-footer {
+  --footer-inset: clamp(18px, 1.2vw, 28px);
+  position: relative;
+  min-height: max(100svh, 480px);
+  padding: 0;
+  gap: 0;
+  display: block;
+}
+
+.signature-footer .footer-logo-anchor {
+  top: calc(24px + env(safe-area-inset-top, 0px) - var(--footer-logo-size, 41.5px) * .1645833333);
+  left: calc(var(--footer-inset) + env(safe-area-inset-left, 0px) - var(--footer-logo-size, 41.5px) * .090625);
+}
+
+.signature-footer .footer-back-to-top {
+  top: calc(12px + env(safe-area-inset-top, 0px));
+  right: calc(var(--footer-inset) + env(safe-area-inset-right, 0px));
+  font-size: 11px;
+  gap: 16px;
+}
+
+.signature-footer .footer-editorial {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  pointer-events: none;
+}
+
+.footer-contact-heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.footer-signature {
+  width: min(61.5vw, 1400px);
+}
+
+.footer-signature img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 48svh;
+  object-fit: contain;
+}
+
+.signature-footer .signature-bottom {
+  position: absolute;
+  left: calc(var(--footer-inset) + env(safe-area-inset-left, 0px));
+  bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.signature-footer .footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+  width: auto;
+  margin: 0;
+}
+
+/* Minimalist Editorial Link */
+.signature-footer .footer-socials .footer-direct {
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+  width: fit-content;
+  min-height: 40px;
+  padding: 4px 0 2px;
+  margin: 0;
+  border: 0;
+  font: 500 clamp(24px, 1.9vw, 36px)/1.2 var(--font-site);
+  letter-spacing: -.035em;
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .4s cubic-bezier(.22, 1, .36, 1);
+}
+
+.signature-footer .footer-direct span {
+  position: relative;
+  display: inline-block;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  transition: transform .4s cubic-bezier(.22, 1, .36, 1);
+}
+
+/* Clean 1px Hairline Underline (Codrops Underline Principle) */
+.signature-footer .footer-direct::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .45s cubic-bezier(.22, 1, .36, 1);
+  opacity: 0.85;
+}
+
+/* When hover on container, others stay muted; hovered one becomes crisp white */
+@media (hover: hover) and (pointer: fine) {
+  .signature-footer .footer-socials:hover .footer-direct {
+    color: rgba(255, 255, 255, 0.25);
+  }
+
+  .signature-footer .footer-socials .footer-direct:hover {
+    color: #ffffff;
+  }
+
+  .signature-footer .footer-direct:hover span {
+    transform: translateX(4px);
+  }
+
+  .signature-footer .footer-direct:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.signature-footer .footer-direct:focus-visible {
+  color: #ffffff;
+  outline: 1px solid currentColor;
+  outline-offset: 6px;
+}
+
+.signature-footer .footer-direct:focus-visible span {
+  transform: translateX(4px);
+}
+
+.signature-footer .footer-direct:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (max-width: 768px) {
+  .signature-footer {
+    --footer-inset: 20px;
+  }
+
+  .footer-signature {
+    width: 88vw;
+  }
+
+  .signature-footer .footer-back-to-top {
+    font-size: 10px;
+    gap: 12px;
+  }
+
+  .signature-footer .footer-socials .footer-direct {
+    font-size: 25px;
+    min-height: 38px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signature-footer *,
+  .signature-footer *::after {
+    transition: none !important;
+  }
+
+  .signature-footer .footer-direct:is(:hover, :focus-visible) span {
+    transform: none;
+  }
+
+  .signature-footer .footer-direct:is(:hover, :focus-visible)::after {
+    transform: scaleX(1);
+  }
+}

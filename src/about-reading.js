@@ -17,7 +17,7 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
   const ctx = canvas ? canvas.getContext('2d', { alpha: false, desynchronized: true }) : null;
   const originals = copies.map(copy => copy.textContent.trim().replace(/\s+/g, ' '));
   const mobileCopyMedia = matchMedia('(max-width: 699px), (pointer: coarse) and (max-width: 1100px) and (max-height: 500px)');
-  const mobileCopy = 'I’m passionate about how technology and visual design can shape ideas and inspire people. With a background in Informatics and a growing interest in creative media, I love exploring technology, design. I’m eager to keep learning, collaborating, and creating projects.';
+  const mobileCopy = originals.join(' ');
   function populateCopy(copy, text) {
     const tokens = text ? text.split(' ') : [];
     copy.setAttribute('aria-label', text);
@@ -157,13 +157,13 @@ export function animateAboutReading({ getLenis = () => null } = {}) {
       let low = .4, high = 1;
       for (let iteration = 0; iteration < 20; iteration++) {
         const scale = (low + high) / 2;
-        if (scaledLineCount(scale) * baseSize * scale * 1.12 <= frameHeight) low = scale;
+        if (scaledLineCount(scale) * baseSize * scale * 1.22 <= frameHeight) low = scale;
         else high = scale;
       }
       stage.style.setProperty('--about-paired-font', `${baseSize * low}px`);
       layouts = readLayouts();
-      const lines = Math.max(...layouts.map(layout => layout.lines));
-      stage.style.setProperty('--about-paired-leading', `${frameHeight / lines}px`);
+      // Follow the type size instead of stretching sparse lines to the frame.
+      stage.style.setProperty('--about-paired-leading', `${baseSize * low * 1.22}px`);
     }
     const lineCount = Math.max(...layouts.map(layout => layout.lines));
     wordGroups.forEach((group, index) => {

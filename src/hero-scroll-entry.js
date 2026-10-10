@@ -11,8 +11,8 @@ export function createHeroScrollEntry() {
   const copy=hero.querySelector('.hero-introduction');
   const pattern=createAperturePattern(),source=pattern.canvas;
   const header=document.querySelector('.studio-header');
-  // Arrival is a time-based fade after the aperture clears. Scroll still owns
-  // the later logo journey, never the opacity of this first appearance.
+  // The opening reveals the mark with scroll; the journey continues that same
+  // silhouette into the paper section without a second timed appearance.
   header?.classList.add('has-hero-nav-reveal', 'is-logo-aperture-visible');
   if(header)header.inert=true;
   let sourceReady=false;
@@ -46,9 +46,13 @@ export function createHeroScrollEntry() {
       canvas.style.opacity=String(1-smooth(p/.7));
     }
     canvas.style.visibility=p>=.86?'hidden':'visible';
-    const awaitingPainting=visible&&p<.86;
+    // Reveal the mark progressively with the opening, rather than switching
+    // the whole header on at one scroll threshold.
+    const logoReveal=visible?smooth((p-.60)/.30):1;
+    header?.style.setProperty('--hero-logo-reveal',String(logoReveal));
+    const awaitingPainting=logoReveal<=0;
     header?.classList.toggle('is-logo-aperture-visible',awaitingPainting);
-    if(header)header.inert=awaitingPainting;
+    if(header)header.inert=logoReveal<.999;
     if(copy){copy.style.opacity=String(state.entry*(1-smooth(p/.15)));copy.style.visibility=p>=.15?'hidden':'visible';}
     hero.dataset.entryProgress=p.toFixed(4);hero.dataset.entryPhase=p>=.9?'painting':p>.001?'entering':'white';
     hero.dataset.foregroundScale=(1/distance).toFixed(4);hero.dataset.paintingScale=paintingScale.toFixed(4);
@@ -111,6 +115,7 @@ export function createHeroScrollEntry() {
     canvas.remove();hero.classList.remove('has-depth-entry');
     paper?.classList.remove('has-hero-paper-overlap');
     header?.classList.remove('is-logo-aperture-visible','has-hero-nav-reveal');
+    header?.style.removeProperty('--hero-logo-reveal');
     if(header)header.inert=false;
     destination.style.removeProperty('transform');destination.style.removeProperty('transform-origin');
     copy?.style.removeProperty('opacity');copy?.style.removeProperty('visibility');
