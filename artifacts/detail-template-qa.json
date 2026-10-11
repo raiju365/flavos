@@ -1,0 +1,245 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "index": 0,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "DEAF",
+      "images": [
+        {
+          "ok": true,
+          "center": 719.9921875,
+          "ratio": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "index": 1,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "Poster kegiatan 01",
+      "images": [
+        {
+          "ok": true,
+          "center": 719.984375,
+          "ratio": 0.00000441384180793758
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "index": 2,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "Poster kegiatan 02",
+      "images": [
+        {
+          "ok": true,
+          "center": 719.984375,
+          "ratio": 0.00000441384180793758
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "index": 3,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "PANAM",
+      "images": [
+        {
+          "ok": true,
+          "center": 719.9921875,
+          "ratio": 0.00002854858969958407
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "index": 4,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "Cover album",
+      "images": [
+        {
+          "ok": true,
+          "center": 719.9921875,
+          "ratio": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "index": 5,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "Poster HC",
+      "images": [
+        {
+          "ok": true,
+          "center": 719.984375,
+          "ratio": 0.000019620433789890868
+        },
+        {
+          "ok": true,
+          "center": 1368.671875,
+          "ratio": 0.000008918378995415033
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "index": 6,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "Student DACO — 2nd Anniversary",
+      "images": [
+        {
+          "ok": true,
+          "center": 719.984375,
+          "ratio": 5.042174298086621e-7
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "index": 7,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "Beware The Deep",
+      "images": [
+        {
+          "ok": true,
+          "center": 719.984375,
+          "ratio": 0.000013241525423812739
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "index": 8,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "Asset 09",
+      "images": []
+    },
+    {
+      "width": 1440,
+      "index": 9,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "Asset 10",
+      "images": []
+    },
+    {
+      "width": 820,
+      "index": 0,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "DEAF",
+      "images": [
+        {
+          "ok": true,
+          "center": 410,
+          "ratio": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "index": 0,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "DEAF",
+      "images": [
+        {
+          "ok": true,
+          "center": 195,
+          "ratio": 0
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "index": 0,
+      "overflow": false,
+      "labels": [
+        "Tujuan karya",
+        "Konsep desain",
+        "Alasan memilih elemen visual",
+        "Tools yang digunakan"
+      ],
+      "title": "DEAF",
+      "images": [
+        {
+          "ok": true,
+          "center": 160,
+          "ratio": 0
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,3 +1,4 @@
+import { initFooterGradient } from './footer-gradient';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { initProjectGallery } from './project-gallery';
@@ -13,6 +14,21 @@ import { createHeroScrollEntry } from './hero-scroll-entry';
 export function initPortfolio({ getLenis }) {
   const main = document.getElementById('main-content');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let cleanupSignature, signatureDisposed = false;
+  const signatureObserver = new IntersectionObserver(entries => {
+    if (!entries.some(entry => entry.isIntersecting)) return;
+    signatureObserver.disconnect();
+    import('./footer-signature-3d').then(({ initFooterSignature3D }) => {
+      if (!signatureDisposed) cleanupSignature = initFooterSignature3D();
+    }).catch(error => console.warn('Footer signature keeps its image fallback.', error));
+  }, { rootMargin: '300px' });
+  const signatureFooter = document.querySelector('.signature-footer');
+  if (signatureFooter) signatureObserver.observe(signatureFooter);
+  if (import.meta.hot) import.meta.hot.dispose(() => {
+    signatureDisposed = true; signatureObserver.disconnect(); cleanupSignature?.();
+  });
+  const cleanupGradient = initFooterGradient();
+  if (import.meta.hot) import.meta.hot.dispose(cleanupGradient);
   const heroEntry = createHeroScrollEntry();
   if (import.meta.hot) import.meta.hot.dispose(heroEntry.destroy);
   const transitions = mountScrollTransitions(main);

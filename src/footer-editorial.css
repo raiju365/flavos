@@ -21,7 +21,9 @@
 .signature-footer .footer-back-to-top {
   top: calc(12px + env(safe-area-inset-top, 0px));
   right: calc(var(--footer-inset) + env(safe-area-inset-right, 0px));
-  font-size: 11px;
+  font: 500 13px/1.2 var(--font-site);
+  letter-spacing: -.025em;
+  text-transform: none;
   gap: 16px;
 }
 
@@ -169,7 +171,7 @@
   }
 
   .signature-footer .footer-back-to-top {
-    font-size: 10px;
+    font-size: 11px;
     gap: 12px;
   }
 
@@ -193,4 +195,11 @@
   .signature-footer .footer-direct:is(:hover, :focus-visible)::after {
     transform: scaleX(1);
   }
+}
+/* The original image reserves the exact layout and supplies accessible text. */
+.footer-signature { position: relative; }
+.footer-signature.has-signature-3d > img { opacity: 0; }
+.footer-signature-canvas {
+  position: absolute; left: -20%; top: -60%; width: 140%; height: 220%;
+  display: block; pointer-events: none;
 }

@@ -331,7 +331,22 @@ export function initProjectGallery({ getLenis }) {
     const work = galleryWorks[selected];
     title.textContent = label(selected);
     $('.orbit-detail-count').textContent = `${String(selected + 1).padStart(2, '0')} / ${count}`;
-    $('.orbit-detail-description').textContent = work.description || 'Karya sedang dibuat. Aset dan penjelasannya akan ditampilkan di sini.';
+    const description = $('.orbit-detail-description');
+    description.replaceChildren(...[
+      ['purpose', 'Tujuan karya'],
+      ['concept', 'Konsep desain'],
+      ['visualReason', 'Alasan memilih elemen visual'],
+      ['tools', 'Tools yang digunakan'],
+    ].map(([key, label]) => {
+      const section = document.createElement('div');
+      section.className = 'orbit-detail-section';
+      const heading = document.createElement('dt');
+      heading.textContent = label;
+      const content = document.createElement('dd');
+      content.textContent = work.detail[key];
+      section.append(heading, content);
+      return section;
+    }));
     media.replaceChildren();
     media.classList.toggle('has-image', Boolean(work.src));
     if (work.src) {

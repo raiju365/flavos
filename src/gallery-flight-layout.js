@@ -27,7 +27,7 @@ export function getGalleryFlightLayout({ progress, count, angle, radius, size, g
     // card starts inside the opaque photo window before joining its ring lane.
     const lane = ease((arrival - .08) / .58);
     const launchLift = portraitLift * (1 - drop);
-    const laneScale = Math.min(desiredScale, safeScale);
+    const laneScale = Math.min(desiredScale, safeScale + (desiredScale - safeScale) * ease((arrival - .75) / .25));
     const exitScale = initialScale + (Math.max(initialScale, desktop ? .65 : .72) - initialScale) * exit;
     return {
       x: originX * (1 - lane) + Math.sin(theta) * flightRadius * lane,
@@ -64,7 +64,8 @@ export function getGalleryFlightLayout({ progress, count, angle, radius, size, g
     });
     // Clearance is a safety guard, not the animation clock. Reserve a broad
     // final scroll interval for the bend, with zero speed at both endpoints.
-    const turn = ease((progress - .78) / .22) * ease((separation - 2) / (size * .03));
+    const settledSeparation = Math.max(1, (size + gap) * Math.cos(Math.PI / count) - size * Math.SQRT2);
+    const turn = ease((progress - .78) / .22) * ease((separation - .5) / (settledSeparation - .5));
     return { ...pose, yaw: pose.yaw * turn, pitch: pose.pitch * turn, bank: pose.bank * turn };
   });
 }

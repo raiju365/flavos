@@ -219,3 +219,36 @@
 @media (max-width: 767px), (max-height: 650px) {
   #about .about-reading-content { opacity: var(--gallery-copy-opacity, 1); }
 }
+
+/* Editable project notes: one consistent reading order for every artwork. */
+.orbit-detail-description { display: grid; gap: 22px; }
+.orbit-detail-section dt {
+  margin: 0 0 7px; color: #202334;
+  font: 400 12px/1.5 var(--font-body);
+}
+.orbit-detail-section dd {
+  margin: 0; font: 400 14px/1.7 var(--font-body);
+  overflow-wrap: anywhere; white-space: pre-line;
+}
+@media (min-width: 1001px) {
+  .project-gallery .orbit-detail-context {
+    max-height: 100%; overflow-y: auto; overscroll-behavior: contain;
+    padding-block: 8px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .project-gallery .orbit-detail { padding: 96px var(--orbit-gutter) 24px; }
+  .project-gallery .orbit-detail-layout {
+    position: static; transform: none; width: 100%; margin: 0;
+    grid-template-columns: minmax(0, 1fr); gap: 28px;
+  }
+  .project-gallery .orbit-detail-copy,
+  .project-gallery .orbit-detail-context { width: 100%; max-width: none; justify-self: stretch; }
+  .project-gallery .orbit-detail-media img,
+  .project-gallery .orbit-detail-media:has(.orbit-image-controls) img { max-height: 48svh; }
+  .project-gallery .orbit-image-controls { position: static; }
+  .project-gallery .orbit-detail-controls { position: static; margin-top: 28px; }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .orbit-detail-description { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 32px; }
+}

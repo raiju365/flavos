@@ -55,7 +55,6 @@ html body .studio-link,
 .orbit-detail-number,
 .project-gallery .orbit-detail-count,
 .project-gallery .orbit-image-controls,
-.signature-footer .footer-back-to-top,
 .hero-introduction a {
   font-family: var(--font-label);
   font-weight: 500;
@@ -112,9 +111,11 @@ html body .studio-link { font-size: 12px; line-height: 1.3; }
   line-height: .98;
 }
 .signature-footer .footer-direct,
-.signature-footer .footer-direct span {
+.signature-footer .footer-direct span,
+.signature-footer .footer-back-to-top,
+.signature-footer .footer-back-to-top .back-top-label {
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -.025em;
   text-transform: none;
 }

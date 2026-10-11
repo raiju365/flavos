@@ -344,3 +344,10 @@ if (meanderPaths.length) gsap.to(meanderPaths, {
 });
 
 initPortfolio({ getLenis: () => lenis });
+
+// Ensure no native browser tooltips ever linger or get re-injected
+const stripNativeTooltips = () => {
+  document.querySelectorAll('.footer-socials a, .footer-direct').forEach(a => a.removeAttribute('title'));
+};
+stripNativeTooltips();
+document.addEventListener('mouseover', stripNativeTooltips, { passive: true });
