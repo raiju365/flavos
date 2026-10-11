@@ -9,13 +9,20 @@ await page.goto('http://localhost:5173/',{waitUntil:'networkidle'});await page.w
 await page.locator('#contact').scrollIntoViewIfNeeded();await page.evaluate(()=>window.scrollTo(0,document.documentElement.scrollHeight));await page.waitForTimeout(1800);
 assert.ok(await page.locator('.signature-footer').evaluate(el=>getComputedStyle(el).backgroundImage.includes('linear-gradient')));
 assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+assert.equal(await page.locator('.signature-bottom').evaluate(el=>getComputedStyle(el).mixBlendMode),'difference');
+assert.equal(await page.locator('.footer-direct').first().getAttribute('data-footer-contrast'),null);
+const social=page.locator('.footer-direct').first();
+const restingColor=await social.evaluate(el=>getComputedStyle(el).color);
+await social.hover();
+assert.equal(await social.evaluate(el=>getComputedStyle(el).color),restingColor,'hover keeps automatic contrast');
+await page.mouse.move(width/2,height/2);
 const sample = () => page.locator('.footer-flow').evaluate(c => c.toDataURL());
 const before = await sample();
-await page.screenshot({path:`artifacts/footer-gradient-${width}.png`});
+await page.screenshot({path:`artifacts/${process.env.QA_PREFIX || 'footer-gradient'}-${width}.png`});
 await page.waitForTimeout(5000);
 const after = await sample();
 if(width===320) assert.equal(before,after,'reduced motion stays still');
 else assert.notEqual(before,after,'gradient changes over time');
-await page.screenshot({path:`artifacts/footer-flow-${width}-later.png`});await page.locator('.footer-direct').first().focus();assert.ok(await page.locator('.footer-direct').first().evaluate(el=>el===document.activeElement));
+await page.screenshot({path:`artifacts/${process.env.QA_PREFIX || 'footer-flow'}-${width}-later.png`});await page.locator('.footer-direct').first().focus();assert.ok(await page.locator('.footer-direct').first().evaluate(el=>el===document.activeElement));
 await page.locator('.footer-back-to-top').click();await page.waitForTimeout(2200);console.log('PASS',width,await page.evaluate(()=>({hash:location.hash,scroll:scrollY})));
 const stopped = await sample(); await page.waitForTimeout(600); assert.equal(stopped,await sample(),'offscreen animation pauses'); await page.close();}assert.deepEqual(errors,[]);}finally{await browser.close();}

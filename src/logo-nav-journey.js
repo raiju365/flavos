@@ -131,9 +131,10 @@ export function initLogoNavJourney(cycle) {
         paintPaperInk(target.top + target.height / 2, target.width, rect.top, footerTravel);
         return;
       }
-      stage.style.visibility = 'hidden';
-      base.style.visibility = 'inherit';
-      paperInk.style.visibility = 'inherit';
+      // Reduced motion keeps one original-colour material in the footer.
+      stage.style.visibility = footerTravel > 0 ? 'inherit' : 'hidden';
+      base.style.visibility = footerTravel > 0 ? 'hidden' : 'inherit';
+      paperInk.style.visibility = base.style.visibility;
     }
     const g = geometry;
     const progress = motion.matches ? 0 : arrival * (1 - returnToNav);

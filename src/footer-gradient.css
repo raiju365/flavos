@@ -44,9 +44,11 @@
 .signature-footer .footer-socials .footer-direct,
 .signature-footer .footer-socials:hover .footer-direct,
 .signature-footer .footer-socials .footer-direct:is(:hover, :focus-visible),
-.signature-footer .footer-back-to-top { color: var(--footer-auto-ink, #081624); transition: color .18s linear; }
-.logo-journey-mark[data-footer-contrast="light"] { filter: brightness(0) invert(1) !important; }
-.logo-journey-mark[data-footer-contrast="dark"] { filter: brightness(0) !important; }
+.signature-footer .footer-back-to-top { color: #fff; transition: none; }
+/* Blend each glyph against the gradient directly, without threshold switches
+   or one averaged light/dark state for the whole label. */
+.signature-footer .signature-bottom,
+.signature-footer .footer-back-to-top { mix-blend-mode: difference; }
 .signature-footer .footer-signature img {
   filter: brightness(0) saturate(100%) invert(6%) sepia(22%) saturate(1600%) hue-rotate(169deg) brightness(95%) contrast(98%) drop-shadow(0 0 1px #f8f7f3);
 }

@@ -8,12 +8,13 @@ const page=await browser.newPage({viewport:{width,height},reducedMotion:width===
 await page.goto('http://localhost:5173/',{waitUntil:'networkidle'});await page.waitForFunction(()=>window.isMainPageReady&&!document.querySelector('#loading-screen'));
 await page.locator('#contact').scrollIntoViewIfNeeded();await page.evaluate(()=>window.scrollTo(0,document.documentElement.scrollHeight));
 await page.waitForSelector('.has-signature-3d');await page.waitForTimeout(1800);
+await page.waitForFunction(() => document.querySelector('.footer-signature')?.dataset.stickersLoaded === '6');
 assert.equal(await page.locator('.footer-signature').getAttribute('data-footer-contrast'),null);
 const state=()=>page.locator('.footer-signature').evaluate(el=>({...el.dataset}));
 await page.mouse.move(width*.2,height*.2);await page.waitForTimeout(900);const left=await state();
-await page.screenshot({path:`artifacts/footer-3d-${width}-left.png`});
+await page.screenshot({path:`artifacts/${process.env.QA_PREFIX || 'footer-3d'}-${width}-left.png`});
 await page.mouse.move(width*.85,height*.8);await page.waitForTimeout(900);const right=await state();
-await page.screenshot({path:`artifacts/footer-3d-${width}-right.png`});
+await page.screenshot({path:`artifacts/${process.env.QA_PREFIX || 'footer-3d'}-${width}-right.png`});
 if(width===320){assert.equal(left.rotation,right.rotation);assert.equal(left.light,right.light);}
 else {assert.notEqual(left.rotation,right.rotation);assert.notEqual(left.light,right.light);const before=await state();await page.waitForTimeout(900);assert.notEqual(before.light,(await state()).light);}
 assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
