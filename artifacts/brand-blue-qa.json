@@ -1,0 +1,26 @@
+[
+  {
+    "width": 1440,
+    "about": "rgb(32, 35, 91)",
+    "gallery": "rgb(32, 35, 91)",
+    "footerInk": "#20235b"
+  },
+  {
+    "width": 820,
+    "about": "rgb(32, 35, 91)",
+    "gallery": "rgb(32, 35, 91)",
+    "footerInk": "#20235b"
+  },
+  {
+    "width": 390,
+    "about": "rgb(32, 35, 91)",
+    "gallery": "rgb(32, 35, 91)",
+    "footerInk": "#20235b"
+  },
+  {
+    "width": 320,
+    "about": "rgb(32, 35, 91)",
+    "gallery": "rgb(32, 35, 91)",
+    "footerInk": "#20235b"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "start": 13.445,
+  "duration": 6.050000000000001,
+  "raw": "artifacts/cloud-return-clean-rocket-growth-raw.webm",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "instrumented": false,
+  "final": {
+    "y": 0,
+    "hash": "#hero",
+    "inert": false,
+    "overflow": "",
+    "phase": "idle",
+    "assembly": "1.0000",
+    "reveal": "scale",
+    "heroPhase": "white",
+    "focused": "hero-heading"
+  }
+}

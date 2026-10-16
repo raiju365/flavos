@@ -1,0 +1,647 @@
+{
+  "results": [
+    {
+      "index": 4,
+      "stats": {
+        "matched": 84488,
+        "walls": 55746,
+        "total": 87960,
+        "projectedError": 2.3437142008433856e-13,
+        "minZ": -0.15665796399116516,
+        "maxZ": 0.3149999976158142,
+        "glError": 0,
+        "contours": [
+          504
+        ]
+      },
+      "frames": [
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "1.0000",
+          "rotation": "-0.0340,-0.0753,-0.0098,0.9965",
+          "scale": "2.9648",
+          "contact": "0.0000",
+          "flight": "1.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "0.6500",
+          "rotation": "-0.0795,-0.0285,0.0332,0.9959",
+          "scale": "1.5717",
+          "contact": "0.0000",
+          "flight": "0.4546"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "0.4000",
+          "rotation": "-0.1152,0.0086,0.0672,0.9910",
+          "scale": "0.4701",
+          "contact": "0.0000",
+          "flight": "0.0233"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "0.3400",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.4106",
+          "contact": "0.0000",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "0.2500",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.4106",
+          "contact": "0.1731",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "0.1600",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.4106",
+          "contact": "0.5441",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "0.0700",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.4106",
+          "contact": "0.8903",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "0.0250",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.4106",
+          "contact": "0.9846",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "4",
+          "progress": "0.0000",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.4106",
+          "contact": "1.0000",
+          "flight": "0.0000"
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "stats": {
+        "matched": 185316,
+        "walls": 106738,
+        "total": 185316,
+        "projectedError": 2.3437142008433856e-13,
+        "minZ": -0.2241506725549698,
+        "maxZ": 0.3149999976158142,
+        "glError": 0,
+        "contours": [
+          849
+        ]
+      },
+      "frames": [
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "1.0000",
+          "rotation": "-0.0340,-0.0753,-0.0098,0.9965",
+          "scale": "1.6742",
+          "contact": "0.0000",
+          "flight": "1.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "0.6500",
+          "rotation": "-0.0783,-0.0506,-0.1507,0.9842",
+          "scale": "0.9719",
+          "contact": "0.0000",
+          "flight": "0.4546"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "0.4000",
+          "rotation": "-0.1122,-0.0302,-0.2599,0.9586",
+          "scale": "0.4164",
+          "contact": "0.0000",
+          "flight": "0.0233"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "0.3400",
+          "rotation": "-0.1139,-0.0291,-0.2657,0.9569",
+          "scale": "0.3864",
+          "contact": "0.0000",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "0.2500",
+          "rotation": "-0.1139,-0.0291,-0.2657,0.9569",
+          "scale": "0.3864",
+          "contact": "0.1731",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "0.1600",
+          "rotation": "-0.1139,-0.0291,-0.2657,0.9569",
+          "scale": "0.3864",
+          "contact": "0.5441",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "0.0700",
+          "rotation": "-0.1139,-0.0291,-0.2657,0.9569",
+          "scale": "0.3864",
+          "contact": "0.8903",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "0.0250",
+          "rotation": "-0.1139,-0.0291,-0.2657,0.9569",
+          "scale": "0.3864",
+          "contact": "0.9846",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "0",
+          "progress": "0.0000",
+          "rotation": "-0.1139,-0.0291,-0.2657,0.9569",
+          "scale": "0.3864",
+          "contact": "1.0000",
+          "flight": "0.0000"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "stats": {
+        "matched": 57684,
+        "walls": 22354,
+        "total": 57684,
+        "projectedError": 1.2710574864626038e-13,
+        "minZ": 0.18894338607788086,
+        "maxZ": 0.3149999976158142,
+        "glError": 0,
+        "contours": [
+          366
+        ]
+      },
+      "frames": [
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "1.0000",
+          "rotation": "-0.0340,-0.0753,-0.0098,0.9965",
+          "scale": "3.4753",
+          "contact": "0.0000",
+          "flight": "1.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "0.6500",
+          "rotation": "-0.0796,-0.0313,0.0096,0.9963",
+          "scale": "1.8960",
+          "contact": "0.0000",
+          "flight": "0.4546"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "0.4000",
+          "rotation": "-0.1155,0.0036,0.0249,0.9930",
+          "scale": "0.6471",
+          "contact": "0.0000",
+          "flight": "0.0233"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "0.3400",
+          "rotation": "-0.1175,0.0055,0.0257,0.9927",
+          "scale": "0.5796",
+          "contact": "0.0000",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "0.2500",
+          "rotation": "-0.1175,0.0055,0.0257,0.9927",
+          "scale": "0.5796",
+          "contact": "0.1731",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "0.1600",
+          "rotation": "-0.1175,0.0055,0.0257,0.9927",
+          "scale": "0.5796",
+          "contact": "0.5441",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "0.0700",
+          "rotation": "-0.1175,0.0055,0.0257,0.9927",
+          "scale": "0.5796",
+          "contact": "0.8903",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "0.0250",
+          "rotation": "-0.1175,0.0055,0.0257,0.9927",
+          "scale": "0.5796",
+          "contact": "0.9846",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "1",
+          "progress": "0.0000",
+          "rotation": "-0.1175,0.0055,0.0257,0.9927",
+          "scale": "0.5796",
+          "contact": "1.0000",
+          "flight": "0.0000"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "stats": {
+        "matched": 83172,
+        "walls": 50536,
+        "total": 83172,
+        "projectedError": 1.2710574864626038e-13,
+        "minZ": 0.1621643751859665,
+        "maxZ": 0.3149999976158142,
+        "glError": 0,
+        "contours": [
+          497
+        ]
+      },
+      "frames": [
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "1.0000",
+          "rotation": "-0.0340,-0.0753,-0.0098,0.9965",
+          "scale": "3.0176",
+          "contact": "0.0000",
+          "flight": "1.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "0.6500",
+          "rotation": "-0.0797,-0.0352,-0.0236,0.9959",
+          "scale": "1.5088",
+          "contact": "0.0000",
+          "flight": "0.4546"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "0.4000",
+          "rotation": "-0.1157,-0.0034,-0.0344,0.9927",
+          "scale": "0.3156",
+          "contact": "0.0000",
+          "flight": "0.0233"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "0.3400",
+          "rotation": "-0.1176,-0.0017,-0.0349,0.9924",
+          "scale": "0.2512",
+          "contact": "0.0000",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "0.2500",
+          "rotation": "-0.1176,-0.0017,-0.0349,0.9924",
+          "scale": "0.2512",
+          "contact": "0.1731",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "0.1600",
+          "rotation": "-0.1176,-0.0017,-0.0349,0.9924",
+          "scale": "0.2512",
+          "contact": "0.5441",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "0.0700",
+          "rotation": "-0.1176,-0.0017,-0.0349,0.9924",
+          "scale": "0.2512",
+          "contact": "0.8903",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "0.0250",
+          "rotation": "-0.1176,-0.0017,-0.0349,0.9924",
+          "scale": "0.2512",
+          "contact": "0.9846",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "3",
+          "progress": "0.0000",
+          "rotation": "-0.1176,-0.0017,-0.0349,0.9924",
+          "scale": "0.2512",
+          "contact": "1.0000",
+          "flight": "0.0000"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "stats": {
+        "matched": 87278,
+        "walls": 57542,
+        "total": 92508,
+        "projectedError": 2.5421149729252077e-13,
+        "minZ": -0.10595812648534775,
+        "maxZ": 0.3149999976158142,
+        "glError": 0,
+        "contours": [
+          521
+        ]
+      },
+      "frames": [
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "1.0000",
+          "rotation": "-0.0340,-0.0753,-0.0098,0.9965",
+          "scale": "2.9881",
+          "contact": "0.0000",
+          "flight": "1.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "0.6500",
+          "rotation": "-0.0795,-0.0285,0.0332,0.9959",
+          "scale": "1.5639",
+          "contact": "0.0000",
+          "flight": "0.4546"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "0.4000",
+          "rotation": "-0.1152,0.0086,0.0672,0.9910",
+          "scale": "0.4376",
+          "contact": "0.0000",
+          "flight": "0.0233"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "0.3400",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.3768",
+          "contact": "0.0000",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "0.2500",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.3768",
+          "contact": "0.1731",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "0.1600",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.3768",
+          "contact": "0.5441",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "0.0700",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.3768",
+          "contact": "0.8903",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "0.0250",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.3768",
+          "contact": "0.9846",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "5",
+          "progress": "0.0000",
+          "rotation": "-0.1171,0.0106,0.0690,0.9907",
+          "scale": "0.3768",
+          "contact": "1.0000",
+          "flight": "0.0000"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "stats": {
+        "matched": 110940,
+        "walls": 49862,
+        "total": 110940,
+        "projectedError": 5.684341886080802e-14,
+        "minZ": 0.05936214327812195,
+        "maxZ": 0.3149999976158142,
+        "glError": 0,
+        "contours": [
+          544
+        ]
+      },
+      "frames": [
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "1.0000",
+          "rotation": "-0.0340,-0.0753,-0.0098,0.9965",
+          "scale": "2.3951",
+          "contact": "0.0000",
+          "flight": "1.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "0.6500",
+          "rotation": "-0.0787,-0.0209,0.0994,0.9917",
+          "scale": "1.3154",
+          "contact": "0.0000",
+          "flight": "0.4546"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "0.4000",
+          "rotation": "-0.1131,0.0224,0.1847,0.9760",
+          "scale": "0.4615",
+          "contact": "0.0000",
+          "flight": "0.0233"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "0.3400",
+          "rotation": "-0.1150,0.0248,0.1892,0.9749",
+          "scale": "0.4154",
+          "contact": "0.0000",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "0.2500",
+          "rotation": "-0.1150,0.0248,0.1892,0.9749",
+          "scale": "0.4154",
+          "contact": "0.1731",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "0.1600",
+          "rotation": "-0.1150,0.0248,0.1892,0.9749",
+          "scale": "0.4154",
+          "contact": "0.5441",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "0.0700",
+          "rotation": "-0.1150,0.0248,0.1892,0.9749",
+          "scale": "0.4154",
+          "contact": "0.8903",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "0.0250",
+          "rotation": "-0.1150,0.0248,0.1892,0.9749",
+          "scale": "0.4154",
+          "contact": "0.9846",
+          "flight": "0.0000"
+        },
+        {
+          "lenisPrevent": "",
+          "phase": "closing",
+          "sticker": "2",
+          "progress": "0.0000",
+          "rotation": "-0.1150,0.0248,0.1892,0.9749",
+          "scale": "0.4154",
+          "contact": "1.0000",
+          "flight": "0.0000"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

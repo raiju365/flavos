@@ -1,0 +1,41 @@
+.cloud-return-canvas {
+  position: absolute;
+  inset: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.colonnade-overlay.is-cloud-return { touch-action: none; overscroll-behavior: none; }
+.cloud-return-grade {
+  position: absolute;
+  inset: 0;
+  display: none;
+  opacity: 0;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+.cloud-return-grade > i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.cloud-return-grade-cool {
+  background: linear-gradient(180deg, rgba(78, 96, 151, .72), rgba(135, 158, 183, .22) 48%, rgba(32, 35, 91, .64));
+}
+.cloud-return-grade-warm {
+  background: linear-gradient(175deg, rgba(247, 233, 204, .66), rgba(255, 249, 234, .2) 52%, rgba(204, 186, 154, .32));
+}
+.colonnade-overlay.is-cloud-return .cloud-return-canvas,
+.colonnade-overlay.is-cloud-return .cloud-return-grade { display: block; }
+.colonnade-overlay.is-cloud-return .dust-transition-canvas,
+.colonnade-overlay.is-cloud-return .dust-transition-caption { visibility: hidden; }
+.colonnade-overlay.is-cloud-return:not(.is-reduced):not([data-phase="covered"]):not([data-cloud-opaque="true"]) {
+  background: transparent;
+}
+.colonnade-overlay.is-cloud-return.is-reduced,
+.colonnade-overlay.is-cloud-return[data-phase="covered"],
+.colonnade-overlay.is-cloud-return[data-cloud-opaque="true"] { background: #fff; }
+.colonnade-overlay.is-cloud-return[data-cloud-phase="reveal"]:not([data-cloud-opaque="true"]):not(.is-reduced) {
+  background: transparent;
+}

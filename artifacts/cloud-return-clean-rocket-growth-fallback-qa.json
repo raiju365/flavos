@@ -1,0 +1,28 @@
+{
+  "intermediate": {
+    "y": 0,
+    "hash": "#hero",
+    "inert": true,
+    "overflow": "",
+    "phase": "reveal",
+    "assembly": "0.2014",
+    "reveal": "scale",
+    "heroPhase": "white",
+    "focused": ""
+  },
+  "final": {
+    "y": 0,
+    "hash": "#hero",
+    "inert": false,
+    "overflow": "",
+    "phase": "idle",
+    "assembly": "1.0000",
+    "reveal": "scale",
+    "heroPhase": "white",
+    "focused": "hero-heading"
+  },
+  "errors": [],
+  "expectedFallbackDiagnostics": [
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+  ]
+}

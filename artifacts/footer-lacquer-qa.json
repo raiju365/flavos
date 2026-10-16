@@ -1,0 +1,249 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "reduced": false,
+      "calm": {
+        "rotation": "-0.228,0.014",
+        "motion": [
+          0,
+          0,
+          0
+        ],
+        "light": "0.055,0.298,-0.132",
+        "lights": [
+          "HemisphereLight"
+        ],
+        "materials": [
+          {
+            "color": "080809",
+            "roughness": 0.16,
+            "coat": 0.075,
+            "env": 0.95
+          },
+          {
+            "color": "040405",
+            "roughness": 0.2,
+            "coat": 0.115,
+            "env": 0.8
+          }
+        ],
+        "stoneShader": false,
+        "grain": "0.1"
+      },
+      "moving": {
+        "rotation": "-0.571,-0.382",
+        "motion": [
+          0.0268,
+          0.1954,
+          0.4653
+        ],
+        "light": "-0.220,0.051,-0.020",
+        "lights": [
+          "HemisphereLight"
+        ],
+        "materials": [
+          {
+            "color": "080809",
+            "roughness": 0.16,
+            "coat": 0.06336834494631638,
+            "env": 1.0430532404294688
+          },
+          {
+            "color": "040405",
+            "roughness": 0.2,
+            "coat": 0.10336834494631639,
+            "env": 0.893053240429469
+          }
+        ],
+        "stoneShader": false,
+        "grain": "0.1"
+      },
+      "startupReady": true
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "calm": {
+        "rotation": "-0.228,0.014",
+        "motion": [
+          0,
+          0,
+          0
+        ],
+        "light": "0.056,0.299,-0.132",
+        "lights": [
+          "HemisphereLight"
+        ],
+        "materials": [
+          {
+            "color": "080809",
+            "roughness": 0.16,
+            "coat": 0.075,
+            "env": 0.95
+          },
+          {
+            "color": "040405",
+            "roughness": 0.2,
+            "coat": 0.115,
+            "env": 0.8
+          }
+        ],
+        "stoneShader": false,
+        "grain": "0.1"
+      },
+      "moving": {
+        "rotation": "-0.440,-0.231",
+        "motion": [
+          0.0354,
+          0.2377,
+          0.5659
+        ],
+        "light": "-0.026,0.245,-0.092",
+        "lights": [
+          "HemisphereLight"
+        ],
+        "materials": [
+          {
+            "color": "080809",
+            "roughness": 0.16,
+            "coat": 0.0608516907793372,
+            "env": 1.0631864737653023
+          },
+          {
+            "color": "040405",
+            "roughness": 0.2,
+            "coat": 0.1008516907793372,
+            "env": 0.9131864737653024
+          }
+        ],
+        "stoneShader": false,
+        "grain": "0.1"
+      },
+      "startupReady": true
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "calm": {
+        "rotation": "-0.228,0.015",
+        "motion": [
+          0,
+          0,
+          0
+        ],
+        "light": "0.056,0.300,-0.132",
+        "lights": [
+          "HemisphereLight"
+        ],
+        "materials": [
+          {
+            "color": "080809",
+            "roughness": 0.16,
+            "coat": 0.07499999498780517,
+            "env": 0.9500000400975586
+          },
+          {
+            "color": "040405",
+            "roughness": 0.2,
+            "coat": 0.11499999498780518,
+            "env": 0.8000000400975587
+          }
+        ],
+        "stoneShader": false,
+        "grain": "0.1"
+      },
+      "moving": {
+        "rotation": "-0.448,-0.243",
+        "motion": [
+          0.0359,
+          0.2402,
+          0.5718
+        ],
+        "light": "-0.034,0.227,-0.090",
+        "lights": [
+          "HemisphereLight"
+        ],
+        "materials": [
+          {
+            "color": "080809",
+            "roughness": 0.16,
+            "coat": 0.06070464119913094,
+            "env": 1.0643628704069523
+          },
+          {
+            "color": "040405",
+            "roughness": 0.2,
+            "coat": 0.10070464119913095,
+            "env": 0.9143628704069525
+          }
+        ],
+        "stoneShader": false,
+        "grain": "0.1"
+      },
+      "startupReady": true
+    },
+    {
+      "width": 320,
+      "reduced": true,
+      "calm": {
+        "rotation": "-0.240,0.000",
+        "motion": [
+          0,
+          0,
+          0
+        ],
+        "light": "0.047,0.233,-0.129",
+        "lights": [
+          "HemisphereLight"
+        ],
+        "materials": [
+          {
+            "color": "080809",
+            "roughness": 0.16,
+            "coat": 0.075,
+            "env": 0.95
+          },
+          {
+            "color": "040405",
+            "roughness": 0.2,
+            "coat": 0.115,
+            "env": 0.8
+          }
+        ],
+        "stoneShader": false,
+        "grain": "0.1"
+      },
+      "moving": {
+        "rotation": "-0.240,0.000",
+        "motion": [
+          0,
+          0,
+          0
+        ],
+        "light": "0.047,0.233,-0.129",
+        "lights": [
+          "HemisphereLight"
+        ],
+        "materials": [
+          {
+            "color": "080809",
+            "roughness": 0.16,
+            "coat": 0.075,
+            "env": 0.95
+          },
+          {
+            "color": "040405",
+            "roughness": 0.2,
+            "coat": 0.115,
+            "env": 0.8
+          }
+        ],
+        "stoneShader": false,
+        "grain": "0.1"
+      },
+      "startupReady": true
+    }
+  ],
+  "errors": []
+}

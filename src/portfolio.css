@@ -1,9 +1,9 @@
 /* The portfolio is a quiet architectural counterpart to the cinematic intro. */
 :root {
-  --folio-ink: #20235b;
+  --folio-ink: var(--brand-blue);
   --folio-paper: #ffffff;
   --folio-muted: #646352;
-  --folio-line: rgba(32, 35, 91, .22);
+  --folio-line: rgb(var(--brand-blue-rgb) / .22);
   --folio-serif: var(--font-site);
 }
 
@@ -26,14 +26,14 @@ html {
 .footer-stage ::selection,
 .signature-footer ::selection {
   background-color: #c5a880;
-  color: #1a1f5c;
+  color: var(--folio-ink);
 }
 
 .footer-sequence ::-moz-selection,
 .footer-stage ::-moz-selection,
 .signature-footer ::-moz-selection {
   background-color: #c5a880;
-  color: #1a1f5c;
+  color: var(--folio-ink);
 }
 
 .folio-main {
@@ -118,9 +118,9 @@ html {
   background: rgba(255, 255, 255, .82);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(32, 35, 91, .08);
+  border: 1px solid rgb(var(--brand-blue-rgb) / .08);
   border-radius: 999px;
-  box-shadow: 0 4px 24px rgba(26, 31, 92, .07), 0 1px 4px rgba(26, 31, 92, .04);
+  box-shadow: 0 4px 24px rgb(var(--brand-blue-rgb) / .07), 0 1px 4px rgb(var(--brand-blue-rgb) / .04);
   pointer-events: auto;
   position: relative;
   overflow: hidden;
@@ -128,7 +128,7 @@ html {
 }
 
 .folio-nav-pill:hover {
-  box-shadow: 0 6px 32px rgba(26, 31, 92, .10), 0 2px 6px rgba(26, 31, 92, .05);
+  box-shadow: 0 6px 32px rgb(var(--brand-blue-rgb) / .10), 0 2px 6px rgb(var(--brand-blue-rgb) / .05);
 }
 
 .folio-brand {
@@ -194,11 +194,11 @@ html {
 }
 
 .folio-nav nav a:hover {
-  background: rgba(32, 35, 91, .06);
+  background: rgb(var(--brand-blue-rgb) / .06);
 }
 
 .folio-nav nav a[aria-current] {
-  background: rgba(32, 35, 91, .08);
+  background: rgb(var(--brand-blue-rgb) / .08);
 }
 
 .folio-nav nav a>span {
@@ -209,7 +209,7 @@ html {
 
 .folio-nav .nav-contact {
   border: none;
-  background: var(--folio-ink);
+  background: #09090b;
   color: var(--folio-paper);
   padding: 7px 16px;
   border-radius: 999px;
@@ -219,7 +219,7 @@ html {
 }
 
 .folio-nav .nav-contact:hover {
-  background: #2d317a;
+  background: var(--folio-ink);
   transform: scale(1.03);
 }
 
@@ -323,7 +323,7 @@ html {
 .hero-intro {
   max-width: 370px;
   font-size: 13px;
-  color: #555664;
+  color: var(--folio-ink);
 }
 
 .folio-button {
@@ -375,7 +375,7 @@ html {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(24, 26, 66, .05), rgba(24, 26, 66, .15) 30%, rgba(24, 26, 66, .64));
+  background: linear-gradient(180deg, rgb(var(--brand-blue-rgb) / .05), rgb(var(--brand-blue-rgb) / .15) 30%, rgb(var(--brand-blue-rgb) / .64));
   z-index: 1;
 }
 
@@ -549,7 +549,7 @@ html {
   margin: 30px 0 24px;
   max-width: 760px;
   font-size: 13px;
-  color: #555664;
+  color: var(--folio-ink);
 }
 
 .text-link {
@@ -578,7 +578,7 @@ html {
 
 .section-heading-row>p {
   font-size: 12px;
-  color: #555664;
+  color: var(--folio-ink);
 }
 
 .work-grid {
@@ -708,7 +708,7 @@ html {
   font-size: 13px;
   margin-top: 25px;
   max-width: 270px;
-  color: #555664;
+  color: var(--folio-ink);
 }
 
 .practice-ornament {
@@ -779,7 +779,7 @@ html {
 .practice-description {
   padding: 0 0 30px 44px;
   font-size: 13px;
-  color: #555664;
+  color: var(--folio-ink);
 }
 
 .discipline-tags {
@@ -950,7 +950,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
     margin-top: 0 !important;
     transform-origin: 48% 0% !important;
     opacity: 1 !important;
-    filter: drop-shadow(0 2px 8px rgba(26, 31, 92, 0.35)) !important;
+    filter: drop-shadow(0 2px 8px rgb(var(--brand-blue-rgb) / 0.35)) !important;
     pointer-events: none !important;
     display: block !important;
   }
@@ -1504,7 +1504,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   max-width: 270px;
   height: 2px;
   margin-top: 40px;
-  background: rgba(32, 35, 91, .16);
+  background: rgb(var(--brand-blue-rgb) / .16);
 }
 
 .process-progress i {
@@ -1532,7 +1532,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
 
 .ring-two {
   inset: 16%;
-  border-color: rgba(32, 35, 91, .3);
+  border-color: rgb(var(--brand-blue-rgb) / .3);
   border-style: dashed;
 }
 
@@ -1559,7 +1559,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   position: absolute;
   height: 115%;
   width: 1px;
-  background: rgba(32, 35, 91, .15);
+  background: rgb(var(--brand-blue-rgb) / .15);
 }
 
 .process-axis::before,
@@ -1621,7 +1621,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
 .process-steps p {
   font-size: 11px;
   max-width: 245px;
-  color: #565663
+  color: var(--folio-ink)
 }
 
 .process-chapter {
@@ -1632,7 +1632,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   border-top: 1px solid var(--folio-line);
   font-family: var(--folio-serif);
   font-size: clamp(22px, 3vw, 46px);
-  color: rgba(32, 35, 91, .15);
+  color: var(--folio-ink);
 }
 
 .process-chapter span {
@@ -1655,7 +1655,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
 .folio-closing {
   height: 520vh;
   position: relative;
-  background: #141741;
+  background: var(--folio-ink);
   color: var(--folio-paper);
   padding: 0 !important;
 }
@@ -1668,7 +1668,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   display: grid;
   place-items: center;
   isolation: isolate;
-  background: #141741;
+  background: var(--folio-ink);
 }
 
 .closing-camera {
@@ -1689,7 +1689,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 55%, #2a2f6b 0%, rgba(20, 23, 65, .85) 35%, #101236 75%);
+  background: radial-gradient(circle at 50% 55%, var(--folio-ink) 0%, rgb(var(--brand-blue-rgb) / .85) 35%, var(--folio-ink) 75%);
   opacity: .65;
   transition: opacity .8s;
 }
@@ -1915,9 +1915,9 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   right: 0;
   border-radius: 260px 260px 0 0;
   overflow: hidden;
-  background: linear-gradient(180deg, #181c4e 0%, #0e1030 100%);
+  background: linear-gradient(180deg, var(--folio-ink) 0%, var(--folio-ink) 100%);
   border: 1px solid rgba(213, 184, 143, .3);
-  box-shadow: inset 0 0 45px rgba(8, 10, 28, .85);
+  box-shadow: inset 0 0 45px rgb(var(--brand-blue-rgb) / .85);
   z-index: 1;
 }
 
@@ -1980,7 +1980,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   top: 14%;
   bottom: 0;
   width: 50%;
-  background: linear-gradient(180deg, #1d2258 0%, #151842 100%);
+  background: linear-gradient(180deg, var(--folio-ink) 0%, var(--folio-ink) 100%);
   border: 1px solid #8e7e5b;
   overflow: hidden;
   backface-visibility: hidden;
@@ -2025,7 +2025,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   height: 10px;
   border: 1.5px solid #d5b88f;
   border-radius: 50%;
-  background: #1c2053;
+  background: var(--folio-ink);
   box-shadow: 0 0 6px rgba(213, 184, 143, .4);
 }
 
@@ -2176,7 +2176,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   flex-direction: column;
   justify-content: space-between;
   padding: 42px 7vw 30px;
-  background: #141741;
+  background: var(--folio-ink);
   color: var(--folio-paper);
   z-index: 100;
   opacity: 0;
@@ -2262,7 +2262,7 @@ body:has(.folio-main[style*="display: block"]) .meander-border-container {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: radial-gradient(circle at 50% 60%, rgba(26, 31, 92, 0.4) 0%, transparent 80%);
+  background: radial-gradient(circle at 50% 60%, rgb(var(--brand-blue-rgb) / 0.4) 0%, transparent 80%);
 }
 
 .closing-footer-destination .footer-arch::before {
@@ -2696,7 +2696,7 @@ body:has(.closing-footer-destination.is-active) .folio-nav {
   margin: 28px 0;
   font-size: 16px;
   max-width: 420px;
-  color: #555664;
+  color: var(--folio-ink);
 }
 
 .about-story .text-link {
@@ -2840,7 +2840,7 @@ body:has(.closing-footer-destination.is-active) .folio-nav {
 
 .playground-copy>p {
   margin: 25px 0 32px;
-  color: #555664;
+  color: var(--folio-ink);
   font-size: 14px;
 }
 
@@ -3176,7 +3176,7 @@ body:has(.project-gallery[open]) {
 }
 
 .project-gallery::backdrop {
-  background: rgba(16, 18, 49, .65);
+  background: rgb(var(--brand-blue-rgb) / .65);
 }
 
 .gallery-shell {
@@ -3228,7 +3228,7 @@ body:has(.project-gallery[open]) {
 
 #gallery-help {
   font-size: 13px;
-  color: #555664;
+  color: var(--folio-ink);
   margin: 12px 0 22px;
 }
 
@@ -3394,7 +3394,7 @@ body:has(.project-gallery[open]) {
 
 /* Work index: one art-directed sheet at a time, with a turning-page handoff. */
 .project-gallery {
-  --gallery-ink: #202744;
+  --gallery-ink: var(--folio-ink);
   --gallery-paper: #f3f0e8;
   color: var(--gallery-ink);
   background: var(--gallery-paper);
@@ -3427,7 +3427,7 @@ body:has(.project-gallery[open]) {
 
 .gallery-kicker {
   grid-column: 1;
-  color: #63677a;
+  color: var(--folio-ink);
 }
 
 .gallery-header h2 {
@@ -3471,7 +3471,7 @@ body:has(.project-gallery[open]) {
 
 .gallery-intro {
   margin: clamp(16px, 2vh, 25px) 0 clamp(18px, 2.6vh, 32px) !important;
-  color: #656879 !important;
+  color: var(--folio-ink) !important;
   letter-spacing: .025em;
   font-size: 11px !important;
 }
@@ -3537,7 +3537,7 @@ body:has(.project-gallery[open]) {
   flex-direction: column;
   padding: clamp(28px, 3vw, 58px);
   color: #f4f1e9;
-  background: #202744;
+  background: var(--folio-ink);
 }
 
 .gallery-project-eyebrow {
@@ -3578,7 +3578,7 @@ body:has(.project-gallery[open]) {
   position: relative;
   overflow: hidden;
   background: radial-gradient(circle at 72% 28%, #eee4d1 0, #d3bd99 59%, #b8a27f 100%);
-  color: #27304e;
+  color: var(--folio-ink);
 }
 
 .gallery-art-coordinate,
@@ -3607,8 +3607,8 @@ body:has(.project-gallery[open]) {
 }
 
 .gallery-art-arch--outer {
-  background: linear-gradient(128deg, #e6d6b7 4%, #8f846e 34%, #29304a 35%, #252c47 50%, #d4c5a7 51%, #bda982 100%);
-  box-shadow: -36px 12px 0 rgba(48, 53, 72, .13), 60px 34px 0 rgba(244, 234, 210, .36);
+  background: linear-gradient(128deg, #e6d6b7 4%, #8f846e 34%, var(--folio-ink) 35%, var(--folio-ink) 50%, #d4c5a7 51%, #bda982 100%);
+  box-shadow: -36px 12px 0 rgb(var(--brand-blue-rgb) / .13), 60px 34px 0 rgba(244, 234, 210, .36);
 }
 
 .gallery-art-arch--inner {
@@ -3616,7 +3616,7 @@ body:has(.project-gallery[open]) {
   height: 56%;
   left: 45%;
   bottom: -6%;
-  background: linear-gradient(155deg, #1f2745, #636476 74%, #dbc9a7);
+  background: linear-gradient(155deg, var(--folio-ink), var(--folio-ink) 74%, #dbc9a7);
   box-shadow: inset 24px 0 28px rgba(0, 0, 0, .27);
 }
 
@@ -3624,7 +3624,7 @@ body:has(.project-gallery[open]) {
   position: absolute;
   z-index: 2;
   inset: 72% -10% -10%;
-  background: repeating-linear-gradient(170deg, transparent 0 34px, rgba(39, 48, 78, .12) 35px 36px), linear-gradient(#d8c6a5, #a69272);
+  background: repeating-linear-gradient(170deg, transparent 0 34px, rgb(var(--brand-blue-rgb) / .12) 35px 36px), linear-gradient(#d8c6a5, #a69272);
   transform: skewY(-8deg);
 }
 
@@ -3650,20 +3650,20 @@ body:has(.project-gallery[open]) {
 
 .gallery-project--two .gallery-project-copy {
   background: #e3d8c3;
-  color: #202744;
+  color: var(--folio-ink);
 }
 
 .gallery-project--two .gallery-project-eyebrow {
-  color: #555b72;
+  color: var(--folio-ink);
 }
 
 .gallery-project--two .gallery-project-status {
-  border-color: rgba(32, 39, 68, .4);
+  border-color: rgb(var(--brand-blue-rgb) / .4);
 }
 
 .gallery-project--two .gallery-project-art {
   color: #f1e8d6;
-  background: radial-gradient(circle at 68% 42%, #454b67 0, #202744 49%, #151b32 100%);
+  background: radial-gradient(circle at 68% 42%, var(--folio-ink) 0, var(--folio-ink) 49%, var(--folio-ink) 100%);
 }
 
 .gallery-art-disc {
@@ -3678,7 +3678,7 @@ body:has(.project-gallery[open]) {
   left: 14%;
   top: -6%;
   border: clamp(22px, 4vw, 70px) solid #a4a5a6;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4), 35px 35px 0 rgba(10, 13, 34, .45);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4), 35px 35px 0 rgb(var(--brand-blue-rgb) / .45);
 }
 
 .gallery-art-disc--front {
@@ -3713,7 +3713,7 @@ body:has(.project-gallery[open]) {
   border-bottom: 1px solid #aeb0b9;
   border-radius: 0;
   background: none;
-  color: #777b8b;
+  color: var(--folio-ink);
   text-align: left;
   font: 400 15px/1.2 var(--folio-serif);
 }
@@ -3754,7 +3754,7 @@ body:has(.project-gallery[open]) {
 .gallery-control-hint {
   margin-left: auto;
   margin-right: 24px;
-  color: #777b8b;
+  color: var(--folio-ink);
 }
 
 .gallery-controls>div {
@@ -4180,7 +4180,7 @@ body:has(.project-gallery[open]) {
 .section-heading-row>p {
   font-size: 16px;
   line-height: 1.7;
-  color: #555664;
+  color: var(--folio-ink);
 }
 
 .hero-monument {
@@ -4289,7 +4289,7 @@ body:has(.project-gallery[open]) {
   margin: 0;
   padding: 0;
   border: 0;
-  color: #555664;
+  color: var(--folio-ink);
   font-size: 16px;
 }
 
@@ -4992,7 +4992,7 @@ body:has(.project-gallery[open]) {
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
-  background: #09090b;
+  background: var(--folio-ink);
 }
 
 .hero-bg-wrapper {
@@ -5049,7 +5049,7 @@ body:has(.project-gallery[open]) {
 .ascend-curtain {
   position: fixed;
   inset: 0;
-  /* Strictly below tv-noise (1000001) to keep film grain continuous */
+  /* Below the shared viewport grain to keep its treatment continuous. */
   z-index: 1000000;
   visibility: hidden;
   overflow: hidden;
@@ -5194,7 +5194,7 @@ body:has(.project-gallery[open]) {
 }
 
 .folio-nav.studio-header.is-light-section {
-  --nav-ink: #24243c;
+  --nav-ink: var(--folio-ink);
 }
 
 .studio-bar {
@@ -5502,7 +5502,7 @@ body:has(.project-gallery[open]) {
     font-weight: 500 !important;
     letter-spacing: .025em !important;
     color: #f2eee7 !important;
-    background: rgba(14, 18, 36, 0.86) !important;
+    background: rgb(var(--brand-blue-rgb) / 0.86) !important;
     backdrop-filter: blur(20px) saturate(180%) !important;
     -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
     border: 1px solid rgba(242, 238, 231, 0.2) !important;
@@ -5519,10 +5519,10 @@ body:has(.project-gallery[open]) {
   }
 
   .folio-nav.is-light-section .studio-contact {
-    background: rgba(18, 22, 42, 0.92) !important;
+    background: rgb(var(--brand-blue-rgb) / 0.92) !important;
     border-color: rgba(242, 238, 231, 0.25) !important;
     color: #ffffff !important;
-    box-shadow: 0 10px 28px -2px rgba(20, 24, 50, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 10px 28px -2px rgb(var(--brand-blue-rgb) / 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
   }
 
   .studio-arrow {

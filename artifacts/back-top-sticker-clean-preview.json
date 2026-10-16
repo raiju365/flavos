@@ -1,0 +1,33 @@
+{
+  "start": 14.169,
+  "duration": 6.599999999999998,
+  "final": {
+    "hash": "#hero",
+    "y": 0,
+    "inert": false,
+    "overflow": "",
+    "focus": "hero-heading",
+    "peel": {
+      "phase": "idle",
+      "renderer": "webgl",
+      "peel": "0.0000",
+      "flight": "0.0000"
+    },
+    "overlay": {
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "idle",
+      "cloudProgress": "0.0000",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.00",
+      "cloudReveal": "geometric-clear",
+      "cloudGrade": "0.0000",
+      "cloudGradeVisible": "0.0000",
+      "cloudGradeWarmth": "0.0000",
+      "phase": "idle",
+      "cloudBeat": "idle"
+    },
+    "sourceHidden": false
+  },
+  "instrumented": false
+}

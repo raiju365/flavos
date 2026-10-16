@@ -41,7 +41,7 @@ varying vec2 uv;
 uniform sampler2D field, previousField;
 uniform vec2 resolution, pointerPosition, pointerFlow;
 uniform float pointerStrength;
-uniform float size, distance, progress, entry, clock, reduced;
+uniform float size, distance, progress, entry, assembly, clock, reduced;
 uniform float scrollVel, scratch, motionClock, shapeMix;
 float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
 float noise(vec2 p) {
@@ -54,9 +54,12 @@ float sdf(vec2 p) {
   return (dot(encoded,vec2(256.,1.))/257.-.5)*.25;
 }
 void main() {
+  // A zero-size opening is fully white. Grow the whole distance field at full
+  // contrast so the return changes geometry, never the painting's opacity.
+  if(assembly<=.00001) { gl_FragColor=vec4(1.); return; }
   vec2 screen=vec2(uv.x,1.-uv.y);
   vec2 center=vec2(.5,.49);
-  vec2 q=(screen-center)*resolution/size*distance;
+  vec2 q=(screen-center)*resolution/(size*max(assembly,.00001))*distance;
   float r2=dot(q,q);
   q /= 1.+progress*2.2*exp(-1.8*r2);
   // Enter through the solid central crossbar rather than the logo's white counter.
@@ -162,7 +165,7 @@ export function createApertureRenderer(canvas, source) {
     gl.useProgram(program);buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
     gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
     const attr=gl.getAttribLocation(program,'p');gl.enableVertexAttribArray(attr);gl.vertexAttribPointer(attr,2,gl.FLOAT,false,0,0);
-    uniforms=Object.fromEntries(['resolution','pointerPosition','pointerFlow','pointerStrength','size','distance','progress','entry','clock','reduced','scrollVel','scratch','motionClock','shapeMix'].map(n=>[n,gl.getUniformLocation(program,n)]));
+    uniforms=Object.fromEntries(['resolution','pointerPosition','pointerFlow','pointerStrength','size','distance','progress','entry','assembly','clock','reduced','scrollVel','scratch','motionClock','shapeMix'].map(n=>[n,gl.getUniformLocation(program,n)]));
     textures=[field,previousField].map((image,unit)=>{
       const tex=gl.createTexture();gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,tex);
       for(const key of [gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER])gl.texParameteri(gl.TEXTURE_2D,key,gl.LINEAR);
@@ -223,14 +226,14 @@ export function createApertureRenderer(canvas, source) {
     },
     endPointer() {activeUntil=0;pointerSample=null;flowTarget={x:0,y:0};},
     reset() {pointerTarget=null;pointerStrength=0;activeUntil=0;pointerFrame=0;pointerSample=null;flowTarget={x:0,y:0};pointerFlow={x:0,y:0};},
-    draw({width,height,size,distance,progress,entry,reduced,time,motionClock=0,scrollVel=0,scratch=0}) {
+    draw({width,height,size,distance,progress,entry,assembly=1,reduced,time,motionClock=0,scrollVel=0,scratch=0}) {
       if(!field||lost||disposed)return;
       gl.viewport(0,0,canvas.width,canvas.height);gl.useProgram(program);updatePointer(time,reduced);
       gl.uniform2f(uniforms.resolution,width,height);
       const blend=reduced?1:Math.max(0,Math.min(1,(time-patternTime)/patternDuration));
       gl.uniform1f(uniforms.shapeMix,blend*blend*(3-2*blend));
       canvas.dataset.shapeBlend=blend.toFixed(4);
-      for(const [key,value] of Object.entries({size,distance,progress,entry,clock:reduced?0:time/1000,reduced:+reduced,scrollVel,scratch,motionClock}))gl.uniform1f(uniforms[key],value);
+      for(const [key,value] of Object.entries({size,distance,progress,entry,assembly,clock:reduced?0:time/1000,reduced:+reduced,scrollVel,scratch,motionClock}))gl.uniform1f(uniforms[key],value);
       gl.drawArrays(gl.TRIANGLES,0,6);
       canvas.dataset.trailState=pointerStrength>0?'active':'idle';
       canvas.dataset.pointerEffect='elastic-flow';

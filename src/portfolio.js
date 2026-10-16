@@ -14,18 +14,28 @@ import { createHeroScrollEntry } from './hero-scroll-entry';
 export function initPortfolio({ getLenis }) {
   const main = document.getElementById('main-content');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let cleanupSignature, signatureDisposed = false;
-  const signatureObserver = new IntersectionObserver(entries => {
-    if (!entries.some(entry => entry.isIntersecting)) return;
-    signatureObserver.disconnect();
-    import('./footer-signature-3d').then(({ initFooterSignature3D }) => {
-      if (!signatureDisposed) cleanupSignature = initFooterSignature3D();
-    }).catch(error => console.warn('Footer signature keeps its image fallback.', error));
-  }, { rootMargin: '300px' });
-  const signatureFooter = document.querySelector('.signature-footer');
-  if (signatureFooter) signatureObserver.observe(signatureFooter);
+  let cleanupSignature, signatureDisposed = false, signatureLoading;
+  const startSignature = () => {
+    signatureLoading = import('./footer-signature-3d').then(({ initFooterSignature3D }) => {
+      if (!signatureDisposed) cleanupSignature = initFooterSignature3D({ getLenis });
+    });
+    signatureLoading.catch(() => {});
+  };
+  // Start module/texture work alongside initial image loading, even offscreen.
+  startSignature();
+  const prepareSignature = async () => {
+    if (signatureDisposed) return;
+    if (!signatureLoading) startSignature();
+    try {
+      await signatureLoading;
+      await cleanupSignature?.prepare?.();
+    } catch (error) {
+      cleanupSignature?.(); cleanupSignature = undefined; signatureLoading = undefined;
+      throw error;
+    }
+  };
   if (import.meta.hot) import.meta.hot.dispose(() => {
-    signatureDisposed = true; signatureObserver.disconnect(); cleanupSignature?.();
+    signatureDisposed = true; cleanupSignature?.();
   });
   const cleanupGradient = initFooterGradient();
   if (import.meta.hot) import.meta.hot.dispose(cleanupGradient);
@@ -108,7 +118,7 @@ export function initPortfolio({ getLenis }) {
 
   // Initialize Designer-Grade Floating Island Navbar
   const designerNav = initDesignerNavbar({ getLenis, reduceMotion });
-  const pageTransition = initPageTransition({ getLenis, reduceMotion });
+  const pageTransition = initPageTransition({ getLenis, reduceMotion, heroEntry });
   if (import.meta.hot) import.meta.hot.dispose(() => pageTransition.destroy());
 
   // Initialize Celestial Compass Brand Hover
@@ -120,7 +130,7 @@ export function initPortfolio({ getLenis }) {
   if (import.meta.hot) import.meta.hot.dispose(cleanupLogoCycle);
 
 
-  // In-page links and the footer return share the same quiet dust transition.
+  // The footer ascends through clouds; other section links keep their own rhythm.
   document.querySelectorAll('#main-content a[href^="#"], .footer-back-to-top').forEach(link => {
     link.addEventListener('click', event => {
       if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -134,7 +144,7 @@ export function initPortfolio({ getLenis }) {
       }
 
       const runTransition = () => {
-        pageTransition.navigate(target);
+        pageTransition.navigate(target, { effect: link.classList.contains('footer-back-to-top') ? 'cloud-return' : undefined });
       };
 
       if (!window.isMainPageReady && typeof window.finishIntroGlobal === 'function') {
@@ -202,6 +212,7 @@ export function initPortfolio({ getLenis }) {
   const observer = new MutationObserver(activate);
   observer.observe(main, { attributes: true, attributeFilter: ['style'] });
   activate();
+  return { prepareSignature };
 }
 
 /** Minimal portfolio navigation with restrained motion and accessible disclosure. */

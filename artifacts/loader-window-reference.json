@@ -1,0 +1,4228 @@
+[
+  {
+    "t": 2855.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 2969.399999976158,
+    "paths": []
+  },
+  {
+    "t": 2971.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 2982.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 2988.899999976158,
+    "paths": []
+  },
+  {
+    "t": 2998.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3040.600000023842,
+    "paths": []
+  },
+  {
+    "t": 3045.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3055.7999999523163,
+    "paths": []
+  },
+  {
+    "t": 3060.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3067.600000023842,
+    "paths": []
+  },
+  {
+    "t": 3073,
+    "paths": []
+  },
+  {
+    "t": 3079.5,
+    "paths": []
+  },
+  {
+    "t": 3087.899999976158,
+    "paths": []
+  },
+  {
+    "t": 3093.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3103.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3107.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3114.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3121.5,
+    "paths": []
+  },
+  {
+    "t": 3128.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3135,
+    "paths": []
+  },
+  {
+    "t": 3141.7999999523163,
+    "paths": []
+  },
+  {
+    "t": 3149.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3156,
+    "paths": []
+  },
+  {
+    "t": 3163.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3169.5,
+    "paths": []
+  },
+  {
+    "t": 3176.7999999523163,
+    "paths": []
+  },
+  {
+    "t": 3204.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3238.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3253.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3279.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3292.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3299.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3302.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3308.600000023842,
+    "paths": []
+  },
+  {
+    "t": 3315.5,
+    "paths": []
+  },
+  {
+    "t": 3322.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3329.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3336.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3343.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3350.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3357.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3364.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3371,
+    "paths": []
+  },
+  {
+    "t": 3377.7999999523163,
+    "paths": []
+  },
+  {
+    "t": 3385.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3391.7999999523163,
+    "paths": []
+  },
+  {
+    "t": 3398.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3405.899999976158,
+    "paths": []
+  },
+  {
+    "t": 3412.7999999523163,
+    "paths": []
+  },
+  {
+    "t": 3419.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3426.899999976158,
+    "paths": []
+  },
+  {
+    "t": 3434.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3440.5,
+    "paths": []
+  },
+  {
+    "t": 3447.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3454.5,
+    "paths": []
+  },
+  {
+    "t": 3461.600000023842,
+    "paths": []
+  },
+  {
+    "t": 3468.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3475.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3482.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3490.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3496,
+    "paths": []
+  },
+  {
+    "t": 3503.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3510.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3516.600000023842,
+    "paths": []
+  },
+  {
+    "t": 3523.899999976158,
+    "paths": []
+  },
+  {
+    "t": 3530.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3538.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3544.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3551.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3559,
+    "paths": []
+  },
+  {
+    "t": 3565.399999976158,
+    "paths": []
+  },
+  {
+    "t": 3572.899999976158,
+    "paths": []
+  },
+  {
+    "t": 3579.5,
+    "paths": []
+  },
+  {
+    "t": 3586.5,
+    "paths": []
+  },
+  {
+    "t": 3593.600000023842,
+    "paths": []
+  },
+  {
+    "t": 3600.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3607,
+    "paths": []
+  },
+  {
+    "t": 3613.7999999523163,
+    "paths": []
+  },
+  {
+    "t": 3621.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3628.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3634.899999976158,
+    "paths": []
+  },
+  {
+    "t": 3641.899999976158,
+    "paths": []
+  },
+  {
+    "t": 3648.899999976158,
+    "paths": []
+  },
+  {
+    "t": 3655.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3662.600000023842,
+    "paths": []
+  },
+  {
+    "t": 3669.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3676.7000000476837,
+    "paths": []
+  },
+  {
+    "t": 3683.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3691.2999999523163,
+    "paths": []
+  },
+  {
+    "t": 3697.7999999523163,
+    "paths": []
+  },
+  {
+    "t": 3704.600000023842,
+    "paths": []
+  },
+  {
+    "t": 3711.100000023842,
+    "paths": []
+  },
+  {
+    "t": 3718.2000000476837,
+    "paths": []
+  },
+  {
+    "t": 3921.2000000476837,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 3950.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 3956.2999999523163,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 3962.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 3968.2000000476837,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 3976.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 3982.2999999523163,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 3989.2999999523163,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 3996,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4003,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4010,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4026.7999999523163,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4030.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4038.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4044.2999999523163,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4051.7999999523163,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4058.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4065.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4074.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4079.2000000476837,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4086.2000000476837,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4094,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4099.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4108.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4114.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4121.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4128.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4134.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4141.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4148.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4163.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4170.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4239.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4246.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4252.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4259.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4267.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4273.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4280.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4287.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4294.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4342.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4350,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4376.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4426.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4434,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4440.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4447.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4455.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4462.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4468.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4475.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4482.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4488.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4496,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4504.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4510.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4516.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4523.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4532.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4538.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4545.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4552.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4559.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4566.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4572.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4580.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4587,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4595.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4600,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4621,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4627.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4635,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4696.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4727.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4736,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4758.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4761.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4766.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4773.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4780.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4788,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4794.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4801.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4808.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4815.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4822.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4829,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4837,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4843.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4850.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4857,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4864.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4872,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 4879.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5002.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5013.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5017.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5024.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5034,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5037.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5044.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5051.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5058.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5065.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5072.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5079,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5086.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5092.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5099.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5138.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5141.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5142.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5148.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5155.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5162.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5169.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5176.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5183.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5190.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5197,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5204.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5210.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5217.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5226.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5232.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5238.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5246.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5253.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5260.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5309.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5312.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5315.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5322.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5328.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5336.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5342.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5351.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5356.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5363.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5370.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5377.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5384.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5392.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5399.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5405.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5412.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5419.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5426.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5433.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5440.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5447.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5453.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5460.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5469.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5475.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5484.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5492.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5496.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5502.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5511.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5516.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5523.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5530.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5538.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5544.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5551.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5560.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5567.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5572.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5579.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5586.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5593,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5600.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5607.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5614.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5620.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5627.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5635.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5641.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5648.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5655.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5662.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5669.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5676.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5683.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5690.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5698.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5704,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5711.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5718.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5725.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5732.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5739.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5749,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5768.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5773.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5787.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5794.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5801.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5809,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5815.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5822.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5829.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM639.929888 399.929888H640.070112V400.070112H639.929888Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5835.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM639.794088 399.794088H640.205912V400.205912H639.794088Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5843.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM639.635272 399.635272H640.364728V400.364728H639.635272Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5850.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM639.360928 399.360928H640.6390719999999V400.639072H639.360928Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5857,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM639.05528 399.05528H640.9447200000001V400.94471999999996H639.05528Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5863.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM638.682376 398.682376H641.317624V401.31762399999997H638.682376Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5870.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM638.301912 398.301912H641.698088V401.69808800000004H638.301912Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5913.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM637.7726 397.7726H642.2274V402.2274H637.7726Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5921.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM631.145784 391.145784H648.8542160000001V408.854216H631.145784Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5927.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM628.656304 388.656304H651.343696V411.34369599999997H628.656304Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5935.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM626.24808 386.24808H653.7519199999999V413.75192000000004H626.24808Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5940.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM621.94084 381.94084H658.05916V418.05915999999996H621.94084Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5947.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM618.393352 378.393352H661.6066480000001V421.606648H618.393352Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5954.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM612.564424 372.564424H667.4355760000001V427.43557599999997H612.564424Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5962.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM606.920352 366.920352H673.079648V433.07964799999996H606.920352Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 5970.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM601.886344 361.886344H678.113656V438.113656H601.886344Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6212.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM597.8697999999999 357.8698H682.1302V442.1302H597.8697999999999Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6218.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM579.97984 341.540608H700.02016V458.45939200000004H579.97984Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6224.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM579.5851 341.29912H700.4149V458.70088000000004H579.5851Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6232,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM579.06592 340.981504H700.93408V459.01849599999997H579.06592Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6247.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM578.5229400000001 340.649328H701.47706V459.35067200000003H578.5229400000001Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6252.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM577.3411 339.92632H702.6589V460.07367999999997H577.3411Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6260,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM576.87054 339.638448H703.12946V460.36155199999996H576.87054Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6266.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM576.0967 339.16504H703.9033000000001V460.83495999999997H576.0967Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6273.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM575.51632 338.809984H704.4836799999999V461.190016H575.51632Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6281.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM574.82748 338.388576H705.1725200000001V461.611424H574.82748Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6290.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM573.92546 337.836752H706.0745400000001V462.163248H573.92546Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6294.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM572.8667 337.18904H707.1333000000001V462.81095999999997H572.8667Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6301.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM572.8667 337.18904H707.1333000000001V462.81095999999997H572.8667Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6310.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM571.53152 336.372224H708.46848V463.62777600000004H571.53152Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6315.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM570.28916 335.612192H709.7108400000001V464.387808H570.28916Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6321.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM569.58672 335.182464H710.41328V464.81753599999996H569.58672Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6329,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM568.6031 334.58072H711.3969V465.41927999999996H568.6031Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6336.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM567.50048 333.906176H712.4995200000001V466.09382400000004H567.50048Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6398.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM566.3455 333.19960000000003H713.6545V466.8004H566.3455Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6405.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM552.93998 324.998576H727.06002V475.00142400000004H552.93998Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6445.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM551.37156 324.03907200000003H728.6284400000001V475.960928H551.37156Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6454.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM538.87996 316.397152H741.12004V483.602848H538.87996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6460.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM535.44018 314.292816H744.5598200000001V485.707184H535.44018Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6467.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM532.93574 312.760688H747.06426V487.23931200000004H532.93574Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6474.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM529.93422 310.924464H750.06578V489.075536H529.93422Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6481.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM526.64064 308.90956800000004H753.3593599999999V491.090432H526.64064Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6503.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM523.24064 306.829568H756.75936V493.170432H523.24064Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6510,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM510.61134 299.103408H769.3886600000001V500.89659200000006H510.61134Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6516.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM505.96592 296.261504H774.0340799999999V503.738496H505.96592Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6523.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM501.74312 293.678144H778.25688V506.32185599999997H501.74312Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6531,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM496.41022 290.415664H783.58978V509.584336H496.41022Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6538.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM489.69794 286.309328H790.30206V513.690672H489.69794Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6544.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM483.32464000000004 282.410368H796.67536V517.5896319999999H483.32464000000004Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6573,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM477.44025999999997 278.810512H802.5597399999999V521.189488H477.44025999999997Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6580.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM442.75448 257.59097599999996H837.2455199999999V542.409024H442.75448Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6587.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM433.06039999999996 251.66048H846.9395999999999V548.33952H433.06039999999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6592.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM423.12084 245.579808H856.87916V554.420192H423.12084Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6599.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM414.57561999999996 240.352144H865.4243799999999V559.647856H414.57561999999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6607.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM406.17286 235.211632H873.82714V564.788368H406.17286Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6614.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM395.3221 228.57352H884.6778999999999V571.42648H395.3221Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6620.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM386.41784 223.12620800000002H893.5821599999999V576.873792H386.41784Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6628.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM379.18196 218.699552H900.81804V581.300448H379.18196Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6636.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM370.12334000000004 213.15780800000002H909.8766599999999V586.842192H370.12334000000004Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6642.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM361.88752000000005 208.119424H918.11248V591.880576H361.88752000000005Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6649.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM356.18572 204.63126400000002H923.81428V595.368736H356.18572Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6655.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM350.02696000000003 200.863552H929.97304V599.136448H350.02696000000003Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6662.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM345.13708 197.872096H934.86292V602.127904H345.13708Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6670.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM339.77596 194.592352H940.2240400000001V605.407648H339.77596Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6676.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM334.0269 191.07528000000002H945.9730999999999V608.92472H334.0269Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6685,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM330.10330000000005 188.67496H949.8967V611.32504H330.10330000000005Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6690.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM324.54362000000003 185.273744H955.45638V614.726256H324.54362000000003Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6697.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM321.0984 183.16608H958.9015999999999V616.83392H321.0984Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6703.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM317.86602 181.188624H962.1339800000001V618.811376H317.86602Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6711,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM314.74379999999996 179.27856H965.2562V620.72144H314.74379999999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6719.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM310.87154 176.909648H969.12846V623.0903519999999H310.87154Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6726,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM306.73578000000003 174.379536H973.26422V625.620464H306.73578000000003Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6734.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM304.21978 172.84033599999998H975.78022V627.159664H304.21978Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6738.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM300.94965999999994 170.839792H979.05034V629.160208H300.94965999999994Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6745.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM300.94965999999994 170.839792H979.05034V629.160208H300.94965999999994Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6752.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM296.82444000000004 168.316128H983.1755599999999V631.6838720000001H296.82444000000004Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6760.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM294.33326 166.792112H985.66674V633.207888H294.33326Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6766.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM291.67650000000003 165.16680000000002H988.3235V634.8332H291.67650000000003Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6773.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM289.70926 163.963312H990.29074V636.036688H289.70926Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6780.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM287.61214 162.68036800000002H992.38786V637.319632H287.61214Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6788.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM285.57384 161.43340800000001H994.42616V638.566592H285.57384Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6795.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM283.31046 160.048752H996.6895400000001V639.951248H283.31046Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6802.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM281.51220000000006 158.94864H998.4877999999999V641.0513599999999H281.51220000000006Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6808.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM279.72141999999997 157.853104H1000.27858V642.146896H279.72141999999997Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6815.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM278.23834000000005 156.94580800000003H1001.7616599999999V643.054192H278.23834000000005Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6823.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM276.65496 155.977152H1003.3450399999999V644.0228480000001H276.65496Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6829.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM274.85432000000003 154.87558400000003H1005.14568V645.124416H274.85432000000003Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6835.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM273.54429999999996 154.07415999999998H1006.4557V645.92584H273.54429999999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6849.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM272.35736 153.34803200000002H1007.64264V646.651968H272.35736Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6856.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM269.58806 151.65387199999998H1010.41194V648.346128H269.58806Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6863.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM268.36338 150.904656H1011.63662V649.0953440000001H268.36338Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6870.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM267.15876 150.16771200000002H1012.84124V649.832288H267.15876Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6877.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM265.95822 149.43326399999998H1014.04178V650.566736H265.95822Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6884.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM264.67132 148.645984H1015.3286800000001V651.354016H264.67132Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6891.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM263.78086 148.10123199999998H1016.2191399999999V651.898768H263.78086Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6898.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM262.74147999999997 147.46537600000002H1017.2585200000001V652.534624H262.74147999999997Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6905.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM261.71569999999997 146.83784H1018.2843V653.16216H261.71569999999997Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6912.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM260.77254 146.26084799999998H1019.2274600000001V653.739152H260.77254Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6919.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM259.88480000000004 145.71776H1020.1152V654.28224H259.88480000000004Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6926.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM258.99672 145.17446400000003H1021.00328V654.8255359999999H258.99672Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6933.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM258.12734 144.642608H1021.87266V655.357392H258.12734Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6940.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM257.32936 144.154432H1022.67064V655.845568H257.32936Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6947,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM256.58034 143.696208H1023.41966V656.3037919999999H256.58034Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6954,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM255.83166000000006 143.23819200000003H1024.16834V656.761808H255.83166000000006Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6960.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM255.09215999999998 142.78579199999996H1024.90784V657.2142080000001H255.09215999999998Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6967.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM254.40807999999998 142.367296H1025.59192V657.632704H254.40807999999998Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6974.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM253.87564000000003 142.04156799999998H1026.12436V657.958432H253.87564000000003Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6982.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM253.07558400000005 141.56145600000008H1026.9244159999998V658.4385439999999H253.07558400000005Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6988.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM252.83802399999996 141.428608H1027.161976V658.5713920000001H252.83802399999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 6995.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM252.65978799999993 141.32891199999995H1027.340212V658.671088H252.65978799999993Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7002.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM252.42339200000004 141.196688H1027.5766079999999V658.803312H252.42339200000004Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7009.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM252.114152 141.02369600000003H1027.885848V658.976304H252.114152Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7016.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM251.70986399999992 140.79756000000003H1028.290136V659.20244H251.70986399999992Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7023.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM251.48430000000002 140.67139200000003H1028.5157V659.328608H251.48430000000002Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7030.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM251.08113599999996 140.44586400000003H1028.918864V659.554136H251.08113599999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7037,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM250.65094 140.20523199999997H1029.34906V659.794768H250.65094Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7044,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM250.22098799999998 139.96473600000002H1029.779012V660.035264H250.22098799999998Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7051.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM249.72335599999997 139.68634399999996H1030.276644V660.313656H249.72335599999997Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7060.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM249.16713199999998 139.375208H1030.832868V660.6247920000001H249.16713199999998Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7092.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM248.444632 138.97110400000003H1031.555368V661.028896H248.444632Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7202.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM244.97257199999996 137.02895999999998H1035.027428V662.97104H244.97257199999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7211.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM221.115768 123.68431200000003H1058.8842319999999V676.3156879999999H221.115768Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7217.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM217.646636 121.74380000000002H1062.353364V678.2562H217.646636Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7226.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM215.09956800000003 120.31905599999999H1064.900432V679.680944H215.09956800000003Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7242.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM210.48515599999996 117.73795999999999H1069.514844V682.2620400000001H210.48515599999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7249,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM202.36310400000002 113.194728H1077.636896V686.8052720000001H202.36310400000002Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7253.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM197.92497599999996 110.71223999999995H1082.075024V689.28776H197.92497599999996Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7266.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM195.193664 109.18440799999996H1084.806336V690.815592H195.193664Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7273.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM185.12775999999997 103.55389600000001H1094.8722400000001V696.446104H185.12775999999997Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7287,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM178.70654000000002 99.96209599999997H1101.2934599999999V700.037904H178.70654000000002Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7294,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM163.51668800000004 91.46542400000004H1116.4833119999998V708.534576H163.51668800000004Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7301.200000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM154.662712 86.51279199999999H1125.337288V713.487208H154.662712Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7308,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM145.176068 81.20633599999996H1134.823932V718.793664H145.176068Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7314.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM135.00980000000004 75.51968H1144.9902V724.48032H135.00980000000004Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7322.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM126.25951199999997 70.625088H1153.740488V729.374912H126.25951199999997Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7329,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM114.96337600000004 64.30643200000003H1165.0366239999998V735.6935679999999H114.96337600000004Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7335.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM105.741176 59.14786400000003H1174.258824V740.852136H105.741176Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7343,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM98.36115199999995 55.019743999999946H1181.638848V744.980256H98.36115199999995Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7349.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM89.59008000000006 50.113512000000014H1190.40992V749.886488H89.59008000000006Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7356.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM82.69216000000006 46.25502399999999H1197.30784V753.744976H82.69216000000006Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7377.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM77.40749200000005 43.298968H1202.592508V756.7010319999999H77.40749200000005Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7386.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM62.09893599999998 34.73593599999998H1217.9010640000001V765.264064H62.09893599999998Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7392.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM56.706096 31.71938399999999H1223.293904V768.280616H56.706096Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7400.100000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM53.46252800000002 29.905040000000042H1226.537472V770.0949599999999H53.46252800000002Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7408,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM49.460883999999965 27.66666399999997H1230.539116V772.333336H49.460883999999965Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7413.899999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM45.792827999999986 25.614888000000008H1234.207172V774.3851119999999H45.792827999999986Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7467.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM43.66253199999994 24.423231999999985H1236.3374680000002V775.576768H43.66253199999994Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7490.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM26.216511999999966 14.66459199999997H1253.783488V785.335408H26.216511999999966Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7497.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM21.012307999999962 11.75357600000001H1258.9876920000002V788.2464239999999H21.012307999999962Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7509.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM19.59383200000002 10.960096000000021H1260.406168V789.039904H19.59383200000002Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7518,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM17.394695999999954 9.729984000000002H1262.6053040000002V790.2700159999999H17.394695999999954Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7526.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM15.836731999999984 8.858503999999982H1264.163268V791.141496H15.836731999999984Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7540,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM14.595911999999998 8.164440000000013H1265.404088V791.83556H14.595911999999998Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7546.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM12.540468000000033 7.014696000000015H1267.4595319999999V792.985304H12.540468000000033Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7551.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM11.761120000000119 6.578752000000009H1268.2388799999999V793.421248H11.761120000000119Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7586.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM11.11146000000008 6.215351999999996H1268.88854V793.7846480000001H11.11146000000008Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7592.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM7.306300000000078 4.086880000000008H1272.6936999999998V795.9131199999999H7.306300000000078Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7601,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM6.761248000000023 3.782007999999962H1273.238752V796.2179920000001H6.761248000000023Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7609.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM5.9643839999999955 3.3362639999999715H1274.0356160000001V796.663736H5.9643839999999955Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7616.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM5.3564400000000205 2.9962079999999673H1274.64356V797.003792H5.3564400000000205Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7622,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM4.840372000000116 2.707528000000025H1275.1596279999999V797.292472H4.840372000000116Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7636,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM4.398368000000005 2.460295999999971H1275.6016319999999V797.539704H4.398368000000005Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7650.299999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM3.542124000000058 1.9813440000000355H1276.457876V798.018656H3.542124000000058Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7657,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM2.7442839999999933 1.5350559999999405H1277.2557160000001V798.4649440000001H2.7442839999999933Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7664.399999976158,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM2.422747999999956 1.3551919999999882H1277.577252V798.644808H2.422747999999956Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7671.600000023842,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM2.1207760000000917 1.1862879999999905H1277.8792239999998V798.813712H2.1207760000000917Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7676.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM1.81861600000002 1.0173039999999673H1278.181384V798.982696H1.81861600000002Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7703.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM1.6091959999999972 0.9001279999999952H1278.3908040000001V799.099872H1.6091959999999972Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7711.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM0.7813000000001011 0.4370319999999879H1279.2187V799.562968H0.7813000000001011Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7718.5,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM0.6059920000000147 0.3389680000000226H1279.394008V799.661032H0.6059920000000147Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7724.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM0.4865559999999505 0.27220000000005484H1279.5134440000002V799.7277999999999H0.4865559999999505Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7745.799999952316,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM0.3833560000000489 0.21443199999998797H1279.616644V799.785568H0.3833560000000489Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7756.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM0.10933599999998478 0.061120000000016717H1279.890664V799.9388799999999H0.10933599999998478Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7769.700000047684,
+    "paths": [
+      {
+        "d": "M0 0H1280V800H0ZM0.06582000000003063 0.03681600000004437H1279.93418V799.963184H0.06582000000003063Z",
+        "fill": null,
+        "parent": "clipPath"
+      }
+    ]
+  },
+  {
+    "t": 7779.200000047684,
+    "paths": []
+  },
+  {
+    "t": 7792,
+    "paths": []
+  },
+  {
+    "t": 7802.700000047684,
+    "paths": []
+  },
+  {
+    "t": 7809.700000047684,
+    "paths": []
+  },
+  {
+    "t": 7817.100000023842,
+    "paths": []
+  },
+  {
+    "t": 7824.600000023842,
+    "paths": []
+  },
+  {
+    "t": 7863.5,
+    "paths": []
+  },
+  {
+    "t": 7871.100000023842,
+    "paths": []
+  },
+  {
+    "t": 7877.399999976158,
+    "paths": []
+  },
+  {
+    "t": 7884.100000023842,
+    "paths": []
+  },
+  {
+    "t": 7892.799999952316,
+    "paths": []
+  },
+  {
+    "t": 7899.5,
+    "paths": []
+  },
+  {
+    "t": 7920.5,
+    "paths": []
+  },
+  {
+    "t": 7933.100000023842,
+    "paths": []
+  },
+  {
+    "t": 7947.299999952316,
+    "paths": []
+  },
+  {
+    "t": 7957.299999952316,
+    "paths": []
+  },
+  {
+    "t": 7990.200000047684,
+    "paths": []
+  },
+  {
+    "t": 8356.600000023842,
+    "paths": []
+  },
+  {
+    "t": 8375.799999952316,
+    "paths": []
+  },
+  {
+    "t": 8387.399999976158,
+    "paths": []
+  }
+]

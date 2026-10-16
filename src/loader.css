@@ -13,11 +13,30 @@
 }
 
 html.is-restoring-visit #loading-screen.elegant-loader {
-  background: #17192c;
+  background: var(--folio-ink);
+}
+
+.loader-window-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.loader-reveal-shield {
+  position: fixed;
+  inset: 0;
+  z-index: 2000001;
+  background: transparent;
+  cursor: inherit;
 }
 
 .loader-composition {
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   overflow: hidden;

@@ -1,4 +1,5 @@
 import { initPortfolio } from './portfolio'
+import { getBrandBlue } from './brand-color'
 import { initScrollRestoration } from './scroll-restoration'
 import { createKineticLoader } from './loader-transition'
 import { preparePageAssets, nextPaint } from './page-readiness'
@@ -183,7 +184,7 @@ window.finishIntroGlobal = () => Promise.resolve();
 const loadingScreen = document.getElementById('loading-screen');
 document.body.style.overflow = 'hidden'; // Lock scrolling during loading
 
-const kineticLoader = createKineticLoader({ loader: loadingScreen, reducedMotion: prefersReducedMotion.matches, restoring: scrollRestoration.restoring });
+const kineticLoader = createKineticLoader({ loader: loadingScreen, reducedMotion: prefersReducedMotion.matches });
 
 let pageProgress = 0;
 const updateLoadingProgress = () => kineticLoader.setProgress(pageProgress * 100);
@@ -193,6 +194,9 @@ const preventLoadingScroll = event => {
   if (event.type === 'keydown' && event.target.closest?.('button, input, textarea, select, a')) return;
   if (event.type === 'keydown' && !['Space', 'ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End'].includes(event.code)) return;
   if (event.cancelable) event.preventDefault();
+  // Lenis consumes wheel deltas independently of the browser's default scroll.
+  // Keep the destination still until the complete loader reveal has finished.
+  event.stopImmediatePropagation();
 };
 window.addEventListener('wheel', preventLoadingScroll, { passive: false, capture: true });
 window.addEventListener('touchmove', preventLoadingScroll, { passive: false, capture: true });
@@ -207,7 +211,7 @@ async function prepareAndReveal() {
   kineticLoader.clearError();
   try {
     await preparePageAssets(progress => {
-      pageProgress = progress;
+      pageProgress = progress * .85;
       updateLoadingProgress();
     });
 
@@ -229,6 +233,9 @@ async function prepareAndReveal() {
 
     window.dispatchEvent(new Event('resize'));
     await waitForPortfolio();
+    await portfolio.prepareSignature();
+    pageProgress = 1;
+    updateLoadingProgress();
     // Settle the final scrollbar/sticky layout while the loader still covers it.
     // Input remains blocked by preventLoadingScroll until the reveal finishes.
     document.body.style.overflow = '';
@@ -316,7 +323,7 @@ if (!prefersReducedMotion.matches) {
       options: {
         background: { color: { value: "transparent" } },
         particles: {
-          color: { value: "#1a1f5c" },
+          color: { value: getBrandBlue() },
           links: { enable: false },
           move: { enable: true, speed: 0.5, direction: "bottom" },
           number: { value: 30, density: { enable: true, area: 800 } },
@@ -343,7 +350,7 @@ if (meanderPaths.length) gsap.to(meanderPaths, {
   ease: 'none'
 });
 
-initPortfolio({ getLenis: () => lenis });
+const portfolio = initPortfolio({ getLenis: () => lenis });
 
 // Ensure no native browser tooltips ever linger or get re-injected
 const stripNativeTooltips = () => {

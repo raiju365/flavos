@@ -2,12 +2,12 @@ import * as THREE from 'three';
 
 // Positions use the original signature image's normalized coordinates.
 export const signatureStickers = [
-  { file: 'BIOLOGY.png', x: .115, y: .55, width: .08, angle: 31 },
-  { file: 'MPAA-(6).png', x: .27, y: .32, width: .12, angle: -3 },
-  { file: 'DOPEMICKY-(3).png', x: .457, y: .615, width: .086, angle: -22 },
-  { file: 'SMILE.png', x: .662, y: .55, width: .052, angle: 4 },
-  { file: 'THEKNIGHTS.png', x: .838, y: .285, width: .085, angle: -8 },
-  { file: 'HAPPYPIG.png', x: .9, y: .955, width: .078, angle: -8 },
+  { file: 'BIOLOGY.png', name: 'Biology', x: .115, y: .55, width: .08, angle: 31 },
+  { file: 'MPAA-(6).png', name: 'MPAA', x: .27, y: .32, width: .12, angle: -3 },
+  { file: 'DOPEMICKY-(3).png', name: 'Dope Micky', x: .457, y: .615, width: .086, angle: -22 },
+  { file: 'SMILE.png', name: 'Smile', x: .662, y: .55, width: .052, angle: 4 },
+  { file: 'THEKNIGHTS.png', name: 'The Knights', x: .838, y: .285, width: .085, angle: -8 },
+  { file: 'HAPPYPIG.png', name: 'Happy Pig', x: .9, y: .955, width: .078, angle: -8 },
 ];
 
 // Keep the part of a sticker outside the silhouette: it is needed on the
@@ -63,15 +63,11 @@ export function createSignatureStickers(aspect, onReady) {
   const ctx = canvas.getContext('2d');
   const texture = new THREE.CanvasTexture(canvas);
   texture.colorSpace = THREE.SRGBColorSpace;
-  const ready = Promise.all(signatureStickers.map(async sticker => {
-    const image = new Image();
-    image.src = `/footer/stickers/web/${encodeURIComponent(sticker.file.replace(/\.png$/i, '.webp'))}`;
-    try { await image.decode(); return { sticker, image }; }
-    catch { console.warn(`Signature sticker unavailable: ${sticker.file}`); return null; }
-  })).then(items => {
-    if (disposed) return;
-    for (const item of items) {
-      if (!item) continue;
+  let loaded = [];
+  const paint = (selected = null) => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (const item of loaded) {
+      if (!item || selected === 'all' || item.index === selected) continue;
       const { sticker, image } = item;
       const width = sticker.width * surfaceWidth * scale;
       const height = width * image.naturalHeight / image.naturalWidth;
@@ -82,7 +78,24 @@ export function createSignatureStickers(aspect, onReady) {
       ctx.restore();
     }
     texture.needsUpdate = true;
-    onReady(items.filter(Boolean).length);
+  };
+  const ready = Promise.all(signatureStickers.map(async (sticker, index) => {
+    const image = new Image();
+    image.src = `/footer/stickers/web/${encodeURIComponent(sticker.file.replace(/\.png$/i, '.webp'))}`;
+    try { await image.decode(); return { sticker, image, index }; }
+    catch { console.warn(`Signature sticker unavailable: ${sticker.file}`); return null; }
+  })).then(items => {
+    if (disposed) return;
+    loaded = items;
+    paint();
+    const count = items.filter(Boolean).length;
+    onReady(count);
+    return count;
   });
-  return { texture, ready, dispose() { disposed = true; texture.dispose(); } };
+  return {
+    texture, ready, expectedCount: signatureStickers.length,
+    get items() { return loaded; },
+    select(index) { if (!disposed) paint(index); },
+    dispose() { disposed = true; texture.dispose(); },
+  };
 }

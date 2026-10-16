@@ -1,0 +1,4064 @@
+{
+  "scroll": 0,
+  "hero": {
+    "apertureSize": "779.76",
+    "entryProgress": "0.0000",
+    "entryPhase": "white",
+    "foregroundScale": "1.0000",
+    "paintingScale": "1.0000",
+    "motionEnergy": "0.0000",
+    "motionClock": "2.7288",
+    "scratch": "0.0000",
+    "returnAssembly": "1.0000",
+    "returnScale": "1.0000",
+    "returnReveal": "scale"
+  },
+  "overlay": {
+    "cloudRenderer": "canvas-2d",
+    "cloudOpaque": "false",
+    "cloudPhase": "idle",
+    "cloudProgress": "0.0000",
+    "cloudMotion": "upward-flight",
+    "cloudTravelVh": "0.00",
+    "cloudReveal": "geometric-clear",
+    "phase": "idle"
+  },
+  "samples": [
+    {
+      "time": 13320.89999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0000",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.01",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13344.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0000",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.02",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13404.89999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0003",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.14",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13422.89999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0005",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.25",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13444.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0008",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.37",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13465.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0011",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.53",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13481.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0016",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.77",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13508.39999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0020",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "0.96",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13525.39999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0029",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "1.38",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13543.89999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0035",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "1.70",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13563.89999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0043",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "2.05",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13578.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0053",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "2.56",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13602.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0061",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "2.94",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13625.79999999702,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0079",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "3.77",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13638.5,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0093",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "4.45",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13672,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0111",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "5.32",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13702.099999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0149",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "7.14",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13739.199999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0187",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "8.96",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13777.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0239",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "11.49",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13814.199999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0293",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "14.06",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13847.199999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0357",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "17.16",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13888.099999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0435",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "20.89",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13916.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0514",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "24.66",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13954.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0609",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "29.25",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 13986.099999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0707",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "33.94",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14020.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0802",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "38.48",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14053.199999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.0922",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "44.26",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14095.099999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.1066",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "51.16",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14132.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.1228",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "58.95",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14221.199999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.1658",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "79.60",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14269.5,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.1922",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "92.24",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14321,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.2257",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "108.32",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14354.099999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.2493",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "119.69",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14417.699999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.2937",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "140.97",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14448.89999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.3218",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "154.48",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14488,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.3517",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "168.83",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14522.699999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.3881",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "186.28",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14549.199999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.4130",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "198.24",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14628.199999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.4919",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "236.13",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14653.599999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.5234",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "251.22",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14693.39999999851,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.5657",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "271.55",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14725.699999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.6103",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "292.95",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14774,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.6665",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "319.94",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14812.099999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.7261",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "348.55",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14857,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.7877",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "378.09",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14899.199999999255,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.8526",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "409.25",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14938.29999999702,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.9210",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "442.08",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 14979.099999997765,
+      "scroll": 17172,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "cover",
+      "cloudProgress": "0.9842",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "472.42",
+      "cloudReveal": "geometric-clear",
+      "phase": "cover",
+      "assembly": 1,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15360.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "true",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0000",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "covered",
+      "assembly": 0,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15469,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "true",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0000",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "covered",
+      "assembly": 0,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15483.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "true",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0000",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "covered",
+      "assembly": 0,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15490.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0001",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15494.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0002",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0001,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15507.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0003",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0002,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15518.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0008",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0003,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15525.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0014",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0008,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15529.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0018",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0014,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15554.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0031",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0018,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15561.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0047",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0031,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15607.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0105",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0047,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15616.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0120",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0105,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15621.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0139",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.012,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15624.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0139",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0139,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15631.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0159",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0139,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15649.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0183",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0159,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15652.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0206",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0183,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15667.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0240",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0206,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15684.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0274",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.024,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15697.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0324",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0274,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15709,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0360",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0324,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15722.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0385",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.036,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15730.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0424",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0385,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15739.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0462",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0424,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15754.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0497",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0462,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15763.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0549",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0497,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15777.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0587",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0549,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15785.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0634",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0587,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15794.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0671",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0634,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15811.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0717",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0671,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15821.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0787",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0717,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15832.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0837",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0787,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15854,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0897",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0837,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15859.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.0965",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0897,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15868.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1009",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.0965,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15885.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1070",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1009,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15890.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1126",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.107,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15901.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1179",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1126,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15918.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1239",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1179,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15923.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1294",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1239,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15942.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1366",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1294,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15949.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1447",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1366,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15959.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1506",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1447,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15979,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1583",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1506,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15984,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1656",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1583,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 15996,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1731",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1656,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16015.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1813",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1731,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16023.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1890",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1813,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16033.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.1975",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.189,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16049.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.2041",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.1975,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16059.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.2142",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.2041,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16070.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.2217",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.2142,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16086.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.2293",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.2217,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16092.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.2370",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.2293,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16109.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.2448",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.237,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16116.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.2541",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.2448,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16129.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.2642",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.2541,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16199.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3129",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.2642,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16207.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3221",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3129,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16216,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3221",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3221,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16217.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3306",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3221,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16223.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3345",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3306,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16233.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3431",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3345,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16236.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3431",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3431,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16252.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3542",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3431,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16254.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3597",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3542,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16267.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3693",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3597,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16307.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.3974",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3693,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16314.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4039",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.3974,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16317.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4096",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.4039,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16323.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4153",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.4096,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16335.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4251",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.4153,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16363.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4439",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.4251,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16368.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4521",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.4439,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16386.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4620",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.4521,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16391.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4703",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.462,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16404.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4810",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.4703,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16423.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.4917",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.481,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16428,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.5008",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.4917,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16444.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.5107",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.5008,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16516.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.5692",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.5107,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16519.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.5766",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.5692,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16525.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.5807",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.5766,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16532.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.5864",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.5807,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16549.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.5961",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.5864,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16555.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.6050",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.5961,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16566,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.6139",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.605,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16583.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.6235",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.6139,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16648.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.6794",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.6235,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16656.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.6794",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.6794,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16659,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.6871",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.6794,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16664.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.6910",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.6871,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16675.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.6963",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.691,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16678.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7016",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.6963,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16684.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7069",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7016,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16692.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7121",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7069,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16699.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7181",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7121,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16725.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7329",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7181,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16727.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7387",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7329,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16735.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7430",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7387,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16745.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7474",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.743,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16750,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7545",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7474,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16763.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7637",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7545,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16775.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7672",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7637,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16780.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7755",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7672,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16791.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7831",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7755,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16800.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7892",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7831,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16815.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.7946",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7892,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16817.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8005",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.7946,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16824,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8051",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8005,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16832.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8104",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8051,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16857.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8225",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8104,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16865.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8313",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8225,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16891.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8435",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8313,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16896.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8500",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8435,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16903.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8541",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.85,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16914.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8565",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8541,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16915.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8616",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8565,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16922,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8645",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8616,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16927.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8684",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8645,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16945.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8751",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8684,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16950.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8805",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8751,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16958.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8853",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8805,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16967.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8894",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8853,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16980.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.8941",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8894,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 16990.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9016",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.8941,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17000.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9064",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9016,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17016.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9112",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9064,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17021.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9163",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9112,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17034.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9213",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9163,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17048.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9257",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9213,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17053.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9300",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9257,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17063.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9345",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.93,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17082.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9393",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9345,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17087.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9436",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9393,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17099.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9481",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9436,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17112.39999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9506",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9481,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17120.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9555",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9506,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17128.79999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9585",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9555,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17146.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9624",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9585,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17151.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9655",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9624,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17161,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9684",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9655,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17180.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9724",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9684,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17185,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9750",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9724,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17196.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9778",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.975,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17211.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9801",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9778,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17217.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9826",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9801,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17226.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9845",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9826,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17240.699999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9872",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9845,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17256.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9892",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9872,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17262.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9911",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9892,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17276.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9925",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9911,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17284.5,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9941",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9925,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17296.599999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9956",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9941,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17319.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9970",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9956,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17320.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9979",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.997,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17325.29999999702,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9979",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9979,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17337.099999997765,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9989",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9979,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17354.89999999851,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9995",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9989,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "time": 17360.199999999255,
+      "scroll": 0,
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "reveal",
+      "cloudProgress": "0.9998",
+      "cloudMotion": "upward-flight",
+      "cloudTravelVh": "480.00",
+      "cloudReveal": "geometric-clear",
+      "phase": "reveal",
+      "assembly": 0.9995,
+      "departure": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "maskSamples": [
+    {
+      "target": 0,
+      "assembly": 0,
+      "minAlpha": 255,
+      "openPixels": 0,
+      "partialPixels": 0,
+      "box": null,
+      "canvas": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "target": 0.25,
+      "assembly": 0.2541,
+      "minAlpha": 0,
+      "openPixels": 5266,
+      "partialPixels": 6615,
+      "box": {
+        "left": 644,
+        "top": 391,
+        "width": 153,
+        "height": 135
+      },
+      "canvas": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "target": 0.5,
+      "assembly": 0.5008,
+      "minAlpha": 0,
+      "openPixels": 20345,
+      "partialPixels": 25360,
+      "box": {
+        "left": 569,
+        "top": 326,
+        "width": 301,
+        "height": 264
+      },
+      "canvas": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "target": 1,
+      "assembly": 1,
+      "minAlpha": 0,
+      "openPixels": 78811,
+      "partialPixels": 97848,
+      "box": {
+        "left": 417,
+        "top": 195,
+        "width": 603,
+        "height": 516
+      },
+      "canvas": {
+        "width": 1440,
+        "height": 900
+      }
+    }
+  ]
+}

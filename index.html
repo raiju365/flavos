@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <script>
-    if (['reload', 'back_forward'].includes(performance.getEntriesByType('navigation')[0]?.type)) {
+    if (document.wasDiscarded || ['reload', 'back_forward'].includes(performance.getEntriesByType('navigation')[0]?.type)) {
       document.documentElement.classList.add('is-restoring-visit');
       history.scrollRestoration = 'manual';
     }
   </script>
-  <style>html.is-restoring-visit { background: #17192c; }</style>
+  <style>html.is-restoring-visit { background: var(--brand-blue, #20235b); }</style>
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="description"
@@ -183,13 +183,12 @@
       <div class="footer-stage">
         <footer class="signature-footer" aria-labelledby="contact-heading">
           <div class="footer-logo-anchor" aria-hidden="true"></div>
-          <a href="#hero" class="footer-back-to-top" aria-label="Back to top">
-            <span class="back-top-label">Back to top</span>
-            <span class="back-top-pages" aria-hidden="true"><i></i><i></i><i></i></span>
+          <a href="#hero" class="footer-back-to-top footer-return-sticker" aria-label="Back to top">
+            <img class="footer-return-sticker-image" src="/footer/back-to-top-sticker.webp" width="512" height="512" alt="" decoding="async" draggable="false" />
           </a>
           <div class="footer-editorial">
             <h2 id="contact-heading" class="footer-contact-heading">Get in touch</h2>
-            <div class="footer-signature"><img src="/footer/FlavoSs.png" width="1236" height="444" alt="FlavoS" decoding="async" /></div>
+            <div class="footer-signature"><img src="/footer/signature-3d-poster.webp" width="1236" height="444" alt="FlavoS" decoding="async" /></div>
           </div>
           <div class="signature-bottom">
             <nav class="footer-socials" aria-label="Social and email links">

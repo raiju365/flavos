@@ -1,0 +1,10 @@
+{
+  "errors": [],
+  "onsetCount": 16,
+  "onsetMaxProgress": 0.0362,
+  "onsetMaxGrade": 0.0227,
+  "growthGradePeak": 0.2,
+  "whiteAllNeutral": true,
+  "finalGrade": "0.0000",
+  "note": "Grade and cloudProgress share the same passage assembly; hero returnScale data paints one rAF later."
+}

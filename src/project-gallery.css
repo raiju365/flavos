@@ -2,7 +2,7 @@
   position: fixed; inset: 0;
   width: 100%; max-width: none; height: 100%; max-height: none;
   margin: 0; padding: 0; border: 0;
-  color: #202334; background: transparent;
+  color: var(--folio-ink); background: transparent;
   overflow: hidden; overscroll-behavior: contain;
 }
 .orbit-gallery::backdrop { background: transparent; }
@@ -56,7 +56,7 @@
   position: absolute; left: calc(50% - var(--orbit-size) / 2); top: calc(50% - var(--orbit-size) / 2);
   width: var(--orbit-size); height: var(--orbit-size); aspect-ratio: 1;
   display: grid; place-items: center; padding: 0; border: 0;
-  border-radius: 0; background: #ece9e1; color: #202334;
+  border-radius: 0; background: #ece9e1; color: var(--folio-ink);
   font: 400 clamp(18px, 2vw, 28px)/1 var(--font-display);
   pointer-events: auto; will-change: transform; overflow: hidden; backface-visibility: visible; cursor: pointer;
   transition: background-color .5s;
@@ -77,7 +77,7 @@
 .orbit-color-filter { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
 .orbit-caption { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 0; text-align: center; pointer-events: none; }
 .orbit-caption-title { font: 400 clamp(26px, 3vw, 32px)/1.1 var(--font-display); }
-.orbit-caption-note { width: 180px; text-align: center; font: 400 11px/1.7 var(--font-body); color: #6e707a; }
+.orbit-caption-note { width: 180px; text-align: center; font: 400 11px/1.7 var(--font-body); color: var(--folio-ink); }
 .orbit-controls { position: absolute; z-index: 2; left: var(--orbit-gutter); right: var(--orbit-gutter); bottom: 20px; display: flex; align-items: center; justify-content: center; min-height: 48px; pointer-events: none; }
 .orbit-actions { display: grid; grid-template-columns: 44px minmax(0, 220px) 44px; align-items: start; column-gap: clamp(8px, 2vw, 28px); row-gap: 8px; max-width: 100%; }
 .orbit-actions button { pointer-events: auto; }
@@ -104,15 +104,15 @@
 .orbit-image-viewport:focus-visible { outline: 1px solid #a53628; outline-offset: 4px; }
 .orbit-image-slide { flex: 0 0 100%; min-width: 0; display: grid; place-items: center; scroll-snap-align: start; scroll-snap-stop: always; }
 .orbit-image-controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 18px; font: 400 11px/1.5 var(--font-body); }
-.orbit-gallery .orbit-image-controls button { min-width: 44px; min-height: 44px; padding: 8px; background: transparent; border: 1px solid #20233435; font-size: 20px; }
+.orbit-gallery .orbit-image-controls button { min-width: 44px; min-height: 44px; padding: 8px; background: transparent; border: 1px solid rgb(var(--brand-blue-rgb) / 0.2078); font-size: 20px; }
 .orbit-gallery .orbit-image-controls button:disabled { opacity: .25; cursor: default; }
 .orbit-detail-copy, .orbit-detail-context { min-width: 0; max-width: 300px; }
 .orbit-detail-copy { justify-self: start; }
 .orbit-detail-context { justify-self: end; }
 .orbit-detail-copy h3 { margin: 16px 0; font: 400 clamp(30px, 3.4vw, 54px)/1.05 var(--font-display); letter-spacing: -.03em; overflow-wrap: anywhere; }
-.orbit-detail-description { margin: 0; font: 400 14px/1.8 var(--font-body); color: #6e707a; }
+.orbit-detail-description { margin: 0; font: 400 14px/1.8 var(--font-body); color: var(--folio-ink); }
 .orbit-detail-controls { display: flex; justify-content: center; align-items: center; gap: 22px; padding-bottom: 8px; }
-.orbit-detail-count { font: 400 11px/1.5 var(--font-body); color: #6e707a; }
+.orbit-detail-count { font: 400 11px/1.5 var(--font-body); color: var(--folio-ink); }
 .orbit-gallery .orbit-detail-controls button { font-size: 22px; }
 @media (max-width: 760px) {
   .orbit-detail-layout { grid-template-columns: minmax(0, 1fr); min-height: 0; gap: 28px; margin: 14px 0 28px; }
@@ -223,7 +223,7 @@
 /* Editable project notes: one consistent reading order for every artwork. */
 .orbit-detail-description { display: grid; gap: 22px; }
 .orbit-detail-section dt {
-  margin: 0 0 7px; color: #202334;
+  margin: 0 0 7px; color: var(--folio-ink);
   font: 400 12px/1.5 var(--font-body);
 }
 .orbit-detail-section dd {

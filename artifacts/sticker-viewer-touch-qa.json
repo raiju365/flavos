@@ -1,0 +1,15 @@
+{
+  "results": [
+    {
+      "touch": true,
+      "sourceResumed": true,
+      "overflowRestored": true
+    },
+    {
+      "touch": false,
+      "sourceResumed": true,
+      "overflowRestored": true
+    }
+  ],
+  "errors": []
+}

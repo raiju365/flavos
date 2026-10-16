@@ -3,7 +3,7 @@ export function initScrollRestoration() {
   const key = 'portfolioScrollY';
   const type = performance.getEntriesByType('navigation')[0]?.type;
   const saved = history.state?.[key];
-  const restore = type === 'reload' || type === 'back_forward';
+  const restore = document.wasDiscarded || type === 'reload' || type === 'back_forward';
   const top = restore && Number.isFinite(saved) ? Math.max(0, saved) : 0;
   let ready = false, timer;
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';

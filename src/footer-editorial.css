@@ -27,6 +27,11 @@
   gap: 16px;
 }
 
+/* The absorbed navigation must let clicks reach the footer controls beneath it. */
+.folio-nav.studio-header.is-footer-journey .studio-desktop {
+  pointer-events: none !important;
+}
+
 .signature-footer .footer-editorial {
   position: absolute;
   inset: 0;
@@ -203,6 +208,3 @@
   position: absolute; left: -20%; top: -60%; width: 140%; height: 220%;
   display: block; pointer-events: none;
 }
-
-/* Keep the polished surface readable under the site's full-screen film grain. */
-body:has(.signature-footer.signature-in-view) .tv-noise { opacity: .018; }

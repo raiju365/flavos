@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "reduced": false,
+      "open": {
+        "lenisPrevent": "",
+        "phase": "open",
+        "sticker": "0",
+        "progress": "1.0000",
+        "rotation": "-0.0340,-0.0753,-0.0098,0.9965",
+        "scale": "1.6742",
+        "contact": "0.0000",
+        "flight": "1.0000",
+        "open": true,
+        "focused": "sticker-viewer-close",
+        "overflow": "hidden",
+        "blur": "blur(18px)",
+        "meshes": 1,
+        "vertices": 185316,
+        "depth": 0.004399999976158142,
+        "quaternion": [
+          -0.0339557338864103,
+          -0.07531413697261005,
+          -0.009835102363742783,
+          0.9965330198592525
+        ],
+        "sourceRotation": "-0.229,0.014",
+        "mainOverflow": false
+      },
+      "back": {
+        "lenisPrevent": "",
+        "phase": "open",
+        "sticker": "0",
+        "progress": "1.0000",
+        "rotation": "-0.0098,0.9965,0.0340,0.0754",
+        "scale": "1.6742",
+        "contact": "0.0000",
+        "flight": "1.0000",
+        "open": true,
+        "focused": "sticker-viewer-canvas",
+        "overflow": "hidden",
+        "blur": "blur(18px)",
+        "meshes": 1,
+        "vertices": 185316,
+        "depth": 0.004399999976158142,
+        "quaternion": [
+          -0.009839309124274628,
+          0.9965236814094516,
+          0.03395451513756274,
+          0.07543759863545373
+        ],
+        "sourceRotation": "-0.229,0.014",
+        "mainOverflow": false
+      },
+      "dragged": {
+        "lenisPrevent": "",
+        "phase": "open",
+        "sticker": "0",
+        "progress": "1.0000",
+        "rotation": "-0.2036,-0.9688,-0.1307,0.0532",
+        "scale": "1.6742",
+        "contact": "0.0000",
+        "flight": "1.0000",
+        "open": true,
+        "focused": "sticker-viewer-canvas",
+        "overflow": "hidden",
+        "blur": "blur(18px)",
+        "meshes": 1,
+        "vertices": 185316,
+        "depth": 0.004399999976158142,
+        "quaternion": [
+          -0.2036451714997484,
+          -0.9688216047248835,
+          -0.1307097106058259,
+          0.05318189444238012
+        ],
+        "sourceRotation": "-0.229,0.014",
+        "mainOverflow": false
+      }
+    }
+  ],
+  "errors": []
+}

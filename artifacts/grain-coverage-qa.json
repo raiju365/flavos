@@ -1,0 +1,30 @@
+[
+  {
+    "width": 1440,
+    "reduced": false,
+    "coverage": true,
+    "modal": true,
+    "footerSingleLayer": true
+  },
+  {
+    "width": 820,
+    "reduced": false,
+    "coverage": true,
+    "modal": true,
+    "footerSingleLayer": true
+  },
+  {
+    "width": 390,
+    "reduced": false,
+    "coverage": true,
+    "modal": true,
+    "footerSingleLayer": true
+  },
+  {
+    "width": 320,
+    "reduced": true,
+    "coverage": true,
+    "modal": true,
+    "footerSingleLayer": true
+  }
+]

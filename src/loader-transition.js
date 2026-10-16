@@ -1,7 +1,42 @@
 import gsap from 'gsap';
 import './loader.css';
 
-export function createKineticLoader({ loader, reducedMotion = false, restoring = false }) {
+function createWindowReveal(loader) {
+  const ns = 'http://www.w3.org/2000/svg';
+  const cover = document.createElementNS(ns, 'svg');
+  const path = document.createElementNS(ns, 'path');
+  cover.classList.add('loader-window-cover');
+  cover.setAttribute('viewBox', '0 0 1 1');
+  cover.setAttribute('preserveAspectRatio', 'none');
+  cover.setAttribute('aria-hidden', 'true');
+  cover.setAttribute('focusable', 'false');
+  path.setAttribute('fill', getComputedStyle(loader).backgroundColor);
+  path.setAttribute('fill-rule', 'evenodd');
+  cover.append(path);
+  const smooth = value => {
+    const t = Math.max(0, Math.min(1, value));
+    return t * t * t * (t * (t * 6 - 15) + 10);
+  };
+  const paint = progress => {
+    // Width leads height slightly: a central slit becomes a landscape window,
+    // then clears all four edges. The page itself never scales or moves.
+    const width = smooth(progress / .92) * 1.004;
+    const height = smooth((progress - .08) / .92) * 1.004;
+    const x = (1 - width) / 2, y = (1 - height) / 2;
+    const hole = width > 0 && height > 0
+      ? ` M${x},${y} h${width} v${height} h${-width} Z` : '';
+    path.setAttribute('d', `M-1,-1 H2 V2 H-1 Z${hole}`);
+    loader.dataset.revealProgress = progress.toFixed(4);
+    loader.dataset.revealWidth = width.toFixed(4);
+    loader.dataset.revealHeight = height.toFixed(4);
+  };
+  paint(0);
+  loader.prepend(cover);
+  loader.style.background = 'transparent';
+  return paint;
+}
+
+export function createKineticLoader({ loader, reducedMotion = false }) {
   if (!loader) return { setProgress() { }, clearError() { }, showError() { }, reveal: () => Promise.resolve() };
 
   const mark = loader.querySelector('.loader-mark');
@@ -18,6 +53,7 @@ export function createKineticLoader({ loader, reducedMotion = false, restoring =
   let disposed = false;
   let exiting = false;
   let exit;
+  let inputShield;
   let resolveReveal;
   let currentBlur = 0;
   let currentCounterSkew = 0; // Gaia is naturally upright.
@@ -79,6 +115,7 @@ export function createKineticLoader({ loader, reducedMotion = false, restoring =
     window.removeEventListener('resize', updateMeasurements);
     gsap.ticker.remove(tick);
     exit?.kill();
+    inputShield?.remove();
     loader.remove();
     resolveReveal();
   }
@@ -98,36 +135,28 @@ export function createKineticLoader({ loader, reducedMotion = false, restoring =
     paint();
     loader.dataset.phase = 'opening';
 
+    inputShield = document.createElement('div');
+    inputShield.className = 'loader-reveal-shield';
+    inputShield.setAttribute('aria-hidden', 'true');
+    document.body.append(inputShield);
     const tl = gsap.timeline({ onComplete: dispose });
-
-    if (restoring) {
-      // Resume the settled destination without replaying the white Hero handoff.
-      tl.to([mark, progressEl].filter(Boolean), { opacity: 0, duration: reducedMotion ? .1 : .25, ease: 'power2.out' });
-      tl.call(() => window.dispatchEvent(new Event('portfolio:hero-enter')));
-      tl.to(loader, { opacity: 0, duration: reducedMotion ? .25 : .95, ease: 'power2.inOut' }, reducedMotion ? .1 : .3);
-    } else if (reducedMotion) {
-      tl.to(loader, { opacity: 0, duration: 0.3 });
+    const contents = [mark, progressEl].filter(Boolean);
+    loader.dataset.reveal = reducedMotion ? 'reduced' : 'window';
+    loader.dataset.revealProgress = '0';
+    tl.call(() => window.dispatchEvent(new Event('portfolio:hero-enter')), [], reducedMotion ? .1 : .3);
+    if (reducedMotion) {
+      tl.to(contents, { opacity: 0, duration: .1 }, .06);
+      tl.to(loader, { opacity: 0, duration: .24, ease: 'power1.inOut' }, .1);
     } else {
-      // 1. Brief pause at 100 so user sees the completed right-aligned 100
-      // 2. Traveling counter gracefully fades
-      if (progressEl) {
-        tl.to(progressEl, {
-          opacity: 0,
-          duration: 0.3,
-          ease: 'power2.out'
-        }, 0.2);
-      }
-
-      // Complete the existing loader, then hand off through a clean white field.
-      tl.to(mark, { opacity: 0, duration: .25 }, .2);
-      tl.to(loader, { backgroundColor: '#ffffff', duration: .45, ease: 'power2.inOut' }, .35);
-      tl.call(() => window.dispatchEvent(new Event('portfolio:hero-enter')), [], .85);
-      tl.to(loader, {
-        opacity: 0,
-        duration: .2,
-        ease: 'power2.inOut'
-      }, .85);
-      tl.to({}, { duration: 1.55 });
+      const opening = { progress: 0 };
+      const paintOpening = createWindowReveal(loader);
+      // Let 100 settle, then pass from the counter to the mark and the opening.
+      tl.to(progressEl, { yPercent: -90, opacity: 0, duration: .28, ease: 'power2.in' }, .24);
+      tl.to(mark, { scale: .88, opacity: 0, duration: .26, ease: 'power2.inOut' }, .28);
+      tl.to(opening, {
+        progress: 1, duration: innerWidth <= 600 ? 1.24 : 1.5, ease: 'none',
+        onUpdate: () => paintOpening(opening.progress),
+      }, .48);
     }
 
     exit = tl;

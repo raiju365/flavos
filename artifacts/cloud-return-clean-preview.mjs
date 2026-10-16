@@ -1,0 +1,38 @@
+import {createRequire} from 'node:module';
+import {writeFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const require=createRequire('C:/Users/Fahmi Aufa/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
+const {chromium}=require('playwright');
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const errors=[],expectedFallbackDiagnostics=[];
+let metadata;
+const ready=page=>page.waitForFunction(()=>window.isMainPageReady&&!document.querySelector('#loading-screen'),undefined,{timeout:60000});
+const footer=async page=>{await page.locator('#contact').scrollIntoViewIfNeeded();await page.evaluate(()=>scrollTo(0,document.documentElement.scrollHeight));await page.waitForTimeout(950);};
+const click=async page=>{const box=await page.locator('.footer-back-to-top').boundingBox();await page.mouse.click(box.x+box.width/2,box.y+box.height/2);};
+const settled=page=>page.waitForFunction(()=>location.hash==='#hero'&&scrollY<1&&!document.documentElement.classList.contains('is-colonnade-transitioning'),undefined,{timeout:18000});
+const inspect=page=>page.evaluate(()=>({y:scrollY,hash:location.hash,inert:document.querySelector('#main-content').inert,overflow:document.documentElement.style.overflow,phase:document.querySelector('.colonnade-overlay').dataset.phase,assembly:document.querySelector('#hero').dataset.returnScale,reveal:document.querySelector('#hero').dataset.returnReveal,heroPhase:document.querySelector('#hero').dataset.entryPhase,focused:document.activeElement.id}));
+try{
+ const recordingStartedAt=Date.now();
+ const page=await browser.newPage({viewport:{width:1440,height:900},recordVideo:{dir:'artifacts/cloud-return-clean-video',size:{width:1440,height:900}}});
+ page.on('pageerror',e=>errors.push(e.message));page.on('console',e=>{if(e.type()==='error')errors.push(e.text());});
+ await page.goto('http://localhost:5173/',{waitUntil:'domcontentloaded',timeout:60000});await ready(page);await footer(page);
+ const start=Math.max(0,(Date.now()-recordingStartedAt)/1000-.25);
+ await click(page);await settled(page);await page.waitForTimeout(400);
+ const duration=(Date.now()-recordingStartedAt)/1000-start;
+ const final=await inspect(page);assert.equal(final.y,0);assert.equal(final.inert,false);assert.equal(final.overflow,'');assert.equal(final.phase,'idle');assert.equal(final.assembly,'1.0000');
+ const video=page.video();await page.close();
+ const raw='artifacts/cloud-return-clean-rocket-growth-raw.webm';await video.saveAs(raw);
+ metadata={start,duration,raw,viewport:{width:1440,height:900},instrumented:false,final};
+ await writeFile('artifacts/cloud-return-clean-rocket-growth-preview.json',JSON.stringify(metadata,null,2));
+ console.log('PASS clean1440 recording saved: '+raw);
+ const fallback=await browser.newPage({viewport:{width:390,height:844}});
+ fallback.on('pageerror',e=>errors.push(e.message));fallback.on('console',e=>{if(e.type()!=='error')return;const text=e.text();if(text==='THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.')expectedFallbackDiagnostics.push(text);else errors.push(text);});
+ await fallback.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){return /webgl/.test(type)?null:original.call(this,type,...args);};});
+ await fallback.goto('http://localhost:5173/',{waitUntil:'domcontentloaded',timeout:60000});await ready(fallback);await footer(fallback);await click(fallback);
+ await fallback.waitForFunction(()=>{const scale=Number(document.querySelector('#hero').dataset.returnScale);return scale>.2&&scale<.8;},undefined,{timeout:18000});
+ const intermediate=await inspect(fallback);assert.ok(Number(intermediate.assembly)>.2&&Number(intermediate.assembly)<.8);
+ await settled(fallback);const finalFallback=await inspect(fallback);assert.equal(finalFallback.y,0);assert.equal(finalFallback.inert,false);assert.equal(finalFallback.overflow,'');assert.equal(finalFallback.phase,'idle');assert.equal(finalFallback.assembly,'1.0000');assert.equal(finalFallback.heroPhase,'white');assert.equal(await fallback.locator('.hero-aperture').getAttribute('data-renderer'),'fallback');
+ await fallback.close();assert.deepEqual(errors,[]);
+ await writeFile('artifacts/cloud-return-clean-rocket-growth-fallback-qa.json',JSON.stringify({intermediate,final:finalFallback,errors,expectedFallbackDiagnostics},null,2));
+ console.log('PASS390 noWebGL geometricgrowth smoke');
+}finally{await browser.close();}

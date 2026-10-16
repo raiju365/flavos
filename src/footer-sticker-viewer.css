@@ -1,0 +1,50 @@
+.footer-sticker-hotspots { position: absolute; inset: 0; pointer-events: none; }
+.footer-sticker-trigger {
+  position: absolute; left: 0; top: 0; padding: 0; border: 0; border-radius: 3px;
+  background: transparent; pointer-events: auto; touch-action: manipulation;
+}
+.footer-signature:not(.has-signature-3d) .footer-sticker-hotspots { visibility: hidden; }
+.footer-sticker-trigger:focus-visible { outline: 1px solid #fff; outline-offset: 5px; }
+.footer-sticker-trigger::after {
+  content: 'View sticker'; position: absolute; left: 50%; bottom: calc(100% + 10px);
+  translate: -50% 3px; white-space: nowrap; opacity: 0;
+  padding: 6px 10px; border: 1px solid rgb(32 35 91 / .12); border-radius: 3px;
+  font: 500 11px/1.2 var(--font-site); letter-spacing: .01em;
+  color: var(--folio-ink); background: #faf9f5;
+  box-shadow: 0 2px 6px rgb(17 19 38 / .1); pointer-events: none;
+  transition: opacity .18s ease-out, translate .18s ease-out;
+}
+.footer-sticker-trigger:focus-visible::after { opacity: 1; translate: -50% 0; }
+@media (hover: hover) { .footer-sticker-trigger:hover::after { opacity: 1; translate: -50% 0; } }
+
+.sticker-viewer {
+  --sticker-focus: 0; --sticker-controls: 0;
+  position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none;
+  margin: 0; padding: 0; border: 0; overflow: hidden; background: transparent;
+  color: #fff; overscroll-behavior: contain;
+}
+.sticker-viewer::backdrop { background: transparent; }
+.sticker-viewer-blur {
+  position: absolute; inset: 0;
+  background: rgb(17 19 38 / calc(var(--sticker-focus) * .22));
+  backdrop-filter: blur(calc(var(--sticker-focus) * 18px));
+  -webkit-backdrop-filter: blur(calc(var(--sticker-focus) * 18px));
+  pointer-events: none;
+}
+.sticker-viewer-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+.sticker-viewer-close {
+  position: absolute; z-index: 1;
+  top: max(16px, env(safe-area-inset-top)); right: max(16px, env(safe-area-inset-right));
+  display: grid; place-items: center; width: 44px; height: 44px; padding: 0;
+  color: inherit; background: transparent; border: 0;
+  opacity: var(--sticker-controls);
+}
+.sticker-viewer-close svg { display: block; filter: drop-shadow(0 1px 4px rgb(17 19 38 / .4)); }
+.sticker-viewer-close:focus-visible { outline: 1px solid rgb(255 255 255 / .8); outline-offset: 2px; }
+.sticker-viewer-canvas:focus-visible { outline: none; }
+body:has(.sticker-viewer[open]) #custom-cursor { visibility: hidden; }
+.sticker-viewer, .sticker-viewer * { cursor: auto !important; }
+.sticker-viewer .sticker-viewer-canvas { cursor: grab !important; }
+.sticker-viewer[data-dragging='true'] .sticker-viewer-canvas { cursor: grabbing !important; }
+.sticker-viewer button { cursor: pointer !important; }
+@media (prefers-reduced-motion: reduce) { .footer-sticker-trigger::after { transition: none; } }

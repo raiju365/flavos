@@ -1,0 +1,300 @@
+{
+  "results": [
+    {
+      "name": "front",
+      "rotation": "-0.240,0.000",
+      "light": "0.047,0.233,-0.129",
+      "motion": "0.0000,0.0000,0.0000",
+      "stickersLoaded": "6",
+      "signatureReady": "true",
+      "materials": [
+        {
+          "color": "b8c2cf",
+          "roughness": 0.13,
+          "metalness": 1,
+          "clearcoat": 1,
+          "clearcoatRoughness": 0.065,
+          "environment": 1.08
+        }
+      ],
+      "materialGroups": [
+        0
+      ],
+      "clock": 0,
+      "lights": [
+        {
+          "type": "HemisphereLight",
+          "intensity": 0.5,
+          "position": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 1.5,
+          "position": [
+            -3,
+            4,
+            6
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 0.75,
+          "position": [
+            4,
+            -3,
+            3
+          ]
+        }
+      ],
+      "sprites": 0,
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "overflow": false
+    },
+    {
+      "name": "top",
+      "rotation": "-0.240,0.000",
+      "light": "0.047,0.233,-0.129",
+      "motion": "0.0000,0.0000,0.0000",
+      "stickersLoaded": "6",
+      "signatureReady": "true",
+      "materials": [
+        {
+          "color": "b8c2cf",
+          "roughness": 0.13,
+          "metalness": 1,
+          "clearcoat": 1,
+          "clearcoatRoughness": 0.065,
+          "environment": 1.08
+        }
+      ],
+      "materialGroups": [
+        0
+      ],
+      "clock": 0,
+      "lights": [
+        {
+          "type": "HemisphereLight",
+          "intensity": 0.5,
+          "position": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 1.5,
+          "position": [
+            -3,
+            4,
+            6
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 0.75,
+          "position": [
+            4,
+            -3,
+            3
+          ]
+        }
+      ],
+      "sprites": 0,
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "overflow": false
+    },
+    {
+      "name": "bottom",
+      "rotation": "-0.240,0.000",
+      "light": "0.047,0.233,-0.129",
+      "motion": "0.0000,0.0000,0.0000",
+      "stickersLoaded": "6",
+      "signatureReady": "true",
+      "materials": [
+        {
+          "color": "b8c2cf",
+          "roughness": 0.13,
+          "metalness": 1,
+          "clearcoat": 1,
+          "clearcoatRoughness": 0.065,
+          "environment": 1.08
+        }
+      ],
+      "materialGroups": [
+        0
+      ],
+      "clock": 0,
+      "lights": [
+        {
+          "type": "HemisphereLight",
+          "intensity": 0.5,
+          "position": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 1.5,
+          "position": [
+            -3,
+            4,
+            6
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 0.75,
+          "position": [
+            4,
+            -3,
+            3
+          ]
+        }
+      ],
+      "sprites": 0,
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "overflow": false
+    },
+    {
+      "name": "left",
+      "rotation": "-0.240,0.000",
+      "light": "0.047,0.233,-0.129",
+      "motion": "0.0000,0.0000,0.0000",
+      "stickersLoaded": "6",
+      "signatureReady": "true",
+      "materials": [
+        {
+          "color": "b8c2cf",
+          "roughness": 0.13,
+          "metalness": 1,
+          "clearcoat": 1,
+          "clearcoatRoughness": 0.065,
+          "environment": 1.08
+        }
+      ],
+      "materialGroups": [
+        0
+      ],
+      "clock": 0,
+      "lights": [
+        {
+          "type": "HemisphereLight",
+          "intensity": 0.5,
+          "position": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 1.5,
+          "position": [
+            -3,
+            4,
+            6
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 0.75,
+          "position": [
+            4,
+            -3,
+            3
+          ]
+        }
+      ],
+      "sprites": 0,
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "overflow": false
+    },
+    {
+      "name": "right",
+      "rotation": "-0.240,0.000",
+      "light": "0.047,0.233,-0.129",
+      "motion": "0.0000,0.0000,0.0000",
+      "stickersLoaded": "6",
+      "signatureReady": "true",
+      "materials": [
+        {
+          "color": "b8c2cf",
+          "roughness": 0.13,
+          "metalness": 1,
+          "clearcoat": 1,
+          "clearcoatRoughness": 0.065,
+          "environment": 1.08
+        }
+      ],
+      "materialGroups": [
+        0
+      ],
+      "clock": 0,
+      "lights": [
+        {
+          "type": "HemisphereLight",
+          "intensity": 0.5,
+          "position": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 1.5,
+          "position": [
+            -3,
+            4,
+            6
+          ]
+        },
+        {
+          "type": "DirectionalLight",
+          "intensity": 0.75,
+          "position": [
+            4,
+            -3,
+            3
+          ]
+        }
+      ],
+      "sprites": 0,
+      "alphaCorners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

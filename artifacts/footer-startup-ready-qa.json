@@ -1,0 +1,90 @@
+[
+  {
+    "width": 1440,
+    "cold": {
+      "violations": [],
+      "ready": {
+        "time": 9442.599999904633,
+        "y": 0,
+        "footerTop": 17172,
+        "width": 1240
+      },
+      "opening": {
+        "time": 10349.899999976158,
+        "ready": "true"
+      }
+    },
+    "reload": true
+  },
+  {
+    "width": 820,
+    "cold": {
+      "violations": [],
+      "ready": {
+        "time": 2544.899999976158,
+        "y": 0,
+        "footerTop": 14980,
+        "width": 705
+      },
+      "opening": {
+        "time": 3015.899999976158,
+        "ready": "true"
+      }
+    },
+    "reload": true
+  },
+  {
+    "width": 390,
+    "cold": {
+      "violations": [],
+      "ready": {
+        "time": 2104.7000000476837,
+        "y": 0,
+        "footerTop": 12600.984375,
+        "width": 480
+      },
+      "opening": {
+        "time": 2623,
+        "ready": "true"
+      }
+    },
+    "reload": true
+  },
+  {
+    "width": 320,
+    "cold": {
+      "violations": [],
+      "ready": {
+        "time": 1305,
+        "y": 0,
+        "footerTop": 3118,
+        "width": 394
+      },
+      "opening": {
+        "time": 1720,
+        "ready": "true"
+      }
+    },
+    "reload": true
+  },
+  {
+    "scenario": "retry",
+    "state": "true",
+    "poster": {
+      "complete": true,
+      "width": 1236,
+      "src": "/footer/signature-3d-poster.webp",
+      "filter": "none"
+    }
+  },
+  {
+    "scenario": "no-webgl",
+    "state": "poster",
+    "poster": {
+      "complete": true,
+      "width": 1236,
+      "src": "/footer/signature-3d-poster.webp",
+      "filter": "none"
+    }
+  }
+]

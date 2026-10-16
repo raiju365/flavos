@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "open": {
+        "lenisPrevent": "",
+        "phase": "open",
+        "sticker": "0",
+        "progress": "1.0000",
+        "rotation": "-0.0340,-0.0753,-0.0098,0.9965",
+        "scale": "1.6742",
+        "contact": "0.0000",
+        "flight": "1.0000",
+        "open": true,
+        "focused": "sticker-viewer-close",
+        "overflow": "hidden",
+        "blur": "blur(18px)",
+        "meshes": 1,
+        "vertices": 185316,
+        "depth": 0.004399999976158142,
+        "quaternion": [
+          -0.033955733886410294,
+          -0.07531413697261005,
+          -0.00983510236374278,
+          0.9965330198592524
+        ],
+        "sourceRotation": "-0.228,0.014",
+        "mainOverflow": false
+      },
+      "back": {
+        "lenisPrevent": "",
+        "phase": "open",
+        "sticker": "0",
+        "progress": "1.0000",
+        "rotation": "-0.0098,0.9965,0.0340,0.0754",
+        "scale": "1.6742",
+        "contact": "0.0000",
+        "flight": "1.0000",
+        "open": true,
+        "focused": "sticker-viewer-canvas",
+        "overflow": "hidden",
+        "blur": "blur(18px)",
+        "meshes": 1,
+        "vertices": 185316,
+        "depth": 0.004399999976158142,
+        "quaternion": [
+          -0.009838817182857309,
+          0.9965247742611639,
+          0.033954657688045134,
+          0.07542316077615918
+        ],
+        "sourceRotation": "-0.228,0.014",
+        "mainOverflow": false
+      },
+      "dragged": {
+        "lenisPrevent": "",
+        "phase": "open",
+        "sticker": "0",
+        "progress": "1.0000",
+        "rotation": "-0.1743,-0.9818,-0.0498,0.0564",
+        "scale": "1.6742",
+        "contact": "0.0000",
+        "flight": "1.0000",
+        "open": true,
+        "focused": "sticker-viewer-canvas",
+        "overflow": "hidden",
+        "blur": "blur(18px)",
+        "meshes": 1,
+        "vertices": 185316,
+        "depth": 0.004399999976158142,
+        "quaternion": [
+          -0.1742794614056257,
+          -0.9818195303629869,
+          -0.049814565461411775,
+          0.05635235751820323
+        ],
+        "sourceRotation": "-0.228,0.014",
+        "mainOverflow": false
+      }
+    }
+  ],
+  "errors": []
+}

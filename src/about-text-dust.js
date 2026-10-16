@@ -1,3 +1,5 @@
+import { getBrandBlue } from './brand-color';
+
 // Ink erodes through a continuous, warped ignition field, not directional wipes.
 // Arrival times and turbulent flights are seeded and scroll-seekable in reverse.
 export function createAboutTextDust(stage, showcase, copies, wordGroups) {
@@ -52,16 +54,17 @@ export function createAboutTextDust(stage, showcase, copies, wordGroups) {
   const tile = 48;
   glass.width = tile * 8; glass.height = tile;
   const glassInk = glass.getContext('2d');
+  const blue = getBrandBlue();
   for (let i = 0; glassInk && i < 8; i++) {
     glassInk.save();
     glassInk.translate(i * tile + tile / 2, tile / 2);
     glassInk.rotate(noise(i + 15) * Math.PI);
     const tint = glassInk.createLinearGradient(-10, -10, 12, 12);
     tint.addColorStop(0, 'rgba(248,246,239,.88)');
-    tint.addColorStop(.38, 'rgba(110,120,148,.55)');
-    tint.addColorStop(1, 'rgba(35,43,81,.5)');
+    tint.addColorStop(.38, `${blue}8c`);
+    tint.addColorStop(1, `${blue}80`);
     glassInk.fillStyle = tint;
-    glassInk.shadowColor = 'rgba(75,84,119,.52)';
+    glassInk.shadowColor = `${blue}85`;
     glassInk.shadowBlur = 3 + i % 4 * 2;
     glassInk.beginPath();
     glassInk.moveTo(-10, -5); glassInk.lineTo(3, -12);

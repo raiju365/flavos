@@ -19,6 +19,6 @@ if(width===320){assert.equal(left.rotation,right.rotation);assert.equal(left.lig
 else {assert.notEqual(left.rotation,right.rotation);assert.notEqual(left.light,right.light);const before=await state();await page.waitForTimeout(900);assert.notEqual(before.light,(await state()).light);}
 assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
 await page.locator('.footer-direct').first().focus();assert.ok(await page.locator('.footer-direct').first().evaluate(el=>el===document.activeElement));
-await page.locator('.footer-back-to-top').click();await page.waitForTimeout(2200);const stopped=await state();await page.waitForTimeout(500);assert.equal(stopped.light,(await state()).light);
+await page.locator('.footer-back-to-top').click();await page.waitForFunction(()=>scrollY===0&&!document.documentElement.classList.contains('is-colonnade-transitioning'));await page.waitForTimeout(150);const stopped=await state();await page.waitForTimeout(500);assert.equal(stopped.light,(await state()).light);
 assert.equal(await page.evaluate(()=>scrollY),0);console.log('PASS',width,JSON.stringify({left,right}));await page.close();
 }assert.deepEqual(errors,[]);}finally{await browser.close();}

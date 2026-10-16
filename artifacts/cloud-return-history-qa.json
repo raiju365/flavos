@@ -1,0 +1,219 @@
+{
+  "results": [
+    {
+      "case": "cloud-return",
+      "state": {
+        "hash": "#hero",
+        "y": 0,
+        "inert": false,
+        "overflow": "",
+        "busy": false,
+        "ready": false,
+        "overlay": {
+          "cloudRenderer": "canvas-2d",
+          "cloudOpaque": "false",
+          "cloudPhase": "idle",
+          "cloudProgress": "0.0000",
+          "phase": "idle"
+        },
+        "overlayVisible": "hidden",
+        "hero": {
+          "apertureSize": "779.76",
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "1.0000",
+          "motionEnergy": "0.0000",
+          "motionClock": "1.7438",
+          "scratch": "0.0000",
+          "returnAssembly": "1.0000"
+        },
+        "aboutTop": 4194,
+        "contactTop": 17172,
+        "focus": "hero-heading",
+        "journey": "inactive",
+        "overflowX": 0
+      }
+    },
+    {
+      "case": "normal-back-to-contact",
+      "state": {
+        "hash": "#contact",
+        "y": 17172,
+        "inert": false,
+        "overflow": "",
+        "busy": false,
+        "ready": false,
+        "overlay": {
+          "cloudRenderer": "canvas-2d",
+          "cloudOpaque": "false",
+          "cloudPhase": "idle",
+          "cloudProgress": "0.0000",
+          "phase": "idle",
+          "renderer": "webgl"
+        },
+        "overlayVisible": "hidden",
+        "hero": {
+          "apertureSize": "779.76",
+          "entryProgress": "1.0000",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0800",
+          "motionEnergy": "0.0000",
+          "motionClock": "2.1448",
+          "scratch": "0.0000",
+          "returnAssembly": "1.0000"
+        },
+        "aboutTop": -12978,
+        "contactTop": 0,
+        "focus": "contact-heading",
+        "journey": "docked",
+        "overflowX": 0
+      }
+    },
+    {
+      "case": "normal-forward-to-hero",
+      "state": {
+        "hash": "#hero",
+        "y": 0,
+        "inert": false,
+        "overflow": "",
+        "busy": false,
+        "ready": false,
+        "overlay": {
+          "cloudRenderer": "canvas-2d",
+          "cloudOpaque": "false",
+          "cloudPhase": "idle",
+          "cloudProgress": "0.0000",
+          "phase": "idle",
+          "renderer": "webgl"
+        },
+        "overlayVisible": "hidden",
+        "hero": {
+          "apertureSize": "779.76",
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "1.0000",
+          "motionEnergy": "0.0000",
+          "motionClock": "3.3906",
+          "scratch": "0.0000",
+          "returnAssembly": "1.0000"
+        },
+        "aboutTop": 4194,
+        "contactTop": 17172,
+        "focus": "hero-heading",
+        "journey": "inactive",
+        "overflowX": 0
+      }
+    },
+    {
+      "case": "back-during-cloud-cover-to-about",
+      "covering": {
+        "hash": "#contact",
+        "y": 17172,
+        "inert": true,
+        "overflow": "hidden",
+        "busy": true,
+        "ready": false,
+        "overlay": {
+          "cloudRenderer": "canvas-2d",
+          "cloudOpaque": "false",
+          "cloudPhase": "cover",
+          "cloudProgress": "0.1468",
+          "phase": "cover",
+          "renderer": "webgl"
+        },
+        "overlayVisible": "visible",
+        "hero": {
+          "apertureSize": "779.76",
+          "entryProgress": "1.0000",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0800",
+          "motionEnergy": "0.0000",
+          "motionClock": "3.4562",
+          "scratch": "0.0000",
+          "returnAssembly": "1.0000"
+        },
+        "aboutTop": -12978,
+        "contactTop": 0,
+        "focus": "",
+        "journey": "docked",
+        "overflowX": 0
+      },
+      "state": {
+        "hash": "#about",
+        "y": 4194,
+        "inert": false,
+        "overflow": "",
+        "busy": false,
+        "ready": false,
+        "overlay": {
+          "cloudRenderer": "canvas-2d",
+          "cloudOpaque": "false",
+          "cloudPhase": "idle",
+          "cloudProgress": "0.0000",
+          "phase": "idle",
+          "renderer": "webgl"
+        },
+        "overlayVisible": "hidden",
+        "hero": {
+          "apertureSize": "779.76",
+          "entryProgress": "1.0000",
+          "entryPhase": "painting",
+          "foregroundScale": "166.6667",
+          "paintingScale": "1.0800",
+          "motionEnergy": "0.0000",
+          "motionClock": "5.1372",
+          "scratch": "0.0000",
+          "returnAssembly": "1.0000"
+        },
+        "aboutTop": 0,
+        "contactTop": 12978,
+        "focus": "about",
+        "journey": "inactive",
+        "overflowX": 0
+      }
+    },
+    {
+      "case": "390-no-webgl-fallback-return",
+      "state": {
+        "hash": "#hero",
+        "y": 0,
+        "inert": false,
+        "overflow": "",
+        "busy": false,
+        "ready": false,
+        "overlay": {
+          "cloudRenderer": "canvas-2d",
+          "cloudOpaque": "false",
+          "cloudPhase": "idle",
+          "cloudProgress": "0.0000",
+          "phase": "idle"
+        },
+        "overlayVisible": "hidden",
+        "hero": {
+          "apertureSize": "373.46",
+          "entryProgress": "0.0000",
+          "entryPhase": "white",
+          "foregroundScale": "1.0000",
+          "paintingScale": "1.0000",
+          "motionEnergy": "0.0000",
+          "motionClock": "0.8524",
+          "scratch": "0.0000",
+          "returnAssembly": "1.0000"
+        },
+        "aboutTop": 3823.390625,
+        "contactTop": 12600.984375,
+        "focus": "hero-heading",
+        "journey": "inactive",
+        "overflowX": 0
+      }
+    }
+  ],
+  "errors": [],
+  "expectedFallbackDiagnostics": [
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+  ]
+}

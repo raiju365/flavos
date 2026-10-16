@@ -22,7 +22,7 @@ export function createHeroScrollEntry() {
   const fallback=renderer?null:canvas.getContext('2d');
   const motion=matchMedia('(prefers-reduced-motion: reduce)');
   const fine=matchMedia('(hover: hover) and (pointer: fine)');
-  const state={entry:motion.matches?1:0,progress:0};
+  const state={entry:motion.matches?1:0,progress:0,assembly:1};
   hero.classList.add('has-depth-entry');canvas.dataset.renderer=renderer?'webgl':'fallback';
   let width=0,height=0,size=0,trigger,tween,entered=false,prepared=false,disposed=false,frame=0,visible=true;
   let prevProgress=0, smoothVel=0, lastFrame=0, motionClock=0;
@@ -39,10 +39,13 @@ export function createHeroScrollEntry() {
     // Keep small surface marks at a distance, then settle to an intact edge
     // before magnification can turn them into long radial slits.
     const scratchIntensity = smooth((p - .15) / .2) * (1 - smooth((p - .32) / .2));
-    if(renderer&&prepared)renderer.draw({width,height,size,distance,progress:p,entry:state.entry,reduced,time,motionClock,scrollVel:smoothVel,scratch:scratchIntensity});
+    if(renderer&&prepared)renderer.draw({width,height,size,distance,progress:p,entry:state.entry,assembly:state.assembly,reduced,time,motionClock,scrollVel:smoothVel,scratch:scratchIntensity});
     if(fallback){
       fallback.clearRect(0,0,canvas.width,canvas.height);fallback.fillStyle='#fff';fallback.fillRect(0,0,width,height);
-      fallback.globalCompositeOperation='destination-out';fallback.drawImage(source,width/2-size/2,height*.49-size/2,size,size);fallback.globalCompositeOperation='source-over';
+      const openingSize=size*state.assembly;
+      fallback.globalCompositeOperation='destination-out';
+      if(openingSize>0)fallback.drawImage(source,width/2-openingSize/2,height*.49-openingSize/2,openingSize,openingSize);
+      fallback.globalCompositeOperation='source-over';
       canvas.style.opacity=String(1-smooth(p/.7));
     }
     canvas.style.visibility=p>=.86?'hidden':'visible';
@@ -58,6 +61,8 @@ export function createHeroScrollEntry() {
     hero.dataset.foregroundScale=(1/distance).toFixed(4);hero.dataset.paintingScale=paintingScale.toFixed(4);
     hero.dataset.motionEnergy=smoothVel.toFixed(4);hero.dataset.motionClock=motionClock.toFixed(4);
     hero.dataset.scratch=(reduced?0:scratchIntensity).toFixed(4);
+    hero.dataset.returnAssembly=state.assembly.toFixed(4);
+    hero.dataset.returnScale=state.assembly.toFixed(4);hero.dataset.returnReveal='scale';
     document.querySelector('.studio-header')?.classList.toggle('is-inside-hero',p>.48);
   }
   function tick(time){
@@ -110,7 +115,11 @@ export function createHeroScrollEntry() {
   motion.addEventListener('change',()=>{tween?.kill();state.entry=1;reset();trigger?.refresh();resize();},options);fine.addEventListener('change',reset,options);
   const observer=new ResizeObserver(resize);observer.observe(hero);
   const intersection=new IntersectionObserver(([e])=>{visible=e.isIntersecting;reset();});intersection.observe(hero);
-  return {mount,enter,destroy(){
+  return {mount,enter,
+    prepareReturn(){tween?.kill();state.entry=1;state.progress=0;state.assembly=0;reset();paint();},
+    assembleReturn(value){state.assembly=gsap.utils.clamp(0,1,value);if(!frame)paint();wake();},
+    finishReturn(){state.assembly=1;paint();wake();},
+    destroy(){
     disposed=true;tween?.kill();trigger?.kill();observer.disconnect();intersection.disconnect();abort.abort();cancelAnimationFrame(frame);renderer?.destroy();
     canvas.remove();hero.classList.remove('has-depth-entry');
     paper?.classList.remove('has-hero-paper-overlap');

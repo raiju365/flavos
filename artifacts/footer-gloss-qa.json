@@ -1,0 +1,981 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "reduced": false,
+      "rest": {
+        "rotation": "-0.227,0.017",
+        "light": "0.057,0.310,-0.133",
+        "motion": "0.0000,0.0000,0.0000",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.065,
+            "environment": 1.08
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 1.9773666666666672,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5,
+            "position": [
+              -2.7064612123618095,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.75,
+            "position": [
+              4,
+              -2.782211094645466,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "turning": {
+        "rotation": "-0.497,-0.293",
+        "light": "-0.053,0.238,-0.077",
+        "motion": "0.0425,0.2822,0.6718",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.05828161236661082,
+            "environment": 1.147183876333892
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 3.5120666666666613,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.6007758145008377,
+            "position": [
+              -2.50491068215943,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.8037471010671134,
+            "position": [
+              4,
+              -2.627025318119737,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "reversing": {
+        "rotation": "-0.123,0.151",
+        "light": "-0.537,-0.344,-0.009",
+        "motion": "-0.0719,0.3434,0.8176",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.05682380184013294,
+            "environment": 1.1617619815986706
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 7.458966666666649,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.6226429723980058,
+            "position": [
+              -2.2094177459669773,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.8154095852789365,
+            "position": [
+              4,
+              -2.349251988404461,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "right": {
+        "rotation": "0.165,0.455",
+        "light": "1.291,0.751,-1.098",
+        "motion": "0.0000,0.0000,0.0001",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.06499925909816441,
+            "environment": 1.080007409018356
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 10.16686666666667,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5000111135275338,
+            "position": [
+              -2.2515388376843295,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.7500059272146847,
+            "position": [
+              4,
+              -2.301093490246987,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 820,
+      "reduced": false,
+      "rest": {
+        "rotation": "-0.227,0.016",
+        "light": "0.056,0.305,-0.132",
+        "motion": "0.0000,0.0000,0.0000",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.065,
+            "environment": 1.08
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 1.8220666666666652,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5,
+            "position": [
+              -2.72854493938376,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.75,
+            "position": [
+              4,
+              -2.7988069509455085,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "turning": {
+        "rotation": "-0.476,-0.273",
+        "light": "-0.039,0.235,-0.086",
+        "motion": "0.0413,0.2774,0.6606",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.058394379020286644,
+            "environment": 1.1460562097971336
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 2.5997666666666617,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5990843146957003,
+            "position": [
+              -2.620710070608272,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.8028449678377069,
+            "position": [
+              4,
+              -2.7171505132172586,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "reversing": {
+        "rotation": "-0.127,0.149",
+        "light": "-0.549,-0.327,0.013",
+        "motion": "-0.0703,0.3384,0.8058",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.05694201987417455,
+            "environment": 1.1605798012582547
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 5.009066666666651,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.6208697018873819,
+            "position": [
+              -2.348466925260102,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.8144638410066036,
+            "position": [
+              4,
+              -2.497143782548535,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "right": {
+        "rotation": "0.154,0.480",
+        "light": "1.374,0.783,-1.229",
+        "motion": "0.0000,0.0009,0.0022",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.06497825891030953,
+            "environment": 1.0802174108969047
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 6.835266666666648,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.500326116345357,
+            "position": [
+              -2.229432158401081,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.7501739287175238,
+            "position": [
+              4,
+              -2.3781860041026905,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "rest": {
+        "rotation": "-0.227,0.016",
+        "light": "0.057,0.308,-0.133",
+        "motion": "0.0000,0.0000,0.0000",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.06499999021598639,
+            "environment": 1.0800000978401363
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 1.919266666666664,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5000001467602042,
+            "position": [
+              -2.714694164317974,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.7500000782721089,
+            "position": [
+              4,
+              -2.788404652564,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "turning": {
+        "rotation": "-0.512,-0.316",
+        "light": "-0.072,0.197,-0.073",
+        "motion": "0.0432,0.2841,0.6764",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.05823580696861558,
+            "environment": 1.1476419303138443
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 2.3983666666666608,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.6014628954707664,
+            "position": [
+              -2.647934632053684,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.8041135442510754,
+            "position": [
+              4,
+              -2.7379271144143105,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "reversing": {
+        "rotation": "-0.121,0.153",
+        "light": "-0.546,-0.322,0.012",
+        "motion": "-0.0703,0.3387,0.8064",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.05693556932168847,
+            "environment": 1.1606443067831154
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 4.259166666666655,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.620966460174673,
+            "position": [
+              -2.4209887227859475,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.8145154454264922,
+            "position": [
+              4,
+              -2.5590470488932264,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "right": {
+        "rotation": "0.162,0.490",
+        "light": "1.335,0.793,-1.197",
+        "motion": "-0.0000,0.0043,0.0102",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.06489757495180692,
+            "environment": 1.081024250481931
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 5.675566666666652,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.501536375722896,
+            "position": [
+              -2.2950539683875606,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.7508194003855446,
+            "position": [
+              4,
+              -2.4481686807331293,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "width": 320,
+      "reduced": true,
+      "rest": {
+        "rotation": "-0.240,0.000",
+        "light": "0.047,0.233,-0.129",
+        "motion": "0.0000,0.0000,0.0000",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.065,
+            "environment": 1.08
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 0,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5,
+            "position": [
+              -3,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.75,
+            "position": [
+              4,
+              -3,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "turning": {
+        "rotation": "-0.240,0.000",
+        "light": "0.047,0.233,-0.129",
+        "motion": "0.0000,0.0000,0.0000",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.065,
+            "environment": 1.08
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 0,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5,
+            "position": [
+              -3,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.75,
+            "position": [
+              4,
+              -3,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "reversing": {
+        "rotation": "-0.240,0.000",
+        "light": "0.047,0.233,-0.129",
+        "motion": "0.0000,0.0000,0.0000",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.065,
+            "environment": 1.08
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 0,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5,
+            "position": [
+              -3,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.75,
+            "position": [
+              4,
+              -3,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      },
+      "right": {
+        "rotation": "-0.240,0.000",
+        "light": "0.047,0.233,-0.129",
+        "motion": "0.0000,0.0000,0.0000",
+        "stickersLoaded": "6",
+        "signatureReady": "true",
+        "materials": [
+          {
+            "color": "b8c2cf",
+            "roughness": 0.13,
+            "metalness": 1,
+            "clearcoat": 1,
+            "clearcoatRoughness": 0.065,
+            "environment": 1.08
+          }
+        ],
+        "materialGroups": [
+          0
+        ],
+        "clock": 0,
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "intensity": 0.5,
+            "position": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 1.5,
+            "position": [
+              -3,
+              4,
+              6
+            ]
+          },
+          {
+            "type": "DirectionalLight",
+            "intensity": 0.75,
+            "position": [
+              4,
+              -3,
+              3
+            ]
+          }
+        ],
+        "sprites": 0,
+        "glossyInk": true,
+        "volumePattern": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "overflow": false
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "center",
+    "lights": [
+      "HemisphereLight"
+    ],
+    "materials": [
+      {
+        "color": "080809",
+        "roughness": 0.16,
+        "clearcoat": 1,
+        "shaderKey": "signature-black-lacquer-stickers-v9"
+      },
+      {
+        "color": "040405",
+        "roughness": 0.2,
+        "clearcoat": 1,
+        "shaderKey": "signature-black-lacquer-stickers-v9"
+      }
+    ]
+  },
+  {
+    "name": "left",
+    "lights": [
+      "HemisphereLight"
+    ],
+    "materials": [
+      {
+        "color": "080809",
+        "roughness": 0.16,
+        "clearcoat": 1,
+        "shaderKey": "signature-black-lacquer-stickers-v9"
+      },
+      {
+        "color": "040405",
+        "roughness": 0.2,
+        "clearcoat": 1,
+        "shaderKey": "signature-black-lacquer-stickers-v9"
+      }
+    ]
+  },
+  {
+    "name": "right",
+    "lights": [
+      "HemisphereLight"
+    ],
+    "materials": [
+      {
+        "color": "080809",
+        "roughness": 0.16,
+        "clearcoat": 1,
+        "shaderKey": "signature-black-lacquer-stickers-v9"
+      },
+      {
+        "color": "040405",
+        "roughness": 0.2,
+        "clearcoat": 1,
+        "shaderKey": "signature-black-lacquer-stickers-v9"
+      }
+    ]
+  }
+]

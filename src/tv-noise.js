@@ -4,6 +4,11 @@ export function initTvNoise() {
   const overlay = document.querySelector('.tv-noise');
   if (!overlay) return () => {};
   const gallery = document.querySelector('#project-gallery');
+  const originParent = overlay.parentNode;
+  const originNext = overlay.nextSibling;
+  const restoreOverlay = () => {
+    originParent.insertBefore(overlay, originNext?.parentNode === originParent ? originNext : null);
+  };
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const coarsePointer = window.matchMedia('(pointer: coarse)');
   const connection = navigator.connection;
@@ -19,7 +24,7 @@ export function initTvNoise() {
   const alpha = littleEndian ? 0xff000000 : 0xff;
   const grayMask = littleEndian ? 0x00010101 : 0x01010100;
   let raf = 0, lastDraw = 0, rate = 60, maxPixels = 800000;
-  let pageActive = true, disposed = false, slowDraws = 0;
+  let pageActive = true, revealed = !document.querySelector('#loading-screen'), disposed = false, slowDraws = 0;
   overlay.append(canvas);
 
   function draw() {
@@ -39,7 +44,7 @@ export function initTvNoise() {
   }
 
   function tick(now) {
-    if (disposed || document.hidden || !pageActive || reducedMotion.matches || gallery?.open) {
+    if (disposed || !revealed || document.hidden || !pageActive || reducedMotion.matches) {
       raf = 0;
       return;
     }
@@ -67,7 +72,7 @@ export function initTvNoise() {
   }
   function syncPlayback() {
     stop();
-    if (disposed || document.hidden || !pageActive || reducedMotion.matches || gallery?.open) return;
+    if (disposed || !revealed || document.hidden || !pageActive || reducedMotion.matches) return;
     overlay.removeAttribute('data-noise-paused');
     lastDraw = 0;
     raf = requestAnimationFrame(tick);
@@ -84,7 +89,7 @@ export function initTvNoise() {
     canvas.height = targetHeight;
     frame = ctx.createImageData(targetWidth, targetHeight);
     pixels = new Uint32Array(frame.data.buffer);
-    if (!document.hidden && pageActive) draw();
+    if (revealed && !document.hidden && pageActive) draw();
   }
   function updateSettings() {
     const limited = limitedDevice || connection?.saveData;
@@ -97,10 +102,27 @@ export function initTvNoise() {
   }
   function hidePage() { pageActive = false; stop(); }
   function showPage() { pageActive = true; syncPlayback(); }
+  function reveal() {
+    revealed = true;
+    draw();
+    overlay.classList.add('is-active');
+    syncPlayback();
+  }
   updateSettings();
-  // The opaque modal covers the grain; resume it when the gallery closes.
-  const galleryVisibility = new MutationObserver(syncPlayback);
+  if (revealed) reveal();
+  window.addEventListener('portfolio:reveal', reveal, { once: true });
+  // A modal's native top layer sits above all document z-indices. Move the
+  // existing viewport grain into it, preserving the same pixels and strength.
+  const syncSurface = () => {
+    if (gallery?.open) {
+      if (overlay.parentNode !== gallery) gallery.append(overlay);
+    } else if (overlay.parentNode !== originParent) restoreOverlay();
+    resize();
+    syncPlayback();
+  };
+  const galleryVisibility = new MutationObserver(syncSurface);
   if (gallery) galleryVisibility.observe(gallery, { attributes: true, attributeFilter: ['open'] });
+  syncSurface();
   coarsePointer.addEventListener('change', updateSettings);
   reducedMotion.addEventListener('change', syncPlayback);
   connection?.addEventListener('change', updateSettings);
@@ -120,10 +142,13 @@ export function initTvNoise() {
     window.removeEventListener('resize', resize);
     window.removeEventListener('pagehide', hidePage);
     window.removeEventListener('pageshow', showPage);
+    window.removeEventListener('portfolio:reveal', reveal);
+    restoreOverlay();
     canvas.remove();
     overlay.removeAttribute('data-noise-renderer');
     overlay.removeAttribute('data-noise-rate');
     overlay.removeAttribute('data-noise-paused');
+    overlay.classList.remove('is-active');
   }
   if (import.meta.hot) import.meta.hot.dispose(dispose);
   return dispose;

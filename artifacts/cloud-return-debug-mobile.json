@@ -1,0 +1,622 @@
+{
+  "y": 12601,
+  "header": {
+    "tag": "HEADER",
+    "id": "",
+    "class": "folio-nav studio-header has-hero-nav-reveal has-pixel-type has-logo-journey is-inside-hero is-scrolled is-in-footer is-footer-journey is-nav-suction",
+    "inert": false,
+    "pointer": "none",
+    "visibility": "visible",
+    "opacity": "1",
+    "rect": {
+      "left": 0,
+      "top": 0,
+      "width": 390,
+      "height": 844
+    },
+    "position": "fixed",
+    "z": "1000005"
+  },
+  "samples": [
+    {
+      "selector": ".footer-back-to-top",
+      "x": 325.9140625,
+      "y": 35.984375,
+      "element": {
+        "tag": "A",
+        "id": "",
+        "class": "footer-back-to-top",
+        "inert": false,
+        "pointer": "auto",
+        "visibility": "visible",
+        "opacity": "1",
+        "rect": {
+          "left": 281.828125,
+          "top": 11.984375,
+          "width": 88.171875,
+          "height": 48
+        },
+        "position": "absolute",
+        "z": "auto"
+      },
+      "hits": [
+        {
+          "tag": "NAV",
+          "id": "",
+          "class": "studio-desktop",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 16,
+            "top": 10,
+            "width": 358,
+            "height": 44
+          },
+          "position": "absolute",
+          "z": "auto"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "back-top-label",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 281.828125,
+            "top": 29.390625,
+            "width": 56.171875,
+            "height": 13.1875
+          },
+          "position": "static",
+          "z": "auto"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "footer-back-to-top",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 281.828125,
+            "top": 11.984375,
+            "width": 88.171875,
+            "height": 48
+          },
+          "position": "absolute",
+          "z": "auto"
+        },
+        {
+          "tag": "FOOTER",
+          "id": "",
+          "class": "signature-footer signature-in-view",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "1"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "footer-stage",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "auto"
+        },
+        {
+          "tag": "DIV",
+          "id": "contact",
+          "class": "footer-sequence contact-scroll-target",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "14"
+        },
+        {
+          "tag": "MAIN",
+          "id": "main-content",
+          "class": "folio-main",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "relative",
+          "z": "5"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "class": "",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "static",
+          "z": "auto"
+        },
+        {
+          "tag": "HTML",
+          "id": "",
+          "class": "content-protected lenis",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "static",
+          "z": "auto"
+        }
+      ]
+    },
+    {
+      "selector": ".back-top-label",
+      "x": 309.9140625,
+      "y": 35.984375,
+      "element": {
+        "tag": "SPAN",
+        "id": "",
+        "class": "back-top-label",
+        "inert": false,
+        "pointer": "auto",
+        "visibility": "visible",
+        "opacity": "1",
+        "rect": {
+          "left": 281.828125,
+          "top": 29.390625,
+          "width": 56.171875,
+          "height": 13.1875
+        },
+        "position": "static",
+        "z": "auto"
+      },
+      "hits": [
+        {
+          "tag": "NAV",
+          "id": "",
+          "class": "studio-desktop",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 16,
+            "top": 10,
+            "width": 358,
+            "height": 44
+          },
+          "position": "absolute",
+          "z": "auto"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "back-top-label",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 281.828125,
+            "top": 29.390625,
+            "width": 56.171875,
+            "height": 13.1875
+          },
+          "position": "static",
+          "z": "auto"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "footer-back-to-top",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 281.828125,
+            "top": 11.984375,
+            "width": 88.171875,
+            "height": 48
+          },
+          "position": "absolute",
+          "z": "auto"
+        },
+        {
+          "tag": "FOOTER",
+          "id": "",
+          "class": "signature-footer signature-in-view",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "1"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "footer-stage",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "auto"
+        },
+        {
+          "tag": "DIV",
+          "id": "contact",
+          "class": "footer-sequence contact-scroll-target",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "14"
+        },
+        {
+          "tag": "MAIN",
+          "id": "main-content",
+          "class": "folio-main",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "relative",
+          "z": "5"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "class": "",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "static",
+          "z": "auto"
+        },
+        {
+          "tag": "HTML",
+          "id": "",
+          "class": "content-protected lenis",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "static",
+          "z": "auto"
+        }
+      ]
+    },
+    {
+      "selector": ".back-top-pages",
+      "x": 360,
+      "y": 35.984375,
+      "element": {
+        "tag": "SPAN",
+        "id": "",
+        "class": "back-top-pages",
+        "inert": false,
+        "pointer": "auto",
+        "visibility": "visible",
+        "opacity": "1",
+        "rect": {
+          "left": 350,
+          "top": 23.984375,
+          "width": 20,
+          "height": 24
+        },
+        "position": "relative",
+        "z": "auto"
+      },
+      "hits": [
+        {
+          "tag": "NAV",
+          "id": "",
+          "class": "studio-desktop",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 16,
+            "top": 10,
+            "width": 358,
+            "height": 44
+          },
+          "position": "absolute",
+          "z": "auto"
+        },
+        {
+          "tag": "I",
+          "id": "",
+          "class": "",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "0.65",
+          "rect": {
+            "left": 350,
+            "top": 35.984375,
+            "width": 20,
+            "height": 1
+          },
+          "position": "absolute",
+          "z": "auto"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "back-top-pages",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 350,
+            "top": 23.984375,
+            "width": 20,
+            "height": 24
+          },
+          "position": "relative",
+          "z": "auto"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "footer-back-to-top",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 281.828125,
+            "top": 11.984375,
+            "width": 88.171875,
+            "height": 48
+          },
+          "position": "absolute",
+          "z": "auto"
+        },
+        {
+          "tag": "FOOTER",
+          "id": "",
+          "class": "signature-footer signature-in-view",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "1"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "footer-stage",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "auto"
+        },
+        {
+          "tag": "DIV",
+          "id": "contact",
+          "class": "footer-sequence contact-scroll-target",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -0.015625,
+            "width": 390,
+            "height": 844
+          },
+          "position": "relative",
+          "z": "14"
+        },
+        {
+          "tag": "MAIN",
+          "id": "main-content",
+          "class": "folio-main",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "relative",
+          "z": "5"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "class": "",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "static",
+          "z": "auto"
+        },
+        {
+          "tag": "HTML",
+          "id": "",
+          "class": "content-protected lenis",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 0,
+            "top": -12601,
+            "width": 390,
+            "height": 13444.984375
+          },
+          "position": "static",
+          "z": "auto"
+        }
+      ]
+    }
+  ],
+  "after": {
+    "y": 12601,
+    "clicks": [
+      {
+        "target": {
+          "tag": "NAV",
+          "id": "",
+          "class": "studio-desktop",
+          "inert": false,
+          "pointer": "auto",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "left": 16,
+            "top": 10,
+            "width": 358,
+            "height": 44
+          },
+          "position": "absolute",
+          "z": "auto"
+        },
+        "path": [
+          {
+            "tag": "NAV",
+            "class": "studio-desktop"
+          },
+          {
+            "tag": "DIV",
+            "class": "studio-bar"
+          },
+          {
+            "tag": "HEADER",
+            "class": "folio-nav studio-header has-hero-nav-reveal has-pixel-type has-logo-journey is-inside-hero is-scrolled is-in-footer is-footer-journey is-nav-suction"
+          },
+          {
+            "tag": "BODY",
+            "class": ""
+          },
+          {
+            "tag": "HTML",
+            "class": "content-protected lenis"
+          }
+        ]
+      }
+    ],
+    "overlay": {
+      "cloudRenderer": "canvas-2d",
+      "cloudOpaque": "false",
+      "cloudPhase": "idle",
+      "cloudProgress": "0.0000"
+    }
+  }
+}
