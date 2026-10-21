@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {runtimeQuality,renderPixelRatio} from './runtime-quality';
 import { toCreasedNormals } from 'three/addons/utils/BufferGeometryUtils.js';
 import outline from './footer-signature-shapes.json';
 import { createSignatureStickers, applySignatureStickerUVs } from './footer-signature-stickers';
@@ -11,6 +12,7 @@ export function initFooterSignature3D({ getLenis } = {}) {
   if (!host || !footer) return () => {};
   let disposed = false, renderer, observer, sizing, environment, geometry, materials, stickers, finish, glints, viewer;
   let frame = 0, visible = false, last = 0, time = 0;
+  let renderScale=1,framePressure=0,adaptedAt=0;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const pointer = new THREE.Vector2();
   const follow = new THREE.Vector2();
@@ -86,7 +88,12 @@ export function initFooterSignature3D({ getLenis } = {}) {
     if (disposed || !visible || document.hidden || motion.matches || viewer?.active) { last = 0; return; }
     const delta = last ? Math.min((now - last) / 1000, .05) : 1 / 60;
     time += delta;
-    last = now; pose(delta); frame = requestAnimationFrame(tick);
+    last = now; pose(delta);
+    framePressure=delta>1/48?framePressure+1:Math.max(0,framePressure-1);
+    if(framePressure>30&&renderScale>.72&&now-adaptedAt>1500){
+      renderScale=Math.max(.72,renderScale*.85);framePressure=0;adaptedAt=now;resize();
+    }
+    frame = requestAnimationFrame(tick);
   };
   const sync = () => {
     cancelAnimationFrame(frame); frame = 0; last = 0;
@@ -108,8 +115,10 @@ export function initFooterSignature3D({ getLenis } = {}) {
     if (disposed || !renderer) return;
     const width = Math.max(1, host.clientWidth * 1.4);
     const height = Math.max(1, host.clientHeight * 2.2);
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5, Math.sqrt(2400000 / (width * height))));
+    renderer.setPixelRatio(renderPixelRatio(width,height)*renderScale);
+    host.dataset.renderScale=renderScale.toFixed(2);
     renderer.setSize(width, height, false);
+    host.dataset.renderPixels=String(renderer.domElement.width*renderer.domElement.height);
     finish?.resize();
     const halfHeight = 7.2 * height / width;
     camera.aspect = width / height;
@@ -131,7 +140,7 @@ export function initFooterSignature3D({ getLenis } = {}) {
   };
   try {
     renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: 'low-power' });
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setPixelRatio(runtimeQuality().pixelRatio);
     renderer.setClearColor(0x000000, 0);
     renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = .85;
     renderer.domElement.className = 'footer-signature-canvas';
@@ -142,7 +151,7 @@ export function initFooterSignature3D({ getLenis } = {}) {
     // bevel and walls instead of leaving an unlit, differently colored extrusion.
     const studio = new THREE.Scene();
     const roomCanvas = document.createElement('canvas');
-    roomCanvas.width = 1024; roomCanvas.height = 512;
+    roomCanvas.width = 512; roomCanvas.height = 256;
     const roomContext = roomCanvas.getContext('2d');
     const roomImage = roomContext.createImageData(roomCanvas.width, roomCanvas.height);
     // Continuous soft studio strips surround the full 360 degrees, including
@@ -212,7 +221,8 @@ export function initFooterSignature3D({ getLenis } = {}) {
       shape.holes = item.holes.map(hole => path(hole, THREE.Path)); return shape;
     });
     const depth = .5, bevelSize = .035, bevelThickness = .065;
-    geometry = new THREE.ExtrudeGeometry(shapes, { depth, bevelEnabled: true, bevelSegments: 8, steps: 1, bevelSize, bevelThickness, curveSegments: 4 });
+    const quality=runtimeQuality();
+    geometry = new THREE.ExtrudeGeometry(shapes, { depth, bevelEnabled: true, bevelSegments: quality.bevelSegments, steps: 1, bevelSize, bevelThickness, curveSegments: quality.curveSegments });
     // The utility hashes positions to .01 units: scale temporarily so adjacent
     // bevel rings are not collapsed into the same smoothing bucket.
     geometry.scale(100, 100, 100);

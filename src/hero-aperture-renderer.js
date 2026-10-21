@@ -1,7 +1,8 @@
+import {runtimeQuality} from './runtime-quality';
 // A distance field gives the opening a continuous edge at every camera distance.
 // The field is generated from a fresh procedural outline for each visit.
 function distanceField(image) {
-  const n = 1024, raster = document.createElement('canvas');
+  const n = runtimeQuality().compact?512:768, raster = document.createElement('canvas');
   raster.width = raster.height = n;
   const ctx = raster.getContext('2d', { willReadFrequently: true });
   ctx.drawImage(image, 0, 0, n, n);

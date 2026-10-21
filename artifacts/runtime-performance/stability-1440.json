@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "reduced": false,
+      "before": 17172,
+      "after": 17172,
+      "exposedFrames": 78,
+      "stable": true,
+      "final": {
+        "overflow": 0,
+        "bodyLock": "",
+        "rootLock": "",
+        "inert": false
+      },
+      "network": [
+        "/fonts/Inter-Latin-Variable.woff2",
+        "/fonts/IBMPlexMono-Latin-Medium.woff2",
+        "/assets/index-BLHmSwpQ.css",
+        "/assets/index-BFJl3MFs.js",
+        "/logo.svg",
+        "/optimized/hero-1448.webp",
+        "/logoanimasi/optimized/logo1-960.webp",
+        "/cursor.svg",
+        "/fonts/InstrumentSerif-Regular.ttf",
+        "/hero-runner-mask.svg",
+        "/optimized/favicon.webp"
+      ]
+    }
+  ],
+  "errors": []
+}

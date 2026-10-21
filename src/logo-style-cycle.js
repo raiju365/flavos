@@ -1,3 +1,4 @@
+import { logoAsset } from './runtime-quality';
 /** Opaque material swaps concealed by a short, centered motion-blur impulse. */
 export function initLogoStyleCycle() {
   const section = document.querySelector('.folio-logo-pause');
@@ -107,7 +108,7 @@ export function initLogoStyleCycle() {
     loading = true;
     const results = await Promise.allSettled(styleIds.map(async id => {
       const image = new Image();
-      image.src = `/logoanimasi/web/logo${id}.webp`;
+      image.src = logoAsset(id);
       await image.decode();
       return { id, src: image.src, image };
     }));
@@ -126,7 +127,7 @@ export function initLogoStyleCycle() {
     stop();
     if (motion.matches) {
       front = 0; index = 0;
-      layers[0].src = '/logoanimasi/web/logo1.webp';
+      layers[0].src = logoAsset(1);
       layers[0].classList.add('is-visible');
       layers[1].classList.remove('is-visible');
       stage.dataset.style = '1';
@@ -154,7 +155,7 @@ export function initLogoStyleCycle() {
     stop();
     if (index === 0 && front === 0 && stage.dataset.style === '1') return;
     front = 0; index = 0;
-    layers[0].src = '/logoanimasi/web/logo1.webp';
+    layers[0].src = logoAsset(1);
     layers[0].classList.add('is-visible');
     layers[1].classList.remove('is-visible');
     stage.dataset.style = '1';

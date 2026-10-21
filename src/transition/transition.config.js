@@ -12,7 +12,7 @@ export const TRANSITION_CONFIG = {
   sameSection: { duration: .7 },
   completionGuardMs: 6500,
   cloudReturn: {
-    peel: 1.18, stickerFlight: .72, launchLead: .12,
+    peel: .72, launchLead: .04,
     anticipation: .24, lift: .56, flight: .8, arrival: .56,
     whiteBreath: .18, growthIn: .48, growthTravel: 1.04, growthSettle: .48, settle: .12,
   },

@@ -1,5 +1,6 @@
 // Refresh independent grain samples instead of translating a repeating image.
 // Every pixel in the viewport buffer gets its own sample, without repeated tiles.
+import {runtimeQuality} from './runtime-quality';
 export function initTvNoise() {
   const overlay = document.querySelector('.tv-noise');
   if (!overlay) return () => {};
@@ -12,8 +13,6 @@ export function initTvNoise() {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const coarsePointer = window.matchMedia('(pointer: coarse)');
   const connection = navigator.connection;
-  const limitedDevice = (navigator.hardwareConcurrency > 0 && navigator.hardwareConcurrency <= 4)
-    || (navigator.deviceMemory > 0 && navigator.deviceMemory <= 4);
   const canvas = document.createElement('canvas');
   canvas.className = 'tv-noise-canvas';
   canvas.setAttribute('aria-hidden', 'true');
@@ -56,8 +55,10 @@ export function initTvNoise() {
       draw();
       // Back off if generating / submitting this effect repeatedly costs too much.
       slowDraws = performance.now() - start > 3 ? slowDraws + 1 : Math.max(0, slowDraws - 1);
-      if (slowDraws >= 6 && rate > 30) {
-        rate = rate > 60 ? 60 : 30;
+      if (slowDraws >= 6 && rate > 12) {
+        rate = Math.max(12,rate-6);
+        maxPixels=Math.max(160000,Math.round(maxPixels*.8));
+        resize();
         overlay.dataset.noiseRate = String(rate);
         slowDraws = 0;
       }
@@ -92,9 +93,9 @@ export function initTvNoise() {
     if (revealed && !document.hidden && pageActive) draw();
   }
   function updateSettings() {
-    const limited = limitedDevice || connection?.saveData;
-    rate = limited ? 24 : 30;
-    maxPixels = limited ? 600000 : coarsePointer.matches ? 800000 : 1500000;
+    const quality=runtimeQuality();
+    rate = quality.noiseRate;
+    maxPixels = quality.noisePixels;
     overlay.dataset.noiseRate = String(rate);
     slowDraws = 0;
     resize();

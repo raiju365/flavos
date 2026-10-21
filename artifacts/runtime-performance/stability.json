@@ -1,0 +1,142 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "reduced": false,
+      "before": 17172,
+      "after": 17172,
+      "exposedFrames": 106,
+      "stable": true,
+      "final": {
+        "overflow": 0,
+        "bodyLock": "",
+        "rootLock": "",
+        "inert": false
+      },
+      "network": [
+        "/fonts/Inter-Latin-Variable.woff2",
+        "/fonts/IBMPlexMono-Latin-Medium.woff2",
+        "/assets/index-J5km98T7.js",
+        "/logo.svg",
+        "/assets/index-BLHmSwpQ.css",
+        "/optimized/hero-1448.webp",
+        "/logoanimasi/optimized/logo1-960.webp",
+        "/cursor.svg",
+        "/fonts/InstrumentSerif-Regular.ttf",
+        "/hero-runner-mask.svg",
+        "/optimized/favicon.webp"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "reduced": false,
+      "before": 14980,
+      "after": 14980,
+      "exposedFrames": 119,
+      "stable": true,
+      "final": {
+        "overflow": 0,
+        "bodyLock": "",
+        "rootLock": "",
+        "inert": false
+      },
+      "network": [
+        "/fonts/Inter-Latin-Variable.woff2",
+        "/fonts/IBMPlexMono-Latin-Medium.woff2",
+        "/assets/index-J5km98T7.js",
+        "/assets/index-BLHmSwpQ.css",
+        "/logo.svg",
+        "/optimized/hero-960.webp",
+        "/logoanimasi/optimized/logo1-960.webp",
+        "/cursor.svg",
+        "/fonts/InstrumentSerif-Regular.ttf",
+        "/hero-runner-mask.svg",
+        "/optimized/favicon.webp"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "before": 12601,
+      "after": 12601,
+      "exposedFrames": 137,
+      "stable": true,
+      "final": {
+        "overflow": 0,
+        "bodyLock": "",
+        "rootLock": "",
+        "inert": false
+      },
+      "network": [
+        "/fonts/Inter-Latin-Variable.woff2",
+        "/fonts/IBMPlexMono-Latin-Medium.woff2",
+        "/assets/index-J5km98T7.js",
+        "/logo.svg",
+        "/assets/index-BLHmSwpQ.css",
+        "/logoanimasi/optimized/logo1-960.webp",
+        "/optimized/hero-960.webp",
+        "/fonts/InstrumentSerif-Regular.ttf",
+        "/hero-runner-mask.svg",
+        "/optimized/favicon.webp"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 640,
+      "reduced": false,
+      "before": 9582,
+      "after": 9582,
+      "exposedFrames": 113,
+      "stable": true,
+      "final": {
+        "overflow": 0,
+        "bodyLock": "",
+        "rootLock": "",
+        "inert": false
+      },
+      "network": [
+        "/fonts/Inter-Latin-Variable.woff2",
+        "/fonts/IBMPlexMono-Latin-Medium.woff2",
+        "/assets/index-BLHmSwpQ.css",
+        "/assets/index-J5km98T7.js",
+        "/logo.svg",
+        "/optimized/hero-960.webp",
+        "/logoanimasi/optimized/logo1-960.webp",
+        "/fonts/InstrumentSerif-Regular.ttf",
+        "/hero-runner-mask.svg",
+        "/optimized/favicon.webp"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "before": 4077,
+      "after": 4077,
+      "exposedFrames": 85,
+      "stable": true,
+      "final": {
+        "overflow": 0,
+        "bodyLock": "",
+        "rootLock": "",
+        "inert": false
+      },
+      "network": [
+        "/fonts/Inter-Latin-Variable.woff2",
+        "/fonts/IBMPlexMono-Latin-Medium.woff2",
+        "/assets/index-J5km98T7.js",
+        "/assets/index-BLHmSwpQ.css",
+        "/logo.svg",
+        "/optimized/hero-960.webp",
+        "/logoanimasi/optimized/logo1-960.webp",
+        "/fonts/InstrumentSerif-Regular.ttf",
+        "/hero-runner-mask.svg",
+        "/optimized/favicon.webp"
+      ]
+    }
+  ],
+  "errors": []
+}

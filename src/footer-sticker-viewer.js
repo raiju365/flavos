@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {renderPixelRatio} from './runtime-quality';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import gsap from 'gsap';
 import { createStickerSurface } from './footer-sticker-geometry';
@@ -74,11 +75,12 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
     host.dataset.physicalStickers = String(meshes.filter(item => item.parent === model).length);
   };
 
-  const sourcePose = index => {
+  const sourcePose = (index, measuredCanvas, worldUpdated = false) => {
     const sticker = signatureStickers[index];
-    const canvas = sourceRenderer.domElement.getBoundingClientRect();
+    const canvas = measuredCanvas || sourceRenderer.domElement.getBoundingClientRect();
     const center = new THREE.Vector3((sticker.x - .5) * 10, (.5 - sticker.y) * 10 / aspect, front);
-    model.updateWorldMatrix(true, false); model.localToWorld(center);
+    if(!worldUpdated)model.updateWorldMatrix(true, false);
+    center.applyMatrix4(model.matrixWorld);
     const distance = sourceCamera.position.z - center.z;
     const pixelScale = canvas.height / (2 * distance * Math.tan(THREE.MathUtils.degToRad(sourceCamera.fov / 2)));
     center.project(sourceCamera);
@@ -96,20 +98,27 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
   function update() {
     if (disposed) return;
     const hostRect = host.getBoundingClientRect();
+    const canvasRect=sourceRenderer.domElement.getBoundingClientRect();
+    model.updateWorldMatrix(true,false);
+    // Finish all geometry/layout reads before positioning any hotspot. The
+    // old interleaved loop forced six layouts per rendered signature frame.
+    const poses=buttons.map((_,index)=>sourcePose(index,canvasRect,true));
     buttons.forEach((button, index) => {
-      const pose = sourcePose(index);
+      const pose = poses[index];
       const image = stickers.items[index]?.image;
       const ratio = image ? image.naturalHeight / image.naturalWidth : 1;
       const width = Math.max(44, Math.min(100, pose.pixelWidth));
       const height = Math.max(44, Math.min(120, pose.pixelWidth * ratio));
-      button.style.width = `${width}px`; button.style.height = `${height}px`;
+      const cssWidth=`${width}px`,cssHeight=`${height}px`;
+      if(button.style.width!==cssWidth)button.style.width=cssWidth;
+      if(button.style.height!==cssHeight)button.style.height=cssHeight;
       button.style.transform = `translate(${pose.x - hostRect.left - width / 2}px,${pose.y - hostRect.top - height / 2}px)`;
     });
-    if (selected !== null) origin = sourcePose(selected);
+    if (selected !== null) origin = poses[selected];
   }
   function measure() {
     if (!renderer) return;
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setPixelRatio(renderPixelRatio(innerWidth,innerHeight));
     renderer.setSize(innerWidth, innerHeight, false);
     camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
     if (selected !== null) {
@@ -166,7 +175,11 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
     frame = 0;
     if (disposed || !dialog.open || document.hidden) { last = 0; return; }
     const delta = last ? Math.min((now - last) / 1000, .05) : 1 / 60;
-    last = now; paint(delta); frame = requestAnimationFrame(tick);
+    last = now; paint(delta);
+    if(phase!=='open'||drag||angularVelocity.lengthSq()>.000001
+      ||group.quaternion.angleTo(targetQuaternion)>.0001||Math.abs(group.scale.x-fit)>.00001)
+      frame=requestAnimationFrame(tick);
+    else last=0;
   }
   function start() { if (!frame && dialog.open && !document.hidden) { last = 0; frame = requestAnimationFrame(tick); } }
   function setPhase(value) { phase = value; dialog.dataset.phase = value; }
@@ -235,6 +248,10 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
       `);
     };
     for (const { image, index } of stickers.items.filter(Boolean)) {
+      // Share preparation with input/scroll instead of tessellating all six
+      // sheets in one blocking task. The covered destination still awaits it.
+      await new Promise(resolve=>setTimeout(resolve,0));
+      if(disposed)return;
       const { geometry, print: printImage, backPrintUv } = createStickerSurface(image);
       bindStickerSurface(geometry, signatureGeometry, signatureStickers[index], image, aspect);
       const texture = new THREE.CanvasTexture(printImage); texture.colorSpace = THREE.SRGBColorSpace;
@@ -312,6 +329,7 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
     closingAt = Math.max(.0001, transition.progress); closingQuaternion.copy(group.quaternion);
     origin = sourcePose(selected);
     setPhase('closing');
+    start();
     if (motion.matches) { transition.controls = 0; finishClose(); return; }
     animation = gsap.timeline({ onComplete: () => finishClose() });
     if (transition.progress > PEEL_END) {
@@ -323,7 +341,7 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
     animation.to(transition, { progress: 0, duration: Math.max(.18, STICKER_TIMING.press * contact), ease: 'sine.inOut' })
       .to(transition, { controls: 0, duration: .18 }, 0);
   }
-  function reset() { angularVelocity.set(0, 0); targetQuaternion.copy(restQuaternion); if (motion.matches) paint(); }
+  function reset() { angularVelocity.set(0, 0); targetQuaternion.copy(restQuaternion); if (motion.matches) paint(); else start(); }
   function bindPointer() {
     const canvas = renderer.domElement;
     const intersects = event => {
@@ -334,6 +352,7 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
       if (phase !== 'open' || !event.isPrimary || event.button > 0) return;
       drag = { id: event.pointerId, x: event.clientX, y: event.clientY, startX: event.clientX, startY: event.clientY, time: event.timeStamp, object: intersects(event) };
       angularVelocity.set(0, 0); canvas.setPointerCapture(event.pointerId);
+      start();
       if (drag.object) dialog.dataset.dragging = 'true';
     }, options);
     canvas.addEventListener('pointermove', event => {
@@ -345,6 +364,7 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
       angularVelocity.set(THREE.MathUtils.clamp(dx * rate / dt, -5, 5), THREE.MathUtils.clamp(dy * rate / dt, -5, 5));
       drag.x = event.clientX; drag.y = event.clientY; drag.time = event.timeStamp;
       if (motion.matches) paint();
+      else start();
     }, options);
     const release = event => {
       if (!drag || drag.id !== event.pointerId) return;
@@ -365,6 +385,7 @@ export function createSignatureStickerViewer({ host, renderer: sourceRenderer, c
       event.preventDefault(); angularVelocity.set(0, 0);
       euler.set(angles[0], angles[1], 0); targetQuaternion.premultiply(turn.setFromEuler(euler));
       if (motion.matches) paint();
+      else start();
     }, options);
   }
   closeButton.addEventListener('click', close, options);

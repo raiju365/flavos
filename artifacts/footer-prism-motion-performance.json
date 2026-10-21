@@ -1,0 +1,78 @@
+{
+  "desktop": {
+    "before": {
+      "mode": "before",
+      "test": "controlled 60Hz callbacks; CPU/API time only",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "samples": 180,
+      "renderedFrames": 61,
+      "meanCallbackMs": 5.667777778042687,
+      "meanRenderMs": 16.69508196584514,
+      "p95RenderMs": 22.700000047683716,
+      "maxRenderMs": 24.400000035762787,
+      "meanDraws": 11.86111111111111,
+      "canvas": [
+        1440,
+        900
+      ]
+    },
+    "after": {
+      "mode": "after",
+      "test": "controlled 60Hz callbacks; CPU/API time only",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "samples": 180,
+      "renderedFrames": 180,
+      "meanCallbackMs": 0.12388888862397936,
+      "meanRenderMs": 0.12388888862397936,
+      "p95RenderMs": 0.20000004768371582,
+      "maxRenderMs": 0.20000004768371582,
+      "meanDraws": 34.36666666666667,
+      "canvas": [
+        1440,
+        900
+      ]
+    }
+  },
+  "mobile": {
+    "before": {
+      "mode": "before",
+      "test": "controlled 60Hz callbacks; CPU/API time only",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "samples": 180,
+      "renderedFrames": 61,
+      "meanCallbackMs": 4.111666666467984,
+      "meanRenderMs": 12.111475411008616,
+      "p95RenderMs": 14.300000011920929,
+      "maxRenderMs": 16.399999976158142,
+      "meanDraws": 11.86111111111111,
+      "canvas": [
+        390,
+        844
+      ]
+    },
+    "after": {
+      "mode": "after",
+      "test": "controlled 60Hz callbacks; CPU/API time only",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "samples": 180,
+      "renderedFrames": 180,
+      "meanCallbackMs": 0.11666666699780358,
+      "meanRenderMs": 0.11666666699780358,
+      "p95RenderMs": 0.20000004768371582,
+      "maxRenderMs": 0.5,
+      "meanDraws": 33.56666666666667,
+      "canvas": [
+        390,
+        844
+      ]
+    }
+  }
+}

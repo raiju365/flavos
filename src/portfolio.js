@@ -21,8 +21,6 @@ export function initPortfolio({ getLenis }) {
     });
     signatureLoading.catch(() => {});
   };
-  // Start module/texture work alongside initial image loading, even offscreen.
-  startSignature();
   const prepareSignature = async () => {
     if (signatureDisposed) return;
     if (!signatureLoading) startSignature();
@@ -37,6 +35,21 @@ export function initPortfolio({ getLenis }) {
   if (import.meta.hot) import.meta.hot.dispose(() => {
     signatureDisposed = true; cleanupSignature?.();
   });
+  // Start the expensive 3D scene as the footer approaches. A restored footer
+  // and covered Contact navigation explicitly await the same preparation.
+  let signaturePreparing;
+  const prepareContact = () => signaturePreparing ||= prepareSignature().catch(error=>{
+    signaturePreparing=undefined;throw error;
+  });
+  const footerWarmup=new IntersectionObserver(([entry])=>{
+    if(entry.isIntersecting&&window.isMainPageReady)prepareContact().catch(error=>console.warn('Footer preparation unavailable:',error));
+  },{rootMargin:'900px 0px'});
+  const warmFooter=()=>{
+    const footer=document.querySelector('.signature-footer');
+    if(footer)footerWarmup.observe(footer);
+  };
+  window.addEventListener('portfolio:reveal',warmFooter,{once:true});
+  if(import.meta.hot)import.meta.hot.dispose(()=>{footerWarmup.disconnect();window.removeEventListener('portfolio:reveal',warmFooter);});
   const cleanupGradient = initFooterGradient();
   if (import.meta.hot) import.meta.hot.dispose(cleanupGradient);
   const heroEntry = createHeroScrollEntry();
@@ -118,7 +131,7 @@ export function initPortfolio({ getLenis }) {
 
   // Initialize Designer-Grade Floating Island Navbar
   const designerNav = initDesignerNavbar({ getLenis, reduceMotion });
-  const pageTransition = initPageTransition({ getLenis, reduceMotion, heroEntry });
+  const pageTransition = initPageTransition({ getLenis, reduceMotion, heroEntry, prepareContact });
   if (import.meta.hot) import.meta.hot.dispose(() => pageTransition.destroy());
 
   // Initialize Celestial Compass Brand Hover
@@ -212,7 +225,7 @@ export function initPortfolio({ getLenis }) {
   const observer = new MutationObserver(activate);
   observer.observe(main, { attributes: true, attributeFilter: ['style'] });
   activate();
-  return { prepareSignature };
+  return { prepareSignature:prepareContact };
 }
 
 /** Minimal portfolio navigation with restrained motion and accessible disclosure. */

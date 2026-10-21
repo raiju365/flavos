@@ -168,7 +168,7 @@ export function initLogoNavJourney(cycle) {
   const queue = () => { if (!frame) frame = requestAnimationFrame(update); };
   window.addEventListener('scroll', queue, { passive: true, signal: controller.signal });
   document.addEventListener('visibilitychange', queue, { signal: controller.signal });
-  for (const event of ['resize', 'portfolio:ready', 'portfolio:reveal']) {
+  for (const event of ['resize', 'portfolio:ready', 'portfolio:reveal', 'portfolio:restore']) {
     window.addEventListener(event, measure, { signal: controller.signal });
   }
   motion.addEventListener('change', measure, { signal: controller.signal });

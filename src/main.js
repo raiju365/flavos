@@ -1,5 +1,5 @@
 import { initPortfolio } from './portfolio'
-import { getBrandBlue } from './brand-color'
+import { initAmbientParticles } from './ambient-particles'
 import { initScrollRestoration } from './scroll-restoration'
 import { createKineticLoader } from './loader-transition'
 import { preparePageAssets, nextPaint } from './page-readiness'
@@ -9,8 +9,6 @@ import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { tsParticles } from "@tsparticles/engine"
-import { loadSlim } from "@tsparticles/slim"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -91,6 +89,9 @@ window.finishIntroGlobal = () => Promise.resolve();
   let cursorY = -100;
   let cursorScale = 1;
   let targetScale = 1;
+  let cursorFrame = 0;
+  const fineCursor=matchMedia('(hover: hover) and (pointer: fine)');
+  function wakeCursor(){if(!cursorFrame&&fineCursor.matches&&!document.hidden)cursorFrame=requestAnimationFrame(renderCursor);}
 
   function updateCursorPos(e) {
     if (e.clientX === undefined || e.clientX === null) return;
@@ -105,11 +106,14 @@ window.finishIntroGlobal = () => Promise.resolve();
 
     // Reveal custom cursor immediately on mouse move
     cursor.style.opacity = '1';
+    wakeCursor();
   }
 
   // Framerate-independent ultra-responsive physics loop
   let lastCursorTime = performance.now();
   function renderCursor(time) {
+    cursorFrame=0;
+    if(document.hidden||!fineCursor.matches)return;
     if (!time) time = performance.now();
     const dt = Math.min(time - lastCursorTime, 50);
     lastCursorTime = time;
@@ -129,14 +133,12 @@ window.finishIntroGlobal = () => Promise.resolve();
 
       cursor.style.transform = `translate3d(${cursorX.toFixed(2)}px, ${cursorY.toFixed(2)}px, 0) rotate(-45deg) scale(${cursorScale.toFixed(3)})`;
     }
-    requestAnimationFrame(renderCursor);
+    if(hasMoved&&(Math.abs(mouseX-cursorX)>.05||Math.abs(mouseY-cursorY)>.05||Math.abs(targetScale-cursorScale)>.001))wakeCursor();
   }
-  renderCursor();
 
   // Only track pointer moves on non-touch pointer devices
   if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
     window.addEventListener('pointermove', updateCursorPos, { passive: true });
-    window.addEventListener('mousemove', updateCursorPos, { passive: true });
     window.addEventListener('mouseenter', updateCursorPos, { passive: true });
 
     // Hover feedback on clickable elements
@@ -145,6 +147,7 @@ window.finishIntroGlobal = () => Promise.resolve();
       if (el) {
         isHovered = true;
         targetScale = 1.18;
+        wakeCursor();
       }
     }, { passive: true });
 
@@ -153,16 +156,19 @@ window.finishIntroGlobal = () => Promise.resolve();
       if (el) {
         isHovered = false;
         targetScale = 1;
+        wakeCursor();
       }
     }, { passive: true });
 
     // Tactile click press feedback
     window.addEventListener('mousedown', () => {
       targetScale = 0.88;
+      wakeCursor();
     }, { passive: true });
 
     window.addEventListener('mouseup', () => {
       targetScale = isHovered ? 1.18 : 1;
+      wakeCursor();
     }, { passive: true });
 
     // Exit animation when leaving window
@@ -178,6 +184,7 @@ window.finishIntroGlobal = () => Promise.resolve();
       }
     });
   }
+  document.addEventListener('visibilitychange',()=>{cancelAnimationFrame(cursorFrame);cursorFrame=0;if(!document.hidden)wakeCursor();});
 }
 
 // --- Loading Screen Logic ---
@@ -213,7 +220,7 @@ async function prepareAndReveal() {
     await preparePageAssets(progress => {
       pageProgress = progress * .85;
       updateLoadingProgress();
-    });
+    }, { destination:scrollRestoration.targetId });
 
     const mainContent = document.getElementById('main-content');
     if (mainContent) {
@@ -233,7 +240,9 @@ async function prepareAndReveal() {
 
     window.dispatchEvent(new Event('resize'));
     await waitForPortfolio();
-    await portfolio.prepareSignature();
+    await document.fonts.ready;
+    const contactTop=document.querySelector('#contact').getBoundingClientRect().top+scrollY;
+    if(scrollRestoration.top+innerHeight>contactTop)await portfolio.prepareSignature();
     pageProgress = 1;
     updateLoadingProgress();
     // Settle the final scrollbar/sticky layout while the loader still covers it.
@@ -244,15 +253,22 @@ async function prepareAndReveal() {
     ScrollTrigger.refresh();
     await nextPaint();
 
-    // Restore behind the loader, after pinned sections and fonts have settled.
-    lenis?.resize();
-    lenis?.scrollTo(scrollRestoration.top, { immediate: true, force: true });
-    window.scrollTo({ top: scrollRestoration.top, behavior: 'instant' });
-    ScrollTrigger.update();
-    window.dispatchEvent(new Event('scroll'));
-    await nextPaint();
-    window.dispatchEvent(new Event('portfolio:restore'));
-    await nextPaint();
+    // Pin spacing, scrubbed scenes and the footer dock must agree before the
+    // first opening pixel. Recheck the bottom anchor against the final height.
+    for(let pass=0;pass<3;pass++){
+      lenis?.resize();
+      const top=scrollRestoration.top;
+      lenis?.scrollTo(top, { immediate: true, force: true });
+      window.scrollTo({ top, behavior: 'instant' });
+      ScrollTrigger.update();
+      ScrollTrigger.getAll().forEach(trigger=>{
+        if(trigger.vars.scrub)trigger.getTween()?.progress(1);
+        else if(trigger.animation&&trigger.progress>0)trigger.animation.progress(1);
+      });
+      window.dispatchEvent(new Event('portfolio:restore'));
+      window.dispatchEvent(new Event('scroll'));
+      await nextPaint();
+    }
 
     window.isMainPageReady = true;
     sessionStorage.setItem('introFinished', 'true');
@@ -260,12 +276,14 @@ async function prepareAndReveal() {
 
     loadingScreen.dataset.assetsReady = 'true';
     await kineticLoader.reveal();
+    document.documentElement.classList.remove('is-page-loading');
 
     window.removeEventListener('wheel', preventLoadingScroll, { capture: true });
     window.removeEventListener('touchmove', preventLoadingScroll, { capture: true });
     window.removeEventListener('keydown', preventLoadingScroll, { capture: true });
 
     window.dispatchEvent(new Event('portfolio:reveal'));
+    if(!cleanupDust)cleanupDust=initAmbientParticles();
     scrollRestoration.activate();
   } catch (error) {
     console.error('Portfolio preparation failed:', error);
@@ -314,28 +332,8 @@ if (!prefersReducedMotion.matches) {
   gsap.ticker.lagSmoothing(0);
 }
 
-// Initialize tsParticles (Dust / Marble flakes)
-(async () => {
-  try {
-    await loadSlim(tsParticles);
-    await tsParticles.load({
-      id: "tsparticles",
-      options: {
-        background: { color: { value: "transparent" } },
-        particles: {
-          color: { value: getBrandBlue() },
-          links: { enable: false },
-          move: { enable: true, speed: 0.5, direction: "bottom" },
-          number: { value: 30, density: { enable: true, area: 800 } },
-          opacity: { value: 0.15 },
-          size: { value: { min: 1, max: 3 } }
-        }
-      }
-    });
-  } catch (_) {
-    // Ignored if already loaded during HMR reload
-  }
-})();
+let cleanupDust;
+if(import.meta.hot)import.meta.hot.dispose(()=>cleanupDust?.());
 
 // Global Meander border animation (drawn over scroll progress)
 const meanderPaths = document.querySelectorAll('.meander-path');

@@ -1,0 +1,501 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "samples": [
+        {
+          "x": 0,
+          "y": 0,
+          "turn": 0,
+          "pressure": 0,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.004,
+          "y": 0.003,
+          "turn": 0.002,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": -0.003,
+          "y": 0.002,
+          "turn": -0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.003,
+          "y": 0.002,
+          "turn": 0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": -0.004,
+          "y": 0.002,
+          "turn": -0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.004,
+          "y": -0.003,
+          "turn": -0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": -0.004,
+          "y": 0.002,
+          "turn": -0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.195,
+          "y": 0.134,
+          "turn": 0.079,
+          "pressure": 0.061,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.471,
+          "y": 0.324,
+          "turn": -0.191,
+          "pressure": 0.147,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.471,
+          "y": 0.324,
+          "turn": 0.191,
+          "pressure": 0.147,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.34,
+          "y": -0.234,
+          "turn": -0.138,
+          "pressure": 0.106,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.012,
+          "y": 0.008,
+          "turn": 0.005,
+          "pressure": 0.004,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.003,
+          "y": 0.002,
+          "turn": -0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.029,
+          "y": 0.02,
+          "turn": 0.012,
+          "pressure": 0.009,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.003,
+          "y": 0.002,
+          "turn": -0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.211,
+          "y": -0.145,
+          "turn": -0.043,
+          "pressure": 0.066,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.039,
+          "y": 0.027,
+          "turn": -0.016,
+          "pressure": 0.012,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.003,
+          "y": 0.002,
+          "turn": 0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": -0.004,
+          "y": 0.003,
+          "turn": -0.002,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.539,
+          "y": 0.37,
+          "turn": 0.219,
+          "pressure": 0.168,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.133,
+          "y": -0.091,
+          "turn": -0.054,
+          "pressure": 0.042,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.095,
+          "y": 0.066,
+          "turn": 0.039,
+          "pressure": 0.03,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.346,
+          "y": 0.238,
+          "turn": -0.141,
+          "pressure": 0.108,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.013,
+          "y": 0.009,
+          "turn": 0.005,
+          "pressure": 0.004,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.553,
+          "y": 0.38,
+          "turn": -0.224,
+          "pressure": 0.173,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.493,
+          "y": -0.339,
+          "turn": -0.102,
+          "pressure": 0.154,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.679,
+          "y": 0.467,
+          "turn": -0.276,
+          "pressure": 0.213,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.492,
+          "y": 0.339,
+          "turn": 0.2,
+          "pressure": 0.154,
+          "rubbing": true,
+          "overflow": 0
+        }
+      ],
+      "settled": {
+        "x": 0.003,
+        "y": 0.002,
+        "turn": 0.001,
+        "pressure": 0.001,
+        "rubbing": false,
+        "overflow": 0
+      }
+    },
+    {
+      "width": 820,
+      "samples": [
+        {
+          "x": 0,
+          "y": 0,
+          "turn": 0,
+          "pressure": 0,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.022,
+          "y": 0.015,
+          "turn": 0.009,
+          "pressure": 0.007,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.004,
+          "y": 0.003,
+          "turn": -0.002,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.004,
+          "y": 0.003,
+          "turn": 0.002,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": -0.004,
+          "y": 0.003,
+          "turn": -0.002,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.004,
+          "y": -0.003,
+          "turn": -0.001,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": -0.099,
+          "y": 0.068,
+          "turn": -0.04,
+          "pressure": 0.031,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 1.589,
+          "y": 1.097,
+          "turn": 0.645,
+          "pressure": 0.499,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.719,
+          "y": 0.499,
+          "turn": -0.292,
+          "pressure": 0.227,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.382,
+          "y": 0.264,
+          "turn": 0.155,
+          "pressure": 0.12,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -1.137,
+          "y": -0.782,
+          "turn": -0.462,
+          "pressure": 0.36,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.319,
+          "y": 0.219,
+          "turn": 0.129,
+          "pressure": 0.1,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.004,
+          "y": 0.003,
+          "turn": -0.002,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.006,
+          "y": 0.004,
+          "turn": 0.002,
+          "pressure": 0.002,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.647,
+          "y": 0.445,
+          "turn": -0.263,
+          "pressure": 0.202,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 1.207,
+          "y": -0.83,
+          "turn": -0.264,
+          "pressure": 0.385,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.37,
+          "y": 0.254,
+          "turn": -0.151,
+          "pressure": 0.116,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.58,
+          "y": 0.399,
+          "turn": 0.236,
+          "pressure": 0.181,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.637,
+          "y": 0.439,
+          "turn": -0.259,
+          "pressure": 0.2,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.004,
+          "y": 0.003,
+          "turn": 0.002,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": -1.682,
+          "y": -1.156,
+          "turn": -0.683,
+          "pressure": 0.526,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.353,
+          "y": 0.243,
+          "turn": 0.143,
+          "pressure": 0.111,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.714,
+          "y": 0.493,
+          "turn": -0.29,
+          "pressure": 0.224,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 1.246,
+          "y": 0.867,
+          "turn": 0.506,
+          "pressure": 0.394,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -1.8,
+          "y": 1.247,
+          "turn": -0.731,
+          "pressure": 0.567,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": 0.033,
+          "y": -0.023,
+          "turn": -0.007,
+          "pressure": 0.01,
+          "rubbing": true,
+          "overflow": 0
+        },
+        {
+          "x": -0.004,
+          "y": 0.003,
+          "turn": -0.002,
+          "pressure": 0.001,
+          "rubbing": false,
+          "overflow": 0
+        },
+        {
+          "x": 0.031,
+          "y": 0.021,
+          "turn": 0.013,
+          "pressure": 0.01,
+          "rubbing": true,
+          "overflow": 0
+        }
+      ],
+      "settled": {
+        "x": 0.004,
+        "y": 0.003,
+        "turn": 0.002,
+        "pressure": 0.001,
+        "rubbing": false,
+        "overflow": 0
+      }
+    },
+    {
+      "width": 390,
+      "layout": {
+        "x": 0.004,
+        "y": 0.003,
+        "turn": 0.002,
+        "pressure": 0.001,
+        "rubbing": false,
+        "overflow": 0
+      }
+    },
+    {
+      "width": 320,
+      "layout": {
+        "x": 0.004,
+        "y": 0.003,
+        "turn": 0.002,
+        "pressure": 0.001,
+        "rubbing": false,
+        "overflow": 0
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {runtimeQuality} from './runtime-quality';
 
 // Positions use the original signature image's normalized coordinates.
 export const signatureStickers = [
@@ -57,7 +58,7 @@ export function applySignatureStickerUVs(geometry, aspect, depth, bevelSize, bev
 export function createSignatureStickers(aspect, onReady) {
   let disposed = false;
   const canvas = document.createElement('canvas');
-  canvas.width = 3072;
+  canvas.width = runtimeQuality().atlasWidth;
   const scale = canvas.width / (surfaceWidth + padding * 2);
   canvas.height = Math.round((surfaceWidth / aspect + padding * 2) * scale);
   const ctx = canvas.getContext('2d');

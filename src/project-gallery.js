@@ -183,9 +183,11 @@ export function initProjectGallery({ getLenis }) {
     if (work.src) {
       const image = new Image();
       image.decoding = 'async';
-      image.src = `/karya/thumbs/${work.src.split('/').pop()}.webp`;
+      image.loading = 'lazy';
+      image.width = image.height = 512;
+      image.src = `/karya/preview/${work.src.split('/').pop()}.webp`;
       image.alt = work.title || '';
-      image.addEventListener('error', () => { image.src = work.src; }, { ...options, once: true });
+      image.addEventListener('error', () => { image.src = detailSource(work.src); }, { ...options, once: true });
       image.draggable = false; surface.append(image);
     } else surface.textContent = 'asset';
     card.append(surface);

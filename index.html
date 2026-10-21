@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <script>
+    document.documentElement.classList.add('is-page-loading');
+    history.scrollRestoration = 'manual';
     if (document.wasDiscarded || ['reload', 'back_forward'].includes(performance.getEntriesByType('navigation')[0]?.type)) {
       document.documentElement.classList.add('is-restoring-visit');
       history.scrollRestoration = 'manual';
     }
   </script>
-  <style>html.is-restoring-visit { background: var(--brand-blue, #20235b); }</style>
+  <style>html.is-page-loading{background:#000;overflow-anchor:none}#loading-screen.elegant-loader{position:fixed;inset:0;z-index:2000000;background:#000}</style>
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="description"
     content="Portfolio of Fahmi, a UI/UX Engineer and Data Analyst blending analytical rigor with creative design in a classical Greek/Roman aesthetic." />
   <title>Fahmi Aufa | Flavos</title>
-  <link rel="icon" type="image/png" href="/untuk%20di%20lobby/wdadada.png" />
+  <link rel="icon" type="image/webp" href="/optimized/favicon.webp" />
   <link rel="preload" href="/fonts/Inter-Latin-Variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/IBMPlexMono-Latin-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/src/style.css" />
@@ -83,15 +85,15 @@
 
     <section id="hero" class="folio-hero imperial-hero podium-hero" aria-labelledby="hero-heading">
       <div class="hero-destination" aria-hidden="true">
-        <img class="hero-destination-image" src="/Sidang%20Kekaisaran%20Romawi%20di%20Aula%20Marmer.png" width="1448" height="1086" alt="" fetchpriority="high" />
+        <img class="hero-destination-image" src="/optimized/hero-1448.webp" srcset="/optimized/hero-960.webp 960w, /optimized/hero-1448.webp 1448w" sizes="100vw" width="1448" height="1086" alt="" fetchpriority="high" />
         <div class="hero-vignette-overlay"></div>
         <div class="hero-gradient-overlay-top"></div>
         <div class="hero-gradient-overlay-bottom"></div>
       </div>
       <div class="hero-bg-wrapper" aria-hidden="true">
         <!-- Classical Base Painting (Ancient Rome) -->
-        <img src="/Sidang%20Kekaisaran%20Romawi%20di%20Aula%20Marmer.png" alt="Sidang Kekaisaran Romawi di Aula Marmer" class="hero-bg-img hero-bg-base"
-          fetchpriority="high" />
+        <img src="/optimized/hero-1448.webp" srcset="/optimized/hero-960.webp 960w, /optimized/hero-1448.webp 1448w" sizes="100vw" alt="Sidang Kekaisaran Romawi di Aula Marmer" class="hero-bg-img hero-bg-base"
+          width="1448" height="1086" fetchpriority="high" />
       </div>
 
       <h1 id="hero-heading" class="sr-only">Fahmi Aufa — Portfolio</h1>
@@ -101,8 +103,8 @@
     <section class="folio-logo-pause" aria-label="Fahmi Aufa">
       <div class="logo-pause-viewport">
         <div class="logo-style-cycle" data-style="1" role="img" aria-label="Fahmi Aufa — logo dalam berbagai material">
-          <img class="logo-style-layer is-visible" src="/logoanimasi/web/logo1.webp" alt="" width="480" height="480" />
-          <img class="logo-style-layer" src="/logoanimasi/web/logo1.webp" alt="" width="480" height="480"
+          <img class="logo-style-layer is-visible" src="/logoanimasi/optimized/logo1-960.webp" alt="" width="480" height="480" />
+          <img class="logo-style-layer" src="/logoanimasi/optimized/logo1-960.webp" alt="" width="480" height="480"
             aria-hidden="true" />
         </div>
       </div>
@@ -121,13 +123,13 @@
             <div class="portrait-orbit">
               <div class="portrait-object">
                 <div class="portrait-window">
-                  <img class="portrait-canvas-bg" src="/fotosebelahabout/backgroundorang/b1849338c1a01ba7de1daaed3df9da6c.jpg" alt="" aria-hidden="true"
-                    draggable="false" />
-                  <img class="portrait-core" src="/fotosebelahabout/selfphoto.png" alt="Portrait of Fahmi Aufa"
-                    loading="eager" width="736" height="1119" draggable="false" />
+                  <img class="portrait-canvas-bg" src="/optimized/portrait-background.webp" alt="" aria-hidden="true"
+                    loading="lazy" decoding="async" draggable="false" />
+                  <img class="portrait-core" src="/optimized/portrait.webp" alt="Portrait of Fahmi Aufa"
+                    loading="lazy" decoding="async" width="736" height="1119" draggable="false" />
                 </div>
-                <img class="portrait-frame" src="/borderfoto.png" alt="" aria-hidden="true"
-                  width="1024" height="1536" draggable="false" />
+                <img class="portrait-frame" src="/optimized/portrait-frame.webp" alt="" aria-hidden="true"
+                  loading="lazy" decoding="async" width="1024" height="1536" draggable="false" />
               </div>
             </div>
 
@@ -184,11 +186,11 @@
         <footer class="signature-footer" aria-labelledby="contact-heading">
           <div class="footer-logo-anchor" aria-hidden="true"></div>
           <a href="#hero" class="footer-back-to-top footer-return-sticker" aria-label="Back to top">
-            <img class="footer-return-sticker-image" src="/footer/back-to-top-sticker.webp" width="512" height="512" alt="" decoding="async" draggable="false" />
+            <span class="footer-return-sticker-paper"><img class="footer-return-sticker-image" src="/footer/stiker-btt-footer.webp" width="424" height="1905" alt="" loading="lazy" decoding="async" draggable="false" /></span>
           </a>
           <div class="footer-editorial">
             <h2 id="contact-heading" class="footer-contact-heading">Get in touch</h2>
-            <div class="footer-signature"><img src="/footer/signature-3d-poster.webp" width="1236" height="444" alt="FlavoS" decoding="async" /></div>
+            <div class="footer-signature"><img src="/footer/signature-3d-poster.webp" width="1236" height="444" alt="FlavoS" loading="lazy" decoding="async" /></div>
           </div>
           <div class="signature-bottom">
             <nav class="footer-socials" aria-label="Social and email links">

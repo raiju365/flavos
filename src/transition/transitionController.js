@@ -6,7 +6,7 @@ import { nextPaint } from '../page-readiness';
 import { createCloudReturn } from './cloudReturn';
 import { createFooterReturnSticker } from '../footer-return-sticker';
 
-export function initPageTransition({ getLenis, reduceMotion, heroEntry }) {
+export function initPageTransition({ getLenis, reduceMotion, heroEntry, prepareContact }) {
   const root = document.documentElement;
   const header = document.querySelector('.studio-header');
   const links = [...header.querySelectorAll('a[href^="#"]')];
@@ -47,7 +47,8 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry }) {
   const assets = target => {
     const images = [...target.querySelectorAll('img')];
     images.forEach(img => { img.loading = 'eager'; });
-    return Promise.all([document.fonts.ready, ...images.map(img => img.decode())]);
+    return Promise.all([document.fonts.ready, ...images.map(img => img.decode()),
+      target.id === 'contact' ? prepareContact?.() : null]);
   };
   const settleScroll = target => {
     getLenis()?.resize();
@@ -199,17 +200,6 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry }) {
       const launchStart = withPeel ? tempo.peel + tempo.launchLead : 0;
       const launchDuration = launchStart + tempo.anticipation + tempo.lift + tempo.flight + tempo.arrival;
       const beat = name => { overlay.dataset.cloudBeat = name; };
-      if (withPeel) {
-        const sheet = { peel: 0, flight: 0 };
-        timeline.to(sheet, {
-          peel: 1, duration: tempo.peel, ease: 'sine.inOut',
-          onStart: () => beat('sticker-peel'), onUpdate: () => returnSticker.peel(sheet.peel),
-        }, 0).to(sheet, {
-          flight: 1, duration: tempo.stickerFlight, ease: 'power2.in',
-          onStart: () => beat('sticker-flight'), onUpdate: () => returnSticker.fly(sheet.flight),
-          onComplete: () => returnSticker.hide(),
-        }, tempo.peel);
-      }
       departureElements.forEach(element => {
         const bounds = element.getBoundingClientRect();
         element.style.transformOrigin = `${innerWidth / 2 - bounds.left}px ${innerHeight / 2 - bounds.top}px`;
@@ -266,6 +256,21 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry }) {
           onStart: () => beat('growth-settle'), onUpdate: paintGrowth,
         })
         .to({}, { duration: tempo.settle, onStart: () => beat('settle') });
+      if (withPeel) {
+        // The paper stays above the clouds through cover, destination swap
+        // and hero assembly. Only the final gust carries it out at the top.
+        const sheet = { peel: 0, flight: 0 };
+        const flightDuration = launchDuration + tempo.growthIn + tempo.growthTravel
+          + tempo.growthSettle + tempo.settle - tempo.peel;
+        timeline.to(sheet, {
+          peel: 1, duration: tempo.peel, ease: 'sine.inOut',
+          onStart: () => beat('sticker-peel'), onUpdate: () => returnSticker.peel(sheet.peel),
+        }, 0).to(sheet, {
+          flight: 1, duration: flightDuration, ease: 'none',
+          onUpdate: () => returnSticker.fly(sheet.flight),
+          onComplete: () => returnSticker.hide(),
+        }, tempo.peel);
+      }
     } else {
       const grains = { cover: 0, reveal: 0 };
       gsap.set(label, { opacity: 0 });

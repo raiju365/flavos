@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset="utf-8"><title>Prism entry and continuity samples</title>
+<style>
+  :root{--folio-ink:#20235b;--folio-paper:#f8f7f3}*{box-sizing:border-box}
+  body{margin:0;background:#f8f7f3;color:#20235b;font:12px/1.4 monospace}
+  .signature-footer{position:fixed;inset:0;z-index:-1;width:100vw;height:100vh;visibility:hidden}
+  .footer-flow{width:100%;height:100%}pre{margin:16px;white-space:pre-wrap}
+  #samples{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:16px}
+  figure{margin:0}figure canvas{width:100%;height:auto;display:block}figcaption{padding-top:5px}
+</style>
+<footer class="signature-footer"></footer><pre id="result">Checking entry, births and departures…</pre><div id="samples"></div>
+<script type="module">
+  let callback;window.requestAnimationFrame=fn=>{callback=fn;return 1;};window.cancelAnimationFrame=()=>{callback=null;};
+  // Keep the real intersection lifecycle; visibility:hidden is not considered
+  // an offscreen geometry change by IntersectionObserver.
+  const {initFooterGradient}=await import('../src/footer-gradient.js');initFooterGradient();
+  setTimeout(()=>{
+    if(!callback){document.querySelector('#result').textContent='No callback';return;}
+    const canvas=document.querySelector('.footer-flow');
+    const probe=document.createElement('canvas');probe.width=96;probe.height=60;
+    const ctx=probe.getContext('2d',{willReadFrequently:true});
+    let previous,entryMax=0,settledMax=0,symmetryMax=0;
+    const checkpoints=new Map([[0,'0 ms'],[36,'600 ms'],[72,'1200 ms'],[114,'1900 ms'],[480,'8 s'],[1080,'18 s'],[2280,'38 s'],[3600,'60 s']]);
+    for(let frame=0;frame<=3600;frame++){
+      callback(100+frame*1000/60);
+      if(frame%2===0){
+        ctx.drawImage(canvas,0,0,96,60);const data=ctx.getImageData(0,0,96,60).data;
+        if(previous){let difference=0;for(let i=0;i<data.length;i+=4)for(let c=0;c<3;c++)difference+=Math.abs(data[i+c]-previous[i+c]);
+          const mean=difference/(96*60*3);if(frame<120)entryMax=Math.max(entryMax,mean);else settledMax=Math.max(settledMax,mean);}
+        let symmetry=0;for(let y=0;y<60;y++)for(let x=0;x<48;x++)for(let c=0;c<3;c++)symmetry+=Math.abs(data[(y*96+x)*4+c]-data[(y*96+95-x)*4+c]);
+        symmetryMax=Math.max(symmetryMax,symmetry/(60*48*3));previous=data;
+      }
+      if(checkpoints.has(frame)){
+        const figure=document.createElement('figure'),snapshot=document.createElement('canvas'),label=document.createElement('figcaption');
+        snapshot.width=336;snapshot.height=210;snapshot.getContext('2d').drawImage(canvas,0,0,336,210);
+        label.textContent=checkpoints.get(frame);figure.append(snapshot,label);document.querySelector('#samples').append(figure);
+      }
+    }
+    document.querySelector('#result').textContent=JSON.stringify({seconds:60,frames:3600,pixelSamplingHz:30,
+      maxEntryMeanChannelDelta:entryMax,maxSettledMeanChannelDelta:settledMax,maxMirrorMeanChannelDelta:symmetryMax,
+      pass:entryMax<3&&settledMax<1&&symmetryMax<1},null,2);
+  },300);
+</script>

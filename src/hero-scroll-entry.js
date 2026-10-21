@@ -3,6 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { createApertureRenderer } from './hero-aperture-renderer';
 import { createAperturePattern } from './hero-aperture-pattern';
 import './header-texture.css';
+import {renderPixelRatio} from './runtime-quality';
 
 export function createHeroScrollEntry() {
   const hero=document.querySelector('#hero');
@@ -81,7 +82,7 @@ export function createHeroScrollEntry() {
     width=hero.clientWidth;height=hero.clientHeight;if(!width||!height)return;
     size=1.14*Math.min(width*(width<=600?.84:.54),height*(width<=600?.58:.76),width<=600?Infinity:760);
     hero.dataset.apertureSize=size.toFixed(2);
-    const dpr=Math.min(devicePixelRatio,1.5,Math.sqrt(1800000/(width*height)));
+    const dpr=renderPixelRatio(width,height);
     canvas.width=Math.max(1,Math.round(width*dpr));canvas.height=Math.max(1,Math.round(height*dpr));
     fallback?.setTransform(dpr,0,0,dpr,0,0);paint();
   }

@@ -19,12 +19,13 @@ async function prepareImage(image) {
   throw failure;
 }
 
-export async function preparePageAssets(onProgress = () => {}) {
-  const images = [...document.querySelectorAll('#main-content img, .folio-nav img')];
-  // Reading computed fonts also covers content that is still display:none.
+export async function preparePageAssets(onProgress = () => {}, { destination = 'hero' } = {}) {
+  const section = ['hero','about','projects','contact'].includes(destination) ? destination : 'hero';
+  const images = [...new Set(document.querySelectorAll(`#hero img, .folio-nav img, #${section} img`))];
+  // Only the opening/destination is a loading gate. Other sections retain
+  // native lazy loading, their reserved dimensions and async decoding.
   const fonts = new Set();
-  document.querySelectorAll('#main-content *, .folio-nav *').forEach(element => {
-    if (!element.textContent.trim()) return;
+  document.querySelectorAll('.loader-percent, .studio-link, #hero h1, #about .about-reading-copy, .orbit-caption-title').forEach(element => {
     const style = getComputedStyle(element);
     fonts.add(`${style.fontStyle} ${style.fontWeight} 16px ${style.fontFamily}`);
   });

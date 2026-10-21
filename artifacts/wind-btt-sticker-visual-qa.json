@@ -1,0 +1,80 @@
+{
+  "states": [
+    {
+      "stop": 0.25,
+      "canvas": {
+        "phase": "flying",
+        "renderer": "webgl",
+        "peel": "1.0000",
+        "flight": "0.2618",
+        "x": "193.7",
+        "y": "451.1"
+      },
+      "overlay": {
+        "cloudRenderer": "canvas-2d",
+        "cloudOpaque": "false",
+        "cloudPhase": "cover",
+        "cloudProgress": "0.4073",
+        "cloudMotion": "upward-flight",
+        "cloudTravelVh": "195.53",
+        "cloudReveal": "geometric-clear",
+        "cloudGrade": "0.9664",
+        "cloudGradeVisible": "0.9664",
+        "cloudGradeWarmth": "0.0006",
+        "phase": "cover",
+        "cloudBeat": "flight"
+      }
+    },
+    {
+      "stop": 0.62,
+      "canvas": {
+        "phase": "flying",
+        "renderer": "webgl",
+        "peel": "1.0000",
+        "flight": "0.6213",
+        "x": "218.7",
+        "y": "294.6"
+      },
+      "overlay": {
+        "cloudRenderer": "canvas-2d",
+        "cloudOpaque": "false",
+        "cloudPhase": "reveal",
+        "cloudProgress": "0.1229",
+        "cloudMotion": "upward-flight",
+        "cloudTravelVh": "480.00",
+        "cloudReveal": "geometric-clear",
+        "cloudGrade": "0.0753",
+        "cloudGradeVisible": "0.0753",
+        "cloudGradeWarmth": "1.0000",
+        "phase": "reveal",
+        "cloudBeat": "growth"
+      }
+    },
+    {
+      "stop": 0.88,
+      "canvas": {
+        "phase": "flying",
+        "renderer": "webgl",
+        "peel": "1.0000",
+        "flight": "0.8831",
+        "x": "161.0",
+        "y": "180.9"
+      },
+      "overlay": {
+        "cloudRenderer": "canvas-2d",
+        "cloudOpaque": "false",
+        "cloudPhase": "reveal",
+        "cloudProgress": "0.9381",
+        "cloudMotion": "upward-flight",
+        "cloudTravelVh": "480.00",
+        "cloudReveal": "geometric-clear",
+        "cloudGrade": "0.0387",
+        "cloudGradeVisible": "0.0387",
+        "cloudGradeWarmth": "1.0000",
+        "phase": "reveal",
+        "cloudBeat": "growth-settle"
+      }
+    }
+  ],
+  "errors": []
+}

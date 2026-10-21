@@ -1,0 +1,274 @@
+[
+  {
+    "source": "public/logoanimasi/web/logo1.webp",
+    "output": "public/logoanimasi/optimized/logo1-512.webp",
+    "originalBytes": 67490,
+    "bytes": 60034,
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "public/logoanimasi/web/logo1.webp",
+    "output": "public/logoanimasi/optimized/logo1-960.webp",
+    "originalBytes": 67490,
+    "bytes": 60034,
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "public/logoanimasi/web/logo4.webp",
+    "output": "public/logoanimasi/optimized/logo4-512.webp",
+    "originalBytes": 35798,
+    "bytes": 32154,
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "public/logoanimasi/web/logo4.webp",
+    "output": "public/logoanimasi/optimized/logo4-960.webp",
+    "originalBytes": 35798,
+    "bytes": 32154,
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "public/logoanimasi/web/logo5.webp",
+    "output": "public/logoanimasi/optimized/logo5-512.webp",
+    "originalBytes": 40610,
+    "bytes": 38280,
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "public/logoanimasi/web/logo5.webp",
+    "output": "public/logoanimasi/optimized/logo5-960.webp",
+    "originalBytes": 40610,
+    "bytes": 38280,
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "public/logoanimasi/web/logo6.webp",
+    "output": "public/logoanimasi/optimized/logo6-512.webp",
+    "originalBytes": 56174,
+    "bytes": 52732,
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "public/logoanimasi/web/logo6.webp",
+    "output": "public/logoanimasi/optimized/logo6-960.webp",
+    "originalBytes": 56174,
+    "bytes": 52732,
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "public/logoanimasi/web/logo8.webp",
+    "output": "public/logoanimasi/optimized/logo8-512.webp",
+    "originalBytes": 10792142,
+    "bytes": 140680,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/logoanimasi/web/logo8.webp",
+    "output": "public/logoanimasi/optimized/logo8-960.webp",
+    "originalBytes": 10792142,
+    "bytes": 492646,
+    "width": 960,
+    "height": 960
+  },
+  {
+    "source": "public/logoanimasi/web/logo9.webp",
+    "output": "public/logoanimasi/optimized/logo9-512.webp",
+    "originalBytes": 5684660,
+    "bytes": 50762,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/logoanimasi/web/logo9.webp",
+    "output": "public/logoanimasi/optimized/logo9-960.webp",
+    "originalBytes": 5684660,
+    "bytes": 152054,
+    "width": 960,
+    "height": 960
+  },
+  {
+    "source": "public/logoanimasi/web/logo10.webp",
+    "output": "public/logoanimasi/optimized/logo10-512.webp",
+    "originalBytes": 4563194,
+    "bytes": 39136,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/logoanimasi/web/logo10.webp",
+    "output": "public/logoanimasi/optimized/logo10-960.webp",
+    "originalBytes": 4563194,
+    "bytes": 129442,
+    "width": 960,
+    "height": 960
+  },
+  {
+    "source": "public/logoanimasi/web/logo11.webp",
+    "output": "public/logoanimasi/optimized/logo11-512.webp",
+    "originalBytes": 5477089,
+    "bytes": 96566,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/logoanimasi/web/logo11.webp",
+    "output": "public/logoanimasi/optimized/logo11-960.webp",
+    "originalBytes": 5477089,
+    "bytes": 324988,
+    "width": 960,
+    "height": 960
+  },
+  {
+    "source": "public/logoanimasi/web/logo12.webp",
+    "output": "public/logoanimasi/optimized/logo12-512.webp",
+    "originalBytes": 8102216,
+    "bytes": 96818,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/logoanimasi/web/logo12.webp",
+    "output": "public/logoanimasi/optimized/logo12-960.webp",
+    "originalBytes": 8102216,
+    "bytes": 317304,
+    "width": 960,
+    "height": 960
+  },
+  {
+    "source": "public/logoanimasi/web/logo13.webp",
+    "output": "public/logoanimasi/optimized/logo13-512.webp",
+    "originalBytes": 3040025,
+    "bytes": 66136,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/logoanimasi/web/logo13.webp",
+    "output": "public/logoanimasi/optimized/logo13-960.webp",
+    "originalBytes": 3040025,
+    "bytes": 186876,
+    "width": 960,
+    "height": 960
+  },
+  {
+    "source": "public/Sidang Kekaisaran Romawi di Aula Marmer.png",
+    "output": "public/optimized/hero-1448.webp",
+    "originalBytes": 2939524,
+    "bytes": 293222,
+    "width": 1448,
+    "height": 1086
+  },
+  {
+    "source": "public/Sidang Kekaisaran Romawi di Aula Marmer.png",
+    "output": "public/optimized/hero-960.webp",
+    "originalBytes": 2939524,
+    "bytes": 135266,
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "public/borderfoto.png",
+    "output": "public/optimized/portrait-frame.webp",
+    "originalBytes": 2424649,
+    "bytes": 366852,
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "source": "public/fotosebelahabout/selfphoto.png",
+    "output": "public/optimized/portrait.webp",
+    "originalBytes": 741193,
+    "bytes": 45270,
+    "width": 736,
+    "height": 1119
+  },
+  {
+    "source": "public/fotosebelahabout/backgroundorang/b1849338c1a01ba7de1daaed3df9da6c.jpg",
+    "output": "public/optimized/portrait-background.webp",
+    "originalBytes": 160006,
+    "bytes": 106144,
+    "width": 640,
+    "height": 1142
+  },
+  {
+    "source": "public/untuk di lobby/wdadada.png",
+    "output": "public/optimized/favicon.webp",
+    "originalBytes": 746633,
+    "bytes": 4888,
+    "width": 96,
+    "height": 99
+  },
+  {
+    "source": "public/karya/thumbs/efefesfeaf.png.webp",
+    "output": "public/karya/preview/efefesfeaf.png.webp",
+    "originalBytes": 313360,
+    "bytes": 71668,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/karya/thumbs/POSTER_KEGIATAN_FAHMI_XIIG.png.webp",
+    "output": "public/karya/preview/POSTER_KEGIATAN_FAHMI_XIIG.png.webp",
+    "originalBytes": 271640,
+    "bytes": 84394,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/karya/thumbs/POSTER_KEGIATAN2_FAHMI_XIIG.jpg.webp",
+    "output": "public/karya/preview/POSTER_KEGIATAN2_FAHMI_XIIG.jpg.webp",
+    "originalBytes": 263248,
+    "bytes": 75496,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/karya/thumbs/X4C5CTVY6U7.jpg.webp",
+    "output": "public/karya/preview/X4C5CTVY6U7.jpg.webp",
+    "originalBytes": 136196,
+    "bytes": 49248,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/karya/thumbs/COVERalbum.png.webp",
+    "output": "public/karya/preview/COVERalbum.png.webp",
+    "originalBytes": 238618,
+    "bytes": 32676,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/karya/thumbs/posterhc.png.webp",
+    "output": "public/karya/preview/posterhc.png.webp",
+    "originalBytes": 218790,
+    "bytes": 74806,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/karya/thumbs/557810714_17984620985893456_636461652688020480_n.jpg.webp",
+    "output": "public/karya/preview/557810714_17984620985893456_636461652688020480_n.jpg.webp",
+    "originalBytes": 294778,
+    "bytes": 98506,
+    "width": 512,
+    "height": 512
+  },
+  {
+    "source": "public/karya/thumbs/aubauob.png.webp",
+    "output": "public/karya/preview/aubauob.png.webp",
+    "originalBytes": 141332,
+    "bytes": 43200,
+    "width": 512,
+    "height": 512
+  }
+]

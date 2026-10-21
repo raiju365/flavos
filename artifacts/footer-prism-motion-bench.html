@@ -1,0 +1,48 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Footer prism motion benchmark</title>
+<style>
+  :root { --folio-ink:#20235b; --folio-paper:#f8f7f3; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#f8f7f3; font:12px/1.5 monospace; }
+  .signature-footer { position:relative; isolation:isolate; width:100vw; height:100vh; overflow:hidden; }
+  .footer-flow { position:absolute; inset:0; width:100%; height:100%; }
+  pre { position:fixed; left:12px; top:12px; margin:0; padding:8px; background:#ffffffdc; color:#20235b; z-index:2; }
+</style>
+<footer class="signature-footer"></footer><pre id="result">Measuring…</pre>
+<script type="module">
+  const query=new URLSearchParams(location.search);
+  const samples=[], renderSamples=[], draws=[];
+  let callback, done=false;
+  const mode=query.get('mode')||'after';
+  const context=CanvasRenderingContext2D.prototype;
+  const originalImage=context.drawImage, originalFill=context.fillRect;
+  let frameDraws=0;
+  context.drawImage=function(...args){frameDraws++;return originalImage.apply(this,args);};
+  context.fillRect=function(...args){frameDraws++;return originalFill.apply(this,args);};
+  // Controlled callbacks keep both versions on the same timeline, independent
+  // of desktop-app background-tab throttling. This measures script/API cost,
+  // not GPU/compositor time or real-device frame rate.
+  window.requestAnimationFrame=fn=>{callback=fn;return 1;};
+  window.cancelAnimationFrame=()=>{callback=null;};
+  const {initFooterGradient}=await import(mode==='before'?'./footer-prism-before.mjs':'../src/footer-gradient.js');
+  initFooterGradient();
+  setTimeout(()=>{
+    if(!callback){document.querySelector('#result').textContent='No active callback';return;}
+    for(let frame=0;frame<300;frame++){
+      frameDraws=0; const start=performance.now(); callback(100+frame*1000/60);
+      const duration=performance.now()-start;
+      if(frame>=120){samples.push(duration);draws.push(frameDraws);if(frameDraws)renderSamples.push(duration);}
+    }
+    const sorted=[...renderSamples].sort((a,b)=>a-b);
+    const metrics={mode,test:'controlled 60Hz callbacks; CPU/API time only',width:innerWidth,height:innerHeight,dpr:devicePixelRatio,
+      samples:samples.length,renderedFrames:renderSamples.length,
+      meanCallbackMs:samples.reduce((a,b)=>a+b,0)/samples.length,
+      meanRenderMs:renderSamples.reduce((a,b)=>a+b,0)/renderSamples.length,
+      p95RenderMs:sorted[Math.floor(sorted.length*.95)],maxRenderMs:sorted.at(-1),
+      meanDraws:draws.reduce((a,b)=>a+b,0)/draws.length,
+      canvas:[document.querySelector('.footer-flow').width,document.querySelector('.footer-flow').height]};
+    done=true; document.querySelector('#result').textContent=JSON.stringify(metrics,null,2);
+  },300);
+</script>

@@ -1,0 +1,354 @@
+{
+  "assets": [
+    {
+      "name": "cursor.svg",
+      "bytes": 7880
+    },
+    {
+      "name": "favicon.svg",
+      "bytes": 9523
+    },
+    {
+      "name": "fonts/Fraunces-OFL.txt",
+      "bytes": 4391
+    },
+    {
+      "name": "fonts/Fraunces-Variable.ttf",
+      "bytes": 360440
+    },
+    {
+      "name": "fonts/Gaia-Display.otf",
+      "bytes": 98404
+    },
+    {
+      "name": "fonts/GoogleSans-OFL.txt",
+      "bytes": 4397
+    },
+    {
+      "name": "fonts/GoogleSans-Regular.woff2",
+      "bytes": 22048
+    },
+    {
+      "name": "fonts/GoogleSans-SOURCE.txt",
+      "bytes": 451
+    },
+    {
+      "name": "fonts/IBMPlexMono-Latin-Medium.woff2",
+      "bytes": 14888
+    },
+    {
+      "name": "fonts/IBMPlexMono-OFL.txt",
+      "bytes": 4456
+    },
+    {
+      "name": "fonts/InstrumentSerif-Italic.ttf",
+      "bytes": 70868
+    },
+    {
+      "name": "fonts/InstrumentSerif-Regular.ttf",
+      "bytes": 69312
+    },
+    {
+      "name": "fonts/Inter-Latin-Variable.woff2",
+      "bytes": 48256
+    },
+    {
+      "name": "fonts/Inter-OFL.txt",
+      "bytes": 4377
+    },
+    {
+      "name": "fonts/MiracleHistory.ttf",
+      "bytes": 97360
+    },
+    {
+      "name": "fonts/reference-typography-SOURCE.txt",
+      "bytes": 893
+    },
+    {
+      "name": "fonts/SOURCE.txt",
+      "bytes": 403
+    },
+    {
+      "name": "footer/back-to-top-sticker.webp",
+      "bytes": 153414
+    },
+    {
+      "name": "footer/FlavoSs.png",
+      "bytes": 41715
+    },
+    {
+      "name": "footer/gradient-grain.png",
+      "bytes": 103872
+    },
+    {
+      "name": "footer/Screenshot-2026-10-10-214032.png",
+      "bytes": 1201526
+    },
+    {
+      "name": "footer/signature-3d-poster.webp",
+      "bytes": 93638
+    },
+    {
+      "name": "footer/stickers/README.md",
+      "bytes": 1501
+    },
+    {
+      "name": "footer/stickers/web/BIOLOGY.webp",
+      "bytes": 54634
+    },
+    {
+      "name": "footer/stickers/web/DOPEMICKY-(3).webp",
+      "bytes": 43042
+    },
+    {
+      "name": "footer/stickers/web/HAPPYPIG.webp",
+      "bytes": 74622
+    },
+    {
+      "name": "footer/stickers/web/MPAA-(6).webp",
+      "bytes": 20342
+    },
+    {
+      "name": "footer/stickers/web/SMILE.webp",
+      "bytes": 9348
+    },
+    {
+      "name": "footer/stickers/web/THEKNIGHTS.webp",
+      "bytes": 114234
+    },
+    {
+      "name": "footer/stiker-btt-footer.webp",
+      "bytes": 369478
+    },
+    {
+      "name": "hero-runner-mask.svg",
+      "bytes": 1131
+    },
+    {
+      "name": "karya/detail/557810714_17984620985893456_636461652688020480_n.jpg-1280.webp",
+      "bytes": 294366
+    },
+    {
+      "name": "karya/detail/557810714_17984620985893456_636461652688020480_n.jpg-1920.webp",
+      "bytes": 294366
+    },
+    {
+      "name": "karya/detail/aubauob.png-1280.webp",
+      "bytes": 189262
+    },
+    {
+      "name": "karya/detail/aubauob.png-1920.webp",
+      "bytes": 209710
+    },
+    {
+      "name": "karya/detail/COVERalbum.png-1280.webp",
+      "bytes": 496312
+    },
+    {
+      "name": "karya/detail/COVERalbum.png-1920.webp",
+      "bytes": 1375006
+    },
+    {
+      "name": "karya/detail/efefesfeaf.png-1280.webp",
+      "bytes": 542778
+    },
+    {
+      "name": "karya/detail/efefesfeaf.png-1920.webp",
+      "bytes": 1128060
+    },
+    {
+      "name": "karya/detail/posterhc.png-1280.webp",
+      "bytes": 261278
+    },
+    {
+      "name": "karya/detail/posterhc.png-1920.webp",
+      "bytes": 472812
+    },
+    {
+      "name": "karya/detail/posterhcmockup.png-1280.webp",
+      "bytes": 222134
+    },
+    {
+      "name": "karya/detail/posterhcmockup.png-1920.webp",
+      "bytes": 445258
+    },
+    {
+      "name": "karya/detail/POSTER_KEGIATAN2_FAHMI_XIIG.jpg-1280.webp",
+      "bytes": 339514
+    },
+    {
+      "name": "karya/detail/POSTER_KEGIATAN2_FAHMI_XIIG.jpg-1920.webp",
+      "bytes": 607238
+    },
+    {
+      "name": "karya/detail/POSTER_KEGIATAN_FAHMI_XIIG.png-1280.webp",
+      "bytes": 347214
+    },
+    {
+      "name": "karya/detail/POSTER_KEGIATAN_FAHMI_XIIG.png-1920.webp",
+      "bytes": 614424
+    },
+    {
+      "name": "karya/detail/X4C5CTVY6U7.jpg-1280.webp",
+      "bytes": 144546
+    },
+    {
+      "name": "karya/detail/X4C5CTVY6U7.jpg-1920.webp",
+      "bytes": 249778
+    },
+    {
+      "name": "karya/preview/557810714_17984620985893456_636461652688020480_n.jpg.webp",
+      "bytes": 98506
+    },
+    {
+      "name": "karya/preview/aubauob.png.webp",
+      "bytes": 43200
+    },
+    {
+      "name": "karya/preview/COVERalbum.png.webp",
+      "bytes": 32676
+    },
+    {
+      "name": "karya/preview/efefesfeaf.png.webp",
+      "bytes": 71668
+    },
+    {
+      "name": "karya/preview/posterhc.png.webp",
+      "bytes": 74806
+    },
+    {
+      "name": "karya/preview/POSTER_KEGIATAN2_FAHMI_XIIG.jpg.webp",
+      "bytes": 75496
+    },
+    {
+      "name": "karya/preview/POSTER_KEGIATAN_FAHMI_XIIG.png.webp",
+      "bytes": 84394
+    },
+    {
+      "name": "karya/preview/X4C5CTVY6U7.jpg.webp",
+      "bytes": 49248
+    },
+    {
+      "name": "karya/thumbs/posterhcmockup.png.webp",
+      "bytes": 172606
+    },
+    {
+      "name": "logo.svg",
+      "bytes": 3511
+    },
+    {
+      "name": "logoanimasi/optimized/logo1-512.webp",
+      "bytes": 60034
+    },
+    {
+      "name": "logoanimasi/optimized/logo1-960.webp",
+      "bytes": 60034
+    },
+    {
+      "name": "logoanimasi/optimized/logo10-512.webp",
+      "bytes": 39136
+    },
+    {
+      "name": "logoanimasi/optimized/logo10-960.webp",
+      "bytes": 129442
+    },
+    {
+      "name": "logoanimasi/optimized/logo11-512.webp",
+      "bytes": 96566
+    },
+    {
+      "name": "logoanimasi/optimized/logo11-960.webp",
+      "bytes": 324988
+    },
+    {
+      "name": "logoanimasi/optimized/logo12-512.webp",
+      "bytes": 96818
+    },
+    {
+      "name": "logoanimasi/optimized/logo12-960.webp",
+      "bytes": 317304
+    },
+    {
+      "name": "logoanimasi/optimized/logo13-512.webp",
+      "bytes": 66136
+    },
+    {
+      "name": "logoanimasi/optimized/logo13-960.webp",
+      "bytes": 186876
+    },
+    {
+      "name": "logoanimasi/optimized/logo4-512.webp",
+      "bytes": 32154
+    },
+    {
+      "name": "logoanimasi/optimized/logo4-960.webp",
+      "bytes": 32154
+    },
+    {
+      "name": "logoanimasi/optimized/logo5-512.webp",
+      "bytes": 38280
+    },
+    {
+      "name": "logoanimasi/optimized/logo5-960.webp",
+      "bytes": 38280
+    },
+    {
+      "name": "logoanimasi/optimized/logo6-512.webp",
+      "bytes": 52732
+    },
+    {
+      "name": "logoanimasi/optimized/logo6-960.webp",
+      "bytes": 52732
+    },
+    {
+      "name": "logoanimasi/optimized/logo8-512.webp",
+      "bytes": 140680
+    },
+    {
+      "name": "logoanimasi/optimized/logo8-960.webp",
+      "bytes": 492646
+    },
+    {
+      "name": "logoanimasi/optimized/logo9-512.webp",
+      "bytes": 50762
+    },
+    {
+      "name": "logoanimasi/optimized/logo9-960.webp",
+      "bytes": 152054
+    },
+    {
+      "name": "optimized/favicon.webp",
+      "bytes": 4888
+    },
+    {
+      "name": "optimized/hero-1448.webp",
+      "bytes": 293222
+    },
+    {
+      "name": "optimized/hero-960.webp",
+      "bytes": 135266
+    },
+    {
+      "name": "optimized/portrait-background.webp",
+      "bytes": 106144
+    },
+    {
+      "name": "optimized/portrait-frame.webp",
+      "bytes": 366852
+    },
+    {
+      "name": "optimized/portrait.webp",
+      "bytes": 45270
+    },
+    {
+      "name": "paling-atas.png",
+      "bytes": 2969617
+    },
+    {
+      "name": "tv-noise.png",
+      "bytes": 17182
+    }
+  ],
+  "sourceBytes": 140423697,
+  "runtimeBytes": 18439260
+}

@@ -1,0 +1,2509 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "reduced": false,
+      "bounds": {
+        "x": 1321.875,
+        "y": 484,
+        "width": 88.125,
+        "height": 396
+      },
+      "final": {
+        "hash": "#hero",
+        "scroll": 0,
+        "overflow": "",
+        "inert": false,
+        "focus": "hero-heading",
+        "overlay": {
+          "cloudRenderer": "canvas-2d",
+          "cloudOpaque": "false",
+          "cloudPhase": "idle",
+          "cloudProgress": "0.0000",
+          "cloudMotion": "upward-flight",
+          "cloudTravelVh": "0.00",
+          "cloudReveal": "geometric-clear",
+          "cloudGrade": "0.0000",
+          "cloudGradeVisible": "0.0000",
+          "cloudGradeWarmth": "0.0000",
+          "phase": "idle",
+          "cloudBeat": "idle"
+        },
+        "peel": {
+          "phase": "idle",
+          "renderer": "webgl",
+          "peel": "0.0000",
+          "flight": "0.0000"
+        },
+        "sourceHidden": false,
+        "overflowX": 0
+      },
+      "frames": [
+        {
+          "time": 23135.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23174.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23204,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23235.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23267.5,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23287.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23311.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23337.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23363.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23381.099999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23399.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23418.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23441.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23465.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23487.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23511.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23535.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23558,
+          "scroll": 17172,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl"
+          },
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 23642.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.0146",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23679.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.0261",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23709.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.0388",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23762.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.0533",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23789.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.0893",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23821.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.1117",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23881,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.1840",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23901.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.1954",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23935.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.2281",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23950.099999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.2577",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23969.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.2754",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 23986.099999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.2983",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24010.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.3229",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24033.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.3480",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24054.5,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.3788",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24075.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.4126",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24101.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.4389",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24117.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.4667",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24137.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.4867",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24159.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.5160",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24176.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.5478",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24196.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.5677",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24211.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.5940",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24239.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.6122",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24262.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.6507",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24278.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.6784",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24305.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.7078",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24326,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.7317",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24359.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.7641",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24373.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.7907",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24397.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.8098",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24412.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.8313",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24468.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.8450",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24494.5,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.8957",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24519.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9189",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24536.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9335",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24556.099999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9443",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24590.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9617",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24623.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9775",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24637.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9848",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24664.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9906",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24692.099999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9964",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24710.5,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9990",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24728.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "peeling",
+            "renderer": "webgl",
+            "peel": "0.9999",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-peel",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24743.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24764.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0000"
+          },
+          "beat": "sticker-flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24779.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0003"
+          },
+          "beat": "sticker-flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24800.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0007"
+          },
+          "beat": "sticker-flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24816.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0018"
+          },
+          "beat": "sticker-flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24841,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0029"
+          },
+          "beat": "sticker-flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24866.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0054"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24895.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0102"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 24934.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0187"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25009.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0533"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25033.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.0688"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25087.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.1110"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25132.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.1626"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25178.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.2298"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25238.099999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.3349"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25285.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.4385"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25330,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.5531"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25366.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.6731"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25406.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.8022"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25455.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "flying",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "0.9793"
+          },
+          "beat": "anticipation",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": true
+        },
+        {
+          "time": 25505.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "lift",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 25533.399999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "lift",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 25633.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "lift",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 25672.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "lift",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 25721.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "lift",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 25818.30000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "lift",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 25951.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "lift",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 25982.099999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "lift",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26091.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26201.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26231.099999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26370.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26415.899999976158,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26542.69999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26620.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26695.80000001192,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26763.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "flight",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26838.19999998808,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "arrival",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26915.599999964237,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "arrival",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 26984.5,
+          "scroll": 17172,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "arrival",
+          "phase": "cover",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27584.5,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "white",
+          "phase": "covered",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27726.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "white",
+          "phase": "covered",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27746,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "white",
+          "phase": "covered",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27762.5,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27775.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27803.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27821.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27844.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27880.5,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27922.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27950.19999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 27972.80000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28017,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28046.099999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28087.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28104.69999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28150.099999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28182.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28201.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-in",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28248.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28284.69999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28324.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28355.19999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28393.19999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28422.19999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28456.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28488.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28522.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28565.69999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28613.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28663.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28694.099999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28725,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28776,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28820.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28856.099999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28886.80000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28924.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28953.099999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 28995.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29030.5,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29065.69999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29103.099999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29135.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29178.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29212.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29245.5,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29285.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29326.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29362.19999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29398.69999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29444.69999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29477.69999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29508.80000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29546.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29586.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29627.5,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29661.19999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29692.69999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29716.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "growth-settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29746.19999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29769.099999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29807.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29828.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29845.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "departed",
+            "renderer": "webgl",
+            "peel": "1.0000",
+            "flight": "1.0000"
+          },
+          "beat": "settle",
+          "phase": "reveal",
+          "sourceHidden": true,
+          "canvasVisible": false
+        },
+        {
+          "time": 29900.80000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 29920.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 29932.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 29966.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 29969.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 29995.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 30010.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 30029.599999964237,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 30063.30000001192,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 30065.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 30088.19999998808,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 30112.399999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 30123.5,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        },
+        {
+          "time": 30151.899999976158,
+          "scroll": 0,
+          "peel": {
+            "phase": "idle",
+            "renderer": "webgl",
+            "peel": "0.0000",
+            "flight": "0.0000"
+          },
+          "beat": "idle",
+          "phase": "idle",
+          "sourceHidden": false,
+          "canvasVisible": false
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
