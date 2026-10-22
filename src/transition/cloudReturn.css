@@ -28,6 +28,8 @@
 }
 .colonnade-overlay.is-cloud-return .cloud-return-canvas,
 .colonnade-overlay.is-cloud-return .cloud-return-grade { display: block; }
+.colonnade-overlay.is-cloud-return.is-reduced .cloud-return-canvas,
+.colonnade-overlay.is-cloud-return.is-reduced .cloud-return-grade { display: none; }
 .colonnade-overlay.is-cloud-return .dust-transition-canvas,
 .colonnade-overlay.is-cloud-return .dust-transition-caption { visibility: hidden; }
 .colonnade-overlay.is-cloud-return:not(.is-reduced):not([data-phase="covered"]):not([data-cloud-opaque="true"]) {

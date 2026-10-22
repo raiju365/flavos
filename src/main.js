@@ -218,9 +218,9 @@ async function prepareAndReveal() {
   kineticLoader.clearError();
   try {
     await preparePageAssets(progress => {
-      pageProgress = progress * .85;
+      pageProgress = progress * .75;
       updateLoadingProgress();
-    }, { destination:scrollRestoration.targetId });
+    });
 
     const mainContent = document.getElementById('main-content');
     if (mainContent) {
@@ -241,8 +241,10 @@ async function prepareAndReveal() {
     window.dispatchEvent(new Event('resize'));
     await waitForPortfolio();
     await document.fonts.ready;
-    const contactTop=document.querySelector('#contact').getBoundingClientRect().top+scrollY;
-    if(scrollRestoration.top+innerHeight>contactTop)await portfolio.prepareSignature();
+    await portfolio.prepareAssets(progress => {
+      pageProgress = .75 + progress * .24;
+      updateLoadingProgress();
+    });
     pageProgress = 1;
     updateLoadingProgress();
     // Settle the final scrollbar/sticky layout while the loader still covers it.

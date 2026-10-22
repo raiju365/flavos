@@ -345,10 +345,26 @@
       "bytes": 2969617
     },
     {
+      "name": "transition/clouds/cumulus-1.webp",
+      "bytes": 46616
+    },
+    {
+      "name": "transition/clouds/cumulus-2.webp",
+      "bytes": 40362
+    },
+    {
+      "name": "transition/clouds/cumulus-3.webp",
+      "bytes": 34032
+    },
+    {
+      "name": "transition/clouds/cumulus-4.webp",
+      "bytes": 40132
+    },
+    {
       "name": "tv-noise.png",
       "bytes": 17182
     }
   ],
-  "sourceBytes": 140423697,
-  "runtimeBytes": 18439260
+  "sourceBytes": 140584839,
+  "runtimeBytes": 18600402
 }

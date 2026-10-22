@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 1440,
+      "blocked": {
+        "ready": false,
+        "phase": "loading",
+        "canvases": 1,
+        "poster": "hidden",
+        "canvas": "hidden",
+        "images": true,
+        "bottom": 17172,
+        "overlaps": 0
+      },
+      "initial": {
+        "ready": true,
+        "signature": "true",
+        "stickers": "6",
+        "canvases": 1,
+        "poster": "hidden",
+        "canvas": "visible",
+        "logos": "10",
+        "images": true,
+        "bottom": 17172,
+        "overlaps": 0
+      },
+      "restored": {
+        "ready": true,
+        "signature": "true",
+        "stickers": "6",
+        "canvases": 1,
+        "poster": "hidden",
+        "canvas": "visible",
+        "logos": "10",
+        "images": true,
+        "bottom": 0,
+        "overlaps": 0
+      }
+    },
+    {
+      "width": 390,
+      "blocked": {
+        "ready": false,
+        "phase": "loading",
+        "canvases": 1,
+        "poster": "hidden",
+        "canvas": "hidden",
+        "logos": "10",
+        "images": true,
+        "bottom": 12601,
+        "overlaps": 0
+      },
+      "initial": {
+        "ready": true,
+        "signature": "true",
+        "stickers": "6",
+        "canvases": 1,
+        "poster": "hidden",
+        "canvas": "visible",
+        "logos": "10",
+        "images": true,
+        "bottom": 12601,
+        "overlaps": 0
+      },
+      "restored": {
+        "ready": true,
+        "signature": "true",
+        "stickers": "6",
+        "canvases": 1,
+        "poster": "hidden",
+        "canvas": "visible",
+        "logos": "10",
+        "images": true,
+        "bottom": 0,
+        "overlaps": 0
+      }
+    },
+    {
+      "failureAndRetry": {
+        "failed": {
+          "ready": false,
+          "phase": "error",
+          "canvases": 0,
+          "poster": "hidden",
+          "canvas": null,
+          "logos": "10",
+          "images": true,
+          "bottom": 12601,
+          "overlaps": 0
+        },
+        "retried": {
+          "ready": true,
+          "signature": "true",
+          "stickers": "6",
+          "canvases": 1,
+          "poster": "hidden",
+          "canvas": "visible",
+          "logos": "10",
+          "images": true,
+          "bottom": 12601,
+          "overlaps": 0
+        }
+      }
+    }
+  ],
+  "errors": []
+}

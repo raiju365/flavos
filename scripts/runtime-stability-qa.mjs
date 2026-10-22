@@ -26,7 +26,10 @@ try{
   const ready=()=>page.waitForFunction(()=>window.isMainPageReady&&!document.querySelector('#loading-screen'),null,{timeout:90000});
   await ready();
   const network=await page.evaluate(()=>performance.getEntriesByType('resource').map(e=>new URL(e.name).pathname));
-  assert.ok(!network.some(url=>/footer-signature-3d.*\.js$/.test(url)),'Home does not load the 3D footer module');
+  assert.ok(network.some(url=>/footer-signature-3d.*\.js$/.test(url)),'The full startup gate prepares the footer before opening');
+  assert.equal(await page.locator('.footer-signature').getAttribute('data-signature-ready'),'true');
+  assert.equal(await page.locator('#main-content img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0)),true);
+  if(!reduced)assert.equal(await page.locator('.logo-style-cycle').getAttribute('data-assets-loaded'),'10');
   const checkLayout=async()=>{
     const state=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth-innerWidth,bodyLock:document.body.style.overflow,rootLock:document.documentElement.style.overflow,inert:document.querySelector('#main-content').inert}));
     assert.ok(state.overflow<=1,JSON.stringify(state));assert.equal(state.inert,false);return state;

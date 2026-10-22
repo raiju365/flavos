@@ -12,7 +12,7 @@ export function initLogoStyleCycle() {
   const styleIds = [1, 4, 5, 6, 8, 9, 10, 11, 12, 13];
   const holds = [1200, 1500, 1200, 1800, 1200, 1500, 1800, 1500, 1800, 1500, 1500, 1800, 1800];
   const holdFor = id => holds[id - 1] ?? 2000;
-  let assets = [], loading = false, docked = false, disposed = false;
+  let assets = [], preparation, docked = false, disposed = false;
   let timer, index = 0, front = 0;
   let frame = 0;
   let paused = false, pointerInside = false, keyboardFocus = false;
@@ -103,18 +103,28 @@ export function initLogoStyleCycle() {
   }, options);
   brand?.addEventListener('blur', () => { keyboardFocus = false; syncPause(); }, options);
 
-  async function load() {
-    if (loading || motion.matches) return;
-    loading = true;
-    const results = await Promise.allSettled(styleIds.map(async id => {
+  function load() {
+    if (motion.matches || disposed) return Promise.resolve();
+    if (preparation) return preparation;
+    preparation = Promise.all(styleIds.map(async id => {
       const image = new Image();
       image.src = logoAsset(id);
       await image.decode();
       return { id, src: image.src, image };
-    }));
-    if (disposed) return;
-    assets = results.filter(result => result.status === 'fulfilled').map(result => result.value);
-    schedule();
+    })).then(items => {
+      if (disposed) return;
+      assets = items;
+      stage.dataset.assetsReady = 'true';
+      stage.dataset.assetsLoaded = String(assets.length);
+      schedule();
+    }).catch(error => {
+      preparation = undefined;
+      throw error;
+    });
+    // Intersection and docking can start preparation without awaiting it.
+    // The loading gate receives the original rejection and offers Retry.
+    preparation.catch(() => {});
+    return preparation;
   }
 
   const observer = new IntersectionObserver(entries => {
@@ -143,6 +153,7 @@ export function initLogoStyleCycle() {
     document.removeEventListener('visibilitychange', update);
     motion.removeEventListener('change', update);
   };
+  cleanup.prepare = load;
   // Scroll choreography owns arrival; mere intersection must not start a style.
   cleanup.setDocked = value => {
     if (docked === value) return;

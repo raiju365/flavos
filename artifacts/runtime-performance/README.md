@@ -1,8 +1,20 @@
 # Validasi performa dan refresh portfolio
 
-Diuji pada 21 Oktober 2026 menggunakan Edge headless dan build produksi lokal di `http://127.0.0.1:4173/`. Pengujian sebelum/sesudah mematikan cache browser. Profil mobile memakai viewport 390×844, DPR 2, input sentuh dan perlambatan CPU 4×. Ini simulasi desktop, bukan hasil dari HP fisik.
+Diuji menggunakan Edge headless dan build produksi lokal di `http://127.0.0.1:4173/`. Pengukuran performa 21 Oktober mematikan cache browser. Profil mobile memakai viewport 390×844, DPR 2, input sentuh dan perlambatan CPU 4×. Ini simulasi desktop, bukan hasil dari HP fisik.
 
-## Hasil pengukuran
+## Pembaruan kesiapan aset 22 Oktober 2026
+
+Loader sekarang menunggu gambar seluruh section utama dan preview karya, font, tekstur CSS aktif, semua sepuluh varian logo pada mode animasi, persiapan aperture hero, atlas enam stiker, kompilasi shader dan persiapan footer 3D. Aset responsif hasil optimasi tetap digunakan. Mode reduced motion memakai logo statis; perangkat tanpa WebGL memakai poster yang sudah didekode. Gambar detail gallery beresolusi besar tetap disiapkan saat interaksinya dibuka, bukan seluruh arsip asli dipaksa masuk ke memori awal.
+
+Pembaruan transisi awan juga menambahkan empat sprite WebP, total 161,142 byte, yang ikut ditunggu oleh gerbang loading. Gerak stiker dan awan terbaru diperiksa dalam `../cloud-wind/README.md`.
+
+Canvas signature disembunyikan selama persiapan. Poster dan canvas bertukar visibility pada satu perubahan class setelah render pertama siap, sehingga tidak bertumpuk. Feedback loader berada di atas dekorasi agar tombol Try again bisa diklik jika unduhan gagal.
+
+`readiness.json` merekam pengujian unduhan logo/tekstur yang sengaja ditahan pada desktop 1440 dan mobile 390, pemulihan posisi footer, semua gambar halaman selesai, satu canvas, serta tidak ada frame poster dan canvas tampil bersama. Pengujian juga membatalkan tekstur lalu mengklik Try again untuk memastikan scene dapat dipersiapkan ulang tanpa duplikasi.
+
+Angka transfer awal dan durasi loader pada tabel historis di bawah **tidak mewakili gerbang loading baru**. Menunggu semua section dan persiapan 3D membutuhkan waktu awal lebih lama daripada gerbang tujuan saja, sesuai prioritas kesiapan aset terbaru.
+
+## Hasil pengukuran historis 21 Oktober
 
 Sumber angka: `before.json` dan `tuned.json`. Ukuran MB memakai satuan desimal. Resource awal berasal dari Resource Timing (dokumen HTML tidak termasuk); aset detail karya dan footer disiapkan sesuai kebutuhan.
 
@@ -23,7 +35,7 @@ Rata-rata sampel footer mobile meningkat dari sekitar 26.7 menjadi 59.9 FPS. Mas
 - Sepuluh material logo: 37,859,398 byte asli menjadi 1,786,510 byte desktop atau 673,298 byte mobile. Urutan material dan blur saat pertukaran tetap dipakai.
 - Hero, portrait, bingkai dan favicon menggunakan salinan WebP dengan dimensi yang sesuai; sumber asli tetap tersedia.
 - Preview delapan karya memakai salinan 512 px. Detail tetap memakai varian 1280/1920 yang sudah ada.
-- Loading awal menunggu gambar/font yang relevan untuk tujuan kunjungan. Footer 3D dipersiapkan ketika mendekat, atau ditunggu di balik penutup saat navigasi/refresh menuju footer.
+- Loading awal kini menunggu gambar/font seluruh section dan persiapan 3D; lihat pembaruan kesiapan aset di atas. Navigasi Contact menggunakan scene yang sama dan sudah siap.
 - Grain, canvas dan render 3D memiliki anggaran piksel sesuai perangkat. Render footer menurunkan resolusi bertahap bila frame terlalu lambat; kecepatan animasi dan fungsi interaksi tetap dipertahankan.
 - Penghitungan posisi enam hotspot stiker menyelesaikan semua pembacaan layout sebelum menulis posisi, untuk menghindari layout berulang setiap frame.
 - Debu memakai canvas native kecil; cursor dan viewer stiker berhenti menggambar ulang saat sudah tenang. Loop visual berhenti saat halaman tersembunyi atau area terkait tidak terlihat.
@@ -53,6 +65,7 @@ Biarkan terminal server terbuka. Pada terminal kedua:
 
 ```powershell
 node scripts/runtime-assets-qa.mjs
+node scripts/runtime-readiness-qa.mjs
 node scripts/runtime-stability-qa.mjs
 node scripts/runtime-performance-qa.mjs measurement
 node scripts/runtime-fallback-qa.mjs

@@ -19,18 +19,20 @@ async function prepareImage(image) {
   throw failure;
 }
 
-export async function preparePageAssets(onProgress = () => {}, { destination = 'hero' } = {}) {
-  const section = ['hero','about','projects','contact'].includes(destination) ? destination : 'hero';
-  const images = [...new Set(document.querySelectorAll(`#hero img, .folio-nav img, #${section} img`))];
-  // Only the opening/destination is a loading gate. Other sections retain
-  // native lazy loading, their reserved dimensions and async decoding.
+export async function preparePageAssets(onProgress = () => {}) {
+  // Every section is ready before opening, even when the browser restores the
+  // footer. Use the responsive runtime images, never the archival originals.
+  const images = [...new Set(document.querySelectorAll('#main-content img, .folio-nav img'))];
+  const surfaces = ['/tv-noise.png', '/hero-runner-mask.svg', '/cursor.svg'].map(src => {
+    const image = new Image(); image.src = src; return image;
+  });
   const fonts = new Set();
-  document.querySelectorAll('.loader-percent, .studio-link, #hero h1, #about .about-reading-copy, .orbit-caption-title').forEach(element => {
+  document.querySelectorAll('.loader-percent, .studio-link, #main-content h1, #main-content h2, #main-content p, #main-content a, #about .about-reading-copy, .orbit-caption-title').forEach(element => {
     const style = getComputedStyle(element);
     fonts.add(`${style.fontStyle} ${style.fontWeight} 16px ${style.fontFamily}`);
   });
   const tasks = [
-    ...images.map(image => () => prepareImage(image)),
+    ...[...images, ...surfaces].map(image => () => prepareImage(image)),
     ...[...fonts].map(font => () => document.fonts.load(font))
   ];
   let completed = 0;

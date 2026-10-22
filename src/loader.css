@@ -40,6 +40,7 @@ html.is-restoring-visit #loading-screen.elegant-loader {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  pointer-events: none;
 }
 
 /* Mask container in exact center */
@@ -103,6 +104,7 @@ html.is-restoring-visit #loading-screen.elegant-loader {
 
 .loader-feedback {
   position: absolute;
+  z-index: 2;
   left: clamp(24px, 4.5vw, 64px);
   bottom: clamp(110px, 15vh, 160px);
   max-width: min(32ch, calc(100% - 48px));

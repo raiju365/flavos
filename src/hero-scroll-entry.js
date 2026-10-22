@@ -117,6 +117,7 @@ export function createHeroScrollEntry() {
   const observer=new ResizeObserver(resize);observer.observe(hero);
   const intersection=new IntersectionObserver(([e])=>{visible=e.isIntersecting;reset();});intersection.observe(hero);
   return {mount,enter,
+    async prepare(){await pattern.ready;prepare();resize();paint();},
     prepareReturn(){tween?.kill();state.entry=1;state.progress=0;state.assembly=0;reset();paint();},
     assembleReturn(value){state.assembly=gsap.utils.clamp(0,1,value);if(!frame)paint();wake();},
     finishReturn(){state.assembly=1;paint();wake();},

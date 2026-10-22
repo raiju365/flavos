@@ -1,290 +1,129 @@
 import './cloudReturn.css';
+import {runtimeQuality} from '../runtime-quality';
+import {sampleReturnWind} from './returnWind';
 
-const WHITE = '#fff';
-const MAX_PIXELS = 1800000;
-const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
-const smooth = (low, high, value) => {
-  const p = clamp((value - low) / (high - low));
-  return p * p * (3 - 2 * p);
-};
-const hash = (x, y, seed) => {
-  const value = Math.sin(x * 127.1 + y * 311.7 + seed * 73.17) * 43758.5453;
-  return value - Math.floor(value);
-};
-const noise = (x, y, seed) => {
-  const ix = Math.floor(x);
-  const iy = Math.floor(y);
-  const fx = smooth(0, 1, x - ix);
-  const fy = smooth(0, 1, y - iy);
-  const a = hash(ix, iy, seed);
-  const b = hash(ix + 1, iy, seed);
-  const c = hash(ix, iy + 1, seed);
-  const d = hash(ix + 1, iy + 1, seed);
-  return (a + (b - a) * fx) * (1 - fy) + (c + (d - c) * fx) * fy;
-};
+const clamp=(value,min=0,max=1)=>Math.min(max,Math.max(min,value));
+const smooth=(low,high,value)=>{const t=clamp((value-low)/(high-low));return t*t*(3-2*t);};
+const formations=[
+  [.02,-.35,.86,.12,0], [.72,.05,.78,.17,2], [.30,-1.05,1.02,.28,1],
+  [.95,-.68,.95,.38,3], [-.18,.48,1.10,.48,2], [.60,-1.52,1.18,.58,0],
+  [1.03,.68,1.20,.68,1], [.12,-.82,1.35,.78,3], [.72,-.22,1.40,.88,0],
+  [-.12,-1.75,1.55,1,2],
+];
 
-// Each cached strip has an opaque white upper edge and a transparent lower edge.
-// Unequal low-frequency contours avoid repeating scallops or individual circles.
-function makeCloudBand(width, height, seed) {
-  const texture = document.createElement('canvas');
-  texture.width = width;
-  texture.height = height;
-  const context = texture.getContext('2d', { alpha: true });
-  if (!context) return null;
-  const image = context.createImageData(width, height);
-  const profiles = new Float32Array(width);
-  for (let x = 0; x < width; x += 1) {
-    const u = x / (width - 1);
-    profiles[x] = 0.52
-      + (noise(u * 2.4, 0.6, seed) - 0.5) * 0.33
-      + (noise(u * 6.7, 1.2, seed + 1) - 0.5) * 0.16
-      + (noise(u * 15.2, 0.3, seed + 2) - 0.5) * 0.045;
-  }
-  for (let y = 0; y < height; y += 1) {
-    const v = y / (height - 1);
-    for (let x = 0; x < width; x += 1) {
-      const u = x / (width - 1);
-      const volume = noise(u * 5.1, v * 3.7, seed + 3);
-      const fine = noise(u * 13.3, v * 7.1, seed + 4);
-      const boundary = profiles[x] + (volume - 0.5) * 0.055;
-      const density = smooth(-0.115, 0.115, boundary - v);
-      const edgeShade = smooth(0.13, 0.42, v) * smooth(-0.1, 0.22, boundary - v);
-      const shade = edgeShade * (3 + volume * 12 + fine * 2.5);
-      const index = (y * width + x) * 4;
-      image.data[index] = 255 - shade;
-      image.data[index + 1] = 255 - shade * 0.78;
-      image.data[index + 2] = 255 - shade * 0.42;
-      image.data[index + 3] = Math.round(density * 255);
+export function createCloudReturn(overlay){
+  const canvas=document.createElement('canvas');canvas.className='cloud-return-canvas';canvas.setAttribute('aria-hidden','true');
+  const gradeLayer=document.createElement('div');gradeLayer.className='cloud-return-grade';gradeLayer.setAttribute('aria-hidden','true');
+  const coolGrade=document.createElement('i');coolGrade.className='cloud-return-grade-cool';
+  const warmGrade=document.createElement('i');warmGrade.className='cloud-return-grade-warm';
+  gradeLayer.append(coolGrade,warmGrade);overlay.append(canvas,gradeLayer);
+  const context=canvas.getContext('2d',{alpha:true,desynchronized:true});
+  let width=1,height=1,ratio=1,compact=false,sprites=[],preparation,phase='idle',progress=0,gradeIntensity=0;
+  let destroyed=false,frame=0,last=0,elapsed=0,drift=0,paints=0;
+  const syncOpaque=()=>{
+    const opaque=phase==='cover'&&progress===1||phase==='reveal'&&progress===0;
+    overlay.dataset.cloudOpaque=String(opaque);
+    overlay.dataset.cloudPhase=phase;overlay.dataset.cloudProgress=progress.toFixed(4);
+  };
+  const paintGrade=()=>{
+    const warmth=phase==='reveal'?1:smooth(.4,.9,progress);
+    const strength=gradeIntensity*(phase==='idle'||overlay.dataset.cloudOpaque==='true'?0:1)*.22;
+    gradeLayer.style.opacity=String(strength);
+    coolGrade.style.opacity=String(1-warmth);warmGrade.style.opacity=String(warmth);
+    overlay.dataset.cloudGrade=gradeIntensity.toFixed(4);overlay.dataset.cloudGradeVisible=strength.toFixed(4);
+    overlay.dataset.cloudGradeWarmth=warmth.toFixed(4);
+  };
+  const paint=()=>{
+    if(destroyed)return;
+    syncOpaque();paintGrade();
+    if(!context)return;
+    context.setTransform(ratio,0,0,ratio,0,0);context.clearRect(0,0,width,height);
+    if(phase==='idle')return;
+    const revealing=phase==='reveal';
+    // The white interior is a true opaque cover for the scroll swap. Cloud
+    // shading remains above it, then drifts out while the hero grows beneath.
+    const fog=revealing?1-smooth(0,.17,progress):smooth(.43,1,progress);
+    if(fog>0){context.globalAlpha=fog;context.fillStyle='#fff';context.fillRect(0,0,width,height);}
+    const envelope=revealing?.20*(1-smooth(0,.36,progress)):(.78-.58*smooth(.76,1,progress))*smooth(0,.18,elapsed);
+    const camera=revealing?2.6+progress*.52:progress*2.6;
+    const air=sampleReturnWind(elapsed);
+    const count=compact?8:formations.length;
+    for(let i=0;i<count;i++){
+      const [anchorX,anchorY,span,depth,art]=formations[i];
+      const sprite=sprites[art];if(!sprite)continue;
+      const local=sampleReturnWind(elapsed*.7+i*.41);
+      let cy=anchorY+camera*(.58+depth*.62)+elapsed*(.012+depth*.025);
+      while(cy>1.85)cy-=3.7;
+      const clearing=revealing?(anchorX<.5?-1:1)*smooth(0,.4,progress)*.75:0;
+      const cx=anchorX+drift*(.32+depth*.58)+local.side*.04+clearing;
+      const size=width*span*(1+local.lift*.025+depth*(revealing?.12:progress*.12));
+      const cloudHeight=size*sprite.naturalHeight/sprite.naturalWidth;
+      context.save();context.translate(cx*width,cy*height);context.rotate(local.roll*.012);
+      context.globalAlpha=envelope*(.52+depth*.45);
+      // The cloud texture is prepared once; runtime only composites cached
+      // photographs with independent advection, billow and depth parallax.
+      context.scale(1+air.side*.012,1+local.lift*.025);
+      context.drawImage(sprite,-size/2,-cloudHeight/2,size,cloudHeight);context.restore();
     }
-  }
-  context.putImageData(image, 0, 0);
-  return texture;
-}
-
-function makeCloudPassage(width, height, seed) {
-  const texture = document.createElement('canvas');
-  texture.width = width;
-  texture.height = height;
-  const context = texture.getContext('2d', { alpha: true });
-  if (!context) return null;
-  const image = context.createImageData(width, height);
-  for (let y = 0; y < height; y += 1) {
-    const v = y / (height - 1);
-    const endFeather = smooth(0, 0.18, v) * (1 - smooth(0.79, 1, v));
-    for (let x = 0; x < width; x += 1) {
-      const u = x / (width - 1);
-      const distance = Math.abs(u - 0.5) * 2;
-      const depth = 0.16 + smooth(0.14, 0.88, distance) * 0.84;
-      // Clouds remain broad in x but stretched in the direction of travel.
-      const large = noise(u * 5.1, v * 2.4, seed);
-      const detail = noise(u * 12.7, v * 4.1, seed + 1);
-      const density = smooth(0.31, 0.73, large * 0.78 + detail * 0.22);
-      const shade = (1 - large) * 11;
-      const index = (y * width + x) * 4;
-      image.data[index] = 255 - shade;
-      image.data[index + 1] = 255 - shade * 0.65;
-      image.data[index + 2] = 255 - shade * 0.15;
-      image.data[index + 3] = Math.round(density * endFeather * depth * 185);
-    }
-  }
-  context.putImageData(image, 0, 0);
-  return texture;
-}
-
-export function createCloudReturn(overlay) {
-  const canvas = document.createElement('canvas');
-  canvas.className = 'cloud-return-canvas';
-  canvas.setAttribute('aria-hidden', 'true');
-  const gradeLayer = document.createElement('div');
-  gradeLayer.className = 'cloud-return-grade';
-  gradeLayer.setAttribute('aria-hidden', 'true');
-  const coolGrade = document.createElement('i');
-  coolGrade.className = 'cloud-return-grade-cool';
-  const warmGrade = document.createElement('i');
-  warmGrade.className = 'cloud-return-grade-warm';
-  gradeLayer.append(coolGrade, warmGrade);
-  overlay.append(canvas, gradeLayer);
-  const context = canvas.getContext('2d', { alpha: true, desynchronized: true });
-  let width = 1;
-  let height = 1;
-  let ratio = 1;
-  let textures = [];
-  let passages = [];
-  let textureSize = '';
-  let phase = 'idle';
-  let progress = 0;
-  let gradeIntensity = 0;
-  let destroyed = false;
-
-  const setOpaque = (value) => {
-    overlay.dataset.cloudOpaque = value ? 'true' : 'false';
+    context.globalAlpha=1;
+    overlay.dataset.cloudFlowTime=elapsed.toFixed(4);overlay.dataset.cloudDrift=drift.toFixed(4);
+    overlay.dataset.cloudFrame=String(++paints);overlay.dataset.cloudTravelVh=(camera*100).toFixed(2);
+    overlay.dataset.cloudWind=air.side.toFixed(4);
   };
-  const paintGrade = () => {
-    if (destroyed) return;
-    const opaque = overlay.dataset.cloudOpaque === 'true';
-    const warmth = phase === 'reveal' ? 1 : smooth(0.4, 0.9, progress);
-    const whiteGate = phase === 'idle' || opaque ? 0 : phase === 'cover' ? 1 - smooth(0.86, 1, progress) : 1;
-    const strength = gradeIntensity * whiteGate;
-    gradeLayer.style.opacity = String(strength * 0.46);
-    coolGrade.style.opacity = String(1 - warmth);
-    warmGrade.style.opacity = String(warmth);
-    // Color transforms only: no full-screen blur, source mutation or mask.
-    // The opacity envelope removes this layer completely at opaque white.
-    gradeLayer.style.backdropFilter = strength > 0
-      ? `saturate(${1 - strength * 0.1}) sepia(${strength * warmth * 0.12}) hue-rotate(${strength * (1 - warmth) * 7}deg)`
-      : 'none';
-    overlay.dataset.cloudGrade = gradeIntensity.toFixed(4);
-    overlay.dataset.cloudGradeVisible = strength.toFixed(4);
-    overlay.dataset.cloudGradeWarmth = (phase === 'idle' ? 0 : warmth).toFixed(4);
+  const tick=now=>{
+    frame=0;if(destroyed||phase==='idle'||document.hidden)return;
+    const dt=Math.min(.05,last?(now-last)/1000:1/60);last=now;elapsed+=dt;
+    drift+=sampleReturnWind(elapsed).side*dt*.075;
+    paint();wake();
   };
-  const drawBand = (texture, edge, alpha, drift = 0) => {
-    const bandHeight = Math.max(height * 0.76, width * 0.32);
-    const bleed = width * 0.08;
-    const top = edge - bandHeight * 0.52;
-    context.save();
-    context.globalAlpha = alpha;
-    context.fillStyle = WHITE;
-    if (top > -bandHeight) context.fillRect(-bleed, -bandHeight, width + bleed * 2, top + bandHeight + 1);
-    context.drawImage(texture, -bleed + drift, top, width + bleed * 2, bandHeight);
-    context.restore();
+  function wake(){if(!frame&&!destroyed&&phase!=='idle'&&!document.hidden)frame=requestAnimationFrame(tick);}
+  const resize=()=>{
+    if(destroyed)return;
+    width=Math.max(1,innerWidth);height=Math.max(1,innerHeight);
+    compact=runtimeQuality().compact;
+    const budget=compact?650000:1150000;
+    ratio=Math.min(devicePixelRatio||1,1.25,Math.sqrt(budget/(width*height)));
+    const pw=Math.max(1,Math.round(width*ratio)),ph=Math.max(1,Math.round(height*ratio));
+    if(canvas.width!==pw)canvas.width=pw;if(canvas.height!==ph)canvas.height=ph;
+    if(context){context.imageSmoothingEnabled=true;context.imageSmoothingQuality='high';}
+    overlay.dataset.cloudPixels=String(pw*ph);paint();
   };
-
-  const drawPassage = (texture, layer, travel, speed) => {
-    const tileHeight = height * (1.18 + layer * 0.18);
-    const parallax = [0.48, 0.83, 1.36][layer];
-    const offset = (travel * parallax) % tileHeight;
-    const stretch = 1 + speed * (0.11 + layer * 0.075);
-    const drawHeight = tileHeight * stretch;
-    const bleed = width * (0.08 + layer * 0.045);
-    const alpha = [0.28, 0.38, 0.48][layer];
-    const envelope = smooth(0, 0.1, progress) * (1 - smooth(0.72, 0.96, progress));
-    const tail = height * speed * (0.025 + layer * 0.018);
-    context.save();
-    for (let copy = -2; copy <= 1; copy += 1) {
-      const y = offset + copy * tileHeight - tileHeight * 0.2;
-      // A short translucent tail gives directional softness without per-frame filters.
-      context.globalAlpha = alpha * envelope * 0.25;
-      context.drawImage(texture, -bleed, y - tail, width + bleed * 2, drawHeight);
-      context.globalAlpha = alpha * envelope * 0.75;
-      context.drawImage(texture, -bleed, y, width + bleed * 2, drawHeight);
-    }
-    context.restore();
+  const prepare=()=>{
+    if(preparation)return preparation;
+    preparation=Promise.all([1,2,3,4].map(async index=>{
+      const image=new Image();image.src=`/transition/clouds/cumulus-${index}.webp`;await image.decode();
+      if(!image.naturalWidth)throw Error('Cloud image is empty');return image;
+    })).then(images=>{
+      if(destroyed)return;
+      sprites=images;overlay.dataset.cloudSpritesReady='4';overlay.dataset.cloudRenderer=context?'photo-clouds-2d':'fallback';
+      // Upload the small cached sprites under the loader, never at click time.
+      if(context){for(const image of sprites)context.drawImage(image,0,0,1,1);context.clearRect(0,0,canvas.width,canvas.height);}
+    }).catch(error=>{preparation=undefined;throw error;});
+    preparation.catch(()=>{});return preparation;
   };
-
-  const paint = () => {
-    if (destroyed) return;
-    const opaque = (phase === 'cover' && progress === 1)
-      || (phase === 'reveal' && progress === 0);
-    setOpaque(opaque);
-    overlay.dataset.cloudPhase = phase;
-    overlay.dataset.cloudProgress = progress.toFixed(4);
-    overlay.dataset.cloudMotion = 'upward-flight';
-    overlay.dataset.cloudTravelVh = (phase === 'idle' ? 0 : phase === 'cover' ? progress * 480 : 480).toFixed(2);
-    overlay.dataset.cloudReveal = 'geometric-clear';
-    paintGrade();
-    if (!context || textures.length !== 3 || passages.length !== 3) {
-      canvas.style.background = WHITE;
-      canvas.style.opacity = String(opaque ? 1 : phase === 'cover' ? smooth(0.25, 1, progress) : 0);
-      return;
-    }
-    canvas.style.opacity = '';
-    context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    context.clearRect(0, 0, width, height);
-    if (phase === 'idle') return;
-    if (opaque) {
-      context.fillStyle = WHITE;
-      context.fillRect(0, 0, width, height);
-      return;
-    }
-    // The hero owns its intact geometric growth. The cloud canvas clears on
-    // the first reveal frame rather than fading over or slicing the monogram.
-    if (phase === 'reveal' || progress === 0) return;
-    const travel = height * progress * 4.8;
-    const speed = smooth(0.08, 0.94, progress);
-    passages.forEach((texture, layer) => drawPassage(texture, layer, travel, speed));
-    const bandHeight = Math.max(height * 0.76, width * 0.32);
-    // Starting and ending outside the viewport also works on very wide screens.
-    const margin = Math.max(height * 0.48, bandHeight * 0.65);
-    const coverage = smooth(0.24, 1, progress);
-    const edge = -margin + coverage * (height + margin * 2);
-    drawBand(textures[0], edge + height * 0.21, 0.32, width * 0.018 * (progress - 0.5));
-    drawBand(textures[1], edge + height * 0.075, 0.7, -width * 0.012 * (progress - 0.5));
-    drawBand(textures[2], edge - height * 0.055, 1);
-  };
-
-  const resize = () => {
-    if (destroyed) return;
-    const bounds = overlay.getBoundingClientRect();
-    width = Math.max(1, Math.ceil(bounds.width || window.innerWidth));
-    height = Math.max(1, Math.ceil(bounds.height || window.innerHeight));
-    ratio = Math.min(window.devicePixelRatio || 1, 1.5, Math.sqrt(MAX_PIXELS / (width * height)));
-    canvas.width = Math.max(1, Math.round(width * ratio));
-    canvas.height = Math.max(1, Math.round(height * ratio));
-    if (context) {
-      context.imageSmoothingEnabled = true;
-      context.imageSmoothingQuality = 'high';
-      // The soft contours are intentionally cached below display resolution.
-      const tw = Math.round(clamp(width * 0.6, 420, 860));
-      const th = Math.round(clamp(height * 0.38, 230, 380));
-      const size = `${tw}:${th}`;
-      if (textureSize !== size) {
-        [...textures, ...passages].forEach((texture) => { texture.width = 0; texture.height = 0; });
-        textures = [17, 53, 89].map((seed) => makeCloudBand(tw, th, seed)).filter(Boolean);
-        passages = [23, 71, 113].map((seed) => makeCloudPassage(Math.round(tw * 0.65), th, seed)).filter(Boolean);
-        textureSize = size;
-      }
-    }
-    overlay.dataset.cloudRenderer = context && textures.length === 3 && passages.length === 3 ? 'canvas-2d' : 'fallback';
-    paint();
-  };
-
-  const update = (nextPhase, value) => {
-    phase = nextPhase;
-    progress = clamp(Number.isFinite(value) ? value : 0);
-    paint();
-  };
-
-  window.addEventListener('resize', resize, { passive: true });
-  resize();
+  const visibility=()=>{last=0;if(document.hidden){cancelAnimationFrame(frame);frame=0;}else wake();};
+  window.addEventListener('resize',resize,{passive:true});document.addEventListener('visibilitychange',visibility);
+  overlay.dataset.cloudMotion='advected-parallax';overlay.dataset.cloudReveal='drifting-dissipation';resize();
+  prepare();
   return {
-    get available() { return Boolean(context && textures.length === 3 && passages.length === 3); },
-    start() {
-      if (destroyed) return;
-      phase = 'cover';
-      progress = 0;
-      gradeIntensity = 0;
-      resize();
+    prepare,
+    get available(){return !!context&&sprites.length===4;},
+    start(){
+      if(destroyed)return;
+      phase='cover';progress=gradeIntensity=elapsed=drift=last=0;paints=0;
+      // A prepared, cleared canvas is already sized. Keep compositing out of
+      // the click handler so the original sticker can leave immediately.
+      if(width!==innerWidth||height!==innerHeight)resize();else syncOpaque();
+      wake();
     },
-    cover(value) { update('cover', value); },
-    reveal(value) { update('reveal', value); },
-    grade(value) {
-      gradeIntensity = clamp(Number.isFinite(value) ? value : 0);
-      paintGrade();
-    },
-    reset() {
-      phase = 'idle';
-      progress = 0;
-      gradeIntensity = 0;
-      paint();
-    },
-    destroy() {
-      destroyed = true;
-      window.removeEventListener('resize', resize);
-      canvas.remove();
-      gradeLayer.remove();
-      [...textures, ...passages].forEach((texture) => { texture.width = 0; texture.height = 0; });
-      textures = [];
-      passages = [];
-      delete overlay.dataset.cloudOpaque;
-      delete overlay.dataset.cloudPhase;
-      delete overlay.dataset.cloudProgress;
-      delete overlay.dataset.cloudRenderer;
-      delete overlay.dataset.cloudMotion;
-      delete overlay.dataset.cloudTravelVh;
-      delete overlay.dataset.cloudReveal;
-      delete overlay.dataset.cloudGrade;
-      delete overlay.dataset.cloudGradeVisible;
-      delete overlay.dataset.cloudGradeWarmth;
+    cover(value){phase='cover';progress=clamp(value);syncOpaque();wake();},
+    reveal(value){phase='reveal';progress=clamp(value);syncOpaque();wake();},
+    grade(value){gradeIntensity=clamp(value);},
+    reset(){phase='idle';progress=gradeIntensity=0;cancelAnimationFrame(frame);frame=0;last=0;paint();},
+    destroy(){
+      destroyed=true;cancelAnimationFrame(frame);window.removeEventListener('resize',resize);document.removeEventListener('visibilitychange',visibility);
+      canvas.remove();gradeLayer.remove();sprites=[];
+      for(const name of ['cloudOpaque','cloudPhase','cloudProgress','cloudRenderer','cloudMotion','cloudReveal','cloudGrade','cloudGradeVisible','cloudGradeWarmth','cloudSpritesReady','cloudFlowTime','cloudDrift','cloudFrame','cloudTravelVh','cloudWind','cloudPixels'])delete overlay.dataset[name];
     },
   };
 }

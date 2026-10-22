@@ -203,8 +203,10 @@
 }
 /* The original image reserves the exact layout and supplies accessible text. */
 .footer-signature { position: relative; }
-.footer-signature.has-signature-3d > img { opacity: 0; }
+/* Warm-up renders stay hidden; switch both surfaces in the same style update. */
+.footer-signature.has-signature-3d > img { opacity: 0; visibility: hidden; }
+.footer-signature.has-signature-3d > .footer-signature-canvas { visibility: visible; }
 .footer-signature-canvas {
   position: absolute; left: -20%; top: -60%; width: 140%; height: 220%;
-  display: block; pointer-events: none;
+  display: block; pointer-events: none; visibility: hidden;
 }

@@ -76,6 +76,10 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry, prepareC
       return;
     }
     const returnPose = cloudReturn && !reduceMotion.matches ? returnSticker.capture() : null;
+    // Read departure geometry before changing root classes, moving the print
+    // or promoting layers. Click must not alternate layout reads and writes.
+    const departureCandidates = cloudReturn ? [...document.querySelectorAll('.signature-footer > .footer-editorial, .signature-footer > .signature-bottom, .signature-footer > .footer-back-to-top')] : [];
+    const departureBounds = new Map(departureCandidates.map(element => [element, element.getBoundingClientRect()]));
     busy = true;
     // Begin decoding during the cover, and retain a handled result for swap.
     const prepared = assets(target).then(() => null, error => error);
@@ -95,11 +99,14 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry, prepareC
     overlay.classList.toggle('is-cloud-return', cloudReturn);
     overlay.classList.add('is-active');
     overlay.dataset.phase = 'cover';
-    if (cloudReturn) clouds.start();
-    else if (!reduced) dust.start();
-    const withPeel = cloudReturn && !reduced && returnSticker.start(returnPose);
+    if (cloudReturn && !reduced) clouds.start();
+    else if (!cloudReturn && !reduced) dust.start();
+    const tempo = config.cloudReturn;
+    const returnDuration = tempo.anticipation + tempo.lift + tempo.flight + tempo.arrival
+      + tempo.growthIn + tempo.growthTravel + tempo.growthSettle + tempo.settle + tempo.whiteBreath;
+    const withPeel = cloudReturn && !reduced && returnSticker.start(returnPose,{duration:returnDuration});
     // Keep the living gradient edge-to-edge while the foreground drops away.
-    const departureElements = cloudReturn ? [...document.querySelectorAll('.signature-footer > .footer-editorial, .signature-footer > .signature-bottom, .signature-footer > .footer-back-to-top')].filter(element => !withPeel || !element.classList.contains('footer-return-sticker')) : [];
+    const departureElements = departureCandidates.filter(element => !withPeel || !element.classList.contains('footer-return-sticker'));
     const departureProperties = ['translate', 'scale', 'filter', 'willChange', 'transformOrigin'];
     const oldDeparture = departureElements.map(element => Object.fromEntries(departureProperties.map(key => [key, element.style[key]])));
     const restoreDeparture = () => departureElements.forEach((element, index) => Object.assign(element.style, oldDeparture[index]));
@@ -110,11 +117,12 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry, prepareC
     window.addEventListener('keydown', preventScrollKeys, true);
     const preventWheel = event => { if (cloudReturn) event.preventDefault(); };
     overlay.addEventListener('wheel', preventWheel, { passive: false });
-    let finished = false, swapped = false, skipMotion = false;
+    let finished = false, swapped = false, skipMotion = false, stickerTimeline;
     const finish = () => {
       if (finished) return;
       finished = true;
       clearTimeout(guard);
+      stickerTimeline?.kill();
       dust.reset();
       clouds.reset(); returnSticker.reset(); restoreDeparture();
       if (cloudReturn) heroEntry?.finishReturn();
@@ -197,11 +205,11 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry, prepareC
     } else if (cloudReturn) {
       const tempo = config.cloudReturn;
       const passage = { cover: 0, assembly: 0, anticipation: 0 };
-      const launchStart = withPeel ? tempo.peel + tempo.launchLead : 0;
+      const launchStart = 0;
       const launchDuration = launchStart + tempo.anticipation + tempo.lift + tempo.flight + tempo.arrival;
       const beat = name => { overlay.dataset.cloudBeat = name; };
       departureElements.forEach(element => {
-        const bounds = element.getBoundingClientRect();
+        const bounds = departureBounds.get(element);
         element.style.transformOrigin = `${innerWidth / 2 - bounds.left}px ${innerHeight / 2 - bounds.top}px`;
         element.style.willChange = 'translate, scale, filter';
       });
@@ -261,15 +269,18 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry, prepareC
         // and hero assembly. Only the final gust carries it out at the top.
         const sheet = { peel: 0, flight: 0 };
         const flightDuration = launchDuration + tempo.growthIn + tempo.growthTravel
-          + tempo.growthSettle + tempo.settle - tempo.peel;
-        timeline.to(sheet, {
+          + tempo.growthSettle + tempo.settle + tempo.whiteBreath;
+        // The background pauses briefly to commit the destination. The print
+        // keeps drifting during that covered handoff instead of freezing too.
+        stickerTimeline = gsap.timeline({ paused: true });
+        stickerTimeline.to(sheet, {
           peel: 1, duration: tempo.peel, ease: 'sine.inOut',
           onStart: () => beat('sticker-peel'), onUpdate: () => returnSticker.peel(sheet.peel),
         }, 0).to(sheet, {
           flight: 1, duration: flightDuration, ease: 'none',
           onUpdate: () => returnSticker.fly(sheet.flight),
           onComplete: () => returnSticker.hide(),
-        }, tempo.peel);
+        }, 0);
       }
     } else {
       const grains = { cover: 0, reveal: 0 };
@@ -289,6 +300,7 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry, prepareC
     }
     guard = setTimeout(() => timeline.kill(), config.completionGuardMs);
     timeline.play();
+    stickerTimeline?.play();
   }
 
   header.addEventListener('click', event => {
@@ -326,5 +338,5 @@ export function initPageTransition({ getLenis, reduceMotion, heroEntry, prepareC
     history.scrollRestoration = oldRestoration;
   };
   window.addEventListener('pagehide', () => timeline?.kill(), options);
-  return { navigate, destroy };
+  return { navigate, destroy, prepareAssets: clouds.prepare };
 }

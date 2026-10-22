@@ -1,77 +1,18 @@
 import './footer-return-sticker.css';
-import {renderPixelRatio} from './runtime-quality';
-
-const vertex = `
-attribute vec2 point;
-uniform vec2 resolution, origin, dimensions;
-uniform float size, rotation, peel, flight;
-varying vec2 uv;
-varying vec3 paperNormal;
-void main() {
-  uv=point+.5;
-  // Work in physical proportions: the portrait must stay tall through the
-  // curl, perspective and flight. Peel the bottom upward toward the finger.
-  vec2 paper=point*dimensions/size;
-  vec2 direction=normalize(vec2(.12,1.));
-  float line=mix(.515,-.61,peel);
-  float distance=max(0.,dot(paper,direction)-line);
-  float radius=.09;
-  float unfold=smoothstep(0.,.16,flight);
-  float maxAngle=mix(2.05,.06,unfold);
-  float angle=min(distance/radius,maxAngle);
-  float tail=max(0.,distance-radius*maxAngle);
-  float curved=radius*sin(angle)+tail*cos(angle);
-  vec3 position=vec3(paper+direction*(curved-distance),radius*(1.-cos(angle))+tail*sin(angle));
-  paperNormal=vec3(-direction*sin(angle),cos(angle));
-  // Small waves bend the free paper; the printed face stays legible as the
-  // wind changes direction. No rigid spin or straight off-screen launch.
-  float breeze=smoothstep(0.,.10,flight);
-  float ripple=paper.y*7.-flight*30.;
-  position.x+=sin(ripple)*.014*breeze;
-  position.z+=sin(ripple+1.)*.045*breeze;
-  paperNormal=normalize(paperNormal+vec3(0.,cos(ripple)*.28*breeze,0.));
-  float yaw=sin(flight*23.)*.52*breeze;
-  position.xz=mat2(cos(yaw),sin(yaw),-sin(yaw),cos(yaw))*position.xz;
-  float pitch=sin(flight*17.)*.13*breeze;
-  position.yz=mat2(cos(pitch),sin(pitch),-sin(pitch),cos(pitch))*position.yz;
-  float turn=rotation+(sin(flight*19.)*.28+sin(flight*9.)*.12)*breeze;
-  mat2 spin=mat2(cos(turn),sin(turn),-sin(turn),cos(turn));
-  position.xy=spin*position.xy;
-  position*=size*(1.-smoothstep(0.,.5,flight)*.22);
-  position.z+=size*.22*sin(flight*3.14159265);
-  float focal=resolution.y*1.58;
-  float perspective=focal/(focal-position.z);
-  vec2 screen=origin+position.xy*perspective;
-  vec2 clip=screen/resolution*2.-1.;
-  gl_Position=vec4(clip.x,-clip.y,-position.z/(size*4.),1.);
-}`;
-
-const fragment = `
-precision highp float;
-uniform sampler2D artwork;
-varying vec2 uv;
-varying vec3 paperNormal;
-void main() {
-  vec4 print=texture2D(artwork,uv);
-  if(print.a<.025) discard;
-  float grain=fract(sin(dot(floor(uv*700.),vec2(12.9898,78.233)))*43758.5453);
-  vec3 back=vec3(.965,.95,.91)-grain*.012;
-  vec3 color=gl_FrontFacing?print.rgb:back;
-  float light=.74+.26*abs(normalize(paperNormal).z);
-  gl_FragColor=vec4(color*light,print.a);
-}`;
+import {sampleReturnWind} from './transition/returnWind';
 
 export function createFooterReturnSticker(overlay) {
   const button=document.querySelector('.footer-return-sticker');
   const image=button?.querySelector('img');
   const paper=button?.querySelector('.footer-return-sticker-paper');
-  const canvas=document.createElement('canvas');
-  canvas.className='footer-return-peel';canvas.setAttribute('aria-hidden','true');
-  canvas.dataset.phase='idle';overlay.append(canvas);
+  // Move the already decoded image itself. A second canvas used to change
+  // its sharpness/color and compile shaders on the first interaction.
+  const sheet=document.createElement('div');
+  sheet.className='footer-return-peel';sheet.setAttribute('aria-hidden','true');
+  sheet.dataset.phase='idle';sheet.dataset.renderer='original-image';overlay.append(sheet);
   const abort=new AbortController();
-  let gl,program,buffer,texture,uniforms,vertexCount=0;
-  let attempted=false,disposed=false,visible=false,active=false,pose=null;
-  let peel=0,flight=0;
+  let disposed=false,active=false,pose=null,originalStyle,sourceMarker;
+  let peel=0,flight=0,body;
   // Friction responds to each stroke rather than lifting the whole sticker
   // on hover. The fixed link keeps the hit area stable while the print moves.
   const rubMedia=matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
@@ -143,114 +84,80 @@ export function createFooterReturnSticker(overlay) {
     return {x:bounds.left+bounds.width/2+matrix.e,y:bounds.top+bounds.height/2+matrix.f,
       width,height,size:height,rotation:Math.atan2(matrix.b,matrix.a)};
   };
-  const prepare=()=>{
-    if(disposed||!image?.complete||!image.naturalWidth)return false;
-    if(program)return !gl.isContextLost();
-    if(attempted)return false;
-    attempted=true;
-    try {
-      gl=canvas.getContext('webgl',{alpha:true,antialias:true,depth:true,premultipliedAlpha:false,powerPreference:'low-power'});
-      if(!gl)return false;
-      const compile=(type,source)=>{
-        const shader=gl.createShader(type);gl.shaderSource(shader,source);gl.compileShader(shader);
-        if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(shader));
-        return shader;
-      };
-      const shaders=[compile(gl.VERTEX_SHADER,vertex),compile(gl.FRAGMENT_SHADER,fragment)];
-      program=gl.createProgram();shaders.forEach(shader=>gl.attachShader(program,shader));gl.linkProgram(program);
-      shaders.forEach(shader=>gl.deleteShader(shader));
-      if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));
-      gl.useProgram(program);
-      const points=[],columns=16,rows=128;
-      for(let y=0;y<rows;y++)for(let x=0;x<columns;x++){
-        const left=x/columns-.5,right=(x+1)/columns-.5,top=y/rows-.5,bottom=(y+1)/rows-.5;
-        points.push(left,top,left,bottom,right,top,right,top,left,bottom,right,bottom);
-      }
-      vertexCount=points.length/2;
-      buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(points),gl.STATIC_DRAW);
-      const attribute=gl.getAttribLocation(program,'point');gl.enableVertexAttribArray(attribute);gl.vertexAttribPointer(attribute,2,gl.FLOAT,false,0,0);
-      uniforms=Object.fromEntries(['resolution','origin','dimensions','size','rotation','peel','flight'].map(name=>[name,gl.getUniformLocation(program,name)]));
-      texture=gl.createTexture();gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texture);
-      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
-      // Custom artwork can have non-power-of-two dimensions in WebGL 1.
-      gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
-      gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);
-      gl.uniform1i(gl.getUniformLocation(program,'artwork'),0);
-      gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LEQUAL);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);
-      // Warm the driver and texture while the footer is entering view. The
-      // first visible peel must not pay for deferred shader compilation.
-      gl.viewport(0,0,canvas.width,canvas.height);
-      gl.uniform2f(uniforms.resolution,1,1);gl.uniform2f(uniforms.origin,.5,.5);
-      gl.uniform2f(uniforms.dimensions,.8*image.naturalWidth/image.naturalHeight,.8);
-      gl.uniform1f(uniforms.size,.8);gl.uniform1f(uniforms.rotation,0);
-      gl.uniform1f(uniforms.peel,.45);gl.uniform1f(uniforms.flight,0);
-      gl.drawArrays(gl.TRIANGLES,0,vertexCount);gl.finish();
-      canvas.dataset.renderer='webgl';
-      return true;
-    } catch(error) {
-      console.warn('Return sticker peel unavailable:',error);
-      if(program)gl?.deleteProgram(program);program=null;
-      return false;
-    }
-  };
   const render=()=>{
-    if(!active||!program||gl.isContextLost())return;
-    gl.viewport(0,0,canvas.width,canvas.height);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.useProgram(program);
+    if(!active||!pose)return;
     const smooth=(from,to,value)=>{const t=Math.max(0,Math.min(1,(value-from)/(to-from)));return t*t*(3-2*t);};
-    const gather=smooth(0,.42,flight),wind=Math.sin(Math.PI*flight);
-    const x=pose.x+(innerWidth*.48-pose.x)*gather-Math.sin(flight*Math.PI*3)*wind*innerWidth*.21;
-    const y=pose.y+(innerHeight*.4-pose.y)*gather-Math.sin(flight*Math.PI*4)*wind*innerHeight*.055
-      -(innerHeight*.8+pose.size)*smooth(.84,1,flight);
-    gl.uniform2f(uniforms.resolution,innerWidth,innerHeight);gl.uniform2f(uniforms.origin,x,y);
-    gl.uniform2f(uniforms.dimensions,pose.width,pose.height);
-    for(const [key,value]of Object.entries({size:pose.size,rotation:pose.rotation,peel,flight}))gl.uniform1f(uniforms[key],value);
-    gl.drawArrays(gl.TRIANGLES,0,vertexCount);
-    canvas.dataset.peel=peel.toFixed(4);canvas.dataset.flight=flight.toFixed(4);
-    canvas.dataset.x=x.toFixed(1);canvas.dataset.y=y.toFixed(1);
-    canvas.dataset.phase=flight>0?'flying':'peeling';
+    const x=body.x*innerWidth;
+    const y=body.y*innerHeight-(innerHeight*1.25+pose.size)*smooth(.83,1,flight);
+    const breeze=smooth(0,.1,flight),release=Math.sin(Math.PI*peel)*(1-breeze);
+    const turn=pose.rotation+body.angle*breeze;
+    const scale=(1-smooth(0,.5,flight)*.22)*Math.min(1,innerHeight/pose.viewportHeight);
+    const yaw=body.yaw*breeze+release*8;
+    const pitch=body.pitch*breeze-release*9;
+    sheet.style.transform=`translate3d(${x-pose.width/2}px, ${y-pose.height/2}px, 0) perspective(1000px) rotate(${turn}rad) rotateY(${yaw}deg) rotateX(${pitch}deg) skewX(${body.spin*1.4*breeze}deg) scale(${scale})`;
+    sheet.dataset.peel=peel.toFixed(4);sheet.dataset.flight=flight.toFixed(4);
+    sheet.dataset.x=x.toFixed(1);sheet.dataset.y=y.toFixed(1);
+    sheet.dataset.phase=flight>0?'flying':'peeling';
+    sheet.dataset.wind=body.air.toFixed(4);sheet.dataset.rotation=turn.toFixed(4);
   };
-  const resize=(updatePose=true)=>{
-    if(!active)return;
-    const next=updatePose?capture():null;if(next)pose=next;
-    const ratio=renderPixelRatio(innerWidth,innerHeight);
-    canvas.width=Math.round(innerWidth*ratio);canvas.height=Math.round(innerHeight*ratio);render();
+  const advance=value=>{
+    const target=Math.max(0,Math.min(1,value))*pose.duration;
+    // Small fixed steps keep drag and angular inertia independent of frame rate.
+    while(body.time<target){
+      const dt=Math.min(1/90,target-body.time);body.time+=dt;
+      const progress=body.time/pose.duration,air=sampleReturnWind(body.time);
+      const guide=Math.min(1,progress/.48),ease=guide*guide*(3-2*guide);
+      const center=pose.x/pose.viewportWidth*(1-ease)+.52*ease;
+      const airX=air.side*.20+(center-body.x)*1.8;
+      const airY=-.12-air.lift*.09;
+      body.vx+=(airX-body.vx)*dt*2.8;body.vy+=(airY-body.vy)*dt*3.1;
+      body.x+=body.vx*dt;body.y+=body.vy*dt;
+      const targetAngle=Math.atan2(body.vx,.15-body.vy)*.46+air.roll*.13;
+      body.spin+=((targetAngle-body.angle)*24-body.spin*7)*dt;
+      body.angle+=body.spin*dt;
+      body.yaw+=(air.side*27+body.spin*11-body.yaw)*dt*4;
+      body.pitch+=(air.lift*11-body.pitch)*dt*3.2;body.air=air.side;
+    }
+    flight=Math.max(0,Math.min(1,value));render();
   };
   const reset=()=>{
-    active=false;peel=flight=0;canvas.classList.remove('is-active');
-    canvas.dataset.phase='idle';canvas.dataset.peel='0.0000';canvas.dataset.flight='0.0000';
+    active=false;peel=flight=0;sheet.classList.remove('is-active');
+    if(sourceMarker){
+      sourceMarker.replaceWith(image);sourceMarker=null;
+      if(originalStyle===null)image.removeAttribute('style');else image.setAttribute('style',originalStyle);
+    }
+    sheet.style.cssText='';
+    sheet.dataset.phase='idle';sheet.dataset.peel='0.0000';sheet.dataset.flight='0.0000';
     button?.classList.remove('is-peeled');button?.removeAttribute('aria-busy');
-    if(gl&&!gl.isContextLost())gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
   };
-  window.addEventListener('resize',()=>resize(),{signal:abort.signal,passive:true});
-  canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();reset();},{signal:abort.signal});
-  canvas.addEventListener('webglcontextrestored',()=>{
-    program=buffer=texture=null;attempted=false;if(visible&&!disposed)prepare();
-  },{signal:abort.signal});
+  window.addEventListener('resize',render,{signal:abort.signal,passive:true});
   const observer=button?new IntersectionObserver(([entry])=>{
-    visible=entry.isIntersecting;
-    button.classList.toggle('is-sticker-visible',visible);
-    if(!visible)stopRub();
-    if(visible)prepare();
+    button.classList.toggle('is-sticker-visible',entry.isIntersecting);
+    if(!entry.isIntersecting)stopRub();
   },{threshold:0}):null;
   if(button)observer.observe(button);
-  image?.addEventListener('load',()=>{if(visible&&!disposed)prepare();},{signal:abort.signal});
   return {
     capture,
-    start(sourcePose){
-      if(!sourcePose||!prepare())return false;
-      pose=sourcePose;peel=flight=0;active=true;resize(false);
-      canvas.classList.add('is-active');button.classList.add('is-peeled');button.setAttribute('aria-busy','true');render();
-      stopRub();
+    start(sourcePose,{duration=4.46}={}){
+      if(disposed||active||!sourcePose||!image?.complete||!image.naturalWidth)return false;
+      pose={...sourcePose,viewportWidth:innerWidth,viewportHeight:innerHeight,duration};
+      body={time:0,x:pose.x/innerWidth,y:pose.y/innerHeight,vx:-.025,vy:-.34,angle:0,spin:0,yaw:0,pitch:0,air:0};
+      peel=flight=0;active=true;
+      originalStyle=image.getAttribute('style');
+      sourceMarker=document.createComment('return-sticker-home');
+      image.replaceWith(sourceMarker);sheet.append(image);
+      image.style.transform='none';
+      sheet.style.width=`${pose.width}px`;sheet.style.height=`${pose.height}px`;
+      sheet.classList.add('is-active');button.classList.add('is-peeled');button.setAttribute('aria-busy','true');
+      render();stopRub();
       return true;
     },
     peel(value){peel=Math.max(0,Math.min(1,value));render();},
-    fly(value){flight=Math.max(0,Math.min(1,value));render();},
-    hide(){active=false;canvas.classList.remove('is-active');canvas.dataset.phase='departed';},
+    fly:advance,
+    hide(){active=false;sheet.classList.remove('is-active');sheet.dataset.phase='departed';},
     reset,
     destroy(){
-      disposed=true;stopRub();reset();abort.abort();observer?.disconnect();button?.classList.remove('is-sticker-visible');
-      if(gl){gl.deleteTexture(texture);gl.deleteBuffer(buffer);gl.deleteProgram(program);}
-      canvas.remove();
+      disposed=true;stopRub();reset();abort.abort();observer?.disconnect();button?.classList.remove('is-sticker-visible');sheet.remove();
     },
   };
 }
