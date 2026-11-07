@@ -322,11 +322,11 @@
     },
     {
       "name": "optimized/hero-1448.webp",
-      "bytes": 293222
+      "bytes": 239806
     },
     {
       "name": "optimized/hero-960.webp",
-      "bytes": 135266
+      "bytes": 117210
     },
     {
       "name": "optimized/portrait-background.webp",
@@ -339,10 +339,6 @@
     {
       "name": "optimized/portrait.webp",
       "bytes": 45270
-    },
-    {
-      "name": "paling-atas.png",
-      "bytes": 2969617
     },
     {
       "name": "transition/clouds/cumulus-1.webp",
@@ -365,6 +361,6 @@
       "bytes": 17182
     }
   ],
-  "sourceBytes": 140584839,
-  "runtimeBytes": 18600402
+  "sourceBytes": 137573843,
+  "runtimeBytes": 15559313
 }

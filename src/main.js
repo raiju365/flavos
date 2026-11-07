@@ -3,7 +3,6 @@ import { initAmbientParticles } from './ambient-particles'
 import { initScrollRestoration } from './scroll-restoration'
 import { createKineticLoader } from './loader-transition'
 import { preparePageAssets, nextPaint } from './page-readiness'
-import { initTvNoise } from './tv-noise'
 import { initContentProtection } from './content-protection'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
@@ -68,7 +67,6 @@ function forceResetScrollToTop() {
 
 // Handle prefers-reduced-motion
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-initTvNoise();
 
 // Global flag to track loading state
 window.isMainPageReady = false;

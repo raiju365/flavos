@@ -26,10 +26,32 @@
 .sticker-viewer::backdrop { background: transparent; }
 .sticker-viewer-blur {
   position: absolute; inset: 0;
-  background: rgb(17 19 38 / calc(var(--sticker-focus) * .22));
-  backdrop-filter: blur(calc(var(--sticker-focus) * 18px));
-  -webkit-backdrop-filter: blur(calc(var(--sticker-focus) * 18px));
+  overflow: hidden; isolation: isolate;
+  background: rgb(12 15 28 / calc(var(--sticker-focus) * .07));
+  /* Keep the standard declaration last so production retains it after minification. */
+  -webkit-backdrop-filter: blur(calc(var(--sticker-focus) * 3px));
+  backdrop-filter: blur(calc(var(--sticker-focus) * 3px));
   pointer-events: none;
+}
+.sticker-viewer-blur::before,
+.sticker-viewer-blur::after {
+  content: ''; position: absolute; inset: 0;
+  opacity: var(--sticker-focus); pointer-events: none;
+}
+/* Keep the centre clear. Thin spectral reflections sit at opposite edges,
+   instead of washing the entire footer in a milky rainbow. */
+.sticker-viewer-blur::before {
+  background:
+    radial-gradient(ellipse 75% 85% at -34% -30%,
+      transparent 65%, rgb(142 201 222 / .12) 73%, rgb(182 162 222 / .10) 78%,
+      rgb(225 168 186 / .08) 83%, rgb(226 210 167 / .06) 87%, transparent 96%),
+    radial-gradient(ellipse 70% 85% at 132% 128%,
+      transparent 65%, rgb(225 168 186 / .08) 73%, rgb(182 162 222 / .10) 79%,
+      rgb(142 201 222 / .12) 85%, transparent 96%);
+}
+.sticker-viewer-blur::after {
+  background: linear-gradient(120deg, rgb(255 255 255 / .06), transparent 14% 88%, rgb(255 255 255 / .03));
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / .10);
 }
 .sticker-viewer-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
 .sticker-viewer-close {

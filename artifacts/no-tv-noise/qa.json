@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "noiseLayers": 0,
+      "overflow": 0,
+      "footer3d": true
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "noiseLayers": 0,
+      "overflow": 0,
+      "footer3d": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "noiseLayers": 0,
+      "overflow": 0,
+      "footer3d": true
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "noiseLayers": 0,
+      "overflow": 0,
+      "footer3d": true
+    }
+  ],
+  "noiseRequests": [],
+  "errors": []
+}

@@ -1,0 +1,1731 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.58,
+      "progress": 0.5802,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        12
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.68,
+      "progress": 0.6802,
+      "reveal": 0.17637648010993118,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        9.88348
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.74,
+      "progress": 0.7401,
+      "reveal": 0.4506917213110381,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        6.5917
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.8,
+      "progress": 0.8,
+      "reveal": 0.7407434842207318,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        3.11108
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.86,
+      "progress": 0.8599,
+      "reveal": 0.9511231429415843,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        0.586522
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.94,
+      "progress": 0.9401,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.86,
+      "progress": 0.8599,
+      "reveal": 0.9511231429415843,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        0.586522
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.8,
+      "progress": 0.8,
+      "reveal": 0.7407434842207318,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        3.11108
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.74,
+      "progress": 0.7401,
+      "reveal": 0.4506917213110381,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        6.5917
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.68,
+      "progress": 0.6802,
+      "reveal": 0.17637648010993118,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        9.88348
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.58,
+      "progress": 0.5802,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        12
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "targetProgress": 0.94,
+      "progress": 0.9401,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "paperPosition": 0.9,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.0045166015625,
+      "markWidth": 47.265625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "paperPosition": 0.5,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.000244140625,
+      "markWidth": 188.90625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "paperPosition": 0.05,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00152587890625,
+      "markWidth": 343.296875,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(0% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "paperPosition": -0.2,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0,
+      "markWidth": 345.59375,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "visible",
+      "inkCuts": [
+        "inset(0% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "paperPosition": 0.5,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.000244140625,
+      "markWidth": 188.90625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "paperPosition": 0.9,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.0045166015625,
+      "markWidth": 47.265625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.58,
+      "progress": 0.58,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        12
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.68,
+      "progress": 0.68,
+      "reveal": 0.17540958025171455,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        9.89509
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.74,
+      "progress": 0.74,
+      "reveal": 0.4500768395068588,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        6.59908
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.8,
+      "progress": 0.8,
+      "reveal": 0.7407432098731137,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        3.11108
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.86,
+      "progress": 0.86,
+      "reveal": 0.9514086913504801,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        0.583096
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.94,
+      "progress": 0.94,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.86,
+      "progress": 0.86,
+      "reveal": 0.9514086913504801,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        0.583096
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.8,
+      "progress": 0.8,
+      "reveal": 0.7407432098731137,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        3.11108
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.74,
+      "progress": 0.74,
+      "reveal": 0.4500768395068588,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        6.59908
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.68,
+      "progress": 0.68,
+      "reveal": 0.17540958025171455,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        9.89509
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.58,
+      "progress": 0.58,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        12
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "targetProgress": 0.94,
+      "progress": 0.94,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00555419921875,
+      "markWidth": 41.515625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "paperPosition": 0.9,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.004180908203125,
+      "markWidth": 44.703125,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "paperPosition": 0.5,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.006591796875,
+      "markWidth": 123.171875,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "paperPosition": 0.05,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00518798828125,
+      "markWidth": 208.71875,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(0% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "paperPosition": -0.2,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0,
+      "markWidth": 210,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "visible",
+      "inkCuts": [
+        "inset(0% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "paperPosition": 0.5,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.006591796875,
+      "markWidth": 123.171875,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 820,
+      "height": 1000,
+      "paperPosition": 0.9,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.004180908203125,
+      "markWidth": 44.703125,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.58,
+      "progress": 0.5799,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        12
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.68,
+      "progress": 0.68,
+      "reveal": 0.17526583280770577,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        9.89681
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.74,
+      "progress": 0.7399,
+      "reveal": 0.44939586380709057,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        6.60725
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.8,
+      "progress": 0.7998,
+      "reveal": 0.739689860883407,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        3.12372
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.86,
+      "progress": 0.8603,
+      "reveal": 0.9521487726274512,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0.574215
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.94,
+      "progress": 0.94,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.86,
+      "progress": 0.8603,
+      "reveal": 0.9521487726274512,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0.574215
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.8,
+      "progress": 0.7998,
+      "reveal": 0.739689860883407,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        3.12372
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.74,
+      "progress": 0.7399,
+      "reveal": 0.44939586380709057,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        6.60725
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.68,
+      "progress": 0.68,
+      "reveal": 0.17526583280770577,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        9.89681
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.58,
+      "progress": 0.5799,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        12
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "targetProgress": 0.94,
+      "progress": 0.94,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "paperPosition": 0.9,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.0041961669921875,
+      "markWidth": 35.078125,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "paperPosition": 0.5,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00469970703125,
+      "markWidth": 118.140625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "paperPosition": 0.05,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00580596923828125,
+      "markWidth": 208.65626525878906,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(0% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "paperPosition": -0.2,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0,
+      "markWidth": 210,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "visible",
+      "inkCuts": [
+        "inset(0% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "paperPosition": 0.5,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00469970703125,
+      "markWidth": 118.140625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "paperPosition": 0.9,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.0041961669921875,
+      "markWidth": 35.078125,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.58,
+      "progress": 0.5802,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        12
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.68,
+      "progress": 0.6802,
+      "reveal": 0.17603171830599562,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        9.88762
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.74,
+      "progress": 0.7397,
+      "reveal": 0.44849800296947895,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        6.61802
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.8,
+      "progress": 0.8,
+      "reveal": 0.7407442680706029,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        3.11107
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.86,
+      "progress": 0.8603,
+      "reveal": 0.952140449431914,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0.574315
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.94,
+      "progress": 0.9397,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.86,
+      "progress": 0.8603,
+      "reveal": 0.952140449431914,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0.574315
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.8,
+      "progress": 0.8,
+      "reveal": 0.7407442680706029,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        3.11107
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.74,
+      "progress": 0.7397,
+      "reveal": 0.44849800296947895,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        6.61802
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.68,
+      "progress": 0.6802,
+      "reveal": 0.17603171830599562,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        9.88762
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.58,
+      "progress": 0.5802,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        12
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "targetProgress": 0.94,
+      "progress": 0.9397,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "paperPosition": 0.9,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.0001068115234375,
+      "markWidth": 35.125,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "paperPosition": 0.5,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.004695892333984375,
+      "markWidth": 118.14061737060547,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "paperPosition": 0.05,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00738525390625,
+      "markWidth": 208.640625,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(0% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "paperPosition": -0.2,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0,
+      "markWidth": 210,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "visible",
+      "inkCuts": [
+        "inset(0% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "paperPosition": 0.5,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.004695892333984375,
+      "markWidth": 118.14061737060547,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "paperPosition": 0.9,
+      "progress": 1,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.0001068115234375,
+      "markWidth": 35.125,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "restore": {
+        "before": {
+          "progress": 0.78,
+          "reveal": 0.6480789871358789,
+          "visible": "visible",
+          "inert": true,
+          "overflow": 0,
+          "centerError": 0.00286865234375,
+          "markWidth": 31.75,
+          "translations": [
+            4.22305
+          ],
+          "intact": true,
+          "sources": true,
+          "monochrome": "visible",
+          "material": "hidden",
+          "inkCuts": [
+            "inset(100% 0px 0px)"
+          ]
+        },
+        "restored": {
+          "progress": 0.78,
+          "reveal": 0.6480789871358789,
+          "visible": "visible",
+          "inert": true,
+          "overflow": 0,
+          "centerError": 0.00286865234375,
+          "markWidth": 31.75,
+          "translations": [
+            4.22305
+          ],
+          "intact": true,
+          "sources": true,
+          "monochrome": "visible",
+          "material": "hidden",
+          "inkCuts": [
+            "inset(100% 0px 0px)"
+          ]
+        }
+      }
+    },
+    {
+      "reduced": true,
+      "progress": 0.5806,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "reduced": true,
+      "progress": 0.7498,
+      "reveal": 0.49916215336140224,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "reduced": true,
+      "progress": 0.9394,
+      "reveal": 1,
+      "visible": "visible",
+      "inert": false,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "reduced": true,
+      "progress": 0.7498,
+      "reveal": 0.49916215336140224,
+      "visible": "visible",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "visible",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    },
+    {
+      "reduced": true,
+      "progress": 0.5806,
+      "reveal": 0,
+      "visible": "hidden",
+      "inert": true,
+      "overflow": 0,
+      "centerError": 0.00286865234375,
+      "markWidth": 31.75,
+      "translations": [
+        0
+      ],
+      "intact": true,
+      "sources": true,
+      "monochrome": "hidden",
+      "material": "hidden",
+      "inkCuts": [
+        "inset(100% 0px 0px)"
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -33,7 +33,12 @@ export function initLogoNavJourney(cycle) {
   const paperInk = base.cloneNode();
   paperInk.classList.add('logo-journey-paper-ink');
   paperInk.style.filter = 'brightness(0)';
-  mark.append(base, paperInk, stage);
+  // Move the intact silhouette inside the journey box, leaving that box's
+  // scroll/position transform under the existing journey controller.
+  const monochrome = document.createElement('div');
+  monochrome.className = 'logo-journey-monochrome';
+  monochrome.append(base, paperInk);
+  mark.append(monochrome, stage);
   header.append(mark);
   header.classList.add('has-logo-journey');
   section.classList.add('has-logo-journey');
@@ -104,8 +109,7 @@ export function initLogoNavJourney(cycle) {
     cycle.setDocked?.(materialProgress >= 1);
     if (!cycling) cycle.reset?.();
     stage.style.visibility = cycling ? 'inherit' : 'hidden';
-    base.style.visibility = cycling ? 'hidden' : 'inherit';
-    paperInk.style.visibility = base.style.visibility;
+    monochrome.style.visibility = cycling ? 'hidden' : 'inherit';
     section.dataset.journey = docked ? 'centered' : arrival < 1 ? 'arriving' : departure < 1 ? 'returning' : 'complete';
     header.classList.toggle('is-logo-journey', travelling || (motion.matches && reducedPause));
       brand.inert = travelling || inFooter || (motion.matches && reducedPause);
@@ -133,8 +137,7 @@ export function initLogoNavJourney(cycle) {
       }
       // Reduced motion keeps one original-colour material in the footer.
       stage.style.visibility = footerTravel > 0 ? 'inherit' : 'hidden';
-      base.style.visibility = footerTravel > 0 ? 'hidden' : 'inherit';
-      paperInk.style.visibility = base.style.visibility;
+      monochrome.style.visibility = footerTravel > 0 ? 'hidden' : 'inherit';
     }
     const g = geometry;
     const progress = motion.matches ? 0 : arrival * (1 - returnToNav);

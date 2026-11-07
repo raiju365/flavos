@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "before": 57.8543586730957,
+      "after": 58.13729476928711,
+      "seconds": 1.8165,
+      "overflow": 0,
+      "phasePerSecond": 0.15575892991544524
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "before": 58.386878967285156,
+      "after": 58.667415618896484,
+      "seconds": 1.8008999999761581,
+      "overflow": 0,
+      "phasePerSecond": 0.15577580743797106
+    },
+    {
+      "reducedMotionPaused": true
+    }
+  ],
+  "errors": []
+}

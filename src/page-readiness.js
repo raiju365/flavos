@@ -23,7 +23,7 @@ export async function preparePageAssets(onProgress = () => {}) {
   // Every section is ready before opening, even when the browser restores the
   // footer. Use the responsive runtime images, never the archival originals.
   const images = [...new Set(document.querySelectorAll('#main-content img, .folio-nav img'))];
-  const surfaces = ['/tv-noise.png', '/hero-runner-mask.svg', '/cursor.svg'].map(src => {
+  const surfaces = ['/hero-runner-mask.svg', '/cursor.svg'].map(src => {
     const image = new Image(); image.src = src; return image;
   });
   const fonts = new Set();

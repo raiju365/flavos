@@ -1,5 +1,6 @@
 // The supplied Untitled blend FLOW recipe: scale 58, distortion 47, swirl 20,
-// speed 26. Its duplicated light/blue stops use the portfolio's paper and ink.
+// speed 26, with the phase clock slowed to half speed for a calmer flow.
+// Its duplicated light/blue stops use the portfolio's paper and ink.
 const vertex = `attribute vec2 position;
 void main() { gl_Position = vec4(position, 0.0, 1.0); }`;
 const fragment = `precision highp float;
@@ -98,7 +99,7 @@ export function initFooterGradient() {
   };
   const draw = () => {
     if (!program || lost || disposed) return;
-    const time = 57.77832344000101 + elapsed * .000312;
+    const time = 57.77832344000101 + elapsed * .000156;
     for (let index = 0; index < 4; index++) {
       const phase = index * .37;
       const rateX = .6 + (index / 3 % 1) * .9;
@@ -114,7 +115,7 @@ export function initFooterGradient() {
   const resize = () => {
     const width = footer.clientWidth || innerWidth, height = footer.clientHeight || innerHeight;
     // A soft field needs no retina-sized buffer. One triangle, at most 512px
-    // on its long side, is upscaled by the browser beneath the existing grain.
+    // on its long side, is smoothly upscaled across the footer by the browser.
     const scale = Math.min(1, 512 / Math.max(width, height));
     canvas.width = Math.max(1, Math.round(width * scale));
     canvas.height = Math.max(1, Math.round(height * scale));

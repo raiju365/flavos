@@ -8,8 +8,6 @@ export function runtimeQuality() {
     compact,limited,
     pixelRatio:limited?1:compact?1.25:1.5,
     pixels:limited?700000:compact?1000000:1600000,
-    noisePixels:limited?130000:compact?180000:400000,
-    noiseRate:limited?12:compact?18:24,
     atlasWidth:limited||compact?1536:2048,
     bevelSegments:limited||compact?4:6,
     curveSegments:limited||compact?2:3,

@@ -5049,7 +5049,6 @@ body:has(.project-gallery[open]) {
 .ascend-curtain {
   position: fixed;
   inset: 0;
-  /* Below the shared viewport grain to keep its treatment continuous. */
   z-index: 1000000;
   visibility: hidden;
   overflow: hidden;

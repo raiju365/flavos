@@ -25,9 +25,9 @@ export function createCloudReturn(overlay){
     overlay.dataset.cloudOpaque=String(opaque);
     overlay.dataset.cloudPhase=phase;overlay.dataset.cloudProgress=progress.toFixed(4);
   };
-  const paintGrade=()=>{
+  const paintGrade=fog=>{
     const warmth=phase==='reveal'?1:smooth(.4,.9,progress);
-    const strength=gradeIntensity*(phase==='idle'||overlay.dataset.cloudOpaque==='true'?0:1)*.22;
+    const strength=phase==='idle'?0:gradeIntensity*(1-fog)*.22;
     gradeLayer.style.opacity=String(strength);
     coolGrade.style.opacity=String(1-warmth);warmGrade.style.opacity=String(warmth);
     overlay.dataset.cloudGrade=gradeIntensity.toFixed(4);overlay.dataset.cloudGradeVisible=strength.toFixed(4);
@@ -35,17 +35,19 @@ export function createCloudReturn(overlay){
   };
   const paint=()=>{
     if(destroyed)return;
-    syncOpaque();paintGrade();
+    const revealing=phase==='reveal';
+    // Both sides meet at full fog and the same cloud density. The entrance
+    // breathes in over several frames; dissipation spans the entire reveal.
+    const fog=phase==='idle'?0:revealing?1-smooth(0,.68,progress):smooth(.35,1,progress);
+    const envelope=revealing?.32*(1-smooth(.04,1,progress)):(.78-.46*smooth(.72,1,progress))*smooth(0,.72,elapsed);
+    syncOpaque();paintGrade(fog);
     if(!context)return;
     context.setTransform(ratio,0,0,ratio,0,0);context.clearRect(0,0,width,height);
     if(phase==='idle')return;
-    const revealing=phase==='reveal';
     // The white interior is a true opaque cover for the scroll swap. Cloud
     // shading remains above it, then drifts out while the hero grows beneath.
-    const fog=revealing?1-smooth(0,.17,progress):smooth(.43,1,progress);
     if(fog>0){context.globalAlpha=fog;context.fillStyle='#fff';context.fillRect(0,0,width,height);}
-    const envelope=revealing?.20*(1-smooth(0,.36,progress)):(.78-.58*smooth(.76,1,progress))*smooth(0,.18,elapsed);
-    const camera=revealing?2.6+progress*.52:progress*2.6;
+    const camera=revealing?2.6+progress*.2:progress*2.6;
     const air=sampleReturnWind(elapsed);
     const count=compact?8:formations.length;
     for(let i=0;i<count;i++){
@@ -54,12 +56,15 @@ export function createCloudReturn(overlay){
       const local=sampleReturnWind(elapsed*.7+i*.41);
       let cy=anchorY+camera*(.58+depth*.62)+elapsed*(.012+depth*.025);
       while(cy>1.85)cy-=3.7;
-      const clearing=revealing?(anchorX<.5?-1:1)*smooth(0,.4,progress)*.75:0;
+      const clearing=revealing?(anchorX<.5?-1:1)*smooth(.03,.95,progress)*.75:0;
       const cx=anchorX+drift*(.32+depth*.58)+local.side*.04+clearing;
       const size=width*span*(1+local.lift*.025+depth*(revealing?.12:progress*.12));
       const cloudHeight=size*sprite.naturalHeight/sprite.naturalWidth;
+      // Oversized formations can still intersect a screen edge when their
+      // centre wraps. Dissolve them in that outer band before recycling.
+      const edgeFade=smooth(-1.85,-1.3,cy)*(1-smooth(1.3,1.85,cy));
       context.save();context.translate(cx*width,cy*height);context.rotate(local.roll*.012);
-      context.globalAlpha=envelope*(.52+depth*.45);
+      context.globalAlpha=envelope*(.52+depth*.45)*edgeFade;
       // The cloud texture is prepared once; runtime only composites cached
       // photographs with independent advection, billow and depth parallax.
       context.scale(1+air.side*.012,1+local.lift*.025);

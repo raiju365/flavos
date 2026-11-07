@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "state": {
+        "blur": "blur(8px) saturate(1.12)",
+        "spectrum": "radial-gradient(112% 94% at 4% -16%, rgba(0, 0, 0, 0) 39%, rgba(169, 154, 240, 0.28) 49%, rgba(239, 156, 202, 0.27) 55%, rgba(244, 218, 158, 0.24) 61%, rgba(150, 225, 205, 0.26) 67%, rgba(151, 192, 244, 0.25) 73%, rgba(0, 0, 0, 0) 84%), conic-gradient(from 215deg at 68% 58%, rgba(164, 206, 238, 0.09), rgba(166, 229, 208, 0.16), rgba(242, 221, 166, 0.14), rgba(237, 168, 206, 0.17), rgba(178, 164, 241, 0.18), rgba(164, 206, 238, 0.09))",
+        "blend": "normal",
+        "canvas": "none",
+        "overflow": 0
+      },
+      "restored": true
+    },
+    {
+      "width": 390,
+      "state": {
+        "blur": "blur(8px) saturate(1.12)",
+        "spectrum": "radial-gradient(112% 94% at 4% -16%, rgba(0, 0, 0, 0) 39%, rgba(169, 154, 240, 0.28) 49%, rgba(239, 156, 202, 0.27) 55%, rgba(244, 218, 158, 0.24) 61%, rgba(150, 225, 205, 0.26) 67%, rgba(151, 192, 244, 0.25) 73%, rgba(0, 0, 0, 0) 84%), conic-gradient(from 215deg at 68% 58%, rgba(164, 206, 238, 0.09), rgba(166, 229, 208, 0.16), rgba(242, 221, 166, 0.14), rgba(237, 168, 206, 0.17), rgba(178, 164, 241, 0.18), rgba(164, 206, 238, 0.09))",
+        "blend": "normal",
+        "canvas": "none",
+        "overflow": 0
+      },
+      "restored": true
+    }
+  ],
+  "errors": []
+}

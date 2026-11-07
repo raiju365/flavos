@@ -1,0 +1,26 @@
+{
+  "states": [
+    {
+      "stage": "touch-home",
+      "scrollY": 0,
+      "progress": "0.0000",
+      "hidden": true,
+      "overflow": 0
+    },
+    {
+      "stage": "wheel",
+      "scrollY": 550,
+      "progress": "0.3620",
+      "overflow": 0
+    },
+    {
+      "stage": "repeat",
+      "translations": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "errors": []
+}

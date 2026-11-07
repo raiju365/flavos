@@ -34,8 +34,8 @@ export function createHeroScrollEntry() {
     // Different camera distances for the foreground and painting.
     // No shared scale or opacity handoff is used between these planes.
     const distance=Math.max(.006,1-smooth(p/.78)*.994);
-    // One full-bleed painting from the opening through the navbar reveal.
-    const paintingScale=reduced?1:1+.08*smooth(p/.9);
+    // Keep the painting at its fitted size; only the aperture moves forward.
+    const paintingScale=1;
     destination.style.transform=`scale(${paintingScale})`;destination.style.transformOrigin='50% 49%';
     // Keep small surface marks at a distance, then settle to an intact edge
     // before magnification can turn them into long radial slits.

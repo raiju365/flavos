@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "spec": {
+        "width": 1795,
+        "height": 950
+      },
+      "state": {
+        "filter": "blur(8px) saturate(1.12)",
+        "opacity": "1",
+        "prism": "radial-gradient(112% 94% at 4% -16%, rgba(0, 0, 0, 0) 39%, rgba(169, 154, 240, 0.18) 49%, rgba(239, 156, 202, 0.17) 55%, rgba(244, 218, 158, 0.14) 61%, rgba(150, 225, 205, 0.16) 67%, rgba(151, 192, 244, 0.15) 73%, rgba(0, 0, 0, 0) 84%), conic-gradient(from 215deg at 68% 58%, rgba(164, 206, 238, 0.07), rgba(166, 229, 208, 0.13), rgba(242, 221, 166, 0.1), rgba(237, 168, 206, 0.13), rgba(178, 164, 241, 0.14), rgba(164, 206, 238, 0.07))",
+        "prismBlend": "color",
+        "canvasFilter": "none",
+        "overflow": 0,
+        "phase": "open"
+      },
+      "closed": {
+        "overflow": "",
+        "focus": "footer-sticker-trigger",
+        "stickers": "6"
+      }
+    },
+    {
+      "spec": {
+        "width": 820,
+        "height": 1000
+      },
+      "state": {
+        "filter": "blur(8px) saturate(1.12)",
+        "opacity": "1",
+        "prism": "radial-gradient(112% 94% at 4% -16%, rgba(0, 0, 0, 0) 39%, rgba(169, 154, 240, 0.18) 49%, rgba(239, 156, 202, 0.17) 55%, rgba(244, 218, 158, 0.14) 61%, rgba(150, 225, 205, 0.16) 67%, rgba(151, 192, 244, 0.15) 73%, rgba(0, 0, 0, 0) 84%), conic-gradient(from 215deg at 68% 58%, rgba(164, 206, 238, 0.07), rgba(166, 229, 208, 0.13), rgba(242, 221, 166, 0.1), rgba(237, 168, 206, 0.13), rgba(178, 164, 241, 0.14), rgba(164, 206, 238, 0.07))",
+        "prismBlend": "color",
+        "canvasFilter": "none",
+        "overflow": 0,
+        "phase": "open"
+      },
+      "closed": {
+        "overflow": "",
+        "focus": "footer-sticker-trigger",
+        "stickers": "6"
+      }
+    },
+    {
+      "spec": {
+        "width": 390,
+        "height": 844,
+        "touch": true
+      },
+      "state": {
+        "filter": "blur(8px) saturate(1.12)",
+        "opacity": "1",
+        "prism": "radial-gradient(112% 94% at 4% -16%, rgba(0, 0, 0, 0) 39%, rgba(169, 154, 240, 0.18) 49%, rgba(239, 156, 202, 0.17) 55%, rgba(244, 218, 158, 0.14) 61%, rgba(150, 225, 205, 0.16) 67%, rgba(151, 192, 244, 0.15) 73%, rgba(0, 0, 0, 0) 84%), conic-gradient(from 215deg at 68% 58%, rgba(164, 206, 238, 0.07), rgba(166, 229, 208, 0.13), rgba(242, 221, 166, 0.1), rgba(237, 168, 206, 0.13), rgba(178, 164, 241, 0.14), rgba(164, 206, 238, 0.07))",
+        "prismBlend": "color",
+        "canvasFilter": "none",
+        "overflow": 0,
+        "phase": "open"
+      },
+      "closed": {
+        "overflow": "",
+        "focus": "footer-sticker-trigger",
+        "stickers": "6"
+      }
+    },
+    {
+      "spec": {
+        "width": 320,
+        "height": 640,
+        "touch": true,
+        "reduced": true
+      },
+      "state": {
+        "filter": "blur(8px) saturate(1.12)",
+        "opacity": "1",
+        "prism": "radial-gradient(112% 94% at 4% -16%, rgba(0, 0, 0, 0) 39%, rgba(169, 154, 240, 0.18) 49%, rgba(239, 156, 202, 0.17) 55%, rgba(244, 218, 158, 0.14) 61%, rgba(150, 225, 205, 0.16) 67%, rgba(151, 192, 244, 0.15) 73%, rgba(0, 0, 0, 0) 84%), conic-gradient(from 215deg at 68% 58%, rgba(164, 206, 238, 0.07), rgba(166, 229, 208, 0.13), rgba(242, 221, 166, 0.1), rgba(237, 168, 206, 0.13), rgba(178, 164, 241, 0.14), rgba(164, 206, 238, 0.07))",
+        "prismBlend": "color",
+        "canvasFilter": "none",
+        "overflow": 0,
+        "phase": "open"
+      },
+      "closed": {
+        "overflow": "",
+        "focus": "footer-sticker-trigger",
+        "stickers": "6"
+      }
+    }
+  ],
+  "errors": []
+}

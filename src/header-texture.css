@@ -25,7 +25,7 @@
 .hero-introduction a span { margin-left: 12px; }
 .studio-header.is-hero-surface { color: #171717; }
 .hero-destination { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: #09090b; }
-.hero-destination-image { position: absolute; inset: 0; max-width: none; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transform: scale(1.02); filter: saturate(1.04) contrast(1.02); }
+.hero-destination-image { position: absolute; inset: 0; max-width: none; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; transform: none; filter: saturate(1.04) contrast(1.02); }
 .hero-destination > .hero-vignette-overlay { background: none; }
 .hero-destination > .hero-gradient-overlay-top { background: linear-gradient(180deg, rgba(8,8,10,.28), transparent); }
 .hero-destination > .hero-gradient-overlay-bottom { background: linear-gradient(0deg, rgba(9,9,11,.32), transparent); }
@@ -49,8 +49,12 @@
 .folio-nav.studio-header.has-hero-nav-reveal {
   transition: none;
 }
-.studio-header.has-hero-nav-reveal .logo-journey-mark {
-  clip-path: inset(0 0 calc((1 - var(--hero-logo-reveal, 0)) * 100%) 0);
+.logo-journey-monochrome {
+  position: absolute;
+  inset: 0;
+  /* One intact mark rises gently into place, driven by hero scroll progress. */
+  opacity: var(--hero-logo-reveal, 1);
+  transform: translate3d(0, calc((1 - var(--hero-logo-reveal, 1)) * 12px), 0);
 }
 .folio-nav.studio-header.is-logo-aperture-visible {
   opacity: 0 !important;
@@ -60,6 +64,7 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .folio-nav.studio-header.has-hero-nav-reveal { transition: none; }
+  .logo-journey-monochrome { transform: none; opacity: 1; }
 }
 @media (max-width: 600px) {
   .podium-hero .hero-bg-wrapper { width: min(84vw, 58svh); }
