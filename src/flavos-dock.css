@@ -1,0 +1,269 @@
+.flavos-dock-toggle,
+.flavos-preview-close {
+  --flavos-orange: #ff754c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  border: 0;
+  background: #20211f;
+  color: #f6f1e6;
+  font: 540 13px/1.2 var(--font-body);
+  touch-action: manipulation;
+}
+
+.flavos-dock-toggle {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  min-height: 46px;
+  padding: calc(9px + env(safe-area-inset-top, 0px))
+    calc(13px + env(safe-area-inset-right, 0px)) 9px 23px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+}
+
+.flavos-dock-symbol {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ff754c75;
+  color: var(--flavos-orange);
+  rotate: 45deg;
+  transition: rotate .35s cubic-bezier(.22, 1, .36, 1), background-color .2s ease, color .2s ease;
+}
+
+.flavos-dock-symbol::before,
+.flavos-dock-symbol::after {
+  content: '';
+  grid-area: 1 / 1;
+  width: 9px;
+  height: 1px;
+  background: currentColor;
+}
+
+.flavos-dock-symbol::after {
+  rotate: 90deg;
+}
+
+.flavos-dock-toggle:is(:hover, :focus-visible) .flavos-dock-symbol {
+  rotate: 135deg;
+  background: var(--flavos-orange);
+  color: #20211f;
+}
+
+.flavos-preview {
+  --flavos-paper: #f6f1e6;
+  --flavos-ink: #151513;
+  --flavos-orange: #ff754c;
+  position: fixed;
+  inset: 0 0 auto auto;
+  box-sizing: border-box;
+  width: min(440px, 86vw);
+  max-width: none;
+  height: min(210px, 75dvh);
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background: transparent;
+  color: var(--flavos-paper);
+}
+
+.flavos-preview::backdrop {
+  background: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 601px) {
+  #flavos-preview:has(> #custom-cursor),
+  #flavos-preview:has(> #custom-cursor) *,
+  #flavos-preview:has(> #custom-cursor)::backdrop {
+    cursor: none !important;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (max-width: 600px) {
+  #flavos-preview,
+  #flavos-preview *,
+  #flavos-preview::backdrop {
+    cursor: auto !important;
+  }
+
+  #flavos-preview :is(a, button) {
+    cursor: pointer !important;
+  }
+}
+
+.flavos-preview-stage {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  background: var(--flavos-ink);
+}
+
+.flavos-preview-stage::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: url('/tv-noise.png') repeat;
+  opacity: .16;
+  pointer-events: none;
+}
+
+.flavos-preview-image {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #262521;
+}
+
+.flavos-preview-image span {
+  position: absolute;
+  inset: 0;
+  background: #c2beb0 url('/optimized/portrait.webp') center bottom / cover no-repeat;
+  filter: grayscale(1) contrast(1.16);
+}
+
+.flavos-preview-image span:nth-child(1) {
+  clip-path: polygon(0 0, 42% 0, 30% 100%, 0 100%);
+}
+
+.flavos-preview-image span:nth-child(2) {
+  clip-path: polygon(43% 0, 75% 0, 64% 100%, 31% 100%);
+}
+
+.flavos-preview-image span:nth-child(3) {
+  clip-path: polygon(76% 0, 100% 0, 100% 100%, 65% 100%);
+}
+
+.flavos-preview-copy {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+  padding: 12px 8px 12px clamp(14px, 4.5vw, 28px);
+}
+
+.folio-main .flavos-preview-title {
+  margin: 0 0 14px;
+  color: var(--flavos-paper);
+  font: 400 clamp(36px, min(12vw, 21dvh), 58px)/.8 'Instrument Serif', Georgia, serif;
+  letter-spacing: -.042em;
+}
+
+.flavos-preview-title > span {
+  display: block;
+  overflow: hidden;
+  padding: .035em .11em .12em 0;
+  margin-bottom: -.12em;
+}
+
+.flavos-preview-title > span > span {
+  display: block;
+  transform-origin: left center;
+}
+
+.flavos-preview-link {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 9px;
+  background: var(--flavos-orange);
+  color: var(--flavos-ink);
+  font: 620 12px/1.2 var(--font-body);
+  white-space: nowrap;
+}
+
+.flavos-preview-link span {
+  font-size: 16px;
+  transition: translate .25s cubic-bezier(.22, 1, .36, 1);
+}
+
+.flavos-preview-link:is(:hover, :focus-visible) span {
+  translate: 3px -3px;
+}
+
+.flavos-preview-wipe {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%);
+  background: #c84f30;
+  transform: translateX(-125%);
+  pointer-events: none;
+}
+
+.flavos-preview-close {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  width: calc(44px + env(safe-area-inset-right, 0px));
+  height: calc(44px + env(safe-area-inset-top, 0px));
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) 0 0;
+}
+
+.flavos-preview-close span {
+  color: var(--flavos-orange);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.folio-main :is(.flavos-dock-toggle, .flavos-preview-close, .flavos-preview-link):focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -4px;
+}
+
+@media (max-width: 1024px) {
+  .folio-nav.studio-header .studio-bar {
+    height: calc(108px + env(safe-area-inset-top, 0px)) !important;
+    padding-top: calc(46px + env(safe-area-inset-top, 0px)) !important;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 560px) {
+  .flavos-preview {
+    width: min(310px, 88vw);
+    height: min(172px, 75dvh);
+  }
+}
+
+@media (max-height: 300px) {
+  .flavos-preview-copy {
+    padding-block: 6px;
+  }
+
+  .folio-main .flavos-preview-title {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flavos-dock-symbol,
+  .flavos-preview-link span {
+    transition: none;
+  }
+
+  .flavos-dock-toggle:is(:hover, :focus-visible) .flavos-dock-symbol {
+    rotate: 45deg;
+  }
+
+  .flavos-preview-link:is(:hover, :focus-visible) span {
+    translate: none;
+  }
+}

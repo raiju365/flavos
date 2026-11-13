@@ -82,6 +82,31 @@
   <main id="main-content" class="folio-main" style="display: none; opacity: 0;">
     <a class="skip-content" href="#hero">Skip to content</a>
 
+    <button class="flavos-dock-toggle" type="button" aria-controls="flavos-preview" aria-haspopup="dialog"
+      aria-expanded="false">
+      Click Here <span class="flavos-dock-symbol" aria-hidden="true"></span>
+    </button>
+
+    <dialog id="flavos-preview" class="flavos-preview" aria-labelledby="flavos-preview-title" data-lenis-prevent>
+      <div class="flavos-preview-stage">
+        <div class="flavos-preview-image" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="flavos-preview-copy">
+          <h2 id="flavos-preview-title" class="flavos-preview-title">
+            <span><span>Other</span></span> <span><span>Flavos</span></span>
+          </h2>
+          <a class="flavos-preview-link" href="https://otherflavos.vercel.app/">
+            See other flavos <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="flavos-preview-wipe" aria-hidden="true"></div>
+        <button class="flavos-preview-close" type="button" aria-label="Close" autofocus>
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+    </dialog>
+
     <section id="hero" class="folio-hero imperial-hero podium-hero" aria-labelledby="hero-heading">
       <div class="hero-destination" aria-hidden="true">
         <img class="hero-destination-image" src="/optimized/hero-1448.webp" width="1421" height="1107" alt="" fetchpriority="high" />
@@ -96,7 +121,6 @@
       </div>
 
       <h1 id="hero-heading" class="sr-only">Fahmi Aufa — Portfolio</h1>
-
     </section>
 
     <section class="folio-logo-pause" aria-label="Fahmi Aufa">

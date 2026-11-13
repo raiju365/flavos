@@ -8,6 +8,7 @@ import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { initFlavosPreview } from './flavos-preview'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -349,6 +350,8 @@ if (meanderPaths.length) gsap.to(meanderPaths, {
 });
 
 const portfolio = initPortfolio({ getLenis: () => lenis });
+const cleanupFlavosPreview = initFlavosPreview({ getLenis: () => lenis, reducedMotion: prefersReducedMotion });
+if (import.meta.hot) import.meta.hot.dispose(cleanupFlavosPreview);
 
 // Ensure no native browser tooltips ever linger or get re-injected
 const stripNativeTooltips = () => {
