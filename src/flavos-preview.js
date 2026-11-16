@@ -48,25 +48,13 @@ export function initFlavosPreview({ getLenis, reducedMotion }) {
 
     if (reducedMotion.matches) return;
     const stage = dialog.querySelector('.flavos-preview-stage');
-    const wipe = dialog.querySelector('.flavos-preview-wipe');
-    const strips = dialog.querySelectorAll('.flavos-preview-image span');
-    const words = dialog.querySelectorAll('.flavos-preview-title > span > span');
-    const link = dialog.querySelector('.flavos-preview-link');
-    const covered = 'polygon(100% 0%, 160% 0%, 160% 100%, 150% 100%)';
-    const full = 'polygon(-35% 0%, 100% 0%, 100% 100%, 0% 100%)';
-
-    motion = gsap.timeline({ onReverseComplete: finishClose });
-    motion
-      .fromTo(stage, { clipPath: covered }, { clipPath: full, duration: .68, ease: 'power3.inOut' }, 0)
-      .fromTo(wipe, { xPercent: 0 }, { xPercent: -125, duration: .67, ease: 'power3.inOut' }, .13)
-      .fromTo(strips, { xPercent: 16, yPercent: -22, scale: 1.12, opacity: 0 }, {
-        xPercent: 0, yPercent: 0, scale: 1, opacity: 1,
-        stagger: { each: .065, from: 'end' }, duration: .59, ease: 'power3.out'
-      }, .28)
-      .fromTo(words, { yPercent: 110, rotate: 5 }, {
-        yPercent: 0, rotate: 0, stagger: .085, duration: .55, ease: 'power4.out'
-      }, .42)
-      .fromTo(link, { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: .34, ease: 'power2.out' }, .64);
+    motion = gsap.fromTo(stage, { y: -8, opacity: 0 }, {
+      y: 0,
+      opacity: 1,
+      duration: .22,
+      ease: 'power2.out',
+      onReverseComplete: finishClose
+    });
   }
 
   function hide() {
@@ -75,7 +63,7 @@ export function initFlavosPreview({ getLenis, reducedMotion }) {
       finishClose();
       return;
     }
-    motion.timeScale(1.65).reverse();
+    motion.timeScale(1.25).reverse();
   }
 
   trigger.addEventListener('click', show, options);

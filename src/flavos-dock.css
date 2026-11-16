@@ -1,13 +1,12 @@
 .flavos-dock-toggle,
 .flavos-preview-close {
-  --flavos-orange: #ff754c;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 13px;
+  gap: 12px;
   border: 0;
-  background: #20211f;
-  color: #f6f1e6;
+  background: #f6f3eb;
+  color: #252520;
   font: 540 13px/1.2 var(--font-body);
   touch-action: manipulation;
 }
@@ -20,50 +19,34 @@
   min-height: 46px;
   padding: calc(9px + env(safe-area-inset-top, 0px))
     calc(13px + env(safe-area-inset-right, 0px)) 9px 23px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  border-left: 1px solid #d8d4c8;
+  border-bottom: 1px solid #d8d4c8;
 }
 
 .flavos-dock-symbol {
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 22px;
-  height: 22px;
-  border: 1px solid #ff754c75;
-  color: var(--flavos-orange);
+  width: 7px;
+  height: 7px;
+  margin-block-start: -4px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   rotate: 45deg;
-  transition: rotate .35s cubic-bezier(.22, 1, .36, 1), background-color .2s ease, color .2s ease;
 }
 
-.flavos-dock-symbol::before,
-.flavos-dock-symbol::after {
-  content: '';
-  grid-area: 1 / 1;
-  width: 9px;
-  height: 1px;
-  background: currentColor;
-}
-
-.flavos-dock-symbol::after {
-  rotate: 90deg;
-}
-
-.flavos-dock-toggle:is(:hover, :focus-visible) .flavos-dock-symbol {
-  rotate: 135deg;
-  background: var(--flavos-orange);
-  color: #20211f;
+.flavos-dock-toggle:hover,
+.flavos-preview-close:hover span {
+  background: #ebe6db;
 }
 
 .flavos-preview {
-  --flavos-paper: #f6f1e6;
-  --flavos-ink: #151513;
-  --flavos-orange: #ff754c;
+  --flavos-paper: #f6f3eb;
+  --flavos-ink: #252520;
+  --flavos-line: #d8d4c8;
   position: fixed;
   inset: 0 0 auto auto;
   box-sizing: border-box;
-  width: min(440px, 86vw);
+  width: min(354px, 88vw);
   max-width: none;
-  height: min(210px, 75dvh);
+  height: min(154px, 75dvh);
   max-height: none;
   margin: 0;
   padding: 0;
@@ -100,78 +83,41 @@
 
 .flavos-preview-stage {
   position: relative;
-  isolation: isolate;
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 32%;
   align-items: center;
   height: 100%;
   overflow: hidden;
-  background: var(--flavos-ink);
-}
-
-.flavos-preview-stage::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: url('/tv-noise.png') repeat;
-  opacity: .16;
-  pointer-events: none;
+  box-sizing: border-box;
+  border-left: 1px solid var(--flavos-line);
+  border-bottom: 1px solid var(--flavos-line);
+  background: var(--flavos-paper);
+  color: var(--flavos-ink);
 }
 
 .flavos-preview-image {
   grid-column: 2;
   grid-row: 1;
-  position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background: #262521;
-}
-
-.flavos-preview-image span {
-  position: absolute;
-  inset: 0;
-  background: #c2beb0 url('/optimized/portrait.webp') center bottom / cover no-repeat;
-  filter: grayscale(1) contrast(1.16);
-}
-
-.flavos-preview-image span:nth-child(1) {
-  clip-path: polygon(0 0, 42% 0, 30% 100%, 0 100%);
-}
-
-.flavos-preview-image span:nth-child(2) {
-  clip-path: polygon(43% 0, 75% 0, 64% 100%, 31% 100%);
-}
-
-.flavos-preview-image span:nth-child(3) {
-  clip-path: polygon(76% 0, 100% 0, 100% 100%, 65% 100%);
+  min-height: 0;
+  object-fit: cover;
+  object-position: center bottom;
+  background: #d1cdc4;
+  filter: grayscale(1);
 }
 
 .flavos-preview-copy {
   grid-column: 1;
   grid-row: 1;
-  z-index: 1;
-  padding: 12px 8px 12px clamp(14px, 4.5vw, 28px);
+  padding: 8px 12px 8px clamp(14px, 4.5vw, 24px);
 }
 
 .folio-main .flavos-preview-title {
-  margin: 0 0 14px;
-  color: var(--flavos-paper);
-  font: 400 clamp(36px, min(12vw, 21dvh), 58px)/.8 'Instrument Serif', Georgia, serif;
-  letter-spacing: -.042em;
-}
-
-.flavos-preview-title > span {
-  display: block;
-  overflow: hidden;
-  padding: .035em .11em .12em 0;
-  margin-bottom: -.12em;
-}
-
-.flavos-preview-title > span > span {
-  display: block;
-  transform-origin: left center;
+  margin: 0;
+  color: var(--flavos-ink);
+  font: 400 clamp(30px, 10vw, 42px)/1.02 'Instrument Serif', Georgia, serif;
+  letter-spacing: -.025em;
 }
 
 .flavos-preview-link {
@@ -180,51 +126,56 @@
   align-items: center;
   gap: 8px;
   min-height: 44px;
-  padding: 0 9px;
-  background: var(--flavos-orange);
+  padding: 0 2px;
   color: var(--flavos-ink);
-  font: 620 12px/1.2 var(--font-body);
+  font: 550 12px/1.2 var(--font-body);
   white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: #8a8478;
+  text-underline-offset: 4px;
 }
 
 .flavos-preview-link span {
   font-size: 16px;
-  transition: translate .25s cubic-bezier(.22, 1, .36, 1);
+  transition: translate .18s ease-out;
 }
 
 .flavos-preview-link:is(:hover, :focus-visible) span {
-  translate: 3px -3px;
-}
-
-.flavos-preview-wipe {
-  position: absolute;
-  z-index: 2;
-  inset: 0;
-  clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%);
-  background: #c84f30;
-  transform: translateX(-125%);
-  pointer-events: none;
+  translate: 2px -2px;
 }
 
 .flavos-preview-close {
   position: absolute;
-  z-index: 3;
   top: 0;
   right: 0;
   width: calc(44px + env(safe-area-inset-right, 0px));
   height: calc(44px + env(safe-area-inset-top, 0px));
   padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) 0 0;
+  background: transparent;
 }
 
 .flavos-preview-close span {
-  color: var(--flavos-orange);
-  font-size: 22px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  background: var(--flavos-paper);
+  font-size: 20px;
   line-height: 1;
 }
 
-.folio-main :is(.flavos-dock-toggle, .flavos-preview-close, .flavos-preview-link):focus-visible {
+.folio-main :is(.flavos-dock-toggle, .flavos-preview-link):focus-visible {
   outline: 2px solid currentColor;
   outline-offset: -4px;
+}
+
+.folio-main .flavos-preview-close:focus-visible {
+  outline: none;
+}
+
+.flavos-preview-close:focus-visible span {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 @media (max-width: 1024px) {
@@ -237,8 +188,8 @@
 
 @media (max-width: 560px) {
   .flavos-preview {
-    width: min(310px, 88vw);
-    height: min(172px, 75dvh);
+    width: min(290px, 88vw);
+    height: min(130px, 75dvh);
   }
 }
 
@@ -249,18 +200,12 @@
 
   .folio-main .flavos-preview-title {
     font-size: 32px;
-    margin-bottom: 8px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .flavos-dock-symbol,
   .flavos-preview-link span {
     transition: none;
-  }
-
-  .flavos-dock-toggle:is(:hover, :focus-visible) .flavos-dock-symbol {
-    rotate: 45deg;
   }
 
   .flavos-preview-link:is(:hover, :focus-visible) span {
